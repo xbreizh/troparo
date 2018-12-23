@@ -15,6 +15,10 @@
 
     <modules>
         <module>troparo-web</module>
+        <module>troparo-business</module>
+        <module>troparo-consumer</module>
+        <module>troparo-model</module>
+        <module>troparo-log</module>
     </modules>
 
     <!-- properties -->
@@ -40,11 +44,16 @@
     <dependencies>
         <!-- ===== Modules ===== -->
 
+        <!--<dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>troparo-business</artifactId>
+            <version>${project.version}</version>
+        </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>troparo-web</artifactId>
             <version>${project.version}</version>
-        </dependency>
+        </dependency>-->
 
         <!-- ===== Third Part ===== -->
 
