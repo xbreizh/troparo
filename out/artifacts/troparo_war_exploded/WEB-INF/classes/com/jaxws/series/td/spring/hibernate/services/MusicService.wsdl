@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  targetNamespace="http://benchresources.in/services/MusicService/"
+                  xmlns:tns="http://benchresources.in/services/MusicService/"
+                  xmlns:muzix="http://benchresources.in/entities/music" name="MusicService">
+
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://benchresources.in/services/MusicService/">
+            <xsd:import namespace="http://benchresources.in/entities/music"
+                        schemaLocation="../entities/music.xsd" />
+        </xsd:schema>
+    </wsdl:types>
+
+    <wsdl:message name="MusicListRequest">
+        <wsdl:part element="muzix:MusicListRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="MusicListResponse">
+        <wsdl:part element="muzix:MusicListResponseType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="BusinessException">
+        <wsdl:part element="muzix:BusinessFaultType" name="parameters" />
+    </wsdl:message>
+
+    <wsdl:portType name="IMusicService">
+        <wsdl:operation name="getAllMovieDetailByComposer">
+            <wsdl:input message="tns:MusicListRequest" />
+            <wsdl:output message="tns:MusicListResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
+    </wsdl:portType>
+
+    <wsdl:binding name="MusicServiceSOAPBinding" type="tns:IMusicService">
+        <soap:binding style="document"
+                      transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="getAllMovieDetailByComposer">
+            <soap:operation
+                    soapAction="" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="businessException">
+                <soap:fault name="businessException" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+
+    <wsdl:service name="MusicService">
+        <wsdl:port name="MusicServicePort" binding="tns:MusicServiceSOAPBinding">
+            <soap:address
+                    location="http://localhost:8080/ApacheCXF-JAX-WS-Top-Down-Spring-Hibernate/services/music/MusicService" />
+        </wsdl:port>
+    </wsdl:service>
+
+</wsdl:definitions>

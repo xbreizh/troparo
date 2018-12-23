@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://benchresources.in/entities/music" xmlns:tns="http://benchresources.in/entities/music"
+            elementFormDefault="qualified">
+
+    <!-- Music List Request Type -->
+    <xsd:element name="MusicListRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="composerName" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Music List Response Type -->
+    <xsd:element name="MusicListResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="composer" type="xsd:string" />
+                <xsd:element ref="tns:MovieListType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- List of Movies -->
+    <xsd:element name="MovieListType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:MovieType" maxOccurs="unbounded" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Movie Type -->
+    <xsd:element name="MovieType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="movieName" type="xsd:string" />
+                <xsd:element name="year" type="xsd:string" />
+                <xsd:element name="director" type="xsd:string" />
+                <xsd:element name="comments" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Business Exception Type -->
+    <xsd:element name="BusinessFaultType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="errorCode" type="xsd:int" />
+                <xsd:element name="errorMessage" type="xsd:string" />
+                <xsd:element name="errorDescription" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://benchresources.in/entities/Book" xmlns:tns="http://benchresources.in/entities/Book"
+            elementFormDefault="qualified">
+
+    <!-- Book Request Type -->
+    <xsd:element name="BookRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="isbnNumber" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book Response Type -->
+    <xsd:element name="BookResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="bookISBN" type="xsd:string" />
+                <xsd:element name="bookName" type="xsd:string" />
+                <xsd:element name="author" type="xsd:string" />
+                <xsd:element name="category" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+</xsd:schema>
