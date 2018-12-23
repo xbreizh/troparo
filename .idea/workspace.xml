@@ -7,103 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df106c40-6ca2-423b-aa65-a5307468a621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/troparo-web/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/troparo-web/troparo-web.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/troparo_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/book/BookRequestType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/book/BookResponseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/book/ObjectFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/book/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/BusinessFaultType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/MovieListType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/MovieType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/MusicListRequestType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/MusicListResponseType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/ObjectFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/package-info.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/services/bookservice/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/services/bookservice/IBookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/services/musicservice/BusinessException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/services/musicservice/IMusicService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/generated/java/source/in/benchresources/services/musicservice/MusicService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/apache-cxf-services.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/entities/music.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/model/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/top/down/approach/service/BookServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/top/down/approach/service/entities/book.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/com/jaxws/series/top/down/approach/service/services/BookService.wsdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/entities/book/BookRequestType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/entities/book/BookResponseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/entities/book/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/entities/book/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/services/bookservice/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/classes/in/benchresources/services/bookservice/IBookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/troparo_war_exploded/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jaxws/series/top/down/approach/service/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jaxws/series/td/spring/hibernate/entities/music.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/entities/music.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jaxws/series/top/down/approach/service/entities/book.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jaxws/series/top/down/approach/service/services/BookService.wsdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/apache-cxf-services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/entities/music.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/model/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/top/down/approach/service/BookServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/top/down/approach/service/entities/book.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jaxws/series/top/down/approach/service/services/BookService.wsdl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/book/BookRequestType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/book/BookResponseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/book/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/book/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/BusinessFaultType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/MovieListType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/MovieType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/MusicListRequestType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/MusicListResponseType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/ObjectFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/entities/music/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/services/bookservice/BookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/services/bookservice/IBookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/services/musicservice/BusinessException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/services/musicservice/IMusicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/in/benchresources/services/musicservice/MusicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cxf-codegen-plugin-markers/.33C953B20A0CA485D684C0F439005EEECA5E1521" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-test.jaxws.series.top.down.approach.service.TestBookService.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/test.jaxws.series.top.down.approach.service.TestBookService.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/jaxws/series/td/spring/hibernate/service/TestMusicService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/test/jaxws/series/top/down/approach/service/TestBookService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/troparo-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/troparo-web.iml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/troparo-web.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -116,35 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-web/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="64" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="902">
-              <caret line="97" column="24" selection-start-line="64" selection-start-column="7" selection-end-line="97" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -202,8 +85,12 @@
         <option value="$PROJECT_DIR$/troparo-web/webapp/WEB-INF/apache-cxf-services.xml" />
         <option value="$PROJECT_DIR$/troparo-web/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/troparo-web/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -244,10 +131,6 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="troparo-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="troparo-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
       </expand>
       <select />
     </treeState>
@@ -275,38 +158,6 @@
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
               <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="series" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,6 +172,60 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="hibernate" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -354,11 +259,11 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545580665059" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545583943727" />
     <property name="last_opened_file_path" value="D:/openClassrooms/Project_6-climbing/tutos/spring_tuto" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15668203" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -422,7 +327,6 @@
       </method>
     </configuration>
     <configuration name="TomCat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="troparo-web:war exploded">
           <settings>
@@ -590,17 +494,25 @@
       <updated>1545516394035</updated>
       <workItem from="1545516395521" duration="4788000" />
       <workItem from="1545521493209" duration="2113000" />
-      <workItem from="1545562594588" duration="11305000" />
+      <workItem from="1545562594588" duration="14621000" />
     </task>
+    <task id="LOCAL-00001" summary="migrated web to webapp module">
+      <created>1545580729110</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1545580729110</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18206000" />
+    <option name="totallyTimeSpent" value="21522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1463" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27868852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27868852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -611,7 +523,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39142463" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39142463" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -638,6 +550,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="migrated web to webapp module" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrated web to webapp module" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/jaxws/series/top/down/approach/service/entities/book.xsd">
@@ -842,22 +758,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/entities/music.xsd">
       <provider selected="true" editor-type-id="text-editor">
@@ -876,38 +782,61 @@
     <entry file="file://$PROJECT_DIR$/troparo-web/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/ObjectFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="32" column="36" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-379">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="32" column="3" selection-start-line="32" selection-start-column="3" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="222">
+          <caret line="33" column="37" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="97" column="24" selection-start-line="64" selection-start-column="7" selection-end-line="97" selection-end-column="24" />
+        <state relative-caret-position="255">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="4" column="199" selection-start-line="4" selection-start-column="199" selection-end-line="4" selection-end-column="199" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -922,6 +851,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -929,7 +859,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (troparo-web)|Spring</last-edited>
+          <last-edited>Web (troparo-web)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -964,7 +894,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|troparo-web</last-edited>
+          <last-edited>Spring|troparo-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
