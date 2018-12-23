@@ -18,6 +18,12 @@
 
 
     <dependencies>
+        <!-- ===== Modules ===== -->
+        <dependency>
+            <groupId>org.troparo</groupId>
+            <artifactId>troparo-model</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <!-- apache cxf jax-ws-3.0.2 -->
         <dependency>
