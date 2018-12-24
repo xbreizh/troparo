@@ -1,23 +1,23 @@
 package com.jaxws.series.td.spring.hibernate.service;
 
 
-import com.jaxws.series.td.spring.hibernate.dao.MusicDAO;
 import in.benchresources.entities.music.*;
 import in.benchresources.services.musicservice.BusinessException;
 import in.benchresources.services.musicservice.IMusicService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+import org.troparo.consumer.contract.MusicDAO;
 import org.troparo.model.Music;
 
+import javax.inject.Inject;
 import javax.jws.WebService;
 import java.util.List;
 
 @WebService(serviceName="MusicService", endpointInterface="in.benchresources.services.musicservice.IMusicService",
         targetNamespace="http://benchresources.in/services/MusicService/", portName="MusicServicePort", name="MusicServiceImpl")
-public class MusicServiceImpl extends SpringBeanAutowiringSupport implements IMusicService {
+public class MusicServiceImpl implements IMusicService {
 
-    @Autowired
+    @Inject
     private MusicDAO musicDAO;
+
 
     @Override
     public MusicListResponseType getAllMovieDetailByComposer(MusicListRequestType parameters) throws BusinessException {

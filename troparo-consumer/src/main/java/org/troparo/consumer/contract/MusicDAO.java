@@ -1,4 +1,6 @@
-package com.jaxws.series.td.spring.hibernate.dao;
+package org.troparo.consumer.contract;
+
+
 
 
 

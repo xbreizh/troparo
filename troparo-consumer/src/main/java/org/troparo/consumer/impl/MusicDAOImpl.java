@@ -1,20 +1,21 @@
-package com.jaxws.series.td.spring.hibernate.dao;
+package org.troparo.consumer.impl;
 
 
 import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.troparo.consumer.contract.MusicDAO;
 import org.troparo.model.Music;
+import javax.inject.Inject;
+import javax.inject.Named;
 
 import java.util.List;
 
-@Repository("musicDAO")
+@Named("musicDAO")
 public class MusicDAOImpl implements MusicDAO {
 
     public static final String MUSIC_COMPOSER = "AR Rahman";
 
-    @Autowired
+    @Inject
     private SessionFactory sessionFactory;
 
     @SuppressWarnings("unchecked")
