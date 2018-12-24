@@ -37,7 +37,7 @@
             <xsd:sequence>
                 <xsd:element name="name" type="xsd:string" />
                 <xsd:element name="author" type="xsd:string" />
-                <xsd:element name="publication" type="xsd:date" />
+                <xsd:element name="publication" type="xsd:string" />
                 <xsd:element name="edition" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>

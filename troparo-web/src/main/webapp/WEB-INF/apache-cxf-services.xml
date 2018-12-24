@@ -8,5 +8,9 @@
                     implementor="org.troparo.web.service.MusicServiceImpl"
                     address="/music">
     </jaxws:endpoint>
+    <jaxws:endpoint id="bookservice"
+                    implementor="org.troparo.web.service.BookServiceImpl"
+                    address="/book">
+    </jaxws:endpoint>
 
 </beans>

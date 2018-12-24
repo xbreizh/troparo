@@ -99,6 +99,7 @@
                             <wsdlOptions>
                                 <wsdlOption>
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookService.wsdl</wsdl>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>

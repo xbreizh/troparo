@@ -1,9 +1,6 @@
 package org.troparo.consumer.contract;
 
 
-
-
-
 import org.troparo.model.Music;
 
 import java.util.List;
