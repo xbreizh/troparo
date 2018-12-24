@@ -2,12 +2,12 @@ package com.jaxws.series.td.spring.hibernate.service;
 
 
 import com.jaxws.series.td.spring.hibernate.dao.MusicDAO;
-import com.jaxws.series.td.spring.hibernate.model.Music;
 import in.benchresources.entities.music.*;
 import in.benchresources.services.musicservice.BusinessException;
 import in.benchresources.services.musicservice.IMusicService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.context.support.SpringBeanAutowiringSupport;
+import org.troparo.model.Music;
 
 import javax.jws.WebService;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.jaxws.series.td.spring.hibernate.model;
+package org.troparo.model;
 
 
 import javax.persistence.*;

@@ -1,6 +1,8 @@
 package com.jaxws.series.td.spring.hibernate.dao;
 
-import com.jaxws.series.td.spring.hibernate.model.Music;
+
+
+import org.troparo.model.Music;
 
 import java.util.List;
 

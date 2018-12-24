@@ -15,6 +15,7 @@
 
     <modules>
         <module>troparo-web</module>
+        <module>troparo-model</module>
     </modules>
 
     <!-- properties -->

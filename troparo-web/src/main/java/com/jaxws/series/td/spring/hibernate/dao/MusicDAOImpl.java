@@ -1,10 +1,11 @@
 package com.jaxws.series.td.spring.hibernate.dao;
 
-import com.jaxws.series.td.spring.hibernate.model.Music;
+
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
+import org.troparo.model.Music;
 
 import java.util.List;
 

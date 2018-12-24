@@ -27,7 +27,7 @@
         <property name="dataSource" ref="dataSource" />
         <property name="annotatedClasses">
             <list>
-                <value>com.jaxws.series.td.spring.hibernate.model.Music</value>
+                <value>org.troparo.model.Music</value>
             </list>
         </property>
         <property name="hibernateProperties">

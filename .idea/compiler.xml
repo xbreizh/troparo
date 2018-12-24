@@ -6,8 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="troparo-model" />
         <module name="troparo-web" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="troparo-business" target="1.7" />
+      <module name="troparo-consumer" target="1.7" />
+      <module name="troparo-log" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
