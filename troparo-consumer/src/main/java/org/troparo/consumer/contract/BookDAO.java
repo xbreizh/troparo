@@ -6,5 +6,6 @@ import java.util.List;
 
 public interface BookDAO {
 
-    public List<Book> getBooks();
+    List<Book> getBooks();
+    boolean addBook(Book book);
 }

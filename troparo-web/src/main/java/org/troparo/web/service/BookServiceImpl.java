@@ -1,10 +1,7 @@
 package org.troparo.web.service;
 
 import org.troparo.consumer.contract.BookDAO;
-import org.troparo.entities.book.BookListRequestType;
-import org.troparo.entities.book.BookListResponseType;
-import org.troparo.entities.book.BookListType;
-import org.troparo.entities.book.BookType;
+import org.troparo.entities.book.*;
 import org.troparo.model.Book;
 import org.troparo.services.bookservice.BusinessException;
 import org.troparo.services.bookservice.IBookService;
@@ -21,6 +18,23 @@ public class BookServiceImpl implements IBookService {
     @Inject
     private BookDAO bookDAO;
 
+
+    @Override
+    public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
+        Book book = new Book();
+        BookType bt = parameters.getBookType();
+        book.setName(bt.getName());
+        book.setAuthor(bt.getAuthor());
+        book.setEdition(bt.getEdition());
+        book.setPublication(bt.getPublication());
+
+        AddBookResponseType ar = new AddBookResponseType();
+        ar.setReturn(false);
+        if(bookDAO.addBook(book)==true){
+            ar.setReturn(true);
+        }
+        return ar;
+    }
 
     @Override
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {

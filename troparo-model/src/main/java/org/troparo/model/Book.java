@@ -10,7 +10,7 @@ public class Book {
 
     // member variables
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Column(name = "BOOK_ID")
     private int bookId;
 

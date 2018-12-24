@@ -22,6 +22,24 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Book List Request Type -->
+    <xsd:element name="addBookRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:BookType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book List Response Type -->
+    <xsd:element name="addBookResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- List of Movies -->
     <xsd:element name="BookListType">
         <xsd:complexType>
