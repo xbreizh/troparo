@@ -17,28 +17,28 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="author" type="xsd:string" />
-                <xsd:element ref="tns:MovieListType" />
+                <xsd:element ref="tns:BookListType" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- List of Movies -->
-    <xsd:element name="MovieListType">
+    <xsd:element name="BookListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MovieType" maxOccurs="unbounded" />
+                <xsd:element ref="tns:BookType" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- Movie Type -->
-    <xsd:element name="MovieType">
+    <xsd:element name="BookType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="movieName" type="xsd:string" />
-                <xsd:element name="year" type="xsd:string" />
-                <xsd:element name="director" type="xsd:string" />
-                <xsd:element name="comments" type="xsd:string" />
+                <xsd:element name="name" type="xsd:string" />
+                <xsd:element name="author" type="xsd:string" />
+                <xsd:element name="publication" type="xsd:date" />
+                <xsd:element name="edition" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
