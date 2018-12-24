@@ -1,10 +1,6 @@
 package org.troparo.web.service;
 
 import org.troparo.consumer.contract.BookDAO;
-
-import javax.inject.Inject;
-import javax.jws.WebService;
-
 import org.troparo.entities.book.BookListRequestType;
 import org.troparo.entities.book.BookListResponseType;
 import org.troparo.entities.book.BookListType;
@@ -12,6 +8,9 @@ import org.troparo.entities.book.BookType;
 import org.troparo.model.Book;
 import org.troparo.services.bookservice.BusinessException;
 import org.troparo.services.bookservice.IBookService;
+
+import javax.inject.Inject;
+import javax.jws.WebService;
 
 import java.util.List;
 
