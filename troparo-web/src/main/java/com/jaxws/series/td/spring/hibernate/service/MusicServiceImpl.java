@@ -30,7 +30,7 @@ public class MusicServiceImpl extends SpringBeanAutowiringSupport implements IMu
         BusinessFaultType businessFaultType = null;
 
         try{
-            if(null != parameters && !parameters.getComposerName().equalsIgnoreCase("")){
+            if(parameters != null && !parameters.getComposerName().equalsIgnoreCase("")){
 
                 // invoke dao to get values
                 lstMusic = musicDAO.getAllMoviesByComposer(parameters.getComposerName());

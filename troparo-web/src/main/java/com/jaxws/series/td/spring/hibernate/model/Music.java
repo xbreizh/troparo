@@ -4,7 +4,7 @@ package com.jaxws.series.td.spring.hibernate.model;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "MUSICO")
+@Table(name = "MUSIC")
 public class Music {
 
     // member variables

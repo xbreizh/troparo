@@ -24,10 +24,11 @@ public class MusicDAOImpl implements MusicDAO {
         // local variables
         List<Music> lstMusic = null;
 
-        if(null != composerName && composerName.equalsIgnoreCase(MUSIC_COMPOSER)){
-
+        if(composerName !=null && composerName.equalsIgnoreCase(MUSIC_COMPOSER)){
+            System.out.println("composer is correct");
             // get all books info from database
-            lstMusic = sessionFactory.getCurrentSession().createCriteria(Music.class).list();
+            lstMusic = sessionFactory.getCurrentSession().createQuery("from Music").getResultList();
+            System.out.println("size of list: "+lstMusic.size());
         }
         return lstMusic;
     }
