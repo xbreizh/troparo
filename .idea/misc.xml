@@ -3,13 +3,11 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/troparo-web" />
-    <file type="web" url="file://$PROJECT_DIR$/troparo-web/generated/java/source" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-web2/pom.xml" />
       </list>
     </option>
   </component>

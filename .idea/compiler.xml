@@ -12,8 +12,5 @@
         <module name="troparo-web" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="troparo-log" target="1.7" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,90 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ArtifactsWorkspaceSettings">
-    <artifacts-to-build>
-      <artifact name="troparo-web:war exploded" />
-    </artifacts-to-build>
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df106c40-6ca2-423b-aa65-a5307468a621" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" afterDir="false" />
+    <list default="true" id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/troparo-web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/troparo-web/target/" />
-    <ignored path="$PROJECT_DIR$/troparo-web2/target/" />
     <ignored path="$PROJECT_DIR$/troparo-model/target/" />
     <ignored path="$PROJECT_DIR$/troparo-consumer/target/" />
-    <ignored path="$PROJECT_DIR$/troparo-business/target/" />
     <ignored path="$PROJECT_DIR$/troparo-technical/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MusicServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            <state relative-caret-position="238">
+              <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="75" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="75" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="HTML File" />
-        <option value="Jsp File" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>model</find>
-      <find>musico</find>
-      <find>benchre</find>
-      <find>benchresources.in</find>
-      <find>in.benchresources</find>
-      <find>benchresources</find>
-      <find>music</find>
-      <find>composer</find>
-      <find>MusicService</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>troparo</replace>
-      <replace>troparo.org</replace>
-      <replace>org.troparo</replace>
-      <replace>book</replace>
-      <replace>author</replace>
-      <replace>BookService</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>C:\Users\xavier.lamourec\Desktop\metro\troparo</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -92,71 +53,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/jaxws/series/td/spring/hibernate/service/TestMusicService.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/jaxws/series/td/spring/hibernate/entities/music.xsd" />
-        <option value="$PROJECT_DIR$/src/main/java/com/jaxws/series/top/down/approach/service/BookServiceImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-web/web/WEB-INF/de.html" />
-        <option value="$PROJECT_DIR$/troparo-web/web/index.html" />
-        <option value="$PROJECT_DIR$/troparo-web/web/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web2/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web2/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java" />
-        <option value="$PROJECT_DIR$/troparo-web2/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-web2/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-web2/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" />
-        <option value="$PROJECT_DIR$/troparo-web/webapp/WEB-INF/index.html" />
-        <option value="$PROJECT_DIR$/troparo-web/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/webapp/WEB-INF/apache-cxf-services.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8a60f720-be38-4980-8e47-24b3615b6463/console.sql" />
-        <option value="$PROJECT_DIR$/troparo-model/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java" />
-        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MusicDAO.java" />
-        <option value="$PROJECT_DIR$/troparo-model/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MusicDaoTest.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAOImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MusicDAOImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-business/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/com/jaxws/series/td/spring/hibernate/config/spring-hibernate-jax-ws.xml" />
-        <option value="$PROJECT_DIR$/troparo-technical/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-technical/src/main/resources/logs/log4j.properties" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MusicService.wsdl" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/music.xsd" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MusicServiceImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp" />
       </list>
     </option>
-  </component>
-  <component name="LogFilters">
-    <option name="FILTER_ERRORS" value="false" />
-    <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
-    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$USER_HOME$/Documents/java/apache-maven-3.5.0-bin/apache-maven-3.5.0" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../java/apache-maven-3.5.0-bin/apache-maven-3.5.0" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -172,17 +77,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="troparo-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="troparo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="troparo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1829" />
-    <option name="height" value="1098" />
+    <option name="x" value="-224" />
+    <option name="y" value="152" />
+    <option name="width" value="2420" />
+    <option name="height" value="1370" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -200,7 +110,83 @@
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
               <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -214,6 +200,23 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -229,8 +232,7 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -238,61 +240,25 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="postgresql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545660420996" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545663639551" />
     <property name="last_opened_file_path" value="D:/openClassrooms/Project_6-climbing/tutos/spring_tuto" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15668203" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web\src\main\resources\org\troparo\web" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-technical\src\main\resources" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-consumer" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web\src\main\webapp" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web\src\main" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.jaxws.series.td.spring.hibernate" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web\src\main\resources\org\troparo\web\services" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web\src\main\resources\org\troparo\web\entities" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-consumer\src\main\java\org\troparo\consumer" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web2\src\main\resources\com\jaxws\series\td\spring\hibernate" />
-      <recent name="C:\Users\xavier.lamourec\Desktop\metro\troparo\troparo-web2\src\main\java\com\jaxws\series\td\spring\hibernate" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -306,82 +272,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.TomCat 9">
-    <configuration name="TestBookService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.jaxws.series.top.down.approach.service.TestBookService" />
-      <module name="troparo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.jaxws.series.top.down.approach.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMusicService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.jaxws.series.td.spring.hibernate.service.TestMusicService" />
-      <module name="troparo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.jaxws.series.td.spring.hibernate.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="troparo-technical" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="troparo-technical" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager">
     <configuration name="TomCat 9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.10" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
       <deployment>
         <artifact name="troparo-web:war exploded">
           <settings>
@@ -390,7 +282,7 @@
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_troparo" />
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_troparo_4" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -398,7 +290,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59701" />
+        <option name="DEBUG_PORT" value="52267" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -452,537 +344,105 @@
         </option>
       </method>
     </configuration>
-    <configuration name="Tomcat 8" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="UPDATING_POLICY" value="restart-server" />
-      <deployment>
-        <artifact name="troparo-web:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/troparo" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="Unnamed_troparo_3" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="59185" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="troparo-web:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Application.TestBookService" />
-      <item itemvalue="Application.TestMusicService" />
-      <item itemvalue="Tomcat Server.TomCat 9" />
-      <item itemvalue="Tomcat Server.Tomcat 8" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.TestMusicService" />
-        <item itemvalue="Application.TestBookService" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="df106c40-6ca2-423b-aa65-a5307468a621" name="Default Changelist" comment="" />
-      <created>1545516394035</created>
+      <changelist id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="" />
+      <created>1545663092864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545516394035</updated>
-      <workItem from="1545516395521" duration="4788000" />
-      <workItem from="1545521493209" duration="2113000" />
-      <workItem from="1545562594588" duration="14621000" />
-      <workItem from="1545650221640" duration="8193000" />
+      <updated>1545663092864</updated>
+      <workItem from="1545663094327" duration="520000" />
     </task>
-    <task id="LOCAL-00001" summary="migrated web to webapp module">
-      <created>1545580729110</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1545580729110</updated>
-    </task>
-    <task id="LOCAL-00002" summary="connection db ok">
-      <created>1545652207856</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1545652207857</updated>
-    </task>
-    <task id="LOCAL-00003" summary="moved model -&gt; ok">
-      <created>1545652594825</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1545652594825</updated>
-    </task>
-    <task id="LOCAL-00004" summary="moved consumer -&gt; ok">
-      <created>1545656371194</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1545656371194</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added technical -&gt; ok">
-      <created>1545657050487</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1545657050488</updated>
-    </task>
-    <task id="LOCAL-00006" summary="rebranding -&gt; ok">
-      <created>1545658237111</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1545658237111</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29731000" />
+    <option name="totallyTimeSpent" value="520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1463" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2822523" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Learn" />
+      <window_info id="Web" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33428368" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Learn" order="7" />
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.32918397" />
+      <window_info anchor="bottom" id="Application Servers" weight="0.32918397" />
+      <window_info anchor="bottom" id="Spring" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32918397" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33333334" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32918397" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32918397" />
-      <window_info anchor="bottom" id="Spring" order="8" weight="0.32918397" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4757953" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32918397" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32918397" />
-      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="15" />
+      <window_info anchor="right" id="Maven" weight="0.32929438" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.13898788" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32929438" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="migrated web to webapp module" />
-    <MESSAGE value="connection db ok" />
-    <MESSAGE value="moved model -&gt; ok" />
-    <MESSAGE value="moved consumer -&gt; ok" />
-    <MESSAGE value="added technical -&gt; ok" />
-    <MESSAGE value="rebranding -&gt; ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebranding -&gt; ok" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jaxws/series/top/down/approach/service/entities/book.xsd" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/jaxws/series/top/down/approach/service/services/BookService.wsdl" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/jaxws/series/top/down/approach/service/TestBookService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="24" column="76" selection-start-line="24" selection-start-column="76" selection-end-line="24" selection-end-column="76" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/jaxws/series/td/spring/hibernate/service/TestMusicService.java">
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="19" column="62" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jaxws/series/td/spring/hibernate/service/MusicService.java" />
-    <entry file="file://$PROJECT_DIR$/generated_old/java/source/in/benchresources/entities/music/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/generated_old/java/source/in/benchresources/entities/music/MusicListResponseType.java" />
-    <entry file="file://$PROJECT_DIR$/generated_old/java/source/in/benchresources/entities/music/MovieType.java" />
-    <entry file="file://$PROJECT_DIR$/generated_old/java/source/in/benchresources/entities/music/ObjectFactory.java" />
-    <entry file="file://$PROJECT_DIR$/generated_old/java/source/in/benchresources/entities/music/MusicListRequestType.java" />
-    <entry file="file://$PROJECT_DIR$/generated2/java/source/in/benchresources/entities/music/MovieType.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/jaxws/series/top/down/approach/service/BookServiceImpl.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-    <entry file="file://$PROJECT_DIR$/troparo-web/web/WEB-INF/de.html" />
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/in/benchresources/entities/music/BusinessFaultType.java">
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/com/jaxws/series/td/spring/hibernate/dao/MusicDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/generated/java/source/in/benchresources/entities/music/ObjectFactory.java" />
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/8a60f720-be38-4980-8e47-24b3615b6463/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://8a60f720-be38-4980-8e47-24b3615b6463/role/ocp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/com/jaxws/series/td/spring/hibernate/model/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MusicDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Music.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MusicDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="58" column="21" selection-start-line="20" selection-start-column="8" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-technical/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/in/benchresources/services/musicservice/MusicService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="100" column="87" selection-start-line="100" selection-start-column="87" selection-end-line="100" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/music.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MusicServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/entities/music/BusinessFaultType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-705">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/entities/music/MusicListRequestType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/services/musicservice/BusinessException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MusicDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="58" />
+          <caret line="18" column="11" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-technical/pom.xml">
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="4" column="199" selection-start-line="4" selection-start-column="199" selection-end-line="4" selection-end-column="199" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MusicService.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-586">
-          <caret line="3" column="53" selection-start-line="3" selection-start-column="53" selection-end-line="3" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        <state relative-caret-position="136">
+          <caret line="8" column="75" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="75" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <last-edited>troparo-web:war exploded</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.5" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web (troparo-web)|Web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Web|troparo-web</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <last-edited>test</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
