@@ -8,11 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="troparo-consumer" />
         <module name="troparo-model" />
+        <module name="troparo-technical" />
         <module name="troparo-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="troparo-business" target="1.7" />
       <module name="troparo-log" target="1.7" />
     </bytecodeTargetLevel>
   </component>

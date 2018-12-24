@@ -17,6 +17,7 @@
         <module>troparo-web</module>
         <module>troparo-model</module>
         <module>troparo-consumer</module>
+        <module>troparo-business</module>
     </modules>
 
     <!-- properties -->
