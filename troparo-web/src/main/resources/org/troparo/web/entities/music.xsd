@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://benchresources.in/entities/music" xmlns:tns="http://benchresources.in/entities/music"
+            targetNamespace="http://troparo.org/entities/music" xmlns:tns="http://troparo.org/entities/music"
             elementFormDefault="qualified">
 
     <!-- Music List Request Type -->

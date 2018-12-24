@@ -98,7 +98,7 @@
                             <sourceRoot>generated/java/source</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
-                                    <wsdl>${basedir}/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl</wsdl>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>

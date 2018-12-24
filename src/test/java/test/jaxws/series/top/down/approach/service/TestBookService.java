@@ -18,7 +18,7 @@ public class TestBookService {
     public static void main(String[] args) throws IOException {
 
         String httpRequestURL = "http://localhost:8080/troparo/services/book/BookService?wsdl";
-        String soapRequestParam =   "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:book=\"http://benchresources.in/entities/Book\">"
+        String soapRequestParam =   "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:book=\"http://troparo.org/entities/Book\">"
                 +                       "<soapenv:Header/>"
                 +                       "<soapenv:Body>"
                 +                           "<book:BookRequestType>"

@@ -18,7 +18,7 @@ public class TestMusicService {
     public static void main(String[] args) throws IOException {
 
         String httpRequestURL = "http://localhost:8080/troparo/services/music/MusicService?wsdl";
-        String soapRequestParam =   "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:mus=\"http://benchresources.in/entities/music\">"
+        String soapRequestParam =   "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:mus=\"http://troparo.org/entities/music\">"
                 +                       "<soapenv:Header/>"
                 +                       "<soapenv:Body>"
                 +                           "<mus:MusicListRequestType>"

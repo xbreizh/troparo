@@ -1,18 +1,19 @@
-package com.jaxws.series.td.spring.hibernate.service;
+package org.troparo.web.service;
 
 
-import in.benchresources.entities.music.*;
-import in.benchresources.services.musicservice.BusinessException;
-import in.benchresources.services.musicservice.IMusicService;
+
 import org.troparo.consumer.contract.MusicDAO;
+import org.troparo.entities.music.*;
 import org.troparo.model.Music;
+import org.troparo.services.musicservice.BusinessException;
+import org.troparo.services.musicservice.IMusicService;
 
 import javax.inject.Inject;
 import javax.jws.WebService;
 import java.util.List;
 
-@WebService(serviceName="MusicService", endpointInterface="in.benchresources.services.musicservice.IMusicService",
-        targetNamespace="http://benchresources.in/services/MusicService/", portName="MusicServicePort", name="MusicServiceImpl")
+@WebService(serviceName="MusicService", endpointInterface="org.troparo.services.musicservice.IMusicService",
+        targetNamespace="http://troparo.org/services/MusicService/", portName="MusicServicePort", name="MusicServiceImpl")
 public class MusicServiceImpl implements IMusicService {
 
     @Inject
