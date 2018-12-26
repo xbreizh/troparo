@@ -6,8 +6,9 @@
 <body>
     <h1>Un petit pas pour l'homme!</h1>
 <br>
-    <a href="http://localhost:8080/troparo/services/music/BookService?wsdl">
+    <a href="http://localhost:8080/troparo/services/book/BookService?wsdl">
         <img src="http://www.sapyard.com/wp-content/uploads/2008/10/WSDL-File-in-SAP.jpg" alt="wsdl">
     </a>
 </body>
 </html>
+ 
