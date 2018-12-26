@@ -7,7 +7,6 @@
     <xsd:element name="BookListRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="authorName" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -16,7 +15,6 @@
     <xsd:element name="BookListResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="author" type="xsd:string" />
                 <xsd:element ref="tns:BookListType" />
             </xsd:sequence>
         </xsd:complexType>
@@ -26,7 +24,7 @@
     <xsd:element name="addBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookType" />
+                <xsd:element ref="tns:BookTypeIn" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -40,23 +38,41 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- List of Movies -->
+    <!-- List of Books -->
     <xsd:element name="BookListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookType" maxOccurs="unbounded" />
+                <xsd:element ref="tns:BookTypeOut" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Movie Type -->
-    <xsd:element name="BookType">
+    <!-- Book Type In-->
+    <xsd:element name="BookTypeIn">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="name" type="xsd:string" />
-                <xsd:element name="author" type="xsd:string" />
-                <xsd:element name="publication" type="xsd:string" />
-                <xsd:element name="edition" type="xsd:string" />
+                <xsd:element name="ISBN" type="xsd:string" />
+                <xsd:element name="Title" type="xsd:string" />
+                <xsd:element name="Author" type="xsd:string" />
+                <xsd:element name="Publication" type="xsd:string" />
+                <xsd:element name="Edition" type="xsd:string" />
+                <xsd:element name="NbPages" type="xsd:int" />
+                <xsd:element name="Keywords" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book Type In-->
+    <xsd:element name="BookTypeOut">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ISBN" type="xsd:string" />
+                <xsd:element name="Title" type="xsd:string" />
+                <xsd:element name="Author" type="xsd:string" />
+                <xsd:element name="Publication" type="xsd:date" />
+                <!--<xsd:element name="Edition" type="xsd:string" />-->
+                <xsd:element name="NbPages" type="xsd:int" />
+                <xsd:element name="Keywords" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

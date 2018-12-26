@@ -14,17 +14,29 @@ public class Book {
     @Column(name = "BOOK_ID")
     private int bookId;
 
-    @Column(name = "NAME")
-    private String name;
+    @Column(name = "ISBN")
+    private String isbn;
+
+    @Column(name = "TITLE")
+    private String title;
 
     @Column(name = "AUTHOR")
     private String author;
 
+    @Column(name = "INSERT_DATE")
+    private Date insert_date;
+
     @Column(name = "PUBLICATION")
-    private String publication;
+    private Date publication;
 
     @Column(name = "EDITION")
     private String edition;
+
+    @Column(name = "NB_PAGES")
+    private int nbPages;
+
+    @Column(name = "KEYWORDS")
+    private String keywords;
 
     // getters & setters
 
@@ -37,12 +49,20 @@ public class Book {
         this.bookId = bookId;
     }
 
-    public String getName() {
-        return name;
+    public String getIsbn() {
+        return isbn;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
@@ -53,11 +73,19 @@ public class Book {
         this.author = author;
     }
 
-    public String getPublication() {
+    public Date getInsert_date() {
+        return insert_date;
+    }
+
+    public void setInsert_date(Date insert_date) {
+        this.insert_date = insert_date;
+    }
+
+    public Date getPublication() {
         return publication;
     }
 
-    public void setPublication(String publication) {
+    public void setPublication(Date publication) {
         this.publication = publication;
     }
 
@@ -67,5 +95,21 @@ public class Book {
 
     public void setEdition(String edition) {
         this.edition = edition;
+    }
+
+    public int getNbPages() {
+        return nbPages;
+    }
+
+    public void setNbPages(int nbPages) {
+        this.nbPages = nbPages;
+    }
+
+    public String getKeywords() {
+        return keywords;
+    }
+
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
     }
 }

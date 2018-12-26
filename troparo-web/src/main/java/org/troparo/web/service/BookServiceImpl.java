@@ -8,7 +8,13 @@ import org.troparo.services.bookservice.IBookService;
 
 import javax.inject.Inject;
 import javax.jws.WebService;
+import javax.xml.bind.DatatypeConverter;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 
+import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.List;
 
 @WebService(serviceName="BookService", endpointInterface="org.troparo.services.bookservice.IBookService",
@@ -21,18 +27,32 @@ public class BookServiceImpl implements IBookService {
 
     @Override
     public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
-        Book book = new Book();
-        BookType bt = parameters.getBookType();
-        book.setName(bt.getName());
-        book.setAuthor(bt.getAuthor());
-        book.setEdition(bt.getEdition());
-        book.setPublication(bt.getPublication());
-
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(false);
-        if(bookDAO.addBook(book)==true){
+            Book book = new Book();
+            BookTypeIn bt = parameters.getBookTypeIn();
+            book.setIsbn(bt.getISBN());
+            book.setTitle(bt.getTitle());
+            book.setAuthor(bt.getAuthor());
+            book.setInsert_date(new Date());
+            book.setPublication(new Date());
+            book.setEdition(bt.getEdition());
+            book.setNbPages(bt.getNbPages());
+            book.setKeywords(bt.getKeywords());
+
+
+
+
+        if(bt.getTitle().length() < 2 || bt.getTitle().length() > 200){
+           throw new BusinessException("Title should have between 3 and 200 characters");
+            }
+        if(bt.getAuthor().length() < 2 || bt.getAuthor().length() > 200){
+            throw new BusinessException("Author should have between 3 and 200 characters");
+        }
+        if (bookDAO.addBook(book) == true) {
             ar.setReturn(true);
         }
+
         return ar;
     }
 
@@ -41,19 +61,31 @@ public class BookServiceImpl implements IBookService {
 
         List<Book> bookList= bookDAO.getBooks();
         System.out.println("size list: "+bookList.size());
-        BookType bookType;
+        BookTypeOut bookTypeOut;
         BookListType bookListType = new BookListType();
         BookListResponseType bookListResponseType = new BookListResponseType();
 
         for(Book book : bookList){
 
             // set values retrieved from DAO class
-            bookType = new BookType();
-            bookType.setName(book.getName());
-            bookType.setAuthor(book.getAuthor());
-            bookType.setPublication(book.getPublication());
-            bookType.setEdition(book.getEdition());
-            bookListType.getBookType().add(bookType); // add movieType to the movieListType
+            bookTypeOut = new BookTypeOut();
+            bookTypeOut.setTitle(book.getTitle());
+            bookTypeOut.setAuthor(book.getAuthor());
+
+            try {
+                GregorianCalendar c = new GregorianCalendar();
+                Date date = book.getPublication();
+                XMLGregorianCalendar xmlDate;
+                xmlDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+                bookTypeOut.setPublication(xmlDate);
+            } catch (DatatypeConfigurationException e) {
+                e.printStackTrace();
+            }
+
+            /*bookTypeOut.se(book.getEdition());*/
+            bookTypeOut.setNbPages(book.getNbPages());
+            bookTypeOut.setKeywords(book.getKeywords());
+            bookListType.getBookTypeOut().add(bookTypeOut); // add movieType to the movieListType
         }
 
         bookListResponseType.setBookListType(bookListType);
