@@ -69,8 +69,10 @@ public class BookServiceImpl implements IBookService {
 
             // set values retrieved from DAO class
             bookTypeOut = new BookTypeOut();
+            bookTypeOut.setISBN(book.getIsbn());
             bookTypeOut.setTitle(book.getTitle());
             bookTypeOut.setAuthor(book.getAuthor());
+            bookTypeOut.setEdition(book.getEdition());
 
             try {
                 GregorianCalendar c = new GregorianCalendar();

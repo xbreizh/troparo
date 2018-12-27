@@ -70,7 +70,7 @@
                 <xsd:element name="Title" type="xsd:string" />
                 <xsd:element name="Author" type="xsd:string" />
                 <xsd:element name="Publication" type="xsd:date" />
-                <!--<xsd:element name="Edition" type="xsd:string" />-->
+                <xsd:element name="Edition" type="xsd:string" />
                 <xsd:element name="NbPages" type="xsd:int" />
                 <xsd:element name="Keywords" type="xsd:string" />
             </xsd:sequence>
