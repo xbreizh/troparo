@@ -1,15 +1,11 @@
 package org.troparo.web.service;
 
 
-
-
-import org.troparo.consumer.contract.MusicDAO;
 import org.troparo.entities.music.*;
 import org.troparo.model.Music;
 import org.troparo.services.musicservice.BusinessException;
 import org.troparo.services.musicservice.IMusicService;
 
-import javax.inject.Inject;
 import javax.jws.WebService;
 import java.util.List;
 
@@ -17,8 +13,8 @@ import java.util.List;
         targetNamespace="http://troparo.org/services/MusicService/", portName="MusicServicePort", name="MusicServiceImpl")
 public class MusicServiceImpl implements IMusicService {
 
-    @Inject
-    private MusicDAO musicDAO;
+/*    @Inject
+    private MusicDAO musicDAO;*/
 
 
     @Override
@@ -35,7 +31,7 @@ public class MusicServiceImpl implements IMusicService {
             if(parameters != null && !parameters.getComposerName().equalsIgnoreCase("")){
 
                 // invoke dao to get values
-                lstMusic = musicDAO.getAllMoviesByComposer(parameters.getComposerName());
+                /* lstMusic = musicDAO.getAllMoviesByComposer(parameters.getComposerName());*/
 
                 // create musicListType to set return/response values
                 musicListResponseType = new MusicListResponseType();

@@ -14,13 +14,14 @@
           <element id="module-output" name="troparo-web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="troparo-consumer-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="troparo-consumer" />
+          <element id="archive" name="troparo-business-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="troparo-business" />
           </element>
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-dbcp:9.0.1" />
-          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-juli:9.0.1" />
           <element id="archive" name="troparo-model-1.0-SNAPSHOT.jar">
             <element id="module-output" name="troparo-model" />
+          </element>
+          <element id="archive" name="troparo-consumer-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="troparo-consumer" />
           </element>
           <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.2.7" />
           <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
@@ -73,6 +74,7 @@
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.25" />
           <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
+          <element id="library" level="project" name="Maven: org.city.library:library-model:1.0-SNAPSHOT" />
         </element>
       </element>
       <element id="directory" name="META-INF">

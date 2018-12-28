@@ -2,7 +2,9 @@ package org.troparo.consumer.contract;
 
 import org.troparo.model.Book;
 
+import javax.inject.Named;
 import java.util.List;
+
 
 public interface BookDAO {
 

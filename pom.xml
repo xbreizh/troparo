@@ -13,10 +13,14 @@
     <!-- ===== General Infos ===== -->
     <name>${projectName}</name>
 
+    <!-- =============================================================== -->
+    <!-- Modules -->
+    <!-- =============================================================== -->
     <modules>
         <module>troparo-web</module>
-        <module>troparo-model</module>
+        <module>troparo-business</module>
         <module>troparo-consumer</module>
+        <module>troparo-model</module>
         <module>troparo-technical</module>
     </modules>
 
@@ -30,9 +34,6 @@
         <log4j.version>2.9.1</log4j.version>
         <cxf.scope>compile</cxf.scope>
         <jaxws.scope>compile</jaxws.scope>
-        <spring.scope>compile</spring.scope>
-        <hibernate.scope>compile</hibernate.scope>
-        <spring.scope>compile</spring.scope>
         <compileSource>1.7</compileSource>
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -49,6 +50,7 @@
             <artifactId>troparo-web</artifactId>
             <version>${project.version}</version>
         </dependency>
+
 
         <!-- ===== Third Part ===== -->
 
@@ -75,6 +77,12 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- JSR-250 -->
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>javax.annotation-api</artifactId>
+            <version>1.2</version>
         </dependency>
        <!-- &lt;!&ndash; Spring Framework-4.x &ndash;&gt;
         <dependency>

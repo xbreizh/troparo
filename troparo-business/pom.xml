@@ -9,9 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>troparo-consumer</artifactId>
+    <artifactId>troparo-business</artifactId>
 
     <dependencies>
+        <dependency>
+            <groupId>org.troparo</groupId>
+            <artifactId>troparo-consumer</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.troparo</groupId>
             <artifactId>troparo-model</artifactId>
@@ -58,11 +63,11 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-tx</artifactId>
         </dependency>
-        <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;
-         <dependency>
-             <groupId>org.springframework</groupId>
-             <artifactId>spring-context</artifactId>
-         </dependency>-->
+       <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>-->
 
         <!-- ===== Tests ===== -->
         <dependency>
@@ -80,6 +85,9 @@
             <version>1.2.17</version>
             <scope>compile</scope>
         </dependency>
+
+
+
     </dependencies>
 
 </project>

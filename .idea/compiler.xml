@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="troparo-business" />
         <module name="troparo-consumer" />
         <module name="troparo-model" />
         <module name="troparo-technical" />
