@@ -11,10 +11,7 @@ import javax.jws.WebService;
 import javax.xml.datatype.DatatypeConfigurationException;
 import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 @WebService(serviceName = "BookService", endpointInterface = "org.troparo.services.bookservice.IBookService",
         targetNamespace = "http://troparo.org/services/BookService/", portName = "BookServicePort", name = "BookServiceImpl")
@@ -24,7 +21,7 @@ public class BookServiceImpl implements IBookService {
     private BookManager bookManager;
 
     private String exception = "";
-    private List<Book> bookList;
+    private List<Book> bookList = new ArrayList<>();;
     private BookTypeOut bookTypeOut;
     private BookListType bookListType = new BookListType();
 
@@ -58,8 +55,11 @@ public class BookServiceImpl implements IBookService {
         map.put("Title", criterias.getTitle());
         map.put("Author", criterias.getAuthor());
         System.out.println("map: "+map);
+        bookList.clear();
+        bookListType.getBookTypeOut().clear();
         bookList = bookManager.getBooksByCriterias(map);
         GetBookByCriteriasResponseType brt = new GetBookByCriteriasResponseType();
+        System.out.println("bookListType beg: "+bookListType.getBookTypeOut().size());
 
         for (Book book : bookList) {
 
@@ -85,7 +85,7 @@ public class BookServiceImpl implements IBookService {
             bookTypeOut.setNbPages(book.getNbPages());
             bookTypeOut.setKeywords(book.getKeywords());
             bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType
-
+            System.out.println("bookListType end: "+bookListType.getBookTypeOut().size());
             brt.setBookListType(bookListType);
         }
         return brt;
