@@ -110,4 +110,16 @@ public class BookManagerImpl implements BookManager {
 
         return exception;
     }
+
+    @Override
+    public String remove(int id) {
+        Book book = bookDAO.getBookById(id);
+
+        if(book==null){
+           return  exception ="No item found";
+        }else{
+            bookDAO.remove(book);
+        }
+        return exception;
+    }
 }

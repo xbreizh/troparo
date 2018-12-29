@@ -134,6 +134,21 @@ public class BookServiceImpl implements IBookService {
     }
 
     @Override
+    public RemoveBookResponseType removeBook(RemoveBookRequestType parameters) throws BusinessException {
+        RemoveBookResponseType ar = new RemoveBookResponseType();
+        ar.setReturn(true);
+
+        System.out.println("bookManager: " + bookManager);
+        exception = bookManager.remove(parameters.getId());
+        if (exception != null) {
+            throw new BusinessException(exception);
+        }
+
+        return ar;
+
+    }
+
+    @Override
     public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);

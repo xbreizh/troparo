@@ -103,4 +103,16 @@ public class BookDAOImpl implements BookDAO {
         }
         return true;
     }
+
+    @Override
+    public boolean remove(Book book) {
+        System.out.println("Trying to delete" + book);
+        try {
+            sessionFactory.getCurrentSession().delete(book);
+        } catch (Exception e) {
+            System.err.println("error while updating: " + e.getMessage());
+            return false;
+        }
+        return true;
+    }
 }

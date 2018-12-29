@@ -16,4 +16,6 @@ public interface BookDAO {
     List<Book> getBooksByCriterias(HashMap<String, String> map);
 
     boolean updateBook(Book book);
+
+    boolean remove(Book book);
 }
