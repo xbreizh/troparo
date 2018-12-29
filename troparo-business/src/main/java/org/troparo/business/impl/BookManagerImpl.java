@@ -8,6 +8,7 @@ import org.troparo.model.Book;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -15,12 +16,13 @@ import java.util.List;
 @Named
 public class BookManagerImpl implements BookManager {
 
+    private String exception =null;
+
     @Inject
     BookDAO bookDAO;
 
     @Override
     public String addBook(Book book) {
-        String exception =null;
         if (book.getTitle().length() < 2 || book.getTitle().length() > 200) {
             return exception="Title should have between 3 and 200 characters";
         }
@@ -62,5 +64,50 @@ public class BookManagerImpl implements BookManager {
         }
         System.out.println("criterias: "+criterias);
         return bookDAO.getBooksByCriterias(criterias);
+    }
+
+    @Override
+    public String updateBook(Book book) {
+        if(book.getIsbn().equals("")|| book.getIsbn().equals("?")){
+            return "you must provide an ISBN";
+        }else{
+            System.out.println(book.getTitle());
+            System.out.println(book.getAuthor());
+        }
+        List<Book> bookList = new ArrayList<>();
+        HashMap<String, String> map = new HashMap<>();
+        map.put("ISBN", book.getIsbn());
+        bookList = bookDAO.getBooksByCriterias(map);
+        if(bookList.size()==0){
+            return "No Item found with that ISBN";
+        }
+        System.out.println("getting list: "+bookList.size());
+        for (Book b: bookList
+             ) {
+            if(!book.getTitle().equals("")&& !book.getTitle().equals("?")){
+                b.setTitle(book.getTitle());
+            }
+            if(!book.getAuthor().equals("")&& !book.getAuthor().equals("?")){
+                b.setAuthor(book.getAuthor());
+            }
+            if(!book.getEdition().equals("")&& !book.getEdition().equals("?")){
+                b.setEdition(book.getEdition());
+            }
+            if(!book.getPublication().equals("")&& !book.getPublication().equals("?")){
+                b.setPublication(book.getPublication());
+            }
+            if(book.getNbPages()!=0){
+                b.setNbPages(book.getNbPages());
+            }
+            if(!book.getKeywords().equals("")&& !book.getKeywords().equals("?")){
+                b.setKeywords(book.getKeywords());
+            }
+            System.out.println(b.getAuthor());
+            System.out.println(b.getTitle());
+            bookDAO.updateBook(b);
+            System.out.println("updated: "+b.getBookId());
+        }
+
+        return exception;
     }
 }

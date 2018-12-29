@@ -22,8 +22,26 @@ public class BookServiceImpl implements IBookService {
 
     private String exception = "";
     private List<Book> bookList = new ArrayList<>();;
-    private BookTypeOut bookTypeOut;
+    private BookTypeOut bookTypeOut=null;
+    BookTypeIn bookTypeIn=null;
     private BookListType bookListType = new BookListType();
+    private Book book=null;
+
+    @Override
+    public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
+        UpdateBookResponseType ar = new UpdateBookResponseType();
+        ar.setReturn(true);
+        /*Book book = new Book();*/
+        bookTypeIn = parameters.getBookTypeIn();
+        convertBootypeInIntoBook();
+        System.out.println("bookManager: " + bookManager);
+        exception = bookManager.updateBook(book);
+        if (exception != null) {
+            throw new BusinessException(exception);
+        }
+
+        return ar;
+    }
 
     @Override
     public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
@@ -55,12 +73,20 @@ public class BookServiceImpl implements IBookService {
         map.put("Title", criterias.getTitle());
         map.put("Author", criterias.getAuthor());
         System.out.println("map: "+map);
-        bookList.clear();
-        bookListType.getBookTypeOut().clear();
+        /*bookListType.getBookTypeOut().clear();*/
         bookList = bookManager.getBooksByCriterias(map);
         GetBookByCriteriasResponseType brt = new GetBookByCriteriasResponseType();
         System.out.println("bookListType beg: "+bookListType.getBookTypeOut().size());
 
+        convertBookIntoBookTypeOut();
+        /*bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType*/
+        System.out.println("bookListType end: "+bookListType.getBookTypeOut().size());
+        brt.setBookListType(bookListType);
+        return brt;
+    }
+
+    private void convertBookIntoBookTypeOut() {
+        bookListType.getBookTypeOut().clear();
         for (Book book : bookList) {
 
             // set values retrieved from DAO class
@@ -84,12 +110,11 @@ public class BookServiceImpl implements IBookService {
             bookTypeOut.setEdition(book.getEdition());
             bookTypeOut.setNbPages(book.getNbPages());
             bookTypeOut.setKeywords(book.getKeywords());
-            bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType
-            System.out.println("bookListType end: "+bookListType.getBookTypeOut().size());
-            brt.setBookListType(bookListType);
+            bookListType.getBookTypeOut().add(bookTypeOut);
         }
-        return brt;
+        System.out.println("bookListType end: "+bookListType.getBookTypeOut().size());
     }
+
 
 
     @Override
@@ -100,31 +125,8 @@ public class BookServiceImpl implements IBookService {
 
         BookListResponseType bookListResponseType = new BookListResponseType();
 
-        for (Book book : bookList) {
-
-            // set values retrieved from DAO class
-            bookTypeOut = new BookTypeOut();
-            bookTypeOut.setId(book.getBookId());
-            bookTypeOut.setISBN(book.getIsbn());
-            bookTypeOut.setTitle(book.getTitle());
-            bookTypeOut.setAuthor(book.getAuthor());
-            bookTypeOut.setEdition(book.getEdition());
-
-            try {
-                GregorianCalendar c = new GregorianCalendar();
-                Date date = book.getPublication();
-                XMLGregorianCalendar xmlDate;
-                xmlDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-                bookTypeOut.setPublication(xmlDate);
-            } catch (DatatypeConfigurationException e) {
-                e.printStackTrace();
-            }
-
-            bookTypeOut.setEdition(book.getEdition());
-            bookTypeOut.setNbPages(book.getNbPages());
-            bookTypeOut.setKeywords(book.getKeywords());
-            bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType
-        }
+        convertBookIntoBookTypeOut();
+        // add bookType to the movieListType
 
         bookListResponseType.setBookListType(bookListType);
         return bookListResponseType;
@@ -137,14 +139,7 @@ public class BookServiceImpl implements IBookService {
         ar.setReturn(true);
         Book book = new Book();
         BookTypeIn bt = parameters.getBookTypeIn();
-        book.setIsbn(bt.getISBN());
-        book.setTitle(bt.getTitle());
-        book.setAuthor(bt.getAuthor());
-        book.setInsert_date(new Date());
-        book.setPublication(new Date());
-        book.setEdition(bt.getEdition());
-        book.setNbPages(bt.getNbPages());
-        book.setKeywords(bt.getKeywords());
+        convertBootypeInIntoBook();
         System.out.println("bookManager: " + bookManager);
         exception = bookManager.addBook(book);
         if (exception != null) {
@@ -152,5 +147,17 @@ public class BookServiceImpl implements IBookService {
         }
 
         return ar;
+    }
+
+    private void convertBootypeInIntoBook() {
+        book = new Book();
+        book.setIsbn(bookTypeIn.getISBN());
+        book.setTitle(bookTypeIn.getTitle());
+        book.setAuthor(bookTypeIn.getAuthor());
+        book.setInsert_date(new Date());
+        book.setPublication(new Date());
+        book.setEdition(bookTypeIn.getEdition());
+        book.setNbPages(bookTypeIn.getNbPages());
+        book.setKeywords(bookTypeIn.getKeywords());
     }
 }

@@ -90,4 +90,17 @@ public class BookDAOImpl implements BookDAO {
             return null;
         }
     }
+
+    @Override
+    public boolean updateBook(Book book) {
+        System.out.println("Book from dao: " + book.getTitle());
+        System.out.println("Book from dao: " + book.getAuthor());
+        try {
+            sessionFactory.getCurrentSession().update(book);
+        } catch (Exception e) {
+            System.err.println("error while updating: " + e.getMessage());
+            return false;
+        }
+        return true;
+    }
 }

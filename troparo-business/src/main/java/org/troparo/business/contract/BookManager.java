@@ -12,4 +12,5 @@ public interface BookManager {
   List<Book> getBooks();
   Book getBookById(int id);
   List<Book> getBooksByCriterias(HashMap<String, String> map);
+  String updateBook(Book book);
 }
