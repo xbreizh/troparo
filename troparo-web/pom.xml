@@ -39,14 +39,19 @@
 
 
         <!-- apache cxf jax-ws-3.0.2 -->
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
+            <version>3.2.7</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http -->
         <dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-transports-http</artifactId>
+            <version>3.2.7</version>
         </dependency>
+
 
         <!-- Spring Framework-4.x -->
         <dependency>
