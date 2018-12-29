@@ -15,4 +15,6 @@ public interface BookManager {
   String updateBook(Book book);
 
   String remove(int id);
+
+  int getAvailable(String isbn);
 }

@@ -66,6 +66,17 @@ public class BookServiceImpl implements IBookService {
     }
 
     @Override
+    public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
+        GetAvailableResponseType ar = new GetAvailableResponseType();
+        ar.setReturn(0);
+        int i = bookManager.getAvailable(parameters.getISBN());
+        System.out.println("i: "+i);
+        ar.setReturn(i);
+
+        return ar;
+    }
+
+    @Override
     public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessException {
         HashMap<String, String> map = new HashMap<>();
         BookCriterias criterias = parameters.getBookCriterias();

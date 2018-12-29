@@ -122,4 +122,9 @@ public class BookManagerImpl implements BookManager {
         }
         return exception;
     }
+
+    @Override
+    public int getAvailable(String isbn) {
+        return bookDAO.getAvailable(isbn);
+    }
 }

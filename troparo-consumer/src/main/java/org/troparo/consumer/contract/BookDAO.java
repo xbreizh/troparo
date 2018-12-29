@@ -18,4 +18,6 @@ public interface BookDAO {
     boolean updateBook(Book book);
 
     boolean remove(Book book);
+
+    int getAvailable(String isbn);
 }

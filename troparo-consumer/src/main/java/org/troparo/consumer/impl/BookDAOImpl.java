@@ -12,6 +12,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static java.lang.Math.toIntExact;
+
 @Named("bookDAO")
 public class BookDAOImpl implements BookDAO {
     private Class cl = Book.class;
@@ -114,5 +116,16 @@ public class BookDAOImpl implements BookDAO {
             return false;
         }
         return true;
+    }
+
+    @Override
+    public int getAvailable(String isbn) {
+        Query query = sessionFactory.getCurrentSession().createQuery("select count(*) from Book where isbn = :isbn");
+        query.setParameter("isbn", isbn);
+        long count = (long) query.getSingleResult();
+        System.out.println("result found: "+count);
+        int i = toIntExact(count);
+        System.out.println("count: "+i);
+        return i;
     }
 }

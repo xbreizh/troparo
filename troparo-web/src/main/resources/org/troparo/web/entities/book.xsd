@@ -3,6 +3,24 @@
             targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
             elementFormDefault="qualified">
 
+    <!-- getAvailable Request Type -->
+    <xsd:element name="getAvailableRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ISBN" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- getAvailable Response Type -->
+    <xsd:element name="getAvailableResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Remove Book Request Type -->
     <xsd:element name="removeBookRequestType">
         <xsd:complexType>
