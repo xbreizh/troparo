@@ -8,6 +8,7 @@ import org.troparo.model.Book;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
+import java.util.List;
 
 @Transactional
 @Named
@@ -29,5 +30,10 @@ public class BookManagerImpl implements BookManager {
         bookDAO.addBook(book);
 
         return exception;
+    }
+
+    @Override
+    public List<Book> getBooks() {
+        return bookDAO.getBooks();
     }
 }

@@ -3,6 +3,24 @@
             targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
             elementFormDefault="qualified">
 
+    <!-- Get Book Request Type -->
+    <xsd:element name="getBookByIdRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Book Response Type -->
+    <xsd:element name="getBookByIdResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:BookTypeOut" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Book List Request Type -->
     <xsd:element name="BookListRequestType">
         <xsd:complexType>
@@ -20,7 +38,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book List Request Type -->
+    <!-- Add Book Request Type -->
     <xsd:element name="addBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
@@ -29,7 +47,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book List Response Type -->
+    <!-- Add Book  Response Type -->
     <xsd:element name="addBookResponseType">
         <xsd:complexType>
             <xsd:sequence>

@@ -79,7 +79,6 @@
           <element id="library" level="project" name="Maven: net.sf.ehcache:ehcache:2.10.6" />
           <element id="library" level="project" name="Maven: postgresql:postgresql:9.1-901-1.jdbc4" />
           <element id="library" level="project" name="Maven: javax.inject:javax.inject:1" />
-          <element id="library" level="project" name="Maven: org.city.library:library-model:1.0-SNAPSHOT" />
         </element>
       </element>
       <element id="directory" name="META-INF">

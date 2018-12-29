@@ -1,7 +1,6 @@
 package org.troparo.web.service;
 
 import org.troparo.business.contract.BookManager;
-import org.troparo.business.impl.BookManagerImpl;
 import org.troparo.entities.book.*;
 import org.troparo.model.Book;
 import org.troparo.services.bookservice.BusinessException;
@@ -9,7 +8,12 @@ import org.troparo.services.bookservice.IBookService;
 
 import javax.inject.Inject;
 import javax.jws.WebService;
+import javax.xml.datatype.DatatypeConfigurationException;
+import javax.xml.datatype.DatatypeFactory;
+import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
+import java.util.List;
 
 @WebService(serviceName = "BookService", endpointInterface = "org.troparo.services.bookservice.IBookService",
         targetNamespace = "http://troparo.org/services/BookService/", portName = "BookServicePort", name = "BookServiceImpl")
@@ -18,6 +22,13 @@ public class BookServiceImpl implements IBookService {
     @Inject
     private BookManager bookManager;
 
+
+    @Override
+    public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
+
+        System.out.println("new method added");
+        return null;
+    }
 
     @Override
     public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
@@ -36,7 +47,7 @@ public class BookServiceImpl implements IBookService {
         book.setKeywords(bt.getKeywords());
         System.out.println("bookManager: " + bookManager);
         exception = bookManager.addBook(book);
-        if(exception!=null){
+        if (exception != null) {
             throw new BusinessException(exception);
         }
 
@@ -46,13 +57,13 @@ public class BookServiceImpl implements IBookService {
     @Override
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
 
-     /*   List<Book> bookList= bookDAO.getBooks();
-        System.out.println("size list: "+bookList.size());
+        List<Book> bookList = bookManager.getBooks();
+        System.out.println("size list: " + bookList.size());
         BookTypeOut bookTypeOut;
         BookListType bookListType = new BookListType();
         BookListResponseType bookListResponseType = new BookListResponseType();
 
-        for(Book book : bookList){
+        for (Book book : bookList) {
 
             // set values retrieved from DAO class
             bookTypeOut = new BookTypeOut();
@@ -71,14 +82,14 @@ public class BookServiceImpl implements IBookService {
                 e.printStackTrace();
             }
 
-            *//*bookTypeOut.se(book.getEdition());*//*
+            bookTypeOut.setEdition(book.getEdition());
             bookTypeOut.setNbPages(book.getNbPages());
             bookTypeOut.setKeywords(book.getKeywords());
             bookListType.getBookTypeOut().add(bookTypeOut); // add movieType to the movieListType
         }
 
         bookListResponseType.setBookListType(bookListType);
-        return bookListResponseType;*/
-        return null;
+        return bookListResponseType;
+
     }
 }
