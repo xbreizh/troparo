@@ -21,9 +21,9 @@ public class BookServiceImpl implements IBookService {
     private BookManager bookManager;
 
     private String exception = "";
-    private List<Book> bookList = new ArrayList<>();;
+    private List<Book> bookList = new ArrayList<>();
     private BookTypeOut bookTypeOut=null;
-    BookTypeIn bookTypeIn=null;
+    private BookTypeIn bookTypeIn=null;
     private BookListType bookListType = new BookListType();
     private Book book=null;
 
@@ -68,7 +68,6 @@ public class BookServiceImpl implements IBookService {
     @Override
     public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
         GetAvailableResponseType ar = new GetAvailableResponseType();
-        ar.setReturn(0);
         int i = bookManager.getAvailable(parameters.getISBN());
         System.out.println("i: "+i);
         ar.setReturn(i);
@@ -163,12 +162,12 @@ public class BookServiceImpl implements IBookService {
     public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
-        Book book = new Book();
-        BookTypeIn bt = parameters.getBookTypeIn();
+        bookTypeIn = parameters.getBookTypeIn();
         convertBootypeInIntoBook();
         System.out.println("bookManager: " + bookManager);
         exception = bookManager.addBook(book);
         if (exception != null) {
+            System.out.println(exception);
             throw new BusinessException(exception);
         }
 
