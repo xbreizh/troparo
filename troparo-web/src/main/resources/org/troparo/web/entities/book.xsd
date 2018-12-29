@@ -3,6 +3,24 @@
             targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
             elementFormDefault="qualified">
 
+    <!-- Get Book by Criterias Request Type -->
+    <xsd:element name="getBookByCriteriasRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:BookCriterias" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Book by Criterias Response Type -->
+    <xsd:element name="getBookByCriteriasResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:BookListType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Get Book Request Type -->
     <xsd:element name="getBookByIdRequestType">
         <xsd:complexType>
@@ -65,6 +83,21 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Book Criterias-->
+    <xsd:element name="BookCriterias">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ISBN" type="xsd:string" />
+                <xsd:element name="Title" type="xsd:string" />
+                <xsd:element name="Author" type="xsd:string" />
+               <!-- <xsd:element name="Publication" type="xsd:string" />
+                <xsd:element name="Edition" type="xsd:string" />
+                <xsd:element name="NbPages" type="xsd:int" />
+                <xsd:element name="Keywords" type="xsd:string" />-->
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Book Type In-->
     <xsd:element name="BookTypeIn">
         <xsd:complexType>
@@ -80,7 +113,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book Type In-->
+    <!-- Book Type Out-->
     <xsd:element name="BookTypeOut">
         <xsd:complexType>
             <xsd:sequence>

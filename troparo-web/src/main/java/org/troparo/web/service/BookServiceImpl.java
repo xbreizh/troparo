@@ -13,6 +13,7 @@ import javax.xml.datatype.DatatypeFactory;
 import javax.xml.datatype.XMLGregorianCalendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
+import java.util.HashMap;
 import java.util.List;
 
 @WebService(serviceName = "BookService", endpointInterface = "org.troparo.services.bookservice.IBookService",
@@ -23,6 +24,9 @@ public class BookServiceImpl implements IBookService {
     private BookManager bookManager;
 
     private String exception = "";
+    private List<Book> bookList;
+    private BookTypeOut bookTypeOut;
+    private BookListType bookListType = new BookListType();
 
     @Override
     public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
@@ -47,35 +51,53 @@ public class BookServiceImpl implements IBookService {
     }
 
     @Override
-    public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
-        AddBookResponseType ar = new AddBookResponseType();
-        ar.setReturn(true);
-        Book book = new Book();
-        BookTypeIn bt = parameters.getBookTypeIn();
-        book.setIsbn(bt.getISBN());
-        book.setTitle(bt.getTitle());
-        book.setAuthor(bt.getAuthor());
-        book.setInsert_date(new Date());
-        book.setPublication(new Date());
-        book.setEdition(bt.getEdition());
-        book.setNbPages(bt.getNbPages());
-        book.setKeywords(bt.getKeywords());
-        System.out.println("bookManager: " + bookManager);
-        exception = bookManager.addBook(book);
-        if (exception != null) {
-            throw new BusinessException(exception);
-        }
+    public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessException {
+        HashMap<String, String> map = new HashMap<>();
+        BookCriterias criterias = parameters.getBookCriterias();
+        map.put("ISBN", criterias.getISBN());
+        map.put("Title", criterias.getTitle());
+        map.put("Author", criterias.getAuthor());
+        System.out.println("map: "+map);
+        bookList = bookManager.getBooksByCriterias(map);
+        GetBookByCriteriasResponseType brt = new GetBookByCriteriasResponseType();
 
-        return ar;
+        for (Book book : bookList) {
+
+            // set values retrieved from DAO class
+            bookTypeOut = new BookTypeOut();
+            bookTypeOut.setId(book.getBookId());
+            bookTypeOut.setISBN(book.getIsbn());
+            bookTypeOut.setTitle(book.getTitle());
+            bookTypeOut.setAuthor(book.getAuthor());
+            bookTypeOut.setEdition(book.getEdition());
+
+            try {
+                GregorianCalendar c = new GregorianCalendar();
+                Date date = book.getPublication();
+                XMLGregorianCalendar xmlDate;
+                xmlDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
+                bookTypeOut.setPublication(xmlDate);
+            } catch (DatatypeConfigurationException e) {
+                e.printStackTrace();
+            }
+
+            bookTypeOut.setEdition(book.getEdition());
+            bookTypeOut.setNbPages(book.getNbPages());
+            bookTypeOut.setKeywords(book.getKeywords());
+            bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType
+
+            brt.setBookListType(bookListType);
+        }
+        return brt;
     }
+
 
     @Override
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
 
-        List<Book> bookList = bookManager.getBooks();
+        bookList = bookManager.getBooks();
         System.out.println("size list: " + bookList.size());
-        BookTypeOut bookTypeOut;
-        BookListType bookListType = new BookListType();
+
         BookListResponseType bookListResponseType = new BookListResponseType();
 
         for (Book book : bookList) {
@@ -101,11 +123,34 @@ public class BookServiceImpl implements IBookService {
             bookTypeOut.setEdition(book.getEdition());
             bookTypeOut.setNbPages(book.getNbPages());
             bookTypeOut.setKeywords(book.getKeywords());
-            bookListType.getBookTypeOut().add(bookTypeOut); // add movieType to the movieListType
+            bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType
         }
 
         bookListResponseType.setBookListType(bookListType);
         return bookListResponseType;
 
+    }
+
+    @Override
+    public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
+        AddBookResponseType ar = new AddBookResponseType();
+        ar.setReturn(true);
+        Book book = new Book();
+        BookTypeIn bt = parameters.getBookTypeIn();
+        book.setIsbn(bt.getISBN());
+        book.setTitle(bt.getTitle());
+        book.setAuthor(bt.getAuthor());
+        book.setInsert_date(new Date());
+        book.setPublication(new Date());
+        book.setEdition(bt.getEdition());
+        book.setNbPages(bt.getNbPages());
+        book.setKeywords(bt.getKeywords());
+        System.out.println("bookManager: " + bookManager);
+        exception = bookManager.addBook(book);
+        if (exception != null) {
+            throw new BusinessException(exception);
+        }
+
+        return ar;
     }
 }

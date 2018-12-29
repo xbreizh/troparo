@@ -8,6 +8,7 @@ import org.troparo.model.Book;
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.transaction.Transactional;
+import java.util.HashMap;
 import java.util.List;
 
 @Transactional
@@ -48,5 +49,18 @@ public class BookManagerImpl implements BookManager {
             System.out.println("book is probably null");
             return null;
         }
+    }
+
+    @Override
+    public List<Book> getBooksByCriterias(HashMap<String, String> map) {
+        HashMap<String, String> criterias = new HashMap<>();
+        for (HashMap.Entry<String, String> entry : map.entrySet()
+        ) {
+           if(!entry.getValue().equals("?") && !entry.getValue().equals("")){
+               criterias.put(entry.getKey(), entry.getValue());
+           }
+        }
+        System.out.println("criterias: "+criterias);
+        return bookDAO.getBooksByCriterias(criterias);
     }
 }

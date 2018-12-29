@@ -30,6 +30,12 @@
     <wsdl:message name="getBookByIdResponse">
         <wsdl:part element="book:getBookByIdResponseType" name="parameters" />
     </wsdl:message>
+    <wsdl:message name="getBookByCriteriasRequest">
+        <wsdl:part element="book:getBookByCriteriasRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getBookByCriteriasResponse">
+        <wsdl:part element="book:getBookByCriteriasResponseType" name="parameters" />
+    </wsdl:message>
     <wsdl:message name="BusinessException">
         <wsdl:part element="book:BusinessFaultType" name="parameters" />
     </wsdl:message>
@@ -48,6 +54,11 @@
         <wsdl:operation name="getBookById">
             <wsdl:input message="tns:getBookByIdRequest" />
             <wsdl:output message="tns:getBookByIdResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
+        <wsdl:operation name="getBookByCriterias">
+            <wsdl:input message="tns:getBookByCriteriasRequest" />
+            <wsdl:output message="tns:getBookByCriteriasResponse" />
             <wsdl:fault name="businessException" message="tns:BusinessException" />
         </wsdl:operation>
     </wsdl:portType>
@@ -82,6 +93,19 @@
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getBookById">
+            <soap:operation
+                    soapAction="" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="businessException">
+                <soap:fault name="businessException" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getBookByCriterias">
             <soap:operation
                     soapAction="" />
             <wsdl:input>
