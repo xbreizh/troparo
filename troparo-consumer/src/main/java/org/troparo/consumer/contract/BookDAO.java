@@ -10,4 +10,5 @@ public interface BookDAO {
 
     List<Book> getBooks();
     boolean addBook(Book book);
+    Book getBookById(int id);
 }

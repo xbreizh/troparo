@@ -84,6 +84,7 @@
     <xsd:element name="BookTypeOut">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element name="Id" type="xsd:int" />
                 <xsd:element name="ISBN" type="xsd:string" />
                 <xsd:element name="Title" type="xsd:string" />
                 <xsd:element name="Author" type="xsd:string" />

@@ -22,17 +22,32 @@ public class BookServiceImpl implements IBookService {
     @Inject
     private BookManager bookManager;
 
+    private String exception = "";
 
     @Override
     public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
 
         System.out.println("new method added");
-        return null;
+        GetBookByIdResponseType rep = new GetBookByIdResponseType();
+        BookTypeOut bt = new BookTypeOut();
+        Book book = bookManager.getBookById(parameters.getReturn());
+        if(book == null){
+            throw new BusinessException("no book found with that id");
+        }else {
+            bt.setId(book.getBookId());
+            bt.setISBN(book.getIsbn());
+            bt.setTitle(book.getTitle());
+            bt.setAuthor(book.getAuthor());
+            bt.setEdition(book.getEdition());
+            bt.setNbPages(book.getNbPages());
+            bt.setKeywords(book.getIsbn());
+            rep.setBookTypeOut(bt);
+        }
+        return  rep;
     }
 
     @Override
     public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
-        String exception = "";
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
         Book book = new Book();
@@ -67,6 +82,7 @@ public class BookServiceImpl implements IBookService {
 
             // set values retrieved from DAO class
             bookTypeOut = new BookTypeOut();
+            bookTypeOut.setId(book.getBookId());
             bookTypeOut.setISBN(book.getIsbn());
             bookTypeOut.setTitle(book.getTitle());
             bookTypeOut.setAuthor(book.getAuthor());

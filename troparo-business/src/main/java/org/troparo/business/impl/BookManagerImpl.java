@@ -36,4 +36,17 @@ public class BookManagerImpl implements BookManager {
     public List<Book> getBooks() {
         return bookDAO.getBooks();
     }
+
+    @Override
+    public Book getBookById(int id) {
+        System.out.println("getting id (from business): "+id);
+        Book book = bookDAO.getBookById(id);
+        if(book!=null) {
+            System.out.println("book");
+            return book;
+        }else{
+            System.out.println("book is probably null");
+            return null;
+        }
+    }
 }

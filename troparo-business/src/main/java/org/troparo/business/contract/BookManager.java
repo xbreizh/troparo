@@ -9,4 +9,5 @@ public interface BookManager {
 
   String addBook(Book book);
   List<Book> getBooks();
+  Book getBookById(int id);
 }
