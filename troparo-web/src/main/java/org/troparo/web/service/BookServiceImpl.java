@@ -45,14 +45,14 @@ public class BookServiceImpl implements IBookService {
     // Converts Input into Book for business
     private void convertBootypeInIntoBook() {
         book = new Book();
-        book.setIsbn(bookTypeIn.getISBN());
-        book.setTitle(bookTypeIn.getTitle());
-        book.setAuthor(bookTypeIn.getAuthor());
+        book.setIsbn(bookTypeIn.getISBN().toUpperCase());
+        book.setTitle(bookTypeIn.getTitle().toUpperCase());
+        book.setAuthor(bookTypeIn.getAuthor().toUpperCase());
         logger.info(bookTypeIn.getPublicationYear());
         book.setPublicationYear(bookTypeIn.getPublicationYear());
-        book.setEdition(bookTypeIn.getEdition());
+        book.setEdition(bookTypeIn.getEdition().toUpperCase());
         book.setNbPages(bookTypeIn.getNbPages());
-        book.setKeywords(bookTypeIn.getKeywords());
+        book.setKeywords(bookTypeIn.getKeywords().toUpperCase());
         logger.info("pub date: "+book.getPublicationYear());
     }
 
@@ -65,7 +65,7 @@ public class BookServiceImpl implements IBookService {
         convertBootypeInIntoBook();
         logger.info("bookManager: " + bookManager);
         exception = bookManager.updateBook(book);
-        if (exception != null) {
+        if (!exception.equals("")) {
             throw new BusinessException(exception);
         }
 
@@ -133,9 +133,9 @@ public class BookServiceImpl implements IBookService {
     public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessException {
         HashMap<String, String> map = new HashMap<>();
         BookCriterias criterias = parameters.getBookCriterias();
-        map.put("ISBN", criterias.getISBN());
-        map.put("Title", criterias.getTitle());
-        map.put("Author", criterias.getAuthor());
+        map.put("ISBN", criterias.getISBN().toUpperCase());
+        map.put("Title", criterias.getTitle().toUpperCase());
+        map.put("Author", criterias.getAuthor().toUpperCase());
         logger.info("map: " + map);
         /*bookListType.getBookTypeOut().clear();*/
         bookList = bookManager.getBooksByCriterias(map);
@@ -157,7 +157,7 @@ public class BookServiceImpl implements IBookService {
 
         logger.info("bookManager: " + bookManager);
         exception = bookManager.remove(parameters.getId());
-        if (exception != null) {
+        if (!exception.equals("")) {
             throw new BusinessException(exception);
         }
 
@@ -188,17 +188,7 @@ public class BookServiceImpl implements IBookService {
             bookTypeOut.setTitle(book.getTitle());
             bookTypeOut.setAuthor(book.getAuthor());
             bookTypeOut.setEdition(book.getEdition());
-
-           /* try {
-                GregorianCalendar c = new GregorianCalendar();
-                Date date = book.getPublication();
-                XMLGregorianCalendar xmlDate;
-                xmlDate = DatatypeFactory.newInstance().newXMLGregorianCalendar(c);
-                bookTypeOut.setPublication(xmlDate);
-            } catch (DatatypeConfigurationException e) {
-                e.printStackTrace();
-            }*/
-
+            bookTypeOut.setPublicationYear(book.getPublicationYear());
             bookTypeOut.setEdition(book.getEdition());
             bookTypeOut.setNbPages(book.getNbPages());
             bookTypeOut.setKeywords(book.getKeywords());

@@ -7,8 +7,23 @@
     <xsd:element name="addCopyRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN" type="xsd:string"/>
-                <xsd:element name="nbCopies" type="xsd:int"/>
+
+                <xsd:element name="ISBN">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="8"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="nbCopies">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="10"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -26,7 +41,7 @@
     <xsd:element name="getAvailableRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN" type="xsd:string"/>
+                <xsd:element name="ISBN" type="xsd:string" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -35,7 +50,7 @@
     <xsd:element name="getAvailableResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="return" type="xsd:int"/>
+                <xsd:element name="return" type="xsd:int" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -44,7 +59,7 @@
     <xsd:element name="removeBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="id" type="xsd:int"/>
+                <xsd:element name="id" type="xsd:int" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -161,8 +176,8 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="ISBN" type="xsd:string" />
-                <xsd:element name="Title" type="xsd:string" />
-                <xsd:element name="Author" type="xsd:string" />
+                <xsd:element name="Title" type="xsd:string" minOccurs="0"/>
+                <xsd:element name="Author" type="xsd:string" minOccurs="0"/>
                <!-- <xsd:element name="Publication" type="xsd:string" />
                 <xsd:element name="Edition" type="xsd:string" />
                 <xsd:element name="NbPages" type="xsd:int" />

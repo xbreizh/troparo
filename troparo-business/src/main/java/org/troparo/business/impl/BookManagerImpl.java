@@ -40,7 +40,6 @@ public class BookManagerImpl implements BookManager {
         if (!exception.equals("")) {
             return exception;
         }
-
         logger.info("in the ");
         // adding insertion date
         book.setInsert_date(new Date());
@@ -72,10 +71,24 @@ public class BookManagerImpl implements BookManager {
         if (book.getKeywords().length() < 2 || book.getKeywords().length() > 200) {
             return exception = "Keyword list should be between 2 and 200 characters: " + book.getKeywords();
         }
+        book.setKeywords(cleanKeywords(book.getKeywords()));
 
         return exception;
     }
 
+    private String cleanKeywords(String string){
+        System.out.println("trying to replace: "+string);
+        if(string.contains(",")){
+            System.out.println("replacing ,");
+            string.replace(",", " ");
+        }
+        if(string.contains(";")){
+            System.out.println("replacing ;");
+            string.replace(";", " ");
+        }
+        System.out.println("string wen sortie: "+string);
+        return string;
+    }
     private String checkRequiredValuesNotNull(Book book) {
 
         if (book.getIsbn().equals("") || book.getIsbn().equals("?")) {
