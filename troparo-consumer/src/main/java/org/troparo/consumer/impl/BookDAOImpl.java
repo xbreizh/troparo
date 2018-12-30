@@ -100,11 +100,11 @@ public class BookDAOImpl implements BookDAO {
         Query query =sessionFactory.getCurrentSession().createQuery(request, Book.class);
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
-            logger.info("value: "+entry.getValue());
+            logger.info("criteria: "+entry.getValue());
            query.setParameter(entry.getKey(), "%"+entry.getValue()+"%");
         }
-        logger.info("query: "+query.toString());
         try {
+            logger.info("list with criterias size: "+query.getResultList().size());
             return  query.getResultList();
         }catch(Exception e){
             return null;

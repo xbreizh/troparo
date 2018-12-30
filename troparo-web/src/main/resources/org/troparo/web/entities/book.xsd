@@ -11,8 +11,8 @@
                 <xsd:element name="ISBN">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="5"/>
-                            <xsd:maxLength value="8"/>
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
@@ -41,7 +41,14 @@
     <xsd:element name="getAvailableRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN" type="xsd:string" />
+                <xsd:element name="ISBN">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -77,7 +84,7 @@
     <xsd:element name="updateBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeIn" />
+                <xsd:element ref="tns:BookTypeUpdate" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -127,13 +134,13 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book List Request Type -->
+   <!-- &lt;!&ndash; Book List Request Type &ndash;&gt;
     <xsd:element name="BookListRequestType">
         <xsd:complexType>
             <xsd:sequence>
             </xsd:sequence>
         </xsd:complexType>
-    </xsd:element>
+    </xsd:element>-->
 
     <!-- Book List Response Type -->
     <xsd:element name="BookListResponseType">
@@ -175,47 +182,234 @@
     <xsd:element name="BookCriterias">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN" type="xsd:string" />
-                <xsd:element name="Title" type="xsd:string" minOccurs="0"/>
-                <xsd:element name="Author" type="xsd:string" minOccurs="0"/>
-               <!-- <xsd:element name="Publication" type="xsd:string" />
-                <xsd:element name="Edition" type="xsd:string" />
-                <xsd:element name="NbPages" type="xsd:int" />
-                <xsd:element name="Keywords" type="xsd:string" />-->
+                <xsd:element name="ISBN" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Title" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Author" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- Book Type In-->
     <xsd:element name="BookTypeIn">
-        <xsd:complexType>
+        <xsd:complexType >
             <xsd:sequence>
-                <xsd:element name="ISBN" type="xsd:string" />
-                <xsd:element name="Title" type="xsd:string" />
-                <xsd:element name="Author" type="xsd:string" />
-                <xsd:element name="PublicationYear" type="xsd:int" />
-                <xsd:element name="Edition" type="xsd:string" />
-                <xsd:element name="NbPages" type="xsd:int" />
-                <xsd:element name="Keywords" type="xsd:string" />
+                <xsd:element name="ISBN" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Title" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Author" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="PublicationYear" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1455"/>
+                            <xsd:maxInclusive value="2200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Edition" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="NbPages" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Keywords" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book Type Update-->
+    <xsd:element name="BookTypeUpdate">
+        <xsd:complexType >
+            <xsd:sequence>
+                <xsd:element name="ISBN"  >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string" >
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Title" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Author" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="PublicationYear" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1455"/>
+                            <xsd:maxInclusive value="2200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Edition" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="NbPages" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Keywords" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- Book Type Out-->
     <xsd:element name="BookTypeOut">
-        <xsd:complexType>
+        <xsd:complexType >
             <xsd:sequence>
-                <xsd:element name="Id" type="xsd:int" />
-                <xsd:element name="ISBN" type="xsd:string" />
-                <xsd:element name="Title" type="xsd:string" />
-                <xsd:element name="Author" type="xsd:string" />
-                <xsd:element name="PublicationYear" type="xsd:int" />
-                <xsd:element name="Edition" type="xsd:string" />
-                <xsd:element name="NbPages" type="xsd:int" />
-                <xsd:element name="Keywords" type="xsd:string" />
+                <xsd:element name="id" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ISBN" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Title" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Author" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="PublicationYear" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1455"/>
+                            <xsd:maxInclusive value="2200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Edition" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="NbPages" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Keywords" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+
 
     <!-- Business Exception Type -->
     <xsd:element name="BusinessFaultType">

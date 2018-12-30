@@ -36,7 +36,7 @@
         <wsdl:part element="book:updateBookResponseType" name="parameters" />
     </wsdl:message>
     <wsdl:message name="BookListRequest">
-        <wsdl:part element="book:BookListRequestType" name="parameters" />
+        <!--<wsdl:part element="book:BookListRequestType" name="parameters" />-->
     </wsdl:message>
     <wsdl:message name="BookListResponse">
         <wsdl:part element="book:BookListResponseType" name="parameters" />

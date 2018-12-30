@@ -80,11 +80,11 @@ public class BookManagerImpl implements BookManager {
         System.out.println("trying to replace: "+string);
         if(string.contains(",")){
             System.out.println("replacing ,");
-            string.replace(",", " ");
+            string = string.replace(",", " ");
         }
         if(string.contains(";")){
             System.out.println("replacing ;");
-            string.replace(";", " ");
+            string =string.replace(";", " ");
         }
         System.out.println("string wen sortie: "+string);
         return string;
@@ -148,6 +148,7 @@ public class BookManagerImpl implements BookManager {
 
     @Override
     public String updateBook(Book book) {
+        exception = "";
         if (book.getIsbn().equals("") || book.getIsbn().equals("?")) {
             return "you must provide an ISBN";
         } else {

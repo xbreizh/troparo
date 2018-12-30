@@ -121,3 +121,333 @@
 2018-12-30 22:18:01 INFO  BookServiceImpl:143 - bookListType beg: 3
 2018-12-30 22:18:01 INFO  BookServiceImpl:197 - bookListType end: 1
 2018-12-30 22:18:01 INFO  BookServiceImpl:147 - bookListType end: 1
+2018-12-30 22:26:44 INFO  BookServiceImpl:139 - map: {ISBN=, Title=?, Author=AMELI}
+2018-12-30 22:26:44 INFO  BookManagerImpl:145 - criterias: {Author=AMELI}
+2018-12-30 22:26:44 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 22:26:44 INFO  BookDAOImpl:84 - map: {Author=AMELI}
+2018-12-30 22:26:44 INFO  BookDAOImpl:97 - request: From Book where Author like :Author
+2018-12-30 22:26:44 INFO  BookDAOImpl:103 - value: AMELI
+2018-12-30 22:26:44 INFO  BookDAOImpl:107 - size: 3
+2018-12-30 22:26:44 INFO  BookServiceImpl:143 - bookListType beg: 0
+2018-12-30 22:26:44 INFO  BookServiceImpl:197 - bookListType end: 3
+2018-12-30 22:26:44 INFO  BookServiceImpl:147 - bookListType end: 3
+2018-12-30 23:12:37 INFO  BookServiceImpl:51 - 1995
+2018-12-30 23:12:37 INFO  BookServiceImpl:56 - pub date: 1995
+2018-12-30 23:12:37 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:12:38 INFO  BookDAOImpl:67 - in the dao: 12345678DE
+2018-12-30 23:12:38 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678DE
+2018-12-30 23:12:38 INFO  BookManagerImpl:43 - in the 
+2018-12-30 23:12:38 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678DE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:12:38 CET 2018, publicationYear=1995, edition='HACHETTE', nbPages=159, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:12:38 INFO  BookManagerImpl:47 - exception: 
+2018-12-30 23:12:46 INFO  BookServiceImpl:51 - 1995
+2018-12-30 23:12:46 INFO  BookServiceImpl:56 - pub date: 1995
+2018-12-30 23:12:46 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:12:46 INFO  BookDAOImpl:67 - in the dao: 1235678DE
+2018-12-30 23:12:46 INFO  BookDAOImpl:76 - no record found for that isbn: 1235678DE
+2018-12-30 23:12:46 INFO  BookServiceImpl:39 - ISBN must be 10 or 13 characters: 1235678DE
+2018-12-30 23:12:52 INFO  BookServiceImpl:51 - 1995
+2018-12-30 23:12:52 INFO  BookServiceImpl:56 - pub date: 1995
+2018-12-30 23:12:52 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:12:52 INFO  BookDAOImpl:67 - in the dao: 12345678DE
+2018-12-30 23:12:52 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:12:52 INFO  BookServiceImpl:39 - ISBN already existing
+2018-12-30 23:13:07 INFO  BookServiceImpl:51 - 14
+2018-12-30 23:13:07 INFO  BookServiceImpl:56 - pub date: 14
+2018-12-30 23:13:07 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:13:07 INFO  BookDAOImpl:67 - in the dao: 12345678DE
+2018-12-30 23:13:07 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:13:07 INFO  BookServiceImpl:39 - ISBN already existing
+2018-12-30 23:13:15 INFO  BookServiceImpl:51 - 14
+2018-12-30 23:13:15 INFO  BookServiceImpl:56 - pub date: 14
+2018-12-30 23:13:15 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:13:15 INFO  BookDAOImpl:67 - in the dao: 12345678SE
+2018-12-30 23:13:15 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678SE
+2018-12-30 23:13:15 INFO  BookServiceImpl:39 - Publication year should be between 1455 and current: 14
+2018-12-30 23:13:39 INFO  BookServiceImpl:51 - 1455
+2018-12-30 23:13:39 INFO  BookServiceImpl:56 - pub date: 1455
+2018-12-30 23:13:39 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:13:39 INFO  BookDAOImpl:67 - in the dao: 12345678SE
+2018-12-30 23:13:39 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678SE
+2018-12-30 23:13:39 INFO  BookServiceImpl:39 - NbPages should be filled
+2018-12-30 23:13:46 INFO  BookServiceImpl:51 - 1455
+2018-12-30 23:13:46 INFO  BookServiceImpl:56 - pub date: 1455
+2018-12-30 23:13:46 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:13:46 INFO  BookDAOImpl:67 - in the dao: 12345678SE
+2018-12-30 23:13:46 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678SE
+2018-12-30 23:13:46 INFO  BookManagerImpl:43 - in the 
+2018-12-30 23:13:46 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:13:46 CET 2018, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:13:46 INFO  BookManagerImpl:47 - exception: 
+2018-12-30 23:14:36 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:14:36 INFO  BookDAOImpl:67 - in the dao: 12345678se
+2018-12-30 23:14:36 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678se
+2018-12-30 23:14:48 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:14:48 INFO  BookDAOImpl:67 - in the dao: 12345678se
+2018-12-30 23:14:48 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678se
+2018-12-30 23:15:06 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:15:06 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:15:06 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:15:06 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:15:06 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:15:06 INFO  BookDAOImpl:103 - criteria: 12345678SE
+2018-12-30 23:15:06 INFO  BookDAOImpl:107 - list with criterias size: 1
+2018-12-30 23:15:06 INFO  BookServiceImpl:142 - bookListType beg: 0
+2018-12-30 23:15:06 INFO  BookServiceImpl:198 - bookListType end: 1
+2018-12-30 23:15:06 INFO  BookServiceImpl:146 - bookListType end: 1
+2018-12-30 23:15:15 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@1d405b1
+2018-12-30 23:15:15 INFO  BookDAOImpl:67 - in the dao: 12345678SE
+2018-12-30 23:15:15 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:15:15 INFO  BookManagerImpl:218 - record found: Book{Id=17133, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=2018-12-30 23:13:46.528, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:15:15 INFO  BookManagerImpl:231 - new Book: Book{Id=0, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:15:15 CET 2018, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:15:15 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:15:15 CET 2018, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:15:15 INFO  BookManagerImpl:231 - new Book: Book{Id=0, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:15:15 CET 2018, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:15:15 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678SE', title='BLACK STALLION', author='WALTER FARLEY', insert_date=Sun Dec 30 23:15:15 CET 2018, publicationYear=1455, edition='HACHETTE', nbPages=1, keywords='HORSE, ADVENTURE'}
+2018-12-30 23:16:09 INFO  BookDAOImpl:144 - result found: 3
+2018-12-30 23:16:09 INFO  BookDAOImpl:146 - count: 3
+2018-12-30 23:16:09 INFO  BookServiceImpl:174 - i: 3
+2018-12-30 23:16:18 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:16:18 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:16:18 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:16:18 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:16:18 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:16:18 INFO  BookDAOImpl:103 - criteria: 12345678SE
+2018-12-30 23:16:18 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:16:18 INFO  BookServiceImpl:142 - bookListType beg: 1
+2018-12-30 23:16:18 INFO  BookServiceImpl:198 - bookListType end: 3
+2018-12-30 23:16:18 INFO  BookServiceImpl:146 - bookListType end: 3
+2018-12-30 23:18:43 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:18:44 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:18:44 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:18:44 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:18:44 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBNgroup by isbn
+2018-12-30 23:19:15 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:19:15 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:19:15 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:19:15 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:19:15 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBNgroup by isbn
+2018-12-30 23:20:09 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:20:09 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:20:09 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:20:09 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:20:09 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN group by isbn
+2018-12-30 23:20:09 INFO  BookDAOImpl:103 - criteria: 12345678SE
+2018-12-30 23:20:09 INFO  BookServiceImpl:142 - bookListType beg: 0
+2018-12-30 23:22:24 INFO  BookServiceImpl:138 - map: {ISBN=12345678SE, Title=?, Author=?}
+2018-12-30 23:22:24 INFO  BookManagerImpl:145 - criterias: {ISBN=12345678SE}
+2018-12-30 23:22:24 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:22:24 INFO  BookDAOImpl:84 - map: {ISBN=12345678SE}
+2018-12-30 23:22:24 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN group by isbn, id
+2018-12-30 23:22:25 INFO  BookDAOImpl:103 - criteria: 12345678SE
+2018-12-30 23:22:25 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:22:25 INFO  BookServiceImpl:142 - bookListType beg: 0
+2018-12-30 23:22:25 INFO  BookServiceImpl:198 - bookListType end: 3
+2018-12-30 23:22:25 INFO  BookServiceImpl:146 - bookListType end: 3
+2018-12-30 23:32:20 INFO  BookServiceImpl:51 - 1959
+2018-12-30 23:32:20 INFO  BookServiceImpl:56 - pub date: 1959
+2018-12-30 23:32:20 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:32:20 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:32:20 INFO  BookDAOImpl:76 - no record found for that isbn: 123456456S
+2018-12-30 23:32:20 INFO  BookManagerImpl:43 - in the 
+2018-12-30 23:32:20 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=Sun Dec 30 23:32:20 CET 2018, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:32:20 INFO  BookManagerImpl:47 - exception: 
+2018-12-30 23:32:44 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:32:44 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:32:44 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:32:44 INFO  BookManagerImpl:218 - record found: Book{Id=17136, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=2018-12-30 23:32:20.909, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:32:56 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:32:56 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:32:56 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:32:56 INFO  BookManagerImpl:218 - record found: Book{Id=17136, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=2018-12-30 23:32:20.909, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:32:58 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:32:58 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:32:58 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:32:58 INFO  BookManagerImpl:218 - record found: Book{Id=17136, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=2018-12-30 23:32:20.909, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:33:05 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:33:05 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:33:05 INFO  BookDAOImpl:73 - records found: 1
+2018-12-30 23:33:05 INFO  BookManagerImpl:218 - record found: Book{Id=17136, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=2018-12-30 23:32:20.909, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:33:05 INFO  BookManagerImpl:231 - new Book: Book{Id=0, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=Sun Dec 30 23:33:05 CET 2018, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:33:05 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=Sun Dec 30 23:33:05 CET 2018, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:33:23 INFO  BookDAOImpl:28 - getting in dao
+2018-12-30 23:33:23 INFO  BookServiceImpl:118 - size list: 9
+2018-12-30 23:33:23 INFO  BookServiceImpl:198 - bookListType end: 9
+2018-12-30 23:33:41 INFO  BookDAOImpl:144 - result found: 0
+2018-12-30 23:33:41 INFO  BookDAOImpl:146 - count: 0
+2018-12-30 23:33:41 INFO  BookServiceImpl:174 - i: 0
+2018-12-30 23:33:48 INFO  BookDAOImpl:144 - result found: 0
+2018-12-30 23:33:48 INFO  BookDAOImpl:146 - count: 0
+2018-12-30 23:33:48 INFO  BookServiceImpl:174 - i: 0
+2018-12-30 23:34:25 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:34:25 INFO  BookDAOImpl:67 - in the dao: 123456456S
+2018-12-30 23:34:25 INFO  BookDAOImpl:73 - records found: 2
+2018-12-30 23:34:25 INFO  BookManagerImpl:218 - record found: Book{Id=17136, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=2018-12-30 23:32:20.909, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:34:25 INFO  BookManagerImpl:231 - new Book: Book{Id=0, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=Sun Dec 30 23:34:25 CET 2018, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:34:25 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='123456456S', title='LA PESTE', author='ALBERT CAMU', insert_date=Sun Dec 30 23:34:25 CET 2018, publicationYear=1959, edition='PORO', nbPages=156, keywords='ROMAN'}
+2018-12-30 23:34:35 INFO  BookDAOImpl:144 - result found: 3
+2018-12-30 23:34:35 INFO  BookDAOImpl:146 - count: 3
+2018-12-30 23:34:35 INFO  BookServiceImpl:174 - i: 3
+2018-12-30 23:34:46 INFO  BookServiceImpl:138 - map: {ISBN=123456456S, Title=?, Author=?}
+2018-12-30 23:34:46 INFO  BookManagerImpl:145 - criterias: {ISBN=123456456S}
+2018-12-30 23:34:46 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:34:46 INFO  BookDAOImpl:84 - map: {ISBN=123456456S}
+2018-12-30 23:34:46 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:34:47 INFO  BookDAOImpl:103 - criteria: 123456456S
+2018-12-30 23:34:47 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:34:47 INFO  BookServiceImpl:142 - bookListType beg: 9
+2018-12-30 23:34:47 INFO  BookServiceImpl:198 - bookListType end: 3
+2018-12-30 23:34:47 INFO  BookServiceImpl:146 - bookListType end: 3
+2018-12-30 23:35:01 INFO  BookServiceImpl:138 - map: {ISBN=, Title=?, Author=AME}
+2018-12-30 23:35:01 INFO  BookManagerImpl:145 - criterias: {Author=AME}
+2018-12-30 23:35:01 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:35:01 INFO  BookDAOImpl:84 - map: {Author=AME}
+2018-12-30 23:35:01 INFO  BookDAOImpl:97 - request: From Book where Author like :Author
+2018-12-30 23:35:01 INFO  BookDAOImpl:103 - criteria: AME
+2018-12-30 23:35:01 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:35:01 INFO  BookServiceImpl:142 - bookListType beg: 3
+2018-12-30 23:35:01 INFO  BookServiceImpl:198 - bookListType end: 3
+2018-12-30 23:35:01 INFO  BookServiceImpl:146 - bookListType end: 3
+2018-12-30 23:35:08 INFO  BookServiceImpl:138 - map: {ISBN=, Title=?, Author=M}
+2018-12-30 23:35:08 INFO  BookManagerImpl:145 - criterias: {Author=M}
+2018-12-30 23:35:08 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:35:08 INFO  BookDAOImpl:84 - map: {Author=M}
+2018-12-30 23:35:08 INFO  BookDAOImpl:97 - request: From Book where Author like :Author
+2018-12-30 23:35:08 INFO  BookDAOImpl:103 - criteria: M
+2018-12-30 23:35:08 INFO  BookDAOImpl:107 - list with criterias size: 6
+2018-12-30 23:35:08 INFO  BookServiceImpl:142 - bookListType beg: 3
+2018-12-30 23:35:08 INFO  BookServiceImpl:198 - bookListType end: 6
+2018-12-30 23:35:08 INFO  BookServiceImpl:146 - bookListType end: 6
+2018-12-30 23:35:20 INFO  BookServiceImpl:138 - map: {ISBN=, Title=E, Author=}
+2018-12-30 23:35:20 INFO  BookManagerImpl:145 - criterias: {Title=E}
+2018-12-30 23:35:20 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:35:20 INFO  BookDAOImpl:84 - map: {Title=E}
+2018-12-30 23:35:20 INFO  BookDAOImpl:97 - request: From Book where Title like :Title
+2018-12-30 23:35:20 INFO  BookDAOImpl:103 - criteria: E
+2018-12-30 23:35:20 INFO  BookDAOImpl:107 - list with criterias size: 6
+2018-12-30 23:35:20 INFO  BookServiceImpl:142 - bookListType beg: 6
+2018-12-30 23:35:20 INFO  BookServiceImpl:198 - bookListType end: 6
+2018-12-30 23:35:20 INFO  BookServiceImpl:146 - bookListType end: 6
+2018-12-30 23:35:36 INFO  BookServiceImpl:95 - new method added
+2018-12-30 23:35:36 INFO  BookManagerImpl:125 - getting id (from business): 17129
+2018-12-30 23:35:36 INFO  BookDAOImpl:51 - in the dao: 17129
+2018-12-30 23:35:36 INFO  BookManagerImpl:128 - book
+2018-12-30 23:35:55 INFO  BookServiceImpl:159 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:35:55 INFO  BookDAOImpl:51 - in the dao: 17129
+2018-12-30 23:35:55 INFO  BookDAOImpl:129 - Trying to deleteBook{Id=17129, isbn='123456789A', title='L'EAU BOUGE', author='AMELIE NOTHOM', insert_date=2018-12-30 19:01:16.671, publicationYear=2002, edition='MARGO', nbPages=123, keywords='ROMAN, SPOIL'}
+2018-12-30 23:36:03 INFO  BookServiceImpl:159 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:36:03 INFO  BookDAOImpl:51 - in the dao: 17129
+2018-12-30 23:36:17 INFO  BookDAOImpl:28 - getting in dao
+2018-12-30 23:36:17 INFO  BookServiceImpl:118 - size list: 9
+2018-12-30 23:36:17 INFO  BookServiceImpl:198 - bookListType end: 9
+2018-12-30 23:36:27 INFO  BookServiceImpl:138 - map: {ISBN=, Title=LA PESTE, Author=}
+2018-12-30 23:36:27 INFO  BookManagerImpl:145 - criterias: {Title=LA PESTE}
+2018-12-30 23:36:27 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:36:27 INFO  BookDAOImpl:84 - map: {Title=LA PESTE}
+2018-12-30 23:36:27 INFO  BookDAOImpl:97 - request: From Book where Title like :Title
+2018-12-30 23:36:27 INFO  BookDAOImpl:103 - criteria: LA PESTE
+2018-12-30 23:36:27 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:36:27 INFO  BookServiceImpl:142 - bookListType beg: 9
+2018-12-30 23:36:27 INFO  BookServiceImpl:198 - bookListType end: 3
+2018-12-30 23:36:27 INFO  BookServiceImpl:146 - bookListType end: 3
+2018-12-30 23:40:44 INFO  BookServiceImpl:51 - 1968
+2018-12-30 23:40:44 INFO  BookServiceImpl:56 - pub date: 1968
+2018-12-30 23:40:44 INFO  BookServiceImpl:66 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:40:44 INFO  BookManagerImpl:154 - ?
+2018-12-30 23:40:44 INFO  BookManagerImpl:155 - ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:40:44 INFO  BookDAOImpl:84 - map: {ISBN=123456456S}
+2018-12-30 23:40:44 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:40:44 INFO  BookDAOImpl:103 - criteria: 123456456S
+2018-12-30 23:40:44 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:40:44 INFO  BookManagerImpl:164 - getting list: 3
+2018-12-30 23:40:44 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:188 - updated: 17136
+2018-12-30 23:40:44 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:188 - updated: 17137
+2018-12-30 23:40:44 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:40:44 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:40:44 INFO  BookManagerImpl:188 - updated: 17138
+2018-12-30 23:41:26 INFO  BookServiceImpl:51 - 1968
+2018-12-30 23:41:26 INFO  BookServiceImpl:56 - pub date: 1968
+2018-12-30 23:41:26 INFO  BookServiceImpl:66 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:41:26 INFO  BookManagerImpl:154 - ?
+2018-12-30 23:41:26 INFO  BookManagerImpl:155 - ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:41:26 INFO  BookDAOImpl:84 - map: {ISBN=123456456S}
+2018-12-30 23:41:26 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:41:26 INFO  BookDAOImpl:103 - criteria: 123456456S
+2018-12-30 23:41:26 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:41:26 INFO  BookManagerImpl:164 - getting list: 3
+2018-12-30 23:41:26 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:188 - updated: 17136
+2018-12-30 23:41:26 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:188 - updated: 17137
+2018-12-30 23:41:26 INFO  BookManagerImpl:185 - ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:26 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:41:26 INFO  BookManagerImpl:188 - updated: 17138
+2018-12-30 23:41:42 INFO  BookServiceImpl:51 - 1968
+2018-12-30 23:41:42 INFO  BookServiceImpl:56 - pub date: 1968
+2018-12-30 23:41:42 INFO  BookServiceImpl:66 - bookManager: org.troparo.business.impl.BookManagerImpl@32de04cf
+2018-12-30 23:41:43 INFO  BookManagerImpl:154 - ?
+2018-12-30 23:41:43 INFO  BookManagerImpl:155 - ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:41:43 INFO  BookDAOImpl:84 - map: {ISBN=123456456S}
+2018-12-30 23:41:43 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:41:43 INFO  BookDAOImpl:103 - criteria: 123456456S
+2018-12-30 23:41:43 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:41:43 INFO  BookManagerImpl:164 - getting list: 3
+2018-12-30 23:41:43 INFO  BookManagerImpl:185 - ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:188 - updated: 17136
+2018-12-30 23:41:43 INFO  BookManagerImpl:185 - ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:188 - updated: 17137
+2018-12-30 23:41:43 INFO  BookManagerImpl:185 - ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:186 - LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:41:43 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUSO
+2018-12-30 23:41:43 INFO  BookManagerImpl:188 - updated: 17138
+2018-12-30 23:44:28 INFO  BookServiceImpl:51 - 1966
+2018-12-30 23:44:28 INFO  BookServiceImpl:56 - pub date: 1966
+2018-12-30 23:44:28 INFO  BookServiceImpl:66 - bookManager: org.troparo.business.impl.BookManagerImpl@3a6caf73
+2018-12-30 23:44:28 INFO  BookManagerImpl:155 - ?
+2018-12-30 23:44:28 INFO  BookManagerImpl:156 - ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookDAOImpl:83 - entering the dark dao
+2018-12-30 23:44:28 INFO  BookDAOImpl:84 - map: {ISBN=123456456S}
+2018-12-30 23:44:28 INFO  BookDAOImpl:97 - request: From Book where ISBN like :ISBN
+2018-12-30 23:44:28 INFO  BookDAOImpl:103 - criteria: 123456456S
+2018-12-30 23:44:28 INFO  BookDAOImpl:107 - list with criterias size: 3
+2018-12-30 23:44:28 INFO  BookManagerImpl:165 - getting list: 3
+2018-12-30 23:44:28 INFO  BookManagerImpl:186 - ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:187 - LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:189 - updated: 17136
+2018-12-30 23:44:28 INFO  BookManagerImpl:186 - ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:187 - LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:189 - updated: 17137
+2018-12-30 23:44:28 INFO  BookManagerImpl:186 - ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:187 - LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
+2018-12-30 23:44:28 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
+2018-12-30 23:44:28 INFO  BookManagerImpl:189 - updated: 17138

@@ -76,7 +76,7 @@ public class BookServiceImpl implements IBookService {
     public AddCopyResponseType addCopy(AddCopyRequestType parameters) throws BusinessException {
         AddCopyResponseType ar = new AddCopyResponseType();
         ar.setReturn(true);
-        String isbn = parameters.getISBN();
+        String isbn = parameters.getISBN().toUpperCase();
         int copies = parameters.getNbCopies();
 
         logger.info("bookManager: " + bookManager);
@@ -113,8 +113,7 @@ public class BookServiceImpl implements IBookService {
 
     // Get All
     @Override
-    public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
-
+    public BookListResponseType getAllBooks() throws BusinessException {
         bookList = bookManager.getBooks();
         logger.info("size list: " + bookList.size());
 
@@ -125,8 +124,8 @@ public class BookServiceImpl implements IBookService {
 
         bookListResponseType.setBookListType(bookListType);
         return bookListResponseType;
-
     }
+
 
     // Get List By Criterias
     @Override
@@ -149,6 +148,8 @@ public class BookServiceImpl implements IBookService {
         return brt;
     }
 
+
+
     // Delete
     @Override
     public RemoveBookResponseType removeBook(RemoveBookRequestType parameters) throws BusinessException {
@@ -169,7 +170,7 @@ public class BookServiceImpl implements IBookService {
     @Override
     public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
         GetAvailableResponseType ar = new GetAvailableResponseType();
-        int i = bookManager.getAvailable(parameters.getISBN());
+        int i = bookManager.getAvailable(parameters.getISBN().toUpperCase());
         logger.info("i: " + i);
         ar.setReturn(i);
 
