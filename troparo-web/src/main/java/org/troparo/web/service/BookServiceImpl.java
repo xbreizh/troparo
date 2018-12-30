@@ -1,5 +1,6 @@
 package org.troparo.web.service;
 
+import org.apache.log4j.Logger;
 import org.troparo.business.contract.BookManager;
 import org.troparo.entities.book.*;
 import org.troparo.model.Book;
@@ -13,6 +14,7 @@ import java.util.*;
 @WebService(serviceName = "BookService", endpointInterface = "org.troparo.services.bookservice.IBookService",
         targetNamespace = "http://troparo.org/services/BookService/", portName = "BookServicePort", name = "BookServiceImpl")
 public class BookServiceImpl implements IBookService {
+    private Logger logger = Logger.getLogger(this.getClass().getName());
 
     @Inject
     private BookManager bookManager;
@@ -31,10 +33,10 @@ public class BookServiceImpl implements IBookService {
         ar.setReturn(true);
         bookTypeIn = parameters.getBookTypeIn();
         convertBootypeInIntoBook();
-        System.out.println("bookManager: " + bookManager);
+        logger.info("bookManager: " + bookManager);
         exception = bookManager.addBook(book);
         if (!exception.equals("")) {
-            System.out.println(exception);
+            logger.info(exception);
             throw new BusinessException(exception);
         }
 
@@ -46,12 +48,12 @@ public class BookServiceImpl implements IBookService {
         book.setIsbn(bookTypeIn.getISBN());
         book.setTitle(bookTypeIn.getTitle());
         book.setAuthor(bookTypeIn.getAuthor());
-        System.out.println(bookTypeIn.getPublicationYear());
+        logger.info(bookTypeIn.getPublicationYear());
         book.setPublicationYear(bookTypeIn.getPublicationYear());
         book.setEdition(bookTypeIn.getEdition());
         book.setNbPages(bookTypeIn.getNbPages());
         book.setKeywords(bookTypeIn.getKeywords());
-        System.out.println("pub date: "+book.getPublicationYear());
+        logger.info("pub date: "+book.getPublicationYear());
     }
 
     // Update
@@ -61,7 +63,7 @@ public class BookServiceImpl implements IBookService {
         ar.setReturn(true);
         bookTypeIn = parameters.getBookTypeIn();
         convertBootypeInIntoBook();
-        System.out.println("bookManager: " + bookManager);
+        logger.info("bookManager: " + bookManager);
         exception = bookManager.updateBook(book);
         if (exception != null) {
             throw new BusinessException(exception);
@@ -77,7 +79,7 @@ public class BookServiceImpl implements IBookService {
         String isbn = parameters.getISBN();
         int copies = parameters.getNbCopies();
 
-        System.out.println("bookManager: " + bookManager);
+        logger.info("bookManager: " + bookManager);
         exception = bookManager.addCopy(isbn, copies);
         if (!exception.equals("")) {
             throw new BusinessException(exception);
@@ -90,7 +92,7 @@ public class BookServiceImpl implements IBookService {
     @Override
     public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
 
-        System.out.println("new method added");
+        logger.info("new method added");
         GetBookByIdResponseType rep = new GetBookByIdResponseType();
         BookTypeOut bt = new BookTypeOut();
         Book book = bookManager.getBookById(parameters.getReturn());
@@ -114,7 +116,7 @@ public class BookServiceImpl implements IBookService {
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
 
         bookList = bookManager.getBooks();
-        System.out.println("size list: " + bookList.size());
+        logger.info("size list: " + bookList.size());
 
         BookListResponseType bookListResponseType = new BookListResponseType();
 
@@ -134,15 +136,15 @@ public class BookServiceImpl implements IBookService {
         map.put("ISBN", criterias.getISBN());
         map.put("Title", criterias.getTitle());
         map.put("Author", criterias.getAuthor());
-        System.out.println("map: " + map);
+        logger.info("map: " + map);
         /*bookListType.getBookTypeOut().clear();*/
         bookList = bookManager.getBooksByCriterias(map);
         GetBookByCriteriasResponseType brt = new GetBookByCriteriasResponseType();
-        System.out.println("bookListType beg: " + bookListType.getBookTypeOut().size());
+        logger.info("bookListType beg: " + bookListType.getBookTypeOut().size());
 
         convertBookIntoBookTypeOut();
         /*bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType*/
-        System.out.println("bookListType end: " + bookListType.getBookTypeOut().size());
+        logger.info("bookListType end: " + bookListType.getBookTypeOut().size());
         brt.setBookListType(bookListType);
         return brt;
     }
@@ -153,7 +155,7 @@ public class BookServiceImpl implements IBookService {
         RemoveBookResponseType ar = new RemoveBookResponseType();
         ar.setReturn(true);
 
-        System.out.println("bookManager: " + bookManager);
+        logger.info("bookManager: " + bookManager);
         exception = bookManager.remove(parameters.getId());
         if (exception != null) {
             throw new BusinessException(exception);
@@ -168,7 +170,7 @@ public class BookServiceImpl implements IBookService {
     public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
         GetAvailableResponseType ar = new GetAvailableResponseType();
         int i = bookManager.getAvailable(parameters.getISBN());
-        System.out.println("i: " + i);
+        logger.info("i: " + i);
         ar.setReturn(i);
 
         return ar;
@@ -202,7 +204,7 @@ public class BookServiceImpl implements IBookService {
             bookTypeOut.setKeywords(book.getKeywords());
             bookListType.getBookTypeOut().add(bookTypeOut);
         }
-        System.out.println("bookListType end: " + bookListType.getBookTypeOut().size());
+        logger.info("bookListType end: " + bookListType.getBookTypeOut().size());
     }
 
 

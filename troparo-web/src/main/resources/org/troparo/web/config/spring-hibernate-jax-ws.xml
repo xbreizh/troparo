@@ -13,7 +13,8 @@
     <context:component-scan base-package="org.troparo.web" />
     <context:component-scan base-package="org.troparo.business" />
     <context:component-scan base-package="org.troparo.model" />
-    <context:component-scan base-package="org.troparo.consumer" />
+    <context:component-scan base-package="org.troparo.consumer" /><!--
+    <context:component-scan base-package="org.troparo.technical" />-->
 
     <!-- turn on spring transaction annotation -->
     <tx:annotation-driven transaction-manager="transactionManager" />

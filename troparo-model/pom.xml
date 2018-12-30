@@ -13,6 +13,13 @@
 
 
     <dependencies>
+        <!--Modules-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>troparo-technical</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- Spring Framework-4.x -->
         <dependency>
             <groupId>org.springframework</groupId>

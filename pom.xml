@@ -50,6 +50,11 @@
             <artifactId>troparo-web</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>troparo-technical</artifactId>
+            <version>${project.version}</version>
+        </dependency>
 
 
         <!-- ===== Third Part ===== -->

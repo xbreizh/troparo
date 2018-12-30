@@ -32,6 +32,11 @@
           <element id="archive" name="troparo-consumer-1.0-SNAPSHOT.jar">
             <element id="module-output" name="troparo-consumer" />
           </element>
+          <element id="archive" name="troparo-technical-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="troparo-technical" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-core:2.9.1" />
+          <element id="library" level="project" name="Maven: org.apache.logging.log4j:log4j-api:2.9.1" />
           <element id="library" level="project" name="Maven: org.apache.cxf:cxf-rt-frontend-jaxws:3.2.7" />
           <element id="library" level="project" name="Maven: xml-resolver:xml-resolver:1.2" />
           <element id="library" level="project" name="Maven: org.ow2.asm:asm:5.2" />

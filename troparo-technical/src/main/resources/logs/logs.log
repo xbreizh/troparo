@@ -1,0 +1,6 @@
+2018-12-30 18:43:35 INFO  BookDAOImpl:28 - getting in dao
+2018-12-30 18:43:36 INFO  BookServiceImpl:119 - size list: 6
+2018-12-30 18:43:36 INFO  BookServiceImpl:207 - bookListType end: 6
+2018-12-30 18:50:50 INFO  BookDAOImpl:28 - getting in dao
+2018-12-30 18:50:51 INFO  BookServiceImpl:119 - size list: 6
+2018-12-30 18:50:51 INFO  BookServiceImpl:207 - bookListType end: 6
