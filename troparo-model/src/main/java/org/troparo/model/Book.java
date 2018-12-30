@@ -11,8 +11,8 @@ public class Book {
     // member variables
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "BOOK_ID")
-    private int bookId;
+    @Column(name = "ID")
+    private int Id;
 
     @Column(name = "ISBN")
     private String isbn;
@@ -26,8 +26,8 @@ public class Book {
     @Column(name = "INSERT_DATE")
     private Date insert_date;
 
-    @Column(name = "PUBLICATION")
-    private Date publication;
+    @Column(name = "PUBLICATIONYEAR")
+    private int publicationYear;
 
     @Column(name = "EDITION")
     private String edition;
@@ -41,12 +41,12 @@ public class Book {
     // getters & setters
 
 
-    public int getBookId() {
-        return bookId;
+    public int getId() {
+        return Id;
     }
 
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
+    public void setId(int id) {
+        this.Id = id;
     }
 
     public String getIsbn() {
@@ -81,12 +81,12 @@ public class Book {
         this.insert_date = insert_date;
     }
 
-    public Date getPublication() {
-        return publication;
+    public int getPublicationYear() {
+        return publicationYear;
     }
 
-    public void setPublication(Date publication) {
-        this.publication = publication;
+    public void setPublicationYear(int publicationYear) {
+        this.publicationYear = publicationYear;
     }
 
     public String getEdition() {
@@ -111,5 +111,20 @@ public class Book {
 
     public void setKeywords(String keywords) {
         this.keywords = keywords;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "Id=" + Id +
+                ", isbn='" + isbn + '\'' +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", insert_date=" + insert_date +
+                ", publicationYear=" + publicationYear +
+                ", edition='" + edition + '\'' +
+                ", nbPages=" + nbPages +
+                ", keywords='" + keywords + '\'' +
+                '}';
     }
 }

@@ -8,9 +8,7 @@ import org.troparo.model.Book;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static java.lang.Math.toIntExact;
 
@@ -49,7 +47,7 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public Book getBookById(int id) {
         System.out.println("in the dao: "+id);
-        request = "From Book where book_id = :id";
+        request = "From Book where id = :id";
 
         Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
         query.setParameter("id", id);
@@ -57,6 +55,24 @@ public class BookDAOImpl implements BookDAO {
             return (Book) query.getSingleResult();
         }catch(Exception e){
             return null;
+        }
+    }
+
+
+
+    @Override
+    public boolean existingISBN(String isbn) {
+        System.out.println("in the dao: "+isbn);
+        request = "From Book where isbn = :isbn";
+
+        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
+        query.setParameter("isbn", isbn);
+        if(query.getResultList().size() !=0){
+            System.out.println("records found: "+query.getResultList().size());
+            return true;
+        }else{
+            System.out.println("no record found for that isbn: "+isbn);
+            return false;
         }
     }
 
@@ -128,4 +144,33 @@ public class BookDAOImpl implements BookDAO {
         System.out.println("count: "+i);
         return i;
     }
+
+    @Override
+    public Book getBookByISbn(String isbn) {
+        List<Book> list = new ArrayList<>();
+        request = "From Book where isbn = :isbn";
+
+        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
+        query.setParameter("isbn", isbn);
+        try {
+                return (Book) query.getResultList().get(0);
+        }catch(Exception e){
+            return null;
+        }
+    }
+
+   /* @Override
+    public boolean addCopies(String isbn, int copies) {
+        Book book;
+        System.out.println("nb copied: "+copies);
+        for(int i=0;i<copies;i++){
+            book = new Book();
+            book = getBookByISbn(isbn);
+            book.setId(0);
+            System.out.println("before new insertion: "+book);
+            book.setInsert_date(new Date());
+            addBook(book);
+        }
+        return false;
+    }*/
 }

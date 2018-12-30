@@ -17,4 +17,6 @@ public interface BookManager {
   String remove(int id);
 
   int getAvailable(String isbn);
+
+  String addCopy(String isbn, int copies);
 }

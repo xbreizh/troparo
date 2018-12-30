@@ -3,6 +3,25 @@
             targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
             elementFormDefault="qualified">
 
+    <!-- addCopy Request Type -->
+    <xsd:element name="addCopyRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="ISBN" type="xsd:string"/>
+                <xsd:element name="nbCopies" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- addCopy Response Type -->
+    <xsd:element name="addCopyResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- getAvailable Request Type -->
     <xsd:element name="getAvailableRequestType">
         <xsd:complexType>
@@ -159,7 +178,7 @@
                 <xsd:element name="ISBN" type="xsd:string" />
                 <xsd:element name="Title" type="xsd:string" />
                 <xsd:element name="Author" type="xsd:string" />
-                <xsd:element name="Publication" type="xsd:string" />
+                <xsd:element name="PublicationYear" type="xsd:int" />
                 <xsd:element name="Edition" type="xsd:string" />
                 <xsd:element name="NbPages" type="xsd:int" />
                 <xsd:element name="Keywords" type="xsd:string" />
@@ -175,7 +194,7 @@
                 <xsd:element name="ISBN" type="xsd:string" />
                 <xsd:element name="Title" type="xsd:string" />
                 <xsd:element name="Author" type="xsd:string" />
-                <xsd:element name="Publication" type="xsd:date" />
+                <xsd:element name="PublicationYear" type="xsd:int" />
                 <xsd:element name="Edition" type="xsd:string" />
                 <xsd:element name="NbPages" type="xsd:int" />
                 <xsd:element name="Keywords" type="xsd:string" />

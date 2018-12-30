@@ -11,6 +11,12 @@
                         schemaLocation="../entities/book.xsd" />
         </xsd:schema>
     </wsdl:types>
+    <wsdl:message name="addCopyRequest">
+        <wsdl:part element="book:addCopyRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="addCopyResponse">
+        <wsdl:part element="book:addCopyResponseType" name="parameters" />
+    </wsdl:message>
     <wsdl:message name="getAvailableRequest">
         <wsdl:part element="book:getAvailableRequestType" name="parameters" />
     </wsdl:message>
@@ -58,6 +64,11 @@
     </wsdl:message>
 
     <wsdl:portType name="IBookService">
+        <wsdl:operation name="addCopy">
+            <wsdl:input message="tns:addCopyRequest" />
+            <wsdl:output message="tns:addCopyResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
         <wsdl:operation name="getAvailable">
             <wsdl:input message="tns:getAvailableRequest" />
             <wsdl:output message="tns:getAvailableResponse" />

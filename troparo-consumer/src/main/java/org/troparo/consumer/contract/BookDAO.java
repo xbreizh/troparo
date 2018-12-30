@@ -12,6 +12,9 @@ public interface BookDAO {
     List<Book> getBooks();
     boolean addBook(Book book);
     Book getBookById(int id);
+    Book getBookByISbn(String isbn);
+
+    boolean existingISBN(String isbn);
 
     List<Book> getBooksByCriterias(HashMap<String, String> map);
 
@@ -20,4 +23,6 @@ public interface BookDAO {
     boolean remove(Book book);
 
     int getAvailable(String isbn);
+
+   /* boolean addCopies(String isbn, int copies);*/
 }
