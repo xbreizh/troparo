@@ -14,14 +14,14 @@ public class Member {
     @Column(name = "ID")
     private int Id;
 
+    @Column(name = "LOGIN")
+    private String login;
+
     @Column(name = "FIRSTNAME")
     private String firstName;
 
     @Column(name = "LASTNAME")
     private String lastName;
-
-    @Column(name = "LOGIN")
-    private String login;
 
     @Column(name = "PASSWORD")
     private String password;

@@ -631,3 +631,95 @@
 2018-12-31 15:06:32 INFO  MemberManagerImpl:98 - getting id (from business): 17141
 2018-12-31 15:06:32 INFO  MemberDAOImpl:55 - in the dao: 17141
 2018-12-31 15:06:32 INFO  MemberManagerImpl:101 - login
+2018-12-31 15:27:00 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2018-12-31 15:27:00 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@3593aec7
+2018-12-31 15:27:00 INFO  MemberDAOImpl:71 - in the dao: JVMORIL
+2018-12-31 15:27:01 INFO  MemberDAOImpl:80 - no record found for that login: JVMORIL
+2018-12-31 15:27:01 INFO  MemberServiceImpl:42 - Email should be filled
+2018-12-31 15:27:08 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2018-12-31 15:27:08 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@3593aec7
+2018-12-31 15:27:09 INFO  MemberDAOImpl:71 - in the dao: JVMORIL
+2018-12-31 15:27:09 INFO  MemberDAOImpl:80 - no record found for that login: JVMORIL
+2018-12-31 15:27:09 INFO  MemberDAOImpl:30 - Member from dao: Member{Id=0, firstName='JEAN', lastName='VALJEAN', login='JVMORIL', password='12345', email='TEST', dateJoin=Mon Dec 31 15:27:09 CET 2018}
+2018-12-31 15:27:09 INFO  MemberManagerImpl:46 - exception: 
+2018-12-31 15:27:25 INFO  MemberDAOImpl:43 - getting in dao
+2018-12-31 15:27:25 INFO  MemberServiceImpl:113 - size list: 2
+2018-12-31 15:27:25 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:04:01.392+01:00
+2018-12-31 15:27:25 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:27:09.036+01:00
+2018-12-31 15:27:25 INFO  MemberServiceImpl:193 - memberListType end: 2
+2018-12-31 15:27:39 INFO  MemberServiceImpl:155 - memberManager: org.troparo.business.impl.MemberManagerImpl@3593aec7
+2018-12-31 15:27:39 INFO  MemberDAOImpl:55 - in the dao: 17141
+2018-12-31 15:27:39 INFO  MemberDAOImpl:131 - Trying to deleteMember{Id=17141, firstName='MAURICE', lastName='PIALAT', login='MPIALAT', password='123', email='test', dateJoin=2018-12-31 15:04:01.392}
+2018-12-31 15:27:59 INFO  MemberServiceImpl:134 - map: {Email=TEST, FirstName=?, Login=?, LastName=?}
+2018-12-31 15:27:59 INFO  MemberManagerImpl:118 - criterias: {Email=TEST}
+2018-12-31 15:27:59 INFO  MemberDAOImpl:87 - map received in DAO: {Email=TEST}
+2018-12-31 15:27:59 INFO  MemberDAOImpl:100 - request: From Member where Email like :Email
+2018-12-31 15:27:59 INFO  MemberDAOImpl:106 - criteria: TEST
+2018-12-31 15:27:59 INFO  MemberDAOImpl:110 - list with criterias size: 1
+2018-12-31 15:27:59 INFO  MemberServiceImpl:138 - memberListType beg: 2
+2018-12-31 15:27:59 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:27:09.036+01:00
+2018-12-31 15:27:59 INFO  MemberServiceImpl:193 - memberListType end: 1
+2018-12-31 15:27:59 INFO  MemberServiceImpl:142 - memberListType end: 1
+2018-12-31 15:28:30 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:28:30 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@3593aec7
+2018-12-31 15:28:47 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:28:47 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@3593aec7
+2018-12-31 15:32:51 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:32:51 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@5797acd3
+2018-12-31 15:33:10 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:33:10 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@5797acd3
+2018-12-31 15:36:44 INFO  MemberDAOImpl:43 - getting in dao
+2018-12-31 15:36:45 INFO  MemberServiceImpl:113 - size list: 1
+2018-12-31 15:36:45 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:27:09.036+01:00
+2018-12-31 15:36:45 INFO  MemberServiceImpl:193 - memberListType end: 1
+2018-12-31 15:37:10 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:37:10 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@3ccbea7b
+2018-12-31 15:37:29 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:37:29 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@3ccbea7b
+2018-12-31 15:38:58 INFO  MemberServiceImpl:66 - conversion memberTypeUpdate into member done
+2018-12-31 15:38:58 INFO  MemberServiceImpl:76 - memberManager: org.troparo.business.impl.MemberManagerImpl@272d7488
+2018-12-31 15:42:02 INFO  MemberDAOImpl:43 - getting in dao
+2018-12-31 15:42:03 INFO  MemberServiceImpl:114 - size list: 1
+2018-12-31 15:42:03 INFO  MemberServiceImpl:182 - new date: 2018-12-31T15:27:09.036+01:00
+2018-12-31 15:42:03 INFO  MemberServiceImpl:194 - memberListType end: 1
+2018-12-31 15:42:13 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:42:13 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@7ab456dc
+2018-12-31 15:42:13 INFO  MemberManagerImpl:128 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='?', dateJoin=null}
+2018-12-31 15:42:13 INFO  MemberDAOImpl:87 - map received in DAO: {Login=JVMORIL}
+2018-12-31 15:42:13 INFO  MemberDAOImpl:100 - request: From Member where Login like :Login
+2018-12-31 15:42:13 INFO  MemberDAOImpl:106 - criteria: JVMORIL
+2018-12-31 15:42:13 INFO  MemberDAOImpl:110 - list with criterias size: 1
+2018-12-31 15:42:13 INFO  MemberManagerImpl:137 - getting list: 1
+2018-12-31 15:42:13 INFO  MemberManagerImpl:153 - JVMORIL
+2018-12-31 15:42:13 INFO  MemberDAOImpl:119 - Member from dao: JVMORIL
+2018-12-31 15:42:13 INFO  MemberManagerImpl:155 - updated: 17142
+2018-12-31 15:44:08 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:44:08 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@40e18b13
+2018-12-31 15:44:09 INFO  MemberManagerImpl:128 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='?', dateJoin=null}
+2018-12-31 15:44:38 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:44:38 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@40e18b13
+2018-12-31 15:44:38 INFO  MemberManagerImpl:128 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='TEST@TEST.TEST', dateJoin=null}
+2018-12-31 15:44:45 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:44:45 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@40e18b13
+2018-12-31 15:44:45 INFO  MemberManagerImpl:128 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='TEST@TEST.TEST', dateJoin=null}
+2018-12-31 15:51:46 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:51:46 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@cb317f6
+2018-12-31 15:51:46 INFO  MemberManagerImpl:129 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='TEST@TEST.TEST', dateJoin=null}
+2018-12-31 15:51:46 INFO  MemberManagerImpl:134 - map size: 1
+2018-12-31 15:51:46 INFO  MemberDAOImpl:87 - map received in DAO: {Login=JVMORIL}
+2018-12-31 15:51:46 INFO  MemberDAOImpl:100 - request: From Member where Login like :Login
+2018-12-31 15:51:46 INFO  MemberDAOImpl:106 - criteria: JVMORIL
+2018-12-31 15:51:46 INFO  MemberDAOImpl:110 - list with criterias size: 1
+2018-12-31 15:51:46 INFO  MemberManagerImpl:139 - getting list: 1
+2018-12-31 15:51:46 INFO  MemberManagerImpl:161 - JVMORIL
+2018-12-31 15:51:46 INFO  MemberDAOImpl:119 - Member from dao: JVMORIL
+2018-12-31 15:51:46 INFO  MemberManagerImpl:163 - updated: 17142
+2018-12-31 15:51:55 INFO  MemberServiceImpl:67 - conversion memberTypeUpdate into member done
+2018-12-31 15:51:55 INFO  MemberServiceImpl:77 - memberManager: org.troparo.business.impl.MemberManagerImpl@cb317f6
+2018-12-31 15:51:55 INFO  MemberManagerImpl:129 - member received: Member{Id=0, firstName='?', lastName='?', login='JVMORIL', password='?', email='', dateJoin=null}
+2018-12-31 15:51:55 INFO  MemberManagerImpl:134 - map size: 1
+2018-12-31 15:51:55 INFO  MemberDAOImpl:87 - map received in DAO: {Login=JVMORIL}
+2018-12-31 15:51:55 INFO  MemberDAOImpl:100 - request: From Member where Login like :Login
+2018-12-31 15:51:55 INFO  MemberDAOImpl:106 - criteria: JVMORIL
+2018-12-31 15:51:55 INFO  MemberDAOImpl:110 - list with criterias size: 1
+2018-12-31 15:51:55 INFO  MemberManagerImpl:139 - getting list: 1

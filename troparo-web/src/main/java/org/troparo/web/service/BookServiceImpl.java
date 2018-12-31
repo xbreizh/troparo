@@ -75,6 +75,7 @@ public class BookServiceImpl implements IBookService {
         UpdateBookResponseType ar = new UpdateBookResponseType();
         ar.setReturn(true);
         BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
+        logger.info("received: "+bookTypeUpdate);
         // update
         convertBookTypeUpdateIntoBook(bookTypeUpdate);
         logger.info("bookManager: " + bookManager);

@@ -164,7 +164,14 @@
     <xsd:element name="MemberCriterias">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="Id" type="xsd:int"/>
+                <xsd:element name="Login" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="20"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
                 <xsd:element name="FirstName" minOccurs="0">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">

@@ -59,6 +59,7 @@ public class MemberServiceImpl implements IMemberService {
     // Converts Input into Member for business
     private void convertMemberTypeUpdateIntoMember(MemberTypeUpdate memberTypeUpdate) {
         member = new Member();
+        member.setLogin(memberTypeUpdate.getLogin().toUpperCase());
         member.setFirstName(memberTypeUpdate.getFirstName().toUpperCase());
         member.setPassword(memberTypeUpdate.getPassword().toUpperCase());
         member.setLastName(memberTypeUpdate.getLastName().toUpperCase());
@@ -90,7 +91,7 @@ public class MemberServiceImpl implements IMemberService {
         logger.info("new method added");
         GetMemberByIdResponseType rep = new GetMemberByIdResponseType();
         MemberTypeOut bt = new MemberTypeOut();
-        Member member = memberManager.getMemberById(parameters.getReturn());
+        Member member = memberManager.getMemberById(parameters.getId());
         if (member == null) {
             throw new BusinessException("no member found with that id");
         } else {

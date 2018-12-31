@@ -122,14 +122,16 @@ public class MemberManagerImpl implements MemberManager {
     @Override
     public String updateMember(Member member) {
         exception = "";
+        boolean receivedCriteria=false;
         if (member.getLogin().equals("") || member.getLogin().equals("?")) {
             return "you must provide an Login";
         } else {
-            logger.info(member.getLogin());
+            logger.info("member received: "+member);
         }
         List<Member> loginList = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
         map.put("Login", member.getLogin());
+        logger.info("map size: "+map.size());
         loginList = loginDAO.getMembersByCriterias(map);
         if (loginList.size() == 0) {
             return "No Item found with that Login";
@@ -138,18 +140,24 @@ public class MemberManagerImpl implements MemberManager {
         for (Member b : loginList
         ) {
             if (!member.getFirstName().equals("") && !member.getFirstName().equals("?")) {
+                receivedCriteria = true;
                 b.setFirstName(member.getFirstName());
             }
             if (!member.getLastName().equals("") && !member.getLastName().equals("?")) {
+                receivedCriteria = true;
                 b.setLastName(member.getLastName());
             }
             if (!member.getPassword().equals("") && !member.getPassword().equals("?")) {
+                receivedCriteria = true;
                 b.setPassword(member.getPassword());
             }
             if (!member.getEmail().equals("") && !member.getEmail().equals("?")) {
+                receivedCriteria = true;
                 b.setEmail(member.getEmail());
             }
-
+            if(!receivedCriteria){
+                return "No criteria was passed in";
+            }
             logger.info(b.getLogin());
             loginDAO.updateMember(b);
             logger.info("updated: " + b.getId());
