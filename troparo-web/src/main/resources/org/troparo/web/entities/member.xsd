@@ -49,6 +49,23 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Get Member by Criterias Request Type -->
+    <xsd:element name="getMemberByCriteriasRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:MemberCriterias" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Member by Criterias Response Type -->
+    <xsd:element name="getMemberByCriteriasResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:MemberListType" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
     <!-- Update Member Request Type -->
     <xsd:element name="updateMemberRequestType">
         <xsd:complexType>
@@ -100,59 +117,81 @@
     <xsd:element name="MemberTypeIn">
         <xsd:complexType >
             <xsd:sequence>
-                <xsd:element name="ISBN" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Title" >
+                <xsd:element name="FirstName" >
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
+                            <xsd:maxLength value="50"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Author" >
+                <xsd:element name="LastName" >
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
+                            <xsd:maxLength value="50"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="PublicationYear" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1455"/>
-                            <xsd:maxInclusive value="2200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Edition" >
+                <xsd:element name="Login" >
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
+                            <xsd:maxLength value="50"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="NbPages" >
+                <xsd:element name="Password" >
                     <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1"/>
-                            <xsd:maxInclusive value="20000"/>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="6"/>
+                            <xsd:maxLength value="10"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Keywords" >
+                <xsd:element name="Email" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Member Criterias-->
+    <xsd:element name="MemberCriterias">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Login" minOccurs="0">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="FirstName" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="LastName" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Email" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
@@ -162,136 +201,62 @@
 
     <!-- Member Type Update-->
     <xsd:element name="MemberTypeUpdate">
-        <xsd:complexType >
-            <xsd:sequence>
-                <xsd:element name="ISBN"  >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string" >
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Title" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Author" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="PublicationYear" minOccurs="0" default="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1455"/>
-                            <xsd:maxInclusive value="2200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Edition" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="NbPages" minOccurs="0" default="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1"/>
-                            <xsd:maxInclusive value="20000"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Keywords" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
+    <xsd:complexType >
+        <xsd:sequence>
+            <xsd:element name="Login" >
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="2"/>
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="FirstName" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="2"/>
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="LastName" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="2"/>
+                        <xsd:maxLength value="50"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Password" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:minLength value="6"/>
+                        <xsd:maxLength value="10"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+            <xsd:element name="Email" minOccurs="0">
+                <xsd:simpleType>
+                    <xsd:restriction base="xsd:string">
+                        <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+                    </xsd:restriction>
+                </xsd:simpleType>
+            </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
 
     <!-- Member Type Out-->
     <xsd:element name="MemberTypeOut">
         <xsd:complexType >
             <xsd:sequence>
-                <xsd:element name="id" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1"/>
-                            <xsd:maxInclusive value="20000"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="ISBN" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Title" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Author" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="PublicationYear" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1455"/>
-                            <xsd:maxInclusive value="2200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Edition" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="NbPages" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1"/>
-                            <xsd:maxInclusive value="20000"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Keywords" >
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
+                <xsd:element name="Id" type="xsd:int"/>
+                <xsd:element name="Login" type="xsd:string"/>
+                <xsd:element name="FirstName" type="xsd:string"/>
+                <xsd:element name="LastName" type="xsd:string"/>
+                <xsd:element name="Password" type="xsd:string"/>
+                <xsd:element name="Email" type="xsd:string"/>
+                <xsd:element name="DateJoin" type="xsd:date"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
