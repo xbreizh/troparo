@@ -571,3 +571,63 @@
 2018-12-31 11:18:54 INFO  BookServiceImpl:156 - bookListType beg: 10
 2018-12-31 11:18:54 INFO  BookServiceImpl:212 - bookListType end: 1
 2018-12-31 11:18:54 INFO  BookServiceImpl:160 - bookListType end: 1
+2018-12-31 15:04:00 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2018-12-31 15:04:00 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@30b3774f
+2018-12-31 15:04:01 INFO  MemberDAOImpl:71 - in the dao: MPIALAT
+2018-12-31 15:04:01 INFO  MemberDAOImpl:80 - no record found for that login: MPIALAT
+2018-12-31 15:04:01 INFO  MemberDAOImpl:30 - Member from dao: Member{Id=0, firstName='MAURICE', lastName='PIALAT', login='MPIALAT', password='123', email='test', dateJoin=Mon Dec 31 15:04:01 CET 2018}
+2018-12-31 15:04:01 INFO  MemberManagerImpl:46 - exception: 
+2018-12-31 15:04:32 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2018-12-31 15:04:32 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@30b3774f
+2018-12-31 15:04:32 INFO  MemberDAOImpl:71 - in the dao: MPIALAT
+2018-12-31 15:04:32 INFO  MemberDAOImpl:77 - records found: 1
+2018-12-31 15:04:32 INFO  MemberServiceImpl:42 - Login already existing
+2018-12-31 15:04:42 INFO  MemberDAOImpl:43 - getting in dao
+2018-12-31 15:04:42 INFO  MemberServiceImpl:113 - size list: 1
+2018-12-31 15:04:42 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:04:01.392+01:00
+2018-12-31 15:04:42 INFO  MemberServiceImpl:193 - memberListType end: 1
+2018-12-31 15:05:06 INFO  MemberServiceImpl:134 - map: {Email=TEST, FirstName=?, Login=?, LastName=?}
+2018-12-31 15:05:06 INFO  MemberManagerImpl:118 - criterias: {Email=TEST}
+2018-12-31 15:05:06 INFO  MemberDAOImpl:87 - map received in DAO: {Email=TEST}
+2018-12-31 15:05:06 INFO  MemberDAOImpl:100 - request: From Member where Email like :Email
+2018-12-31 15:05:06 INFO  MemberDAOImpl:106 - criteria: TEST
+2018-12-31 15:05:06 INFO  MemberDAOImpl:110 - list with criterias size: 0
+2018-12-31 15:05:06 INFO  MemberServiceImpl:138 - memberListType beg: 1
+2018-12-31 15:05:06 INFO  MemberServiceImpl:193 - memberListType end: 0
+2018-12-31 15:05:06 INFO  MemberServiceImpl:142 - memberListType end: 0
+2018-12-31 15:05:14 INFO  MemberServiceImpl:134 - map: {Email=TEST, FirstName=?, Login=?, LastName=?}
+2018-12-31 15:05:14 INFO  MemberManagerImpl:118 - criterias: {Email=TEST}
+2018-12-31 15:05:14 INFO  MemberDAOImpl:87 - map received in DAO: {Email=TEST}
+2018-12-31 15:05:14 INFO  MemberDAOImpl:100 - request: From Member where Email like :Email
+2018-12-31 15:05:14 INFO  MemberDAOImpl:106 - criteria: TEST
+2018-12-31 15:05:14 INFO  MemberDAOImpl:110 - list with criterias size: 0
+2018-12-31 15:05:14 INFO  MemberServiceImpl:138 - memberListType beg: 0
+2018-12-31 15:05:14 INFO  MemberServiceImpl:193 - memberListType end: 0
+2018-12-31 15:05:14 INFO  MemberServiceImpl:142 - memberListType end: 0
+2018-12-31 15:05:37 INFO  MemberServiceImpl:134 - map: {Email=TEST, FirstName=?, Login=?, LastName=?}
+2018-12-31 15:05:38 INFO  MemberManagerImpl:118 - criterias: {Email=TEST}
+2018-12-31 15:05:38 INFO  MemberDAOImpl:87 - map received in DAO: {Email=TEST}
+2018-12-31 15:05:38 INFO  MemberDAOImpl:100 - request: From Member where Email like :Email
+2018-12-31 15:05:38 INFO  MemberDAOImpl:106 - criteria: TEST
+2018-12-31 15:05:38 INFO  MemberDAOImpl:110 - list with criterias size: 0
+2018-12-31 15:05:38 INFO  MemberServiceImpl:138 - memberListType beg: 0
+2018-12-31 15:05:38 INFO  MemberServiceImpl:193 - memberListType end: 0
+2018-12-31 15:05:38 INFO  MemberServiceImpl:142 - memberListType end: 0
+2018-12-31 15:06:09 INFO  MemberServiceImpl:134 - map: {Email=, FirstName=MAURICE, Login=?, LastName=?}
+2018-12-31 15:06:09 INFO  MemberManagerImpl:118 - criterias: {FirstName=MAURICE}
+2018-12-31 15:06:09 INFO  MemberDAOImpl:87 - map received in DAO: {FirstName=MAURICE}
+2018-12-31 15:06:09 INFO  MemberDAOImpl:100 - request: From Member where FirstName like :FirstName
+2018-12-31 15:06:09 INFO  MemberDAOImpl:106 - criteria: MAURICE
+2018-12-31 15:06:09 INFO  MemberDAOImpl:110 - list with criterias size: 1
+2018-12-31 15:06:09 INFO  MemberServiceImpl:138 - memberListType beg: 0
+2018-12-31 15:06:09 INFO  MemberServiceImpl:181 - new date: 2018-12-31T15:04:01.392+01:00
+2018-12-31 15:06:09 INFO  MemberServiceImpl:193 - memberListType end: 1
+2018-12-31 15:06:09 INFO  MemberServiceImpl:142 - memberListType end: 1
+2018-12-31 15:06:27 INFO  MemberServiceImpl:90 - new method added
+2018-12-31 15:06:27 INFO  MemberManagerImpl:98 - getting id (from business): 2
+2018-12-31 15:06:27 INFO  MemberDAOImpl:55 - in the dao: 2
+2018-12-31 15:06:27 INFO  MemberManagerImpl:104 - login is probably null
+2018-12-31 15:06:32 INFO  MemberServiceImpl:90 - new method added
+2018-12-31 15:06:32 INFO  MemberManagerImpl:98 - getting id (from business): 17141
+2018-12-31 15:06:32 INFO  MemberDAOImpl:55 - in the dao: 17141
+2018-12-31 15:06:32 INFO  MemberManagerImpl:101 - login
