@@ -147,7 +147,7 @@ public class BookDAOImpl implements BookDAO {
     }
 
     @Override
-    public Book getBookByISbn(String isbn) {
+    public Book getBookByIsbn(String isbn) {
         List<Book> list = new ArrayList<>();
         request = "From Book where isbn = :isbn";
 

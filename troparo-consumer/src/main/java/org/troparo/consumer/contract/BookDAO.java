@@ -12,7 +12,7 @@ public interface BookDAO {
     List<Book> getBooks();
     boolean addBook(Book book);
     Book getBookById(int id);
-    Book getBookByISbn(String isbn);
+    Book getBookByIsbn(String isbn);
 
     boolean existingISBN(String isbn);
 

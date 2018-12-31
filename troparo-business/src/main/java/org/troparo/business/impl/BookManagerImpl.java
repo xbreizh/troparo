@@ -215,7 +215,7 @@ public class BookManagerImpl implements BookManager {
         if (!bookDAO.existingISBN(isbn)) {
             return "No record found with that ISBN";
         } else {
-            Book b = bookDAO.getBookByISbn(isbn);
+            Book b = bookDAO.getBookByIsbn(isbn);
             logger.info("record found: " + b);
             int i = 0;
             while (i < copies) {

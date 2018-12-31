@@ -4,10 +4,10 @@
 
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
 
-    <!-- <jaxws:endpoint id="musicservice"
-                     implementor="org.troparo.web.service.MusicServiceImpl"
-                     address="/music">
-     </jaxws:endpoint>-->
+     <jaxws:endpoint id="memberservice"
+                     implementor="org.troparo.web.service.MemberServiceImpl"
+                     address="/member">
+     </jaxws:endpoint>
     <jaxws:endpoint id="bookservice"
                     implementor="org.troparo.web.service.BookServiceImpl"
                     address="/book">

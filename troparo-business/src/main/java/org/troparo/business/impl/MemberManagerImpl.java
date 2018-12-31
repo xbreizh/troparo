@@ -40,7 +40,7 @@ public class MemberManagerImpl implements MemberManager {
         if (!exception.equals("")) {
             return exception;
         }
-        // adding insertion date
+        // setting dateJoin
         login.setDateJoin(new Date());
         loginDAO.addMember(login);
         logger.info("exception: " + exception);

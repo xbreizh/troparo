@@ -32,7 +32,7 @@ public class BookServiceImpl implements IBookService {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
         bookTypeIn = parameters.getBookTypeIn();
-        convertBootypeInIntoBook();
+        convertBookTypeInIntoBook();
         logger.info("bookManager: " + bookManager);
         exception = bookManager.addBook(book);
         if (!exception.equals("")) {
@@ -43,7 +43,7 @@ public class BookServiceImpl implements IBookService {
         return ar;
     }
     // Converts Input into Book for business
-    private void convertBootypeInIntoBook() {
+    private void convertBookTypeInIntoBook() {
         book = new Book();
         book.setIsbn(bookTypeIn.getISBN().toUpperCase());
         book.setTitle(bookTypeIn.getTitle().toUpperCase());
@@ -57,7 +57,7 @@ public class BookServiceImpl implements IBookService {
     }
 
     // Converts Input into Book for business
-    private void convertBootypeUpdateIntoBook(BookTypeUpdate bookTypeUpdate) {
+    private void convertBookTypeUpdateIntoBook(BookTypeUpdate bookTypeUpdate) {
         book = new Book();
         book.setIsbn(bookTypeUpdate.getISBN().toUpperCase());
         book.setTitle(bookTypeUpdate.getTitle().toUpperCase());
@@ -76,7 +76,7 @@ public class BookServiceImpl implements IBookService {
         ar.setReturn(true);
         BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
         // update
-        convertBootypeUpdateIntoBook(bookTypeUpdate);
+        convertBookTypeUpdateIntoBook(bookTypeUpdate);
         logger.info("bookManager: " + bookManager);
         exception = bookManager.updateBook(book);
         if (!exception.equals("")) {

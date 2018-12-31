@@ -110,14 +110,18 @@
                         <configuration>
                             <sourceRoot>generated/java/source</sourceRoot>
                             <wsdlOptions>
-                                <wsdlOption>
+                               <!-- <wsdlOption>
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookService.wsdl</wsdl>
-                                    <!--<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>-->
-                                </wsdlOption>
+                                    &lt;!&ndash;<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>&ndash;&gt;
+                                </wsdlOption>-->
                                 <wsdlOption>
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MemberService.wsdl</wsdl>
                                     <!--<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>-->
                                 </wsdlOption>
+                               <!-- <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookerService.wsdl</wsdl>
+                                    &lt;!&ndash;<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>&ndash;&gt;
+                                </wsdlOption>-->
                             </wsdlOptions>
                         </configuration>
                         <goals>
