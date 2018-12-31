@@ -80,8 +80,7 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public List<Book> getBooksByCriterias(HashMap<String, String> map) {
-        logger.info("entering the dark dao");
-        logger.info("map: "+map);
+        logger.info("map received in DAO: "+map);
         String criterias="";
         for (Map.Entry<String, String> entry : map.entrySet()
              ) {

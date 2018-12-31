@@ -451,3 +451,123 @@
 2018-12-30 23:44:28 INFO  BookDAOImpl:116 - Book from dao: LA PESTE
 2018-12-30 23:44:28 INFO  BookDAOImpl:117 - Book from dao: ALBERT CAMUS
 2018-12-30 23:44:28 INFO  BookManagerImpl:189 - updated: 17138
+2018-12-31 10:37:24 INFO  BookServiceImpl:51 - 1985
+2018-12-31 10:37:24 INFO  BookServiceImpl:56 - pub date: 1985
+2018-12-31 10:37:24 INFO  BookServiceImpl:36 - bookManager: org.troparo.business.impl.BookManagerImpl@3f46ba1a
+2018-12-31 10:37:24 INFO  BookDAOImpl:67 - in the dao: 12345678S2591
+2018-12-31 10:37:25 INFO  BookDAOImpl:76 - no record found for that isbn: 12345678S2591
+2018-12-31 10:37:25 INFO  BookManagerImpl:43 - in the 
+2018-12-31 10:37:25 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678S2591', title='LE ROUGE ET LE NOI', author='MARGOT VILLEFRANCHE', insert_date=Mon Dec 31 10:37:25 CET 2018, publicationYear=1985, edition='HACHETTE POCHE', nbPages=153, keywords='ROMAN  TRUC'}
+2018-12-31 10:37:25 INFO  BookManagerImpl:47 - exception: 
+2018-12-31 10:37:59 INFO  BookServiceImpl:82 - bookManager: org.troparo.business.impl.BookManagerImpl@3f46ba1a
+2018-12-31 10:37:59 INFO  BookDAOImpl:67 - in the dao: 12345678S2591
+2018-12-31 10:37:59 INFO  BookDAOImpl:73 - records found: 1
+2018-12-31 10:37:59 INFO  BookManagerImpl:219 - record found: Book{Id=17139, isbn='12345678S2591', title='LE ROUGE ET LE NOI', author='MARGOT VILLEFRANCHE', insert_date=2018-12-31 10:37:25.21, publicationYear=1985, edition='HACHETTE POCHE', nbPages=153, keywords='ROMAN  TRUC'}
+2018-12-31 10:37:59 INFO  BookManagerImpl:232 - new Book: Book{Id=0, isbn='12345678S2591', title='LE ROUGE ET LE NOI', author='MARGOT VILLEFRANCHE', insert_date=Mon Dec 31 10:37:59 CET 2018, publicationYear=1985, edition='HACHETTE POCHE', nbPages=153, keywords='ROMAN  TRUC'}
+2018-12-31 10:37:59 INFO  BookDAOImpl:39 - Book from dao: Book{Id=0, isbn='12345678S2591', title='LE ROUGE ET LE NOI', author='MARGOT VILLEFRANCHE', insert_date=Mon Dec 31 10:37:59 CET 2018, publicationYear=1985, edition='HACHETTE POCHE', nbPages=153, keywords='ROMAN  TRUC'}
+2018-12-31 10:38:07 INFO  BookDAOImpl:28 - getting in dao
+2018-12-31 10:38:07 INFO  BookServiceImpl:118 - size list: 11
+2018-12-31 10:38:07 INFO  BookServiceImpl:198 - bookListType end: 11
+2018-12-31 10:38:20 INFO  BookDAOImpl:143 - result found: 0
+2018-12-31 10:38:20 INFO  BookDAOImpl:145 - count: 0
+2018-12-31 10:38:20 INFO  BookServiceImpl:174 - i: 0
+2018-12-31 10:38:27 INFO  BookDAOImpl:143 - result found: 2
+2018-12-31 10:38:27 INFO  BookDAOImpl:145 - count: 2
+2018-12-31 10:38:27 INFO  BookServiceImpl:174 - i: 2
+2018-12-31 10:38:37 INFO  BookServiceImpl:138 - map: {ISBN=?, Title=NOIR, Author=?}
+2018-12-31 10:38:37 INFO  BookManagerImpl:145 - criterias: {Title=NOIR}
+2018-12-31 10:38:37 INFO  BookDAOImpl:83 - map received in DAO: {Title=NOIR}
+2018-12-31 10:38:37 INFO  BookDAOImpl:96 - request: From Book where Title like :Title
+2018-12-31 10:38:37 INFO  BookDAOImpl:102 - criteria: NOIR
+2018-12-31 10:38:37 INFO  BookDAOImpl:106 - list with criterias size: 0
+2018-12-31 10:38:37 INFO  BookServiceImpl:142 - bookListType beg: 11
+2018-12-31 10:38:37 INFO  BookServiceImpl:198 - bookListType end: 0
+2018-12-31 10:38:37 INFO  BookServiceImpl:146 - bookListType end: 0
+2018-12-31 10:39:05 INFO  BookServiceImpl:138 - map: {ISBN=?, Title=NOIR, Author=?}
+2018-12-31 10:39:05 INFO  BookManagerImpl:145 - criterias: {Title=NOIR}
+2018-12-31 10:39:05 INFO  BookDAOImpl:83 - map received in DAO: {Title=NOIR}
+2018-12-31 10:39:05 INFO  BookDAOImpl:96 - request: From Book where Title like :Title
+2018-12-31 10:39:05 INFO  BookDAOImpl:102 - criteria: NOIR
+2018-12-31 10:39:05 INFO  BookDAOImpl:106 - list with criterias size: 0
+2018-12-31 10:39:05 INFO  BookServiceImpl:142 - bookListType beg: 0
+2018-12-31 10:39:05 INFO  BookServiceImpl:198 - bookListType end: 0
+2018-12-31 10:39:05 INFO  BookServiceImpl:146 - bookListType end: 0
+2018-12-31 10:40:09 INFO  BookServiceImpl:138 - map: {ISBN=?, Title=NOI, Author=?}
+2018-12-31 10:40:09 INFO  BookManagerImpl:145 - criterias: {Title=NOI}
+2018-12-31 10:40:09 INFO  BookDAOImpl:83 - map received in DAO: {Title=NOI}
+2018-12-31 10:40:09 INFO  BookDAOImpl:96 - request: From Book where Title like :Title
+2018-12-31 10:40:09 INFO  BookDAOImpl:102 - criteria: NOI
+2018-12-31 10:40:09 INFO  BookDAOImpl:106 - list with criterias size: 2
+2018-12-31 10:40:09 INFO  BookServiceImpl:142 - bookListType beg: 0
+2018-12-31 10:40:09 INFO  BookServiceImpl:198 - bookListType end: 2
+2018-12-31 10:40:09 INFO  BookServiceImpl:146 - bookListType end: 2
+2018-12-31 10:40:25 INFO  BookServiceImpl:138 - map: {ISBN=?, Title=, Author=GOT}
+2018-12-31 10:40:25 INFO  BookManagerImpl:145 - criterias: {Author=GOT}
+2018-12-31 10:40:25 INFO  BookDAOImpl:83 - map received in DAO: {Author=GOT}
+2018-12-31 10:40:25 INFO  BookDAOImpl:96 - request: From Book where Author like :Author
+2018-12-31 10:40:25 INFO  BookDAOImpl:102 - criteria: GOT
+2018-12-31 10:40:25 INFO  BookDAOImpl:106 - list with criterias size: 2
+2018-12-31 10:40:25 INFO  BookServiceImpl:142 - bookListType beg: 2
+2018-12-31 10:40:25 INFO  BookServiceImpl:198 - bookListType end: 2
+2018-12-31 10:40:25 INFO  BookServiceImpl:146 - bookListType end: 2
+2018-12-31 10:40:50 INFO  BookServiceImpl:95 - new method added
+2018-12-31 10:40:50 INFO  BookManagerImpl:125 - getting id (from business): 0
+2018-12-31 10:40:50 INFO  BookDAOImpl:51 - in the dao: 0
+2018-12-31 10:40:50 INFO  BookManagerImpl:131 - book is probably null
+2018-12-31 10:40:54 INFO  BookServiceImpl:95 - new method added
+2018-12-31 10:40:54 INFO  BookManagerImpl:125 - getting id (from business): 17139
+2018-12-31 10:40:54 INFO  BookDAOImpl:51 - in the dao: 17139
+2018-12-31 10:40:54 INFO  BookManagerImpl:128 - book
+2018-12-31 10:41:47 INFO  BookServiceImpl:51 - 1859
+2018-12-31 10:41:47 INFO  BookServiceImpl:56 - pub date: 1859
+2018-12-31 10:41:47 INFO  BookServiceImpl:66 - bookManager: org.troparo.business.impl.BookManagerImpl@3f46ba1a
+2018-12-31 10:41:47 INFO  BookManagerImpl:155 - LE ROUGE ET LE NOIR
+2018-12-31 10:41:47 INFO  BookManagerImpl:156 - ?
+2018-12-31 10:41:47 INFO  BookDAOImpl:83 - map received in DAO: {ISBN=12345678S2591}
+2018-12-31 10:41:47 INFO  BookDAOImpl:96 - request: From Book where ISBN like :ISBN
+2018-12-31 10:41:47 INFO  BookDAOImpl:102 - criteria: 12345678S2591
+2018-12-31 10:41:47 INFO  BookDAOImpl:106 - list with criterias size: 2
+2018-12-31 10:41:47 INFO  BookManagerImpl:165 - getting list: 2
+2018-12-31 10:41:47 INFO  BookManagerImpl:186 - MARGOT VILLEFRANCHE
+2018-12-31 10:41:47 INFO  BookManagerImpl:187 - LE ROUGE ET LE NOIR
+2018-12-31 10:41:47 INFO  BookDAOImpl:115 - Book from dao: LE ROUGE ET LE NOIR
+2018-12-31 10:41:47 INFO  BookDAOImpl:116 - Book from dao: MARGOT VILLEFRANCHE
+2018-12-31 10:41:47 INFO  BookManagerImpl:189 - updated: 17139
+2018-12-31 10:41:47 INFO  BookManagerImpl:186 - MARGOT VILLEFRANCHE
+2018-12-31 10:41:47 INFO  BookManagerImpl:187 - LE ROUGE ET LE NOIR
+2018-12-31 10:41:47 INFO  BookDAOImpl:115 - Book from dao: LE ROUGE ET LE NOIR
+2018-12-31 10:41:47 INFO  BookDAOImpl:116 - Book from dao: MARGOT VILLEFRANCHE
+2018-12-31 10:41:47 INFO  BookManagerImpl:189 - updated: 17140
+2018-12-31 10:42:15 INFO  BookServiceImpl:159 - bookManager: org.troparo.business.impl.BookManagerImpl@3f46ba1a
+2018-12-31 10:42:15 INFO  BookDAOImpl:51 - in the dao: 17130
+2018-12-31 10:42:15 INFO  BookDAOImpl:128 - Trying to deleteBook{Id=17130, isbn='123456789B', title='L'EAU BLEUE', author='AMELIE NOTHOM', insert_date=2018-12-30 19:21:25.924, publicationYear=2013, edition='MARGO', nbPages=123, keywords='ROMAN, SPOIL'}
+2018-12-31 11:12:18 INFO  BookDAOImpl:28 - getting in dao
+2018-12-31 11:12:18 INFO  BookServiceImpl:132 - size list: 10
+2018-12-31 11:12:18 INFO  BookServiceImpl:212 - bookListType end: 10
+2018-12-31 11:18:00 INFO  BookDAOImpl:28 - getting in dao
+2018-12-31 11:18:01 INFO  BookServiceImpl:132 - size list: 10
+2018-12-31 11:18:01 INFO  BookServiceImpl:212 - bookListType end: 10
+2018-12-31 11:18:41 INFO  BookServiceImpl:65 - 0
+2018-12-31 11:18:41 INFO  BookServiceImpl:70 - pub date: 0
+2018-12-31 11:18:41 INFO  BookServiceImpl:80 - bookManager: org.troparo.business.impl.BookManagerImpl@5bfa6bb9
+2018-12-31 11:18:41 INFO  BookManagerImpl:155 - ?
+2018-12-31 11:18:41 INFO  BookManagerImpl:156 - AMELIE NOTHOMB
+2018-12-31 11:18:41 INFO  BookDAOImpl:83 - map received in DAO: {ISBN=1W3456789B}
+2018-12-31 11:18:41 INFO  BookDAOImpl:96 - request: From Book where ISBN like :ISBN
+2018-12-31 11:18:41 INFO  BookDAOImpl:102 - criteria: 1W3456789B
+2018-12-31 11:18:41 INFO  BookDAOImpl:106 - list with criterias size: 1
+2018-12-31 11:18:41 INFO  BookManagerImpl:165 - getting list: 1
+2018-12-31 11:18:41 INFO  BookManagerImpl:186 - AMELIE NOTHOMB
+2018-12-31 11:18:41 INFO  BookManagerImpl:187 - L'EAU BLEUE
+2018-12-31 11:18:41 INFO  BookDAOImpl:115 - Book from dao: L'EAU BLEUE
+2018-12-31 11:18:41 INFO  BookDAOImpl:116 - Book from dao: AMELIE NOTHOMB
+2018-12-31 11:18:41 INFO  BookManagerImpl:189 - updated: 17131
+2018-12-31 11:18:54 INFO  BookServiceImpl:152 - map: {ISBN=1W3456789B, Title=?, Author=?}
+2018-12-31 11:18:54 INFO  BookManagerImpl:145 - criterias: {ISBN=1W3456789B}
+2018-12-31 11:18:54 INFO  BookDAOImpl:83 - map received in DAO: {ISBN=1W3456789B}
+2018-12-31 11:18:54 INFO  BookDAOImpl:96 - request: From Book where ISBN like :ISBN
+2018-12-31 11:18:54 INFO  BookDAOImpl:102 - criteria: 1W3456789B
+2018-12-31 11:18:54 INFO  BookDAOImpl:106 - list with criterias size: 1
+2018-12-31 11:18:54 INFO  BookServiceImpl:156 - bookListType beg: 10
+2018-12-31 11:18:54 INFO  BookServiceImpl:212 - bookListType end: 1
+2018-12-31 11:18:54 INFO  BookServiceImpl:160 - bookListType end: 1

@@ -56,13 +56,27 @@ public class BookServiceImpl implements IBookService {
         logger.info("pub date: "+book.getPublicationYear());
     }
 
+    // Converts Input into Book for business
+    private void convertBootypeUpdateIntoBook(BookTypeUpdate bookTypeUpdate) {
+        book = new Book();
+        book.setIsbn(bookTypeUpdate.getISBN().toUpperCase());
+        book.setTitle(bookTypeUpdate.getTitle().toUpperCase());
+        book.setAuthor(bookTypeUpdate.getAuthor().toUpperCase());
+        logger.info(bookTypeUpdate.getPublicationYear());
+        book.setPublicationYear(bookTypeUpdate.getPublicationYear());
+        book.setEdition(bookTypeUpdate.getEdition().toUpperCase());
+        book.setNbPages(bookTypeUpdate.getNbPages());
+        book.setKeywords(bookTypeUpdate.getKeywords().toUpperCase());
+        logger.info("pub date: "+book.getPublicationYear());
+    }
     // Update
     @Override
     public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
         UpdateBookResponseType ar = new UpdateBookResponseType();
         ar.setReturn(true);
-        bookTypeIn = parameters.getBookTypeIn();
-        convertBootypeInIntoBook();
+        BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
+        // update
+        convertBootypeUpdateIntoBook(bookTypeUpdate);
         logger.info("bookManager: " + bookManager);
         exception = bookManager.updateBook(book);
         if (!exception.equals("")) {
