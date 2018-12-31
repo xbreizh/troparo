@@ -136,8 +136,8 @@
                 <xsd:element name="Login" >
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="50"/>
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="20"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
@@ -167,8 +167,8 @@
                 <xsd:element name="Login" minOccurs="0">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="50"/>
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="20"/>
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
@@ -206,8 +206,8 @@
             <xsd:element name="Login" >
                 <xsd:simpleType>
                     <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="2"/>
-                        <xsd:maxLength value="50"/>
+                        <xsd:minLength value="5"/>
+                        <xsd:maxLength value="20"/>
                     </xsd:restriction>
                 </xsd:simpleType>
             </xsd:element>
