@@ -1,4 +1,4 @@
-package org.troparo.business.impl;
+package org.troparo.business;
 
 import javax.inject.Named;
 import java.util.regex.Matcher;

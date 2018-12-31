@@ -3,6 +3,50 @@
             targetNamespace="http://troparo.org/entities/member" xmlns:tns="http://troparo.org/entities/member"
             elementFormDefault="qualified">
 
+    <!-- Connect Request Type -->
+    <xsd:element name="resetPasswordRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Login" type="xsd:string"/>
+                <xsd:element name="Email" >
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Password" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Connect  Response Type -->
+    <xsd:element name="resetPasswordResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Connect Request Type -->
+    <xsd:element name="connectRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Login" type="xsd:string"/>
+                <xsd:element name="Password" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Connect  Response Type -->
+    <xsd:element name="connectResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
 
     <!-- Add Member Request Type -->
     <xsd:element name="addMemberRequestType">

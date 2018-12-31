@@ -2,12 +2,15 @@ package org.troparo.business.impl;
 
 
 import org.apache.log4j.Logger;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.troparo.business.EmailValidator;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.consumer.contract.MemberDAO;
 import org.troparo.model.Member;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import javax.persistence.NoResultException;
 import javax.transaction.Transactional;
 import java.util.*;
 
@@ -17,34 +20,36 @@ public class MemberManagerImpl implements MemberManager {
     private Logger logger = Logger.getLogger(this.getClass().getName());
 
     private String exception = "";
+    private final String pepper = "Tipiak";
 
     @Inject
-    MemberDAO loginDAO;
+    MemberDAO memberDAO;
     @Inject
     EmailValidator validator;
 
     @Override
-    public String addMember(Member login) {
+    public String addMember(Member member) {
         exception = "";
         // checking if already existing
-        if (loginDAO.existingLogin(login.getLogin())) {
+        if (memberDAO.existingLogin(member.getLogin())) {
             exception = "Login already existing";
             return exception;
         }
         // checking that all values are provided
-        exception = checkRequiredValuesNotNull(login);
+        exception = checkRequiredValuesNotNull(member);
         if (!exception.equals("")) {
             return exception;
         }
 
         // checking that all values are valid
-        exception = checkInsertion(login);
+        exception = checkInsertion(member);
         if (!exception.equals("")) {
             return exception;
         }
+        member.setPassword(encryptPassword(member.getPassword())); // encrypting password
         // setting dateJoin
-        login.setDateJoin(new Date());
-        loginDAO.addMember(login);
+        member.setDateJoin(new Date());
+        memberDAO.addMember(member);
         logger.info("exception: " + exception);
         return exception;
     }
@@ -92,13 +97,13 @@ public class MemberManagerImpl implements MemberManager {
 
     @Override
     public List<Member> getMembers() {
-        return loginDAO.getAllMembers();
+        return memberDAO.getAllMembers();
     }
 
     @Override
     public Member getMemberById(int id) {
         logger.info("getting id (from business): " + id);
-        Member login = loginDAO.getMemberById(id);
+        Member login = memberDAO.getMemberById(id);
         if (login != null) {
             logger.info("login");
             return login;
@@ -106,6 +111,11 @@ public class MemberManagerImpl implements MemberManager {
             logger.info("login is probably null");
             return null;
         }
+    }
+
+    @Override
+    public Member getMemberByLogin(String login) {
+        return memberDAO.getMemberByLogin(login);
     }
 
     @Override
@@ -118,7 +128,7 @@ public class MemberManagerImpl implements MemberManager {
             }
         }
         logger.info("criterias: " + criterias);
-        return loginDAO.getMembersByCriterias(criterias);
+        return memberDAO.getMembersByCriterias(criterias);
     }
 
     @Override
@@ -135,7 +145,7 @@ public class MemberManagerImpl implements MemberManager {
         HashMap<String, String> map = new HashMap<>();
         map.put("Login", member.getLogin());
         logger.info("map size: "+map.size());
-        loginList = loginDAO.getMembersByCriterias(map);
+        loginList = memberDAO.getMembersByCriterias(map);
         if (loginList.size() == 0) {
             return "No Item found with that Login";
         }
@@ -161,7 +171,7 @@ public class MemberManagerImpl implements MemberManager {
                     return exception = "Password should have between 2 and 200 characters: " + member.getPassword();
                 }
                 receivedCriteria = true;
-                b.setPassword(member.getPassword());
+                b.setPassword(encryptPassword(member.getPassword())); // encrypting password
             }
             if (!member.getEmail().equals("") && !member.getEmail().equals("?")) {
                 if (!validator.validate(member.getEmail())) {
@@ -174,7 +184,7 @@ public class MemberManagerImpl implements MemberManager {
                 return "No criteria was passed in";
             }
             logger.info(b.getLogin());
-            loginDAO.updateMember(b);
+            memberDAO.updateMember(b);
             logger.info("updated: " + b.getId());
         }
 
@@ -183,16 +193,68 @@ public class MemberManagerImpl implements MemberManager {
 
     @Override
     public String remove(int id) {
-        Member login = loginDAO.getMemberById(id);
+        Member login = memberDAO.getMemberById(id);
 
         if (login == null) {
             return exception = "No item found";
         } else {
-            loginDAO.remove(login);
+            memberDAO.remove(login);
         }
         return exception;
     }
 
 
+    /*Login*/
+
+    // Login
+    @Override
+    public boolean connect(String login, String password) {
+        Member m;
+        try {
+            m = getMemberByLogin(login.toUpperCase());
+            // checking password match
+            if (checkPassword(password, m.getPassword())) {
+                return true;
+            }
+        } catch (NoResultException e) {
+            logger.info("wrong login or pwd");
+        }
+        return false;
+    }
+    @Override
+    public String encryptPassword(String password) {
+        BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+        String pwd = bcrypt.encode(password + pepper);
+        logger.info("hashed pwd: " + pwd);
+        return pwd;
+    }
+
+    @Override
+    public boolean checkPassword(String pwd1, String pwd2) {
+        BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+
+        return bcrypt.matches(pwd1 + pepper, pwd2);
+    }
+
+    // Update Password
+    @Override
+    public boolean updatePassword(String login, String email, String password) {
+        logger.info("member received: " + login);
+        logger.info("email received: " + email);
+        logger.info("pwd received: " + password);
+
+        if (getMemberByLogin(login.toUpperCase())!=null) {
+            Member m = getMemberByLogin(login.toUpperCase());
+            if (m.getEmail().toUpperCase().equals(email)) {
+                logger.info("email passed");
+                m.setPassword(encryptPassword(password));
+                memberDAO.updateMember(m);
+                return true;
+            }
+        } else {
+            logger.info("member couldn't be found");
+        }
+        return false;
+    }
 
 }

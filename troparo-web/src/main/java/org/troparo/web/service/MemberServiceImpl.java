@@ -83,6 +83,22 @@ public class MemberServiceImpl implements IMemberService {
         return ar;
     }
 
+    @Override
+    public ConnectResponseType connect(ConnectRequestType parameters) throws BusinessException {
+        ConnectResponseType ar = new ConnectResponseType();
+        ar.setReturn(true);
+        String login =  parameters.getLogin();
+        String password = parameters.getPassword();
+
+
+        ar.setReturn( memberManager.connect(login, password));
+        if (!exception.equals("")) {
+            throw new BusinessException(exception);
+        }
+
+        return ar;
+    }
+
 
     // Get One
     @Override
@@ -163,6 +179,20 @@ public class MemberServiceImpl implements IMemberService {
 
     }
 
+    @Override
+    public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws BusinessException {
+        ResetPasswordResponseType ar = new ResetPasswordResponseType();
+        boolean result;
+
+        logger.info("trying to reset pwd for: "+parameters.getLogin());
+        String login = parameters.getLogin();
+        String password = parameters.getPassword();
+        String email = parameters.getEmail();
+        result = memberManager.updatePassword(login, email, password);
+
+        ar.setReturn(result);
+        return ar;
+    }
 
 
     // Converts Member from Business into output
