@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
+            targetNamespace="http://troparo.org/entities/member" xmlns:tns="http://troparo.org/entities/member"
             elementFormDefault="qualified">
 
 
-    <!--CRUD-->
-
-    <!-- Add Book Request Type -->
-    <xsd:element name="addBookRequestType">
+    <!-- Add Member Request Type -->
+    <xsd:element name="addMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeIn" />
+                <xsd:element ref="tns:MemberTypeIn" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Add Book  Response Type -->
-    <xsd:element name="addBookResponseType">
+    <!-- Add Member  Response Type -->
+    <xsd:element name="addMemberResponseType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="return" type="xsd:boolean"/>
@@ -24,17 +22,17 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book List Response Type -->
-    <xsd:element name="BookListResponseType">
+    <!-- Member List Response Type -->
+    <xsd:element name="MemberListResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookListType" />
+                <xsd:element ref="tns:MemberListType" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Get Book Request Type -->
-    <xsd:element name="getBookByIdRequestType">
+    <!-- Get Member Request Type -->
+    <xsd:element name="getMemberByIdRequestType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="return" type="xsd:int"/>
@@ -42,44 +40,26 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Get Book Response Type -->
-    <xsd:element name="getBookByIdResponseType">
+    <!-- Get Member Response Type -->
+    <xsd:element name="getMemberByIdResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeOut" />
+                <xsd:element ref="tns:MemberTypeOut" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Get Book by Criterias Request Type -->
-    <xsd:element name="getBookByCriteriasRequestType">
+    <!-- Update Member Request Type -->
+    <xsd:element name="updateMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookCriterias" />
+                <xsd:element ref="tns:MemberTypeUpdate" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Get Book by Criterias Response Type -->
-    <xsd:element name="getBookByCriteriasResponseType">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element ref="tns:BookListType" />
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- Update Book Request Type -->
-    <xsd:element name="updateBookRequestType">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element ref="tns:BookTypeUpdate" />
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- Update Book Response Type -->
-    <xsd:element name="updateBookResponseType">
+    <!-- Update Member Response Type -->
+    <xsd:element name="updateMemberResponseType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="return" type="xsd:boolean"/>
@@ -87,8 +67,8 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Remove Book Request Type -->
-    <xsd:element name="removeBookRequestType">
+    <!-- Remove Member Request Type -->
+    <xsd:element name="removeMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="id" type="xsd:int" />
@@ -96,123 +76,28 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Remove Book Response Type -->
-    <xsd:element name="removeBookResponseType">
+    <!-- Remove Member Response Type -->
+    <xsd:element name="removeMemberResponseType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="return" type="xsd:boolean"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
-
-
-    <!--EXTRA-->
-
-    <!-- addCopy Request Type -->
-    <xsd:element name="addCopyRequestType">
-        <xsd:complexType>
-            <xsd:sequence>
-
-                <xsd:element name="ISBN">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="nbCopies">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:int">
-                            <xsd:minInclusive value="1"/>
-                            <xsd:maxInclusive value="10"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- addCopy Response Type -->
-    <xsd:element name="addCopyResponseType">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="return" type="xsd:boolean"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- getAvailable Request Type -->
-    <xsd:element name="getAvailableRequestType">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="ISBN">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- getAvailable Response Type -->
-    <xsd:element name="getAvailableResponseType">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="return" type="xsd:int" />
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
 
     <!--Types-->
 
-    <!-- List of Books -->
-    <xsd:element name="BookListType">
+    <!-- List of Members -->
+    <xsd:element name="MemberListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeOut" maxOccurs="unbounded" />
+                <xsd:element ref="tns:MemberTypeOut" maxOccurs="unbounded" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book Criterias-->
-    <xsd:element name="BookCriterias">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element name="ISBN" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minInclusive value="10"/>
-                            <xsd:maxInclusive value="13"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Title" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-                <xsd:element name="Author" minOccurs="0">
-                    <xsd:simpleType>
-                        <xsd:restriction base="xsd:string">
-                            <xsd:minLength value="2"/>
-                            <xsd:maxLength value="200"/>
-                        </xsd:restriction>
-                    </xsd:simpleType>
-                </xsd:element>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
-
-    <!-- Book Type In-->
-    <xsd:element name="BookTypeIn">
+    <!-- Member Type In-->
+    <xsd:element name="MemberTypeIn">
         <xsd:complexType >
             <xsd:sequence>
                 <xsd:element name="ISBN" >
@@ -275,8 +160,8 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book Type Update-->
-    <xsd:element name="BookTypeUpdate">
+    <!-- Member Type Update-->
+    <xsd:element name="MemberTypeUpdate">
         <xsd:complexType >
             <xsd:sequence>
                 <xsd:element name="ISBN"  >
@@ -339,8 +224,8 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Book Type Out-->
-    <xsd:element name="BookTypeOut">
+    <!-- Member Type Out-->
+    <xsd:element name="MemberTypeOut">
         <xsd:complexType >
             <xsd:sequence>
                 <xsd:element name="id" >

@@ -114,10 +114,10 @@
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookService.wsdl</wsdl>
                                     <!--<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>-->
                                 </wsdlOption>
-                                <!--<wsdlOption>
-                                    &lt;!&ndash;<wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookService.wsdl</wsdl>&ndash;&gt;
-                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>
-                                </wsdlOption>-->
+                                <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MemberService.wsdl</wsdl>
+                                    <!--<wsdl>${basedir}/src/main/resources/org/troparo/web/services/MusicService.wsdl</wsdl>-->
+                                </wsdlOption>
                             </wsdlOptions>
                         </configuration>
                         <goals>
