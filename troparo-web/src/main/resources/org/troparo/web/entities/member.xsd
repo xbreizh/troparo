@@ -3,6 +3,43 @@
             targetNamespace="http://troparo.org/entities/member" xmlns:tns="http://troparo.org/entities/member"
             elementFormDefault="qualified">
 
+    <!-- getToken Request Type -->
+    <xsd:element name="invalidateTokenRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Token" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- getToken  Response Type -->
+    <xsd:element name="invalidateTokenResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- getToken Request Type -->
+    <xsd:element name="getTokenRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Login" type="xsd:string"/>
+                <xsd:element name="Password" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- getToken  Response Type -->
+    <xsd:element name="getTokenResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Connect Request Type -->
     <xsd:element name="resetPasswordRequestType">
         <xsd:complexType>

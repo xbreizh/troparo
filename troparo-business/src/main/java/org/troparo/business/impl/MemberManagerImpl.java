@@ -203,24 +203,43 @@ public class MemberManagerImpl implements MemberManager {
         return exception;
     }
 
+    @Override
+    public boolean checkToken(String token) {
+        return memberDAO.checkToken(token);
+    }
+
+    @Override
+    public boolean invalidToken(String token) {
+        return memberDAO.invalidToken(token);
+    }
+
+    @Override
+    public boolean disconnect(String token) {
+        return false;
+    }
+
 
     /*Login*/
 
     // Login
     @Override
-    public boolean connect(String login, String password) {
+    public String  getToken(String login, String password) {
         Member m;
         try {
             m = getMemberByLogin(login.toUpperCase());
             // checking password match
             if (checkPassword(password, m.getPassword())) {
-                return true;
+                String token = generateToken();
+                m.setToken(token);
+                memberDAO.updateMember(m);
+                return token;
             }
         } catch (NoResultException e) {
             logger.info("wrong login or pwd");
         }
-        return false;
+        return null;
     }
+
     @Override
     public String encryptPassword(String password) {
         BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
@@ -255,6 +274,12 @@ public class MemberManagerImpl implements MemberManager {
             logger.info("member couldn't be found");
         }
         return false;
+    }
+
+    private String generateToken(){
+        String uuid = UUID.randomUUID().toString();
+        System.out.println("token created: "+uuid);
+        return uuid;
     }
 
 }

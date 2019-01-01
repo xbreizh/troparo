@@ -808,3 +808,21 @@
 2018-12-31 16:13:07 INFO  MemberManagerImpl:176 - JVMORIL
 2018-12-31 16:13:07 INFO  MemberDAOImpl:119 - Member from dao: JVMORIL
 2018-12-31 16:13:07 INFO  MemberManagerImpl:178 - updated: 17142
+2018-12-31 17:00:08 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2018-12-31 17:00:08 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@6a0944ef
+2018-12-31 17:00:08 INFO  MemberDAOImpl:71 - in the dao: MACKITO
+2018-12-31 17:00:09 INFO  MemberDAOImpl:80 - no record found for that login: MACKITO
+2018-12-31 17:00:09 INFO  MemberManagerImpl:228 - hashed pwd: $2a$10$1n2hosX7k0pgALEOzzNd2.qulNTjJb2jgpi18Ni4RVvwobZH3aVe6
+2018-12-31 17:00:09 INFO  MemberDAOImpl:30 - Member from dao: Member{Id=0, firstName='MACK', lastName='MITE', login='MACKITO', password='$2a$10$1n2hosX7k0pgALEOzzNd2.qulNTjJb2jgpi18Ni4RVvwobZH3aVe6', email='MAC@MAC.MAC', dateJoin=Mon Dec 31 17:00:09 CET 2018}
+2018-12-31 17:00:09 INFO  MemberManagerImpl:53 - exception: 
+2018-12-31 17:01:09 INFO  MemberServiceImpl:187 - trying to reset pwd for: Mackito
+2018-12-31 17:01:09 INFO  MemberManagerImpl:242 - member received: Mackito
+2018-12-31 17:01:09 INFO  MemberManagerImpl:243 - email received: mac@mac.mac
+2018-12-31 17:01:09 INFO  MemberManagerImpl:244 - pwd received: 456
+2018-12-31 17:03:20 INFO  MemberServiceImpl:187 - trying to reset pwd for: Mackito
+2018-12-31 17:03:20 INFO  MemberManagerImpl:242 - member received: Mackito
+2018-12-31 17:03:20 INFO  MemberManagerImpl:243 - email received: MAC@MAC.MAC
+2018-12-31 17:03:20 INFO  MemberManagerImpl:244 - pwd received: 456
+2018-12-31 17:03:20 INFO  MemberManagerImpl:249 - email passed
+2018-12-31 17:03:20 INFO  MemberManagerImpl:228 - hashed pwd: $2a$10$V58uLFSLQj67QdWHwxYLbOaCRNF/XYijZ/e7aQr/FV2O2o77r..86
+2018-12-31 17:03:20 INFO  MemberDAOImpl:119 - Member from dao: MACKITO

@@ -26,6 +26,9 @@ public class Member {
     @Column(name = "PASSWORD")
     private String password;
 
+    @Column(name = "TOKEN")
+    private String token;
+
     @Column(name = "EMAIL")
     private String email;
 
@@ -44,6 +47,14 @@ public class Member {
         Id = id;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -60,20 +71,20 @@ public class Member {
         this.lastName = lastName;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
-    }
-
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
     }
 
     public String getEmail() {
@@ -96,10 +107,9 @@ public class Member {
     public String toString() {
         return "Member{" +
                 "Id=" + Id +
+                ", login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", login='" + login + '\'' +
-                ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
                 ", dateJoin=" + dateJoin +
                 '}';

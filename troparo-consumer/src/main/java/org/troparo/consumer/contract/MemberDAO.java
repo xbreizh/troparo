@@ -22,4 +22,7 @@ public interface MemberDAO {
     boolean remove(Member member);
 
 
+    boolean checkToken(String token);
+
+    boolean invalidToken(String token);
 }

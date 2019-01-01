@@ -2,7 +2,7 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
 
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd" >
 
      <jaxws:endpoint id="memberservice"
                      implementor="org.troparo.web.service.MemberServiceImpl"
@@ -12,5 +12,10 @@
                     implementor="org.troparo.web.service.BookServiceImpl"
                     address="/book">
     </jaxws:endpoint>
+    <jaxws:endpoint id="helloworld"
+                    implementor="org.troparo.web.service.HelloWorld"
+                    address="/hello">
+    </jaxws:endpoint>
+
 
 </beans>

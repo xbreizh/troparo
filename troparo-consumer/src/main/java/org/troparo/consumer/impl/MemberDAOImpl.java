@@ -138,6 +138,32 @@ public class MemberDAOImpl implements MemberDAO {
         return true;
     }
 
+    @Override
+    public boolean checkToken(String token) {
+        logger.info("in the dao: "+token);
+        request = "From Member where token = :token";
+
+        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
+        query.setParameter("token", token);
+        if(query.getResultList().size() !=0){
+            logger.info("token valid");
+            return true;
+        }else{
+            logger.info("invalid token");
+            return false;
+        }
+    }
+
+    @Override
+    public boolean invalidToken(String token) {
+        logger.info("in the dao: "+token);
+        request = "update Member set token = null where token = :token";
+
+        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
+        query.setParameter("token", token);
+        return true;
+    }
+
 
     @Override
     public Member getMemberByLogin(String login) {

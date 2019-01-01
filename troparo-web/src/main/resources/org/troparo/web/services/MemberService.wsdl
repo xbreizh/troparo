@@ -58,6 +58,18 @@
     <wsdl:message name="removeMemberResponse">
         <wsdl:part element="member:removeMemberResponseType" name="parameters" />
     </wsdl:message>
+    <wsdl:message name="getTokenRequest">
+        <wsdl:part element="member:getTokenRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="getTokenResponse">
+        <wsdl:part element="member:getTokenResponseType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="invalidateTokenRequest">
+        <wsdl:part element="member:invalidateTokenRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="invalidateTokenResponse">
+        <wsdl:part element="member:invalidateTokenResponseType" name="parameters" />
+    </wsdl:message>
     <wsdl:message name="BusinessException">
         <wsdl:part element="member:BusinessFaultType" name="parameters" />
     </wsdl:message>
@@ -101,6 +113,16 @@
         <wsdl:operation name="removeMember">
             <wsdl:input message="tns:removeMemberRequest" />
             <wsdl:output message="tns:removeMemberResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
+        <wsdl:operation name="getToken">
+            <wsdl:input message="tns:getTokenRequest" />
+            <wsdl:output message="tns:getTokenResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
+        <wsdl:operation name="invalidateToken">
+            <wsdl:input message="tns:invalidateTokenRequest" />
+            <wsdl:output message="tns:invalidateTokenResponse" />
             <wsdl:fault name="businessException" message="tns:BusinessException" />
         </wsdl:operation>
     </wsdl:portType>
@@ -201,6 +223,32 @@
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="removeMember">
+            <soap:operation
+                    soapAction="" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="businessException">
+                <soap:fault name="businessException" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getToken">
+            <soap:operation
+                    soapAction="" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+            <wsdl:fault name="businessException">
+                <soap:fault name="businessException" use="literal" />
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="invalidateToken">
             <soap:operation
                     soapAction="" />
             <wsdl:input>
