@@ -26,6 +26,9 @@ public class Member {
     @Column(name = "PASSWORD")
     private String password;
 
+    @Column(name = "Role")
+    private String role;
+
     @Column(name = "TOKEN")
     private String token;
 
@@ -79,6 +82,14 @@ public class Member {
         this.password = password;
     }
 
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     public String getToken() {
         return token;
     }
@@ -110,6 +121,9 @@ public class Member {
                 ", login='" + login + '\'' +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
+                ", password='" + password + '\'' +
+                ", role='" + role + '\'' +
+                ", token='" + token + '\'' +
                 ", email='" + email + '\'' +
                 ", dateJoin=" + dateJoin +
                 '}';

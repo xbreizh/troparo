@@ -53,6 +53,7 @@ public class MemberServiceImpl implements IMemberService {
         member.setLastName(memberTypeIn.getLastName().toUpperCase());
         member.setPassword(memberTypeIn.getPassword().toUpperCase());
         member.setEmail(memberTypeIn.getEmail().toUpperCase());
+        member.setRole(memberTypeIn.getRole().toUpperCase());
         logger.info("conversion memberType into member done");
     }
 
@@ -64,6 +65,7 @@ public class MemberServiceImpl implements IMemberService {
         member.setPassword(memberTypeUpdate.getPassword().toUpperCase());
         member.setLastName(memberTypeUpdate.getLastName().toUpperCase());
         member.setEmail(memberTypeUpdate.getEmail().toUpperCase());
+        member.setRole(memberTypeUpdate.getRole().toUpperCase());
         logger.info("conversion memberTypeUpdate into member done");
     }
     // Update
@@ -123,6 +125,13 @@ public class MemberServiceImpl implements IMemberService {
         return rep;
     }
 
+    @Override
+    public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
+        InvalidateTokenResponseType ar = new InvalidateTokenResponseType();
+        ar.setReturn(memberManager.invalidateToken(parameters.getToken()));
+        return ar;
+    }
+
     // Get All
     @Override
     public MemberListResponseType getAllMembers() throws BusinessException {
@@ -138,6 +147,14 @@ public class MemberServiceImpl implements IMemberService {
         return memberListResponseType;
     }
 
+    @Override
+    public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessException {
+        GetTokenResponseType ar = new GetTokenResponseType();
+        String token = memberManager.getToken(parameters.getLogin(), parameters.getPassword());
+        ar.setReturn(token);
+        return ar;
+    }
+
 
     // Get List By Criterias
     @Override
@@ -148,6 +165,7 @@ public class MemberServiceImpl implements IMemberService {
         map.put("FirstName", criterias.getFirstName().toUpperCase());
         map.put("LastName", criterias.getLastName().toUpperCase());
         map.put("Email", criterias.getEmail().toUpperCase());
+        map.put("role", criterias.getRole().toUpperCase());
         logger.info("map: " + map);
         
         memberList = memberManager.getMembersByCriterias(map);

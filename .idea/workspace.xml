@@ -6,22 +6,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="added getToken / invalidateToken methods in wsdl / xsd">
-      <change afterPath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/HelloWorld.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/troparo_web_war_exploded.xml" afterDir="false" />
+    <list default="true" id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MemberDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MemberDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MemberService.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MemberService.wsdl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/troparo-web/target/" />
@@ -62,37 +54,90 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MemberService.wsdl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="71" column="19" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="71" selection-end-column="19" />
-              <folding>
-                <element signature="n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-816">
-              <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
-              <folding>
-                <element signature="e#1230#1523#0" />
-                <element signature="e#1278#1504#0" />
-                <element signature="e#1308#1477#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+            <state relative-caret-position="195">
+              <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="740">
+              <caret line="287" column="5" selection-start-line="287" selection-start-column="5" selection-end-line="287" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7668#7669#0" expanded="true" />
+                <element signature="e#7718#7719#0" expanded="true" />
+                <element signature="e#8582#8583#0" expanded="true" />
+                <element signature="e#8610#8611#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#808#809#0" expanded="true" />
+                <element signature="e#841#842#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#896#897#0" expanded="true" />
+                <element signature="e#924#925#0" expanded="true" />
+                <element signature="e#966#967#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1118#1119#0" expanded="true" />
+                <element signature="e#1160#1161#0" expanded="true" />
+                <element signature="e#1195#1196#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1314#1315#0" expanded="true" />
+                <element signature="e#1349#1350#0" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#1468#1469#0" expanded="true" />
+                <element signature="e#1499#1500#0" expanded="true" />
+                <element signature="e#1526#1527#0" expanded="true" />
+                <element signature="e#1566#1567#0" expanded="true" />
+                <element signature="e#1598#1599#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1658#1659#0" expanded="true" />
+                <element signature="e#1700#1701#0" expanded="true" />
+                <element signature="e#1734#1735#0" expanded="true" />
+                <element signature="e#1766#1767#0" expanded="true" />
+                <element signature="e#1794#1795#0" expanded="true" />
+                <element signature="e#1836#1837#0" expanded="true" />
+                <element signature="e#1870#1871#0" expanded="true" />
+                <element signature="e#1903#1904#0" expanded="true" />
+                <element signature="e#1934#1935#0" expanded="true" />
+                <element signature="e#1980#1981#0" expanded="true" />
+                <element signature="e#2020#2021#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +236,6 @@
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/BookServiceImpl.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/EmailValidator.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/troparo-web/pom.xml" />
@@ -203,14 +247,15 @@
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Token.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/TokenDAOImpl.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/TokenDAO.java" />
-        <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" />
-        <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MemberDAO.java" />
-        <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/235a239c-249d-4a86-8622-2849c258deb2/console.sql" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MemberService.wsdl" />
+        <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" />
+        <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd" />
+        <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -605,7 +650,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546365306034" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546366126047" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Jax-WsClient/JavaWsClient" />
@@ -767,7 +812,7 @@
       <workItem from="1546164315913" duration="27272000" />
       <workItem from="1546202703711" duration="7515000" />
       <workItem from="1546245262836" duration="22760000" />
-      <workItem from="1546344484568" duration="15377000" />
+      <workItem from="1546344484568" duration="16543000" />
     </task>
     <task id="LOCAL-00001" summary="updated wsdl github url -&gt; ok">
       <created>1545663706350</created>
@@ -958,11 +1003,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546272242760</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added getToken / invalidateToken methods in wsdl / xsd">
+      <created>1546365379098</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1546365379099</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138652000" />
+    <option name="totallyTimeSpent" value="139818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1463" height="878" extended-state="6" />
@@ -979,7 +1031,7 @@
       <window_info id="Image Layers" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982181" weight="0.33333334" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4982181" visible="true" weight="0.33333334" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -992,7 +1044,7 @@
       <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32918397" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Messages" order="15" visible="true" weight="0.36099586" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.36099586" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32918397" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1234,16 +1286,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-348">
-          <caret line="192" column="27" selection-start-line="192" selection-start-column="27" selection-end-line="192" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/jre/lib/rt.jar!/com/sun/net/httpserver/Authenticator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
@@ -1358,52 +1400,10 @@
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/235a239c-249d-4a86-8622-2849c258deb2/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1551#1552#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1687#1688#0" expanded="true" />
-            <element signature="e#1721#1722#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MemberDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="26" column="11" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="225" column="27" selection-start-line="225" selection-start-column="19" selection-end-line="225" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7668#7669#0" expanded="true" />
-            <element signature="e#7725#7726#0" expanded="true" />
-            <element signature="e#7759#7760#0" expanded="true" />
-            <element signature="e#7787#7788#0" expanded="true" />
-            <element signature="e#7848#7849#0" expanded="true" />
-            <element signature="e#7876#7877#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1417,6 +1417,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MemberService.wsdl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -1427,22 +1434,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
+    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-816">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        <state relative-caret-position="340">
+          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
           <folding>
-            <element signature="e#1230#1523#0" />
-            <element signature="e#1278#1504#0" />
-            <element signature="e#1308#1477#0" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/MemberDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="159" column="37" selection-start-line="159" selection-start-column="37" selection-end-line="159" selection-end-column="37" />
+        <state relative-caret-position="400">
+          <caret line="364" column="57" selection-start-line="364" selection-start-column="57" selection-end-line="364" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="740">
+          <caret line="287" column="5" selection-start-line="287" selection-start-column="5" selection-end-line="287" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7668#7669#0" expanded="true" />
+            <element signature="e#7718#7719#0" expanded="true" />
+            <element signature="e#8582#8583#0" expanded="true" />
+            <element signature="e#8610#8611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#808#809#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#896#897#0" expanded="true" />
+            <element signature="e#924#925#0" expanded="true" />
+            <element signature="e#966#967#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1118#1119#0" expanded="true" />
+            <element signature="e#1160#1161#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1314#1315#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="e#1428#1429#0" expanded="true" />
+            <element signature="e#1468#1469#0" expanded="true" />
+            <element signature="e#1499#1500#0" expanded="true" />
+            <element signature="e#1526#1527#0" expanded="true" />
+            <element signature="e#1566#1567#0" expanded="true" />
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#1700#1701#0" expanded="true" />
+            <element signature="e#1734#1735#0" expanded="true" />
+            <element signature="e#1766#1767#0" expanded="true" />
+            <element signature="e#1794#1795#0" expanded="true" />
+            <element signature="e#1836#1837#0" expanded="true" />
+            <element signature="e#1870#1871#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1934#1935#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
+            <element signature="e#2020#2021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="167" column="59" selection-start-line="167" selection-start-column="59" selection-end-line="167" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

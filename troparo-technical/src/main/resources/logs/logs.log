@@ -826,3 +826,16 @@
 2018-12-31 17:03:20 INFO  MemberManagerImpl:249 - email passed
 2018-12-31 17:03:20 INFO  MemberManagerImpl:228 - hashed pwd: $2a$10$V58uLFSLQj67QdWHwxYLbOaCRNF/XYijZ/e7aQr/FV2O2o77r..86
 2018-12-31 17:03:20 INFO  MemberDAOImpl:119 - Member from dao: MACKITO
+2019-01-01 19:05:49 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2019-01-01 19:05:49 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@4533fce3
+2019-01-01 19:05:50 INFO  MemberDAOImpl:71 - in the dao: BOB
+2019-01-01 19:05:50 INFO  MemberDAOImpl:80 - no record found for that login: BOB
+2019-01-01 19:05:50 INFO  MemberServiceImpl:42 - Login must be 10 or 13 characters: BOB
+2019-01-01 19:07:06 INFO  MemberServiceImpl:56 - conversion memberType into member done
+2019-01-01 19:07:06 INFO  MemberServiceImpl:39 - memberManager: org.troparo.business.impl.MemberManagerImpl@4533fce3
+2019-01-01 19:07:06 INFO  MemberDAOImpl:71 - in the dao: MAURICE
+2019-01-01 19:07:06 INFO  MemberDAOImpl:80 - no record found for that login: MAURICE
+2019-01-01 19:07:06 INFO  MemberManagerImpl:252 - hashed pwd: $2a$10$/GSnWLebFeFYqSBOeSPsLeQQZ7w8NIhSVj73YPqTdUm0vDFuZqSE2
+2019-01-01 19:07:06 INFO  MemberDAOImpl:30 - Member from dao: Member{Id=0, login='MAURICE', firstName='BOB', lastName='JONYGO', email='BOB@BOB.BOB', dateJoin=Tue Jan 01 19:07:06 CET 2019}
+2019-01-01 19:07:06 INFO  MemberManagerImpl:53 - exception: 
+2019-01-01 19:07:23 INFO  MemberDAOImpl:119 - Member from dao: MAURICE

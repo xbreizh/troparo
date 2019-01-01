@@ -57,7 +57,7 @@ public class MemberManagerImpl implements MemberManager {
 
     private String checkInsertion(Member member) {
         if (member.getLogin().length() < 5 || member.getLogin().length() > 20){
-            return exception = "Login must be 10 or 13 characters: " + member.getLogin();
+            return exception = "Login must be 5 or 20 characters: " + member.getLogin();
         }
         if (member.getFirstName().length() < 2 || member.getFirstName().length() > 50) {
             return exception = "FirstName should have between 2 and 200 characters: " + member.getFirstName();
@@ -209,7 +209,7 @@ public class MemberManagerImpl implements MemberManager {
     }
 
     @Override
-    public boolean invalidToken(String token) {
+    public boolean invalidateToken(String token) {
         return memberDAO.invalidToken(token);
     }
 
@@ -238,6 +238,11 @@ public class MemberManagerImpl implements MemberManager {
             logger.info("wrong login or pwd");
         }
         return null;
+    }
+
+    @Override
+    public boolean connect(String login, String password) {
+        return false;
     }
 
     @Override
