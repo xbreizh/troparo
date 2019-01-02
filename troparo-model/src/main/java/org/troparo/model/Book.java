@@ -2,7 +2,9 @@ package org.troparo.model;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "BOOK")
@@ -38,15 +40,17 @@ public class Book {
     @Column(name = "KEYWORDS")
     private String keywords;
 
-    // getters & setters
+    @OneToMany(mappedBy = "book", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE})
+    private List<Loan> loanList = new ArrayList<>();
 
+    // getters & setters
 
     public int getId() {
         return Id;
     }
 
     public void setId(int id) {
-        this.Id = id;
+        Id = id;
     }
 
     public String getIsbn() {
@@ -113,6 +117,14 @@ public class Book {
         this.keywords = keywords;
     }
 
+    public List<Loan> getLoanList() {
+        return loanList;
+    }
+
+    public void setLoanList(List<Loan> loanList) {
+        this.loanList = loanList;
+    }
+
     @Override
     public String toString() {
         return "Book{" +
@@ -125,6 +137,7 @@ public class Book {
                 ", edition='" + edition + '\'' +
                 ", nbPages=" + nbPages +
                 ", keywords='" + keywords + '\'' +
+                 ", loanList=" + loanList.size() +
                 '}';
     }
 }

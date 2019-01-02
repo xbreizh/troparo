@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>troparo</artifactId>
@@ -10,6 +10,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>troparo-business</artifactId>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -72,11 +84,11 @@
             <artifactId>spring-tx</artifactId>
             <version>${spring.version}</version>
         </dependency>
-       <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>-->
+        <!-- &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;
+         <dependency>
+             <groupId>org.springframework</groupId>
+             <artifactId>spring-context</artifactId>
+         </dependency>-->
 
         <!-- ===== Tests ===== -->
 
@@ -93,7 +105,6 @@
             <version>1.2.17</version>
             <scope>compile</scope>
         </dependency>
-
 
 
     </dependencies>

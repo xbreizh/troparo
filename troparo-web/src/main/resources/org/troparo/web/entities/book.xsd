@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://troparo.org/entities/book" xmlns:tns="http://troparo.org/entities/book"
+            xmlns:tns="http://troparo.org/entities/book" targetNamespace="http://troparo.org/entities/book"
             elementFormDefault="qualified">
 
 
@@ -11,7 +11,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:BookTypeIn" />
+                <xsd:element ref="tns:BookTypeIn"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -38,7 +38,7 @@
     <xsd:element name="BookListResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookListType" />
+                <xsd:element ref="tns:BookListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -57,7 +57,7 @@
     <xsd:element name="getBookByIdResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeOut" />
+                <xsd:element ref="tns:BookTypeOut"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -67,7 +67,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:BookCriterias" />
+                <xsd:element ref="tns:BookCriterias"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -76,7 +76,7 @@
     <xsd:element name="getBookByCriteriasResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookListType" />
+                <xsd:element ref="tns:BookListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -86,7 +86,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:BookTypeUpdate" />
+                <xsd:element ref="tns:BookTypeUpdate"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -105,7 +105,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element name="id" type="xsd:int" />
+                <xsd:element name="id" type="xsd:int"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -177,7 +177,7 @@
     <xsd:element name="getAvailableResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="return" type="xsd:int" />
+                <xsd:element name="return" type="xsd:int"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -189,7 +189,7 @@
     <xsd:element name="BookListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:BookTypeOut" maxOccurs="unbounded" />
+                <xsd:element ref="tns:BookTypeOut" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -228,9 +228,9 @@
 
     <!-- Book Type In-->
     <xsd:element name="BookTypeIn">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN" >
+                <xsd:element name="ISBN">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minInclusive value="10"/>
@@ -238,7 +238,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Title" >
+                <xsd:element name="Title">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -246,7 +246,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Author" >
+                <xsd:element name="Author">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -254,7 +254,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="PublicationYear" >
+                <xsd:element name="PublicationYear">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:int">
                             <xsd:minInclusive value="1455"/>
@@ -262,7 +262,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Edition" >
+                <xsd:element name="Edition">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -270,7 +270,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="NbPages" >
+                <xsd:element name="NbPages">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:int">
                             <xsd:minInclusive value="1"/>
@@ -278,7 +278,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Keywords" >
+                <xsd:element name="Keywords">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -292,11 +292,11 @@
 
     <!-- Book Type Update-->
     <xsd:element name="BookTypeUpdate">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="ISBN"  >
+                <xsd:element name="ISBN">
                     <xsd:simpleType>
-                        <xsd:restriction base="xsd:string" >
+                        <xsd:restriction base="xsd:string">
                             <xsd:minInclusive value="10"/>
                             <xsd:maxInclusive value="13"/>
                         </xsd:restriction>
@@ -356,9 +356,9 @@
 
     <!-- Book Type Out-->
     <xsd:element name="BookTypeOut">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="id" >
+                <xsd:element name="id">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:int">
                             <xsd:minInclusive value="1"/>
@@ -366,7 +366,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="ISBN" >
+                <xsd:element name="ISBN">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minInclusive value="10"/>
@@ -374,7 +374,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Title" >
+                <xsd:element name="Title">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -382,7 +382,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Author" >
+                <xsd:element name="Author">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -390,7 +390,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="PublicationYear" >
+                <xsd:element name="PublicationYear">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:int">
                             <xsd:minInclusive value="1455"/>
@@ -398,7 +398,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Edition" >
+                <xsd:element name="Edition">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -406,7 +406,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="NbPages" >
+                <xsd:element name="NbPages">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:int">
                             <xsd:minInclusive value="1"/>
@@ -414,7 +414,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Keywords" >
+                <xsd:element name="Keywords">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -440,9 +440,9 @@
     <xsd:element name="BusinessFaultType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="errorCode" type="xsd:int" />
-                <xsd:element name="errorMessage" type="xsd:string" />
-                <xsd:element name="errorDescription" type="xsd:string" />
+                <xsd:element name="errorCode" type="xsd:int"/>
+                <xsd:element name="errorMessage" type="xsd:string"/>
+                <xsd:element name="errorDescription" type="xsd:string"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

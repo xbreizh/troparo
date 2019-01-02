@@ -9,7 +9,9 @@ import org.troparo.services.bookservice.IBookService;
 
 import javax.inject.Inject;
 import javax.jws.WebService;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 @WebService(serviceName = "BookService", endpointInterface = "org.troparo.services.bookservice.IBookService",
         targetNamespace = "http://troparo.org/services/BookService/", portName = "BookServicePort", name = "BookServiceImpl")
@@ -48,6 +50,7 @@ public class BookServiceImpl implements IBookService {
 
         return ar;
     }
+
     // Converts Input into Book for business
     private void convertBookTypeInIntoBook() {
         book = new Book();
@@ -59,7 +62,7 @@ public class BookServiceImpl implements IBookService {
         book.setEdition(bookTypeIn.getEdition().toUpperCase());
         book.setNbPages(bookTypeIn.getNbPages());
         book.setKeywords(bookTypeIn.getKeywords().toUpperCase());
-        logger.info("pub date: "+book.getPublicationYear());
+        logger.info("pub date: " + book.getPublicationYear());
     }
 
     // Converts Input into Book for business
@@ -73,8 +76,9 @@ public class BookServiceImpl implements IBookService {
         book.setEdition(bookTypeUpdate.getEdition().toUpperCase());
         book.setNbPages(bookTypeUpdate.getNbPages());
         book.setKeywords(bookTypeUpdate.getKeywords().toUpperCase());
-        logger.info("pub date: "+book.getPublicationYear());
+        logger.info("pub date: " + book.getPublicationYear());
     }
+
     // Update
     @Override
     public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
@@ -83,7 +87,7 @@ public class BookServiceImpl implements IBookService {
         UpdateBookResponseType ar = new UpdateBookResponseType();
         ar.setReturn(true);
         BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
-        logger.info("received: "+bookTypeUpdate);
+        logger.info("received: " + bookTypeUpdate);
         // update
         convertBookTypeUpdateIntoBook(bookTypeUpdate);
         logger.info("bookManager: " + bookManager);
@@ -140,7 +144,6 @@ public class BookServiceImpl implements IBookService {
     // Get All
 
 
-
     @Override
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
 
@@ -189,8 +192,6 @@ public class BookServiceImpl implements IBookService {
         brt.setBookListType(bookListType);
         return brt;
     }
-
-
 
 
     // Delete
@@ -245,7 +246,6 @@ public class BookServiceImpl implements IBookService {
         }
         logger.info("bookListType end: " + bookListType.getBookTypeOut().size());
     }
-
 
 
 }

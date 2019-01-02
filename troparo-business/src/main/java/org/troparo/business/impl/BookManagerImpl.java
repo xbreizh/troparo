@@ -14,12 +14,10 @@ import java.util.*;
 @Transactional
 @Named
 public class BookManagerImpl implements BookManager {
-    private Logger logger = Logger.getLogger(this.getClass().getName());
-
-    private String exception = "";
-
     @Inject
     BookDAO bookDAO;
+    private Logger logger = Logger.getLogger(this.getClass().getName());
+    private String exception = "";
 
     @Override
     public String addBook(Book book) {
@@ -76,19 +74,20 @@ public class BookManagerImpl implements BookManager {
         return exception;
     }
 
-    private String cleanKeywords(String string){
-        System.out.println("trying to replace: "+string);
-        if(string.contains(",")){
+    private String cleanKeywords(String string) {
+        System.out.println("trying to replace: " + string);
+        if (string.contains(",")) {
             System.out.println("replacing ,");
             string = string.replace(",", " ");
         }
-        if(string.contains(";")){
+        if (string.contains(";")) {
             System.out.println("replacing ;");
-            string =string.replace(";", " ");
+            string = string.replace(";", " ");
         }
-        System.out.println("string wen sortie: "+string);
+        System.out.println("string wen sortie: " + string);
         return string;
     }
+
     private String checkRequiredValuesNotNull(Book book) {
 
         if (book.getIsbn().equals("") || book.getIsbn().equals("?")) {
@@ -190,6 +189,11 @@ public class BookManagerImpl implements BookManager {
         }
 
         return exception;
+    }
+
+    @Override
+    public Book getBookByIsbn(String isbn) {
+        return bookDAO.getBookByIsbn(isbn);
     }
 
     @Override

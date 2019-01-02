@@ -2,7 +2,9 @@ package org.troparo.model;
 
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "MEMBER")
@@ -40,6 +42,9 @@ public class Member {
 
     @Column(name = "DATECONNECT")
     private Date dateConnect;
+
+    @OneToMany(mappedBy = "member", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE})
+    private List<Loan> loanList = new ArrayList<>();
 
     // getters & setters
 
@@ -124,6 +129,14 @@ public class Member {
         this.dateConnect = dateConnect;
     }
 
+    public List<Loan> getLoanList() {
+        return loanList;
+    }
+
+    public void setLoanList(List<Loan> loanList) {
+        this.loanList = loanList;
+    }
+
     @Override
     public String toString() {
         return "Member{" +
@@ -137,6 +150,7 @@ public class Member {
                 ", email='" + email + '\'' +
                 ", dateJoin=" + dateJoin +
                 ", dateConnect=" + dateConnect +
+                 ", loanList=" + loanList.size() +
                 '}';
     }
 }

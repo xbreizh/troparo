@@ -12,7 +12,7 @@ public class Authentication {
     MemberManager memberManager;
 
     boolean checkToken(String token) throws Exception {
-        if(!memberManager.checkToken(token)){
+        if (!memberManager.checkToken(token)) {
             throw new Exception("invalid token");
         }
         return true;
@@ -20,7 +20,7 @@ public class Authentication {
 
     boolean checkAdmin(String token) throws Exception {
         checkToken(token);
-        if(!memberManager.checkAdmin(token)){
+        if (!memberManager.checkAdmin(token)) {
             throw new Exception("insufficient rights");
         }
         return true;

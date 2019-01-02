@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://troparo.org/entities/loan" xmlns:tns="http://troparo.org/entities/loan"
+            xmlns:tns="http://troparo.org/entities/loan" targetNamespace="http://troparo.org/entities/loan"
             elementFormDefault="qualified">
 
     <!-- Add Loan Request Type -->
@@ -8,7 +8,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:LoanTypeIn" />
+                <xsd:element ref="tns:LoanTypeIn"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -35,7 +35,7 @@
     <xsd:element name="LoanListResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:LoanListType" />
+                <xsd:element ref="tns:LoanListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -45,7 +45,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="Id"/>
+                <xsd:element ref="tns:Id"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -54,7 +54,7 @@
     <xsd:element name="getLoanByIdResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:LoanTypeOut" />
+                <xsd:element ref="tns:LoanTypeOut"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -64,7 +64,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:LoanCriterias" />
+                <xsd:element ref="tns:LoanCriterias"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -73,7 +73,7 @@
     <xsd:element name="getLoanByCriteriasResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:LoanListType" />
+                <xsd:element ref="tns:LoanListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -82,7 +82,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Token"/>
-                <xsd:element ref="tns:LoanTypeUpdate" />
+                <xsd:element ref="tns:LoanTypeUpdate"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -121,14 +121,14 @@
     <xsd:element name="LoanListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:LoanTypeOut" maxOccurs="unbounded" />
+                <xsd:element ref="tns:LoanTypeOut" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- Loan Type In-->
     <xsd:element name="LoanTypeIn">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login"/>
                 <xsd:element ref="tns:ISBN"/>
@@ -148,7 +148,7 @@
 
     <!-- Loan Type Update-->
     <xsd:element name="LoanTypeUpdate">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login"/>
                 <xsd:element ref="tns:ISBN"/>
@@ -158,12 +158,13 @@
 
     <!-- Loan Type Out-->
     <xsd:element name="LoanTypeOut">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Id"/>
                 <xsd:element ref="tns:Login"/>
                 <xsd:element ref="tns:ISBN"/>
                 <xsd:element name="startDate" type="xsd:date"/>
+                <xsd:element name="plannedEndDate" type="xsd:date"/>
                 <xsd:element name="endDate" type="xsd:date"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -180,7 +181,7 @@
         </xsd:simpleType>
     </xsd:element>
 
-    <xsd:element name="Login" >
+    <xsd:element name="Login">
         <xsd:simpleType>
             <xsd:restriction base="xsd:string">
                 <xsd:minLength value="5"/>
@@ -198,16 +199,16 @@
         </xsd:simpleType>
     </xsd:element>
 
-    <xsd:element name="Id" type="xsd:int" default="0"/>
+    <xsd:element name="Id" type="xsd:int"/>
     <!--Exception-->
 
     <!-- Business Exception Type -->
     <xsd:element name="BusinessFaultType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="errorCode" type="xsd:int" />
-                <xsd:element name="errorMessage" type="xsd:string" />
-                <xsd:element name="errorDescription" type="xsd:string" />
+                <xsd:element name="errorCode" type="xsd:int"/>
+                <xsd:element name="errorMessage" type="xsd:string"/>
+                <xsd:element name="errorDescription" type="xsd:string"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

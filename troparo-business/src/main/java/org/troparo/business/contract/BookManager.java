@@ -8,15 +8,21 @@ import java.util.List;
 
 public interface BookManager {
 
-  String addBook(Book book);
-  List<Book> getBooks();
-  Book getBookById(int id);
-  List<Book> getBooksByCriterias(HashMap<String, String> map);
-  String updateBook(Book book);
+    String addBook(Book book);
 
-  String remove(int id);
+    List<Book> getBooks();
 
-  int getAvailable(String isbn);
+    Book getBookById(int id);
 
-  String addCopy(String isbn, int copies);
+    List<Book> getBooksByCriterias(HashMap<String, String> map);
+
+    String updateBook(Book book);
+
+    Book getBookByIsbn(String isbn);
+
+    String remove(int id);
+
+    int getAvailable(String isbn);
+
+    String addCopy(String isbn, int copies);
 }

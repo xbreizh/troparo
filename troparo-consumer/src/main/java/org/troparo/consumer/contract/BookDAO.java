@@ -2,7 +2,6 @@ package org.troparo.consumer.contract;
 
 import org.troparo.model.Book;
 
-import javax.inject.Named;
 import java.util.HashMap;
 import java.util.List;
 
@@ -10,8 +9,11 @@ import java.util.List;
 public interface BookDAO {
 
     List<Book> getBooks();
+
     boolean addBook(Book book);
+
     Book getBookById(int id);
+
     Book getBookByIsbn(String isbn);
 
     boolean existingISBN(String isbn);
@@ -24,5 +26,5 @@ public interface BookDAO {
 
     int getAvailable(String isbn);
 
-   /* boolean addCopies(String isbn, int copies);*/
+    /* boolean addCopies(String isbn, int copies);*/
 }

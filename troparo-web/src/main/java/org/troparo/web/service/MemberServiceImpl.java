@@ -22,6 +22,10 @@ public class MemberServiceImpl implements IMemberService {
     @Inject
     private MemberManager memberManager;
 
+
+    @Inject
+    private Authentication authentication;
+
     private String exception = "";
     private List<Member> memberList = new ArrayList<>();
     private MemberTypeOut memberTypeOut = null;
@@ -33,6 +37,7 @@ public class MemberServiceImpl implements IMemberService {
     @Override
     public AddMemberResponseType addMember(AddMemberRequestType parameters) throws BusinessException {
         AddMemberResponseType ar = new AddMemberResponseType();
+        checkAuthentication(parameters.getToken());
         ar.setReturn(true);
         memberTypeIn = parameters.getMemberTypeIn();
         convertMemberTypeInIntoMember();
@@ -45,9 +50,11 @@ public class MemberServiceImpl implements IMemberService {
 
         return ar;
     }
+
     // Converts Input into Member for business
     private void convertMemberTypeInIntoMember() {
         member = new Member();
+
         member.setLogin(memberTypeIn.getLogin().toUpperCase());
         member.setFirstName(memberTypeIn.getFirstName().toUpperCase());
         member.setLastName(memberTypeIn.getLastName().toUpperCase());
@@ -68,10 +75,12 @@ public class MemberServiceImpl implements IMemberService {
         member.setRole(memberTypeUpdate.getRole().toUpperCase());
         logger.info("conversion memberTypeUpdate into member done");
     }
+
     // Update
     @Override
     public UpdateMemberResponseType updateMember(UpdateMemberRequestType parameters) throws BusinessException {
         UpdateMemberResponseType ar = new UpdateMemberResponseType();
+        checkAuthentication(parameters.getToken());
         ar.setReturn(true);
         MemberTypeUpdate memberTypeUpdate = parameters.getMemberTypeUpdate();
         // update
@@ -88,12 +97,13 @@ public class MemberServiceImpl implements IMemberService {
     @Override
     public ConnectResponseType connect(ConnectRequestType parameters) throws BusinessException {
         ConnectResponseType ar = new ConnectResponseType();
+
         ar.setReturn(true);
-        String login =  parameters.getLogin();
+        String login = parameters.getLogin();
         String password = parameters.getPassword();
 
 
-        ar.setReturn( memberManager.connect(login, password));
+        ar.setReturn(memberManager.connect(login, password));
         if (!exception.equals("")) {
             throw new BusinessException(exception);
         }
@@ -103,8 +113,9 @@ public class MemberServiceImpl implements IMemberService {
 
     @Override
     public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessException {
+
         CheckTokenResponseType ar = new CheckTokenResponseType();
-        boolean tokenIsValid=false;
+        boolean tokenIsValid = false;
         tokenIsValid = memberManager.checkToken(parameters.getToken());
         ar.setReturn(tokenIsValid);
         return ar;
@@ -114,7 +125,7 @@ public class MemberServiceImpl implements IMemberService {
     // Get One
     @Override
     public GetMemberByIdResponseType getMemberById(GetMemberByIdRequestType parameters) throws BusinessException {
-
+        checkAuthentication(parameters.getToken());
         logger.info("new method added");
         GetMemberByIdResponseType rep = new GetMemberByIdResponseType();
         MemberTypeOut bt = new MemberTypeOut();
@@ -141,9 +152,11 @@ public class MemberServiceImpl implements IMemberService {
         return ar;
     }
 
+
     // Get All
     @Override
-    public MemberListResponseType getAllMembers() throws BusinessException {
+    public MemberListResponseType getAllMembers(MemberListRequestType parameters) throws BusinessException {
+        checkAuthentication(parameters.getToken());
         memberList = memberManager.getMembers();
         logger.info("size list: " + memberList.size());
 
@@ -169,6 +182,7 @@ public class MemberServiceImpl implements IMemberService {
     @Override
     public GetMemberByCriteriasResponseType getMemberByCriterias(GetMemberByCriteriasRequestType parameters) throws BusinessException {
         HashMap<String, String> map = new HashMap<>();
+        checkAuthentication(parameters.getToken());
         MemberCriterias criterias = parameters.getMemberCriterias();
         map.put("Login", criterias.getLogin().toUpperCase());
         map.put("FirstName", criterias.getFirstName().toUpperCase());
@@ -176,24 +190,24 @@ public class MemberServiceImpl implements IMemberService {
         map.put("Email", criterias.getEmail().toUpperCase());
         map.put("role", criterias.getRole().toUpperCase());
         logger.info("map: " + map);
-        
+
         memberList = memberManager.getMembersByCriterias(map);
         GetMemberByCriteriasResponseType brt = new GetMemberByCriteriasResponseType();
         logger.info("memberListType beg: " + memberListType.getMemberTypeOut().size());
 
         convertMemberIntoMemberTypeOut();
-        
+
         logger.info("memberListType end: " + memberListType.getMemberTypeOut().size());
         brt.setMemberListType(memberListType);
         return brt;
     }
 
 
-
     // Delete
     @Override
     public RemoveMemberResponseType removeMember(RemoveMemberRequestType parameters) throws BusinessException {
         RemoveMemberResponseType ar = new RemoveMemberResponseType();
+        checkAuthentication(parameters.getToken());
         ar.setReturn(true);
 
         logger.info("memberManager: " + memberManager);
@@ -211,7 +225,7 @@ public class MemberServiceImpl implements IMemberService {
         ResetPasswordResponseType ar = new ResetPasswordResponseType();
         boolean result;
 
-        logger.info("trying to reset pwd for: "+parameters.getLogin());
+        logger.info("trying to reset pwd for: " + parameters.getLogin());
         String login = parameters.getLogin();
         String password = parameters.getPassword();
         String email = parameters.getEmail();
@@ -236,7 +250,7 @@ public class MemberServiceImpl implements IMemberService {
             memberTypeOut.setEmail(member.getEmail());
             XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
 
-            logger.info("new date: "+xmlCalendar);
+            logger.info("new date: " + xmlCalendar);
 
             // converting xml into Date
 
@@ -265,5 +279,13 @@ public class MemberServiceImpl implements IMemberService {
         return xmlCalendar;
     }
 
+    private void checkAuthentication(String token) throws BusinessException {
+        try {
+            authentication.checkToken(token);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BusinessException("invalid token");
+        }
+    }
 
 }

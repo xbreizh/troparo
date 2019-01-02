@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://troparo.org/entities/member" xmlns:tns="http://troparo.org/entities/member"
+            xmlns:tns="http://troparo.org/entities/member" targetNamespace="http://troparo.org/entities/member"
             elementFormDefault="qualified">
 
     <!-- checkToken Request Type -->
@@ -63,7 +63,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="Login" type="xsd:string"/>
-                <xsd:element name="Email" >
+                <xsd:element name="Email">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:pattern value="[^@]+@[^\.]+\..+"/>
@@ -107,7 +107,8 @@
     <xsd:element name="addMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberTypeIn" />
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element ref="tns:MemberTypeIn"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -125,7 +126,7 @@
     <xsd:element name="MemberListRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:Token" />
+                <xsd:element ref="tns:Token"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -134,7 +135,7 @@
     <xsd:element name="MemberListResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberListType" />
+                <xsd:element ref="tns:MemberListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -143,6 +144,7 @@
     <xsd:element name="getMemberByIdRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element name="Token" type="xsd:string"/>
                 <xsd:element name="Id" type="xsd:int" default="0"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -152,7 +154,7 @@
     <xsd:element name="getMemberByIdResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberTypeOut" />
+                <xsd:element ref="tns:MemberTypeOut"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -161,7 +163,8 @@
     <xsd:element name="getMemberByCriteriasRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberCriterias" />
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element ref="tns:MemberCriterias"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -170,7 +173,7 @@
     <xsd:element name="getMemberByCriteriasResponseType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberListType" />
+                <xsd:element ref="tns:MemberListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -178,7 +181,8 @@
     <xsd:element name="updateMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberTypeUpdate" />
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element ref="tns:MemberTypeUpdate"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -196,7 +200,8 @@
     <xsd:element name="removeMemberRequestType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="id" type="xsd:int" />
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element name="id" type="xsd:int"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -216,16 +221,16 @@
     <xsd:element name="MemberListType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element ref="tns:MemberTypeOut" maxOccurs="unbounded" />
+                <xsd:element ref="tns:MemberTypeOut" maxOccurs="unbounded"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
 
     <!-- Member Type In-->
     <xsd:element name="MemberTypeIn">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="FirstName" >
+                <xsd:element name="FirstName">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -233,7 +238,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="LastName" >
+                <xsd:element name="LastName">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="2"/>
@@ -241,7 +246,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Login" >
+                <xsd:element name="Login">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="5"/>
@@ -249,7 +254,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Password" >
+                <xsd:element name="Password">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="6"/>
@@ -257,7 +262,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Role" >
+                <xsd:element name="Role">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="6"/>
@@ -265,7 +270,7 @@
                         </xsd:restriction>
                     </xsd:simpleType>
                 </xsd:element>
-                <xsd:element name="Email" >
+                <xsd:element name="Email">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:pattern value="[^@]+@[^\.]+\..+"/>
@@ -280,7 +285,7 @@
     <xsd:element name="MemberCriterias">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="Login" >
+                <xsd:element name="Login">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
                             <xsd:minLength value="5"/>
@@ -325,62 +330,62 @@
 
     <!-- Member Type Update-->
     <xsd:element name="MemberTypeUpdate">
-    <xsd:complexType >
-        <xsd:sequence>
-            <xsd:element name="Login" >
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="5"/>
-                        <xsd:maxLength value="20"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="FirstName" minOccurs="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="2"/>
-                        <xsd:maxLength value="50"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="LastName" minOccurs="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="2"/>
-                        <xsd:maxLength value="50"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="Password" minOccurs="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="6"/>
-                        <xsd:maxLength value="10"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="Email" minOccurs="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:pattern value="[^@]+@[^\.]+\..+"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-            <xsd:element name="Role" minOccurs="0">
-                <xsd:simpleType>
-                    <xsd:restriction base="xsd:string">
-                        <xsd:minLength value="2"/>
-                        <xsd:maxLength value="50"/>
-                    </xsd:restriction>
-                </xsd:simpleType>
-            </xsd:element>
-        </xsd:sequence>
-    </xsd:complexType>
-  </xsd:element>
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Login">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="5"/>
+                            <xsd:maxLength value="20"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="FirstName" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="LastName" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Password" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="6"/>
+                            <xsd:maxLength value="10"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Email" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:pattern value="[^@]+@[^\.]+\..+"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Role" minOccurs="0">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="50"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
 
     <!-- Member Type Out-->
     <xsd:element name="MemberTypeOut">
-        <xsd:complexType >
+        <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="Id" type="xsd:int"/>
                 <xsd:element name="Login" type="xsd:string"/>
@@ -410,9 +415,9 @@
     <xsd:element name="BusinessFaultType">
         <xsd:complexType>
             <xsd:sequence>
-                <xsd:element name="errorCode" type="xsd:int" />
-                <xsd:element name="errorMessage" type="xsd:string" />
-                <xsd:element name="errorDescription" type="xsd:string" />
+                <xsd:element name="errorCode" type="xsd:int"/>
+                <xsd:element name="errorMessage" type="xsd:string"/>
+                <xsd:element name="errorDescription" type="xsd:string"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>

@@ -17,15 +17,13 @@ import java.util.*;
 @Transactional
 @Named
 public class MemberManagerImpl implements MemberManager {
-    private Logger logger = Logger.getLogger(this.getClass().getName());
-
-    private String exception = "";
     private final String pepper = "Tipiak";
-
     @Inject
     MemberDAO memberDAO;
     @Inject
     EmailValidator validator;
+    private Logger logger = Logger.getLogger(this.getClass().getName());
+    private String exception = "";
 
     @Override
     public String addMember(Member member) {
@@ -56,7 +54,7 @@ public class MemberManagerImpl implements MemberManager {
 
 
     private String checkInsertion(Member member) {
-        if (member.getLogin().length() < 5 || member.getLogin().length() > 20){
+        if (member.getLogin().length() < 5 || member.getLogin().length() > 20) {
             return exception = "Login must be 5 or 20 characters: " + member.getLogin();
         }
         if (member.getFirstName().length() < 2 || member.getFirstName().length() > 50) {
@@ -103,12 +101,12 @@ public class MemberManagerImpl implements MemberManager {
     @Override
     public Member getMemberById(int id) {
         logger.info("getting id (from business): " + id);
-        Member login = memberDAO.getMemberById(id);
-        if (login != null) {
-            logger.info("login");
-            return login;
+        Member member = memberDAO.getMemberById(id);
+        if (member != null) {
+            logger.info("member");
+            return member;
         } else {
-            logger.info("login is probably null");
+            logger.info("member is probably null");
             return null;
         }
     }
@@ -134,17 +132,17 @@ public class MemberManagerImpl implements MemberManager {
     @Override
     public String updateMember(Member member) {
         exception = "";
-        boolean receivedCriteria=false;
+        boolean receivedCriteria = false;
         if (member.getLogin().equals("") || member.getLogin().equals("?")) {
             return "you must provide an Login";
         } else {
-            logger.info("member received: "+member);
+            logger.info("member received: " + member);
         }
 
         List<Member> loginList = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
         map.put("Login", member.getLogin());
-        logger.info("map size: "+map.size());
+        logger.info("map size: " + map.size());
         loginList = memberDAO.getMembersByCriterias(map);
         if (loginList.size() == 0) {
             return "No Item found with that Login";
@@ -180,7 +178,7 @@ public class MemberManagerImpl implements MemberManager {
                 receivedCriteria = true;
                 b.setEmail(member.getEmail());
             }
-            if(!receivedCriteria){
+            if (!receivedCriteria) {
                 return "No criteria was passed in";
             }
             logger.info(b.getLogin());
@@ -210,7 +208,7 @@ public class MemberManagerImpl implements MemberManager {
 
     // Login
     @Override
-    public String  getToken(String login, String password) {
+    public String getToken(String login, String password) {
         Member m;
         try {
             m = getMemberByLogin(login.toUpperCase());
@@ -240,8 +238,8 @@ public class MemberManagerImpl implements MemberManager {
             m.setToken(null);
             memberDAO.updateMember(m);
             return true;
-        }catch (Exception e) {
-            logger.error("issue while invalidating the token: "+token);
+        } catch (Exception e) {
+            logger.error("issue while invalidating the token: " + token);
             return false;
         }
     }
@@ -250,6 +248,7 @@ public class MemberManagerImpl implements MemberManager {
     public boolean disconnect(String token) {
         return false;
     }
+
     @Override
     public boolean connect(String login, String password) {
         return false;
@@ -277,7 +276,7 @@ public class MemberManagerImpl implements MemberManager {
         logger.info("email received: " + email);
         logger.info("pwd received: " + password);
 
-        if (getMemberByLogin(login.toUpperCase())!=null) {
+        if (getMemberByLogin(login.toUpperCase()) != null) {
             Member m = getMemberByLogin(login.toUpperCase());
             if (m.getEmail().toUpperCase().equals(email)) {
                 logger.info("email passed");
@@ -294,7 +293,7 @@ public class MemberManagerImpl implements MemberManager {
     @Override
     public boolean checkAdmin(String token) {
         Member m = memberDAO.getMemberByToken(token);
-        if(m!=null) {
+        if (m != null) {
             if (m.getRole().equals("Admin")) {
                 return true;
             }
@@ -302,16 +301,16 @@ public class MemberManagerImpl implements MemberManager {
         return false;
     }
 
-    private String generateToken(){
-        boolean tokenValid=false;
-        String uuid=null;
-        while(!tokenValid) {
-           uuid= UUID.randomUUID().toString();
-           // checks if token already in use
-           if( memberDAO.getMemberByToken(uuid) == null){
-               tokenValid=true;
-           }
-            System.out.println("token created: "+uuid);
+    private String generateToken() {
+        boolean tokenValid = false;
+        String uuid = null;
+        while (!tokenValid) {
+            uuid = UUID.randomUUID().toString();
+            // checks if token already in use
+            if (memberDAO.getMemberByToken(uuid) == null) {
+                tokenValid = true;
+            }
+            System.out.println("token created: " + uuid);
         }
         return uuid;
     }
