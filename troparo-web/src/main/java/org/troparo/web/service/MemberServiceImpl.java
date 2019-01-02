@@ -101,6 +101,15 @@ public class MemberServiceImpl implements IMemberService {
         return ar;
     }
 
+    @Override
+    public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessException {
+        CheckTokenResponseType ar = new CheckTokenResponseType();
+        boolean tokenIsValid=false;
+        tokenIsValid = memberManager.checkToken(parameters.getToken());
+        ar.setReturn(tokenIsValid);
+        return ar;
+    }
+
 
     // Get One
     @Override

@@ -18,6 +18,8 @@ public class MemberDAOImpl implements MemberDAO {
     private Logger logger = Logger.getLogger(this.getClass().getName());
     private Class cl = Member.class;
     private String request;
+    private final int MILLI_TO_HOUR = 1000 * 60 * 60;
+    private final int maxTimeTokenValidity= 3;
 
     @Inject
     private SessionFactory sessionFactory;
@@ -145,9 +147,11 @@ public class MemberDAOImpl implements MemberDAO {
         if(query.getResultList().size() !=0){
             Member m = (Member) query.getResultList().get(0);
             Date now = new Date();
-            int time = now.compareTo( m.getDateConnect());
-            System.out.println("time: "+time);
-            if(time > 1 ){
+           /* int time = now.compareTo( m.getDateConnect());*/
+
+            int time =  Math.toIntExact((now.getTime() - m.getDateConnect().getTime()) / MILLI_TO_HOUR);
+            System.out.println("time since last connect: "+time);
+            if(getMemberByToken(token)!=null && time > maxTimeTokenValidity ){
                 logger.info("invalid token");
                 invalidToken(token);
                 return false;
@@ -163,10 +167,14 @@ public class MemberDAOImpl implements MemberDAO {
     @Override
     public boolean invalidToken(String token) {
         logger.info("in the dao: "+token);
-        request = "update Member set token = null where token = :token";
-
-        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
-        query.setParameter("token", token);
+        try {
+            Member m = getMemberByToken(token);
+            m.setToken(null);
+            updateMember(m);
+        }catch(Exception e){
+            logger.error("issue while invalidating the token");
+            return false;
+        }
         return true;
     }
 

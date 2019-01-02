@@ -839,3 +839,125 @@
 2019-01-01 19:07:06 INFO  MemberDAOImpl:30 - Member from dao: Member{Id=0, login='MAURICE', firstName='BOB', lastName='JONYGO', email='BOB@BOB.BOB', dateJoin=Tue Jan 01 19:07:06 CET 2019}
 2019-01-01 19:07:06 INFO  MemberManagerImpl:53 - exception: 
 2019-01-01 19:07:23 INFO  MemberDAOImpl:119 - Member from dao: MAURICE
+2019-01-02 12:14:32 INFO  MemberDAOImpl:190 - in the dao: 1a451be7-99ca-4803-8f0a-7a6b5cefc64c
+2019-01-02 12:14:32 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:15:41 INFO  MemberDAOImpl:165 - in the dao: 1a451be7-99ca-4803-8f0a-7a6b5cefc64c
+2019-01-02 12:22:02 INFO  MemberDAOImpl:190 - in the dao: 1a451be7-99ca-4803-8f0a-7a6b5cefc64c
+2019-01-02 12:22:02 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:29:53 INFO  MemberDAOImpl:190 - in the dao: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:29:53 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:30:09 INFO  MemberDAOImpl:140 - in the dao: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:30:09 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:30:18 INFO  MemberDAOImpl:190 - in the dao: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:30:18 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:30:24 INFO  MemberDAOImpl:140 - in the dao: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:30:24 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:45:39 INFO  MemberDAOImpl:190 - in the dao: 246111fd-8b9f-45dd-ae69-ccd476537e98
+2019-01-02 12:45:39 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:45:41 INFO  MemberDAOImpl:190 - in the dao: e7cd9c03-a27f-4449-8ed4-4a37f9066c5c
+2019-01-02 12:45:41 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:45:42 INFO  MemberDAOImpl:190 - in the dao: e0056b96-2540-47db-896a-48c697b480b7
+2019-01-02 12:45:42 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:45:56 INFO  MemberDAOImpl:140 - in the dao: e0056b96-2540-47db-896a-48c697b480b7
+2019-01-02 12:45:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:46:33 INFO  MemberDAOImpl:140 - in the dao: e0056b96-2540-47db-896a-48c697b480b7
+2019-01-02 12:46:33 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:46:33 INFO  BookDAOImpl:28 - getting in dao
+2019-01-02 12:46:33 INFO  BookServiceImpl:166 - size list: 10
+2019-01-02 12:46:33 INFO  BookServiceImpl:263 - bookListType end: 10
+2019-01-02 12:46:39 INFO  MemberDAOImpl:140 - in the dao: e0056b6-2540-47db-896a-48c697b480b7
+2019-01-02 12:46:39 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:46:39 INFO  BookDAOImpl:28 - getting in dao
+2019-01-02 12:46:39 INFO  BookServiceImpl:166 - size list: 10
+2019-01-02 12:46:39 INFO  BookServiceImpl:263 - bookListType end: 10
+2019-01-02 12:47:38 INFO  MemberDAOImpl:140 - in the dao: e0056b6-2540-47db-896a-48c697b480b7
+2019-01-02 12:47:38 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:47:38 INFO  BookDAOImpl:28 - getting in dao
+2019-01-02 12:47:38 INFO  BookServiceImpl:166 - size list: 10
+2019-01-02 12:47:38 INFO  BookServiceImpl:263 - bookListType end: 10
+2019-01-02 12:49:37 INFO  MemberDAOImpl:140 - in the dao: e0056b6-2540-47db-896a-48c697b480b7
+2019-01-02 12:49:38 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:53:21 INFO  MemberDAOImpl:140 - in the dao: e0056b6-2540-47db-896a-48c697b480b7
+2019-01-02 12:53:21 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:54:33 INFO  MemberDAOImpl:190 - in the dao: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:54:33 ERROR MemberManagerImpl:244 - issue while invalidating the token: 6a298f90-925f-48a1-bab7-fdb16a6495a7
+2019-01-02 12:54:43 INFO  MemberDAOImpl:190 - in the dao: cab2f7b6-2ce4-4fe3-a919-8c229558920f
+2019-01-02 12:54:43 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:55:02 INFO  MemberDAOImpl:190 - in the dao: cab2f7b6-2ce4-4fe3-a919-8c229558920f
+2019-01-02 12:55:02 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:55:11 INFO  MemberDAOImpl:140 - in the dao: ?
+2019-01-02 12:55:11 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:55:15 INFO  MemberDAOImpl:140 - in the dao: cab2f7b6-2ce4-4fe3-a919-8c229558920f
+2019-01-02 12:55:15 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:55:41 INFO  MemberDAOImpl:140 - in the dao: cab2f7b6-2ce4-4fe3-a919-8c229558920f
+2019-01-02 12:55:41 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:56:41 INFO  MemberDAOImpl:190 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 12:56:41 INFO  MemberDAOImpl:116 - Member from dao: MAURICE
+2019-01-02 12:56:54 INFO  MemberDAOImpl:140 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 12:56:54 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:57:09 INFO  MemberDAOImpl:140 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 12:57:09 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:57:09 INFO  BookDAOImpl:28 - getting in dao
+2019-01-02 12:57:09 INFO  BookServiceImpl:149 - size list: 10
+2019-01-02 12:57:09 INFO  BookServiceImpl:246 - bookListType end: 10
+2019-01-02 12:58:08 INFO  MemberDAOImpl:140 - in the dao: ?
+2019-01-02 12:58:08 INFO  MemberDAOImpl:158 - invalid token
+2019-01-02 12:58:17 INFO  MemberDAOImpl:140 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 12:58:17 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 12:58:17 INFO  BookServiceImpl:86 - received: org.troparo.entities.book.BookTypeUpdate@23283400
+2019-01-02 12:58:17 INFO  BookServiceImpl:71 - 0
+2019-01-02 12:58:17 INFO  BookServiceImpl:76 - pub date: 0
+2019-01-02 12:58:17 INFO  BookServiceImpl:89 - bookManager: org.troparo.business.impl.BookManagerImpl@adb29bd
+2019-01-02 12:58:17 INFO  BookManagerImpl:155 - BLUE STALLION
+2019-01-02 12:58:17 INFO  BookManagerImpl:156 - ?
+2019-01-02 12:58:17 INFO  BookDAOImpl:83 - map received in DAO: {ISBN=12345678DE}
+2019-01-02 12:58:17 INFO  BookDAOImpl:96 - request: From Book where ISBN like :ISBN
+2019-01-02 12:58:17 INFO  BookDAOImpl:102 - criteria: 12345678DE
+2019-01-02 12:58:17 INFO  BookDAOImpl:106 - list with criterias size: 1
+2019-01-02 12:58:17 INFO  BookManagerImpl:165 - getting list: 1
+2019-01-02 12:58:17 INFO  BookManagerImpl:186 - WALTER FARLEY
+2019-01-02 12:58:17 INFO  BookManagerImpl:187 - BLUE STALLION
+2019-01-02 12:58:17 INFO  BookDAOImpl:115 - Book from dao: BLUE STALLION
+2019-01-02 12:58:17 INFO  BookDAOImpl:116 - Book from dao: WALTER FARLEY
+2019-01-02 12:58:17 INFO  BookManagerImpl:189 - updated: 17132
+2019-01-02 12:59:18 INFO  MemberDAOImpl:140 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 12:59:18 INFO  MemberDAOImpl:155 - token valid
+2019-01-02 13:16:45 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:16:45 INFO  MemberDAOImpl:159 - token valid
+2019-01-02 13:18:21 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:18:21 INFO  MemberDAOImpl:155 - invalid token
+2019-01-02 13:18:21 INFO  MemberDAOImpl:169 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:21:10 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:21:10 INFO  MemberDAOImpl:155 - invalid token
+2019-01-02 13:21:10 INFO  MemberDAOImpl:169 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:21:20 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:21:20 INFO  MemberDAOImpl:155 - invalid token
+2019-01-02 13:21:20 INFO  MemberDAOImpl:169 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:29:46 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:29:47 INFO  MemberDAOImpl:194 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:29:47 INFO  MemberDAOImpl:155 - invalid token
+2019-01-02 13:29:47 INFO  MemberDAOImpl:169 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:33:34 INFO  MemberDAOImpl:142 - in the dao: a8245d4d-90ea-42e8-bf62-88af855c798b
+2019-01-02 13:33:34 INFO  MemberDAOImpl:162 - invalid token
+2019-01-02 13:34:57 INFO  MemberDAOImpl:198 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:34:57 INFO  MemberDAOImpl:118 - Member from dao: MAURICE
+2019-01-02 13:35:06 INFO  MemberDAOImpl:142 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:06 INFO  MemberDAOImpl:198 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:06 INFO  MemberDAOImpl:159 - token valid
+2019-01-02 13:35:37 INFO  MemberDAOImpl:142 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:37 INFO  MemberDAOImpl:198 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:37 INFO  MemberDAOImpl:155 - invalid token
+2019-01-02 13:35:37 INFO  MemberDAOImpl:169 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:37 INFO  MemberDAOImpl:198 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:35:37 INFO  MemberDAOImpl:171 - trying to invalidate token
+2019-01-02 13:40:29 INFO  MemberDAOImpl:142 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:40:30 INFO  MemberDAOImpl:162 - invalid token
+2019-01-02 13:41:30 INFO  MemberDAOImpl:142 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:41:30 INFO  MemberDAOImpl:162 - invalid token
+2019-01-02 13:41:32 INFO  MemberDAOImpl:142 - in the dao: 1860291f-1e8d-41ca-8476-5b1aa699e3b8
+2019-01-02 13:41:32 INFO  MemberDAOImpl:162 - invalid token
+2019-01-02 13:41:49 INFO  MemberDAOImpl:198 - in the dao: 6b9fa6c8-2c5e-4395-a6bc-3eafbe9f9acc
+2019-01-02 13:41:49 INFO  MemberDAOImpl:118 - Member from dao: MAURICE
+2019-01-02 13:41:58 INFO  MemberDAOImpl:142 - in the dao: 6b9fa6c8-2c5e-4395-a6bc-3eafbe9f9acc
+2019-01-02 13:41:58 INFO  MemberDAOImpl:198 - in the dao: 6b9fa6c8-2c5e-4395-a6bc-3eafbe9f9acc
+2019-01-02 13:41:58 INFO  MemberDAOImpl:159 - token valid

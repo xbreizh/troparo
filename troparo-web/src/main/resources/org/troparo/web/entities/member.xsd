@@ -3,6 +3,24 @@
             targetNamespace="http://troparo.org/entities/member" xmlns:tns="http://troparo.org/entities/member"
             elementFormDefault="qualified">
 
+    <!-- checkToken Request Type -->
+    <xsd:element name="checkTokenRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Token" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- checkToken  Response Type -->
+    <xsd:element name="checkTokenResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- getToken Request Type -->
     <xsd:element name="invalidateTokenRequestType">
         <xsd:complexType>

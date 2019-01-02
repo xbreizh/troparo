@@ -35,11 +35,7 @@ public class BookServiceImpl implements IBookService {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
 
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
 
         bookTypeIn = parameters.getBookTypeIn();
         convertBookTypeInIntoBook();
@@ -82,11 +78,8 @@ public class BookServiceImpl implements IBookService {
     // Update
     @Override
     public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         UpdateBookResponseType ar = new UpdateBookResponseType();
         ar.setReturn(true);
         BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
@@ -104,11 +97,8 @@ public class BookServiceImpl implements IBookService {
 
     @Override
     public AddCopyResponseType addCopy(AddCopyRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         AddCopyResponseType ar = new AddCopyResponseType();
         ar.setReturn(true);
         String isbn = parameters.getISBN().toUpperCase();
@@ -126,11 +116,8 @@ public class BookServiceImpl implements IBookService {
     // Get One
     @Override
     public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         logger.info("new method added");
         GetBookByIdResponseType rep = new GetBookByIdResponseType();
         BookTypeOut bt = new BookTypeOut();
@@ -157,11 +144,7 @@ public class BookServiceImpl implements IBookService {
     @Override
     public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
 
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
         bookList = bookManager.getBooks();
         logger.info("size list: " + bookList.size());
 
@@ -174,15 +157,21 @@ public class BookServiceImpl implements IBookService {
         return bookListResponseType;
     }
 
+    private void checkAuthentication(String token) throws BusinessException {
+        try {
+            authentication.checkToken(token);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BusinessException("invalid token");
+        }
+    }
+
 
     // Get List By Criterias
     @Override
     public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         HashMap<String, String> map = new HashMap<>();
         BookCriterias criterias = parameters.getBookCriterias();
         map.put("ISBN", criterias.getISBN().toUpperCase());
@@ -207,11 +196,8 @@ public class BookServiceImpl implements IBookService {
     // Delete
     @Override
     public RemoveBookResponseType removeBook(RemoveBookRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         RemoveBookResponseType ar = new RemoveBookResponseType();
         ar.setReturn(true);
 
@@ -228,11 +214,8 @@ public class BookServiceImpl implements IBookService {
     // Get number Available
     @Override
     public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
-        try {
-            authentication.checkToken(parameters.getToken());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        checkAuthentication(parameters.getToken());
+
         GetAvailableResponseType ar = new GetAvailableResponseType();
         int i = bookManager.getAvailable(parameters.getISBN().toUpperCase());
         logger.info("i: " + i);

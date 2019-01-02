@@ -235,7 +235,15 @@ public class MemberManagerImpl implements MemberManager {
 
     @Override
     public boolean invalidateToken(String token) {
-        return memberDAO.invalidToken(token);
+        try {
+            Member m = memberDAO.getMemberByToken(token);
+            m.setToken(null);
+            memberDAO.updateMember(m);
+            return true;
+        }catch (Exception e) {
+            logger.error("issue while invalidating the token: "+token);
+            return false;
+        }
     }
 
     @Override

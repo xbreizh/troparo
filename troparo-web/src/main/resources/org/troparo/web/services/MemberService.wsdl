@@ -64,6 +64,12 @@
     <wsdl:message name="getTokenResponse">
         <wsdl:part element="member:getTokenResponseType" name="parameters" />
     </wsdl:message>
+    <wsdl:message name="checkTokenRequest">
+        <wsdl:part element="member:checkTokenRequestType" name="parameters" />
+    </wsdl:message>
+    <wsdl:message name="checkTokenResponse">
+        <wsdl:part element="member:checkTokenResponseType" name="parameters" />
+    </wsdl:message>
     <wsdl:message name="invalidateTokenRequest">
         <wsdl:part element="member:invalidateTokenRequestType" name="parameters" />
     </wsdl:message>
@@ -118,6 +124,11 @@
         <wsdl:operation name="getToken">
             <wsdl:input message="tns:getTokenRequest" />
             <wsdl:output message="tns:getTokenResponse" />
+            <wsdl:fault name="businessException" message="tns:BusinessException" />
+        </wsdl:operation>
+        <wsdl:operation name="checkToken">
+            <wsdl:input message="tns:checkTokenRequest" />
+            <wsdl:output message="tns:checkTokenResponse" />
             <wsdl:fault name="businessException" message="tns:BusinessException" />
         </wsdl:operation>
         <wsdl:operation name="invalidateToken">
