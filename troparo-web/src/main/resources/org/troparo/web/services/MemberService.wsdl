@@ -30,6 +30,7 @@
         <wsdl:part element="member:addMemberResponseType" name="parameters" />
     </wsdl:message>
     <wsdl:message name="MemberListRequest">
+        <wsdl:part element="member:MemberListRequestType" name="parameters" />
     </wsdl:message>
     <wsdl:message name="MemberListResponse">
         <wsdl:part element="member:MemberListResponseType" name="parameters" />
