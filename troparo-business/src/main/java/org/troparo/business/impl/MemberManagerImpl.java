@@ -203,20 +203,7 @@ public class MemberManagerImpl implements MemberManager {
         return exception;
     }
 
-    @Override
-    public boolean checkToken(String token) {
-        return memberDAO.checkToken(token);
-    }
 
-    @Override
-    public boolean invalidateToken(String token) {
-        return memberDAO.invalidToken(token);
-    }
-
-    @Override
-    public boolean disconnect(String token) {
-        return false;
-    }
 
 
     /*Login*/
@@ -231,6 +218,7 @@ public class MemberManagerImpl implements MemberManager {
             if (checkPassword(password, m.getPassword())) {
                 String token = generateToken();
                 m.setToken(token);
+                m.setDateConnect(new Date());
                 memberDAO.updateMember(m);
                 return token;
             }
@@ -240,6 +228,20 @@ public class MemberManagerImpl implements MemberManager {
         return null;
     }
 
+    @Override
+    public boolean checkToken(String token) {
+        return memberDAO.checkToken(token);
+    }
+
+    @Override
+    public boolean invalidateToken(String token) {
+        return memberDAO.invalidToken(token);
+    }
+
+    @Override
+    public boolean disconnect(String token) {
+        return false;
+    }
     @Override
     public boolean connect(String login, String password) {
         return false;
@@ -281,9 +283,28 @@ public class MemberManagerImpl implements MemberManager {
         return false;
     }
 
+    @Override
+    public boolean checkAdmin(String token) {
+        Member m = memberDAO.getMemberByToken(token);
+        if(m!=null) {
+            if (m.getRole().equals("Admin")) {
+                return true;
+            }
+        }
+        return false;
+    }
+
     private String generateToken(){
-        String uuid = UUID.randomUUID().toString();
-        System.out.println("token created: "+uuid);
+        boolean tokenValid=false;
+        String uuid=null;
+        while(!tokenValid) {
+           uuid= UUID.randomUUID().toString();
+           // checks if token already in use
+           if( memberDAO.getMemberByToken(uuid) == null){
+               tokenValid=true;
+           }
+            System.out.println("token created: "+uuid);
+        }
         return uuid;
     }
 

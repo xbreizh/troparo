@@ -10,6 +10,7 @@
     <xsd:element name="addBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element ref="tns:BookTypeIn" />
             </xsd:sequence>
         </xsd:complexType>
@@ -20,6 +21,16 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book List Response Type -->
+    <xsd:element name="BookListRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element ref="tns:BookListType" />
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -37,6 +48,7 @@
     <xsd:element name="getBookByIdRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element name="return" type="xsd:int"/>
             </xsd:sequence>
         </xsd:complexType>
@@ -55,6 +67,7 @@
     <xsd:element name="getBookByCriteriasRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element ref="tns:BookCriterias" />
             </xsd:sequence>
         </xsd:complexType>
@@ -73,6 +86,7 @@
     <xsd:element name="updateBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element ref="tns:BookTypeUpdate" />
             </xsd:sequence>
         </xsd:complexType>
@@ -91,6 +105,7 @@
     <xsd:element name="removeBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element name="id" type="xsd:int" />
             </xsd:sequence>
         </xsd:complexType>
@@ -112,7 +127,7 @@
     <xsd:element name="addCopyRequestType">
         <xsd:complexType>
             <xsd:sequence>
-
+                <xsd:element ref="tns:Token"/>
                 <xsd:element name="ISBN">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
@@ -146,6 +161,7 @@
     <xsd:element name="getAvailableRequestType">
         <xsd:complexType>
             <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
                 <xsd:element name="ISBN">
                     <xsd:simpleType>
                         <xsd:restriction base="xsd:string">
@@ -411,6 +427,14 @@
         </xsd:complexType>
     </xsd:element>
 
+    <xsd:element name="Token">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:minLength value="10"/>
+                <xsd:maxLength value="200"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
     <!--Exception-->
 
     <!-- Business Exception Type -->

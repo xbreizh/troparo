@@ -38,6 +38,8 @@ public class Member {
     @Column(name = "DATEJOIN")
     private Date dateJoin;
 
+    @Column(name = "DATECONNECT")
+    private Date dateConnect;
 
     // getters & setters
 
@@ -114,6 +116,14 @@ public class Member {
         this.dateJoin = dateJoin;
     }
 
+    public Date getDateConnect() {
+        return dateConnect;
+    }
+
+    public void setDateConnect(Date dateConnect) {
+        this.dateConnect = dateConnect;
+    }
+
     @Override
     public String toString() {
         return "Member{" +
@@ -126,6 +136,7 @@ public class Member {
                 ", token='" + token + '\'' +
                 ", email='" + email + '\'' +
                 ", dateJoin=" + dateJoin +
+                ", dateConnect=" + dateConnect +
                 '}';
     }
 }

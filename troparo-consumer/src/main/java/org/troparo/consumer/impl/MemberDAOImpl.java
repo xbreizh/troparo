@@ -9,10 +9,7 @@ import org.troparo.model.Member;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import static java.lang.Math.toIntExact;
 
@@ -146,6 +143,15 @@ public class MemberDAOImpl implements MemberDAO {
         Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
         query.setParameter("token", token);
         if(query.getResultList().size() !=0){
+            Member m = (Member) query.getResultList().get(0);
+            Date now = new Date();
+            int time = now.compareTo( m.getDateConnect());
+            System.out.println("time: "+time);
+            if(time > 1 ){
+                logger.info("invalid token");
+                invalidToken(token);
+                return false;
+            }
             logger.info("token valid");
             return true;
         }else{
@@ -174,6 +180,20 @@ public class MemberDAOImpl implements MemberDAO {
         query.setParameter("login", login);
         try {
                 return (Member) query.getResultList().get(0);
+        }catch(Exception e){
+            return null;
+        }
+    }
+
+    @Override
+    public Member getMemberByToken(String token) {
+        logger.info("in the dao: "+token);
+        request = "From Member where token = :token";
+
+        Query query =sessionFactory.getCurrentSession().createQuery(request, cl);
+        query.setParameter("token", token);
+        try {
+            return (Member) query.getSingleResult();
         }catch(Exception e){
             return null;
         }

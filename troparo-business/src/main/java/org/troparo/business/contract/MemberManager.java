@@ -17,6 +17,9 @@ public interface MemberManager {
 
   String remove(int id);
 
+
+  //Connection
+
   String getToken(String login, String password);
   boolean connect(String login, String password);
   boolean checkToken(String token);
@@ -25,4 +28,5 @@ public interface MemberManager {
   String encryptPassword(String password);
   boolean checkPassword(String pwd1, String pwd2);
   boolean updatePassword(String login, String email, String password);
+  boolean checkAdmin(String token);
 }
