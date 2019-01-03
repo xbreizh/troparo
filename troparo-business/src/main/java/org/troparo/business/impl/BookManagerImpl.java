@@ -210,7 +210,7 @@ public class BookManagerImpl implements BookManager {
     }
 
     @Override
-    public int getAvailable(String isbn) {
+    public int getNbAvailable(String isbn) {
         return bookDAO.getAvailable(isbn);
     }
 
@@ -243,5 +243,10 @@ public class BookManagerImpl implements BookManager {
             }
         }
         return exception;
+    }
+
+    @Override
+    public boolean isAvailable(int id) {
+        return bookDAO.isAvailable(id);
     }
 }

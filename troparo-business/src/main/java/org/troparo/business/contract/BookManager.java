@@ -22,7 +22,9 @@ public interface BookManager {
 
     String remove(int id);
 
-    int getAvailable(String isbn);
+    int getNbAvailable(String isbn);
 
     String addCopy(String isbn, int copies);
+
+    boolean isAvailable(int id);
 }

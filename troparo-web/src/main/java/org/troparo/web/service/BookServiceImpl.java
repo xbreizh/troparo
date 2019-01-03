@@ -160,6 +160,14 @@ public class BookServiceImpl implements IBookService {
         return bookListResponseType;
     }
 
+    @Override
+    public IsAvailableResponseType isAvailable(IsAvailableRequestType parameters) throws BusinessException {
+        checkAuthentication(parameters.getToken());
+        IsAvailableResponseType ar = new IsAvailableResponseType();
+        ar.setReturn(bookManager.isAvailable(parameters.getId()));
+        return ar;
+    }
+
     private void checkAuthentication(String token) throws BusinessException {
         try {
             authentication.checkToken(token);
@@ -218,7 +226,7 @@ public class BookServiceImpl implements IBookService {
         checkAuthentication(parameters.getToken());
 
         GetAvailableResponseType ar = new GetAvailableResponseType();
-        int i = bookManager.getAvailable(parameters.getISBN().toUpperCase());
+        int i = bookManager.getNbAvailable(parameters.getISBN().toUpperCase());
         logger.info("i: " + i);
         ar.setReturn(i);
 

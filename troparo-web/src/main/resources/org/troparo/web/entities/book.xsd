@@ -7,6 +7,25 @@
     <!--CRUD-->
 
     <!-- Add Book Request Type -->
+    <xsd:element name="isAvailableRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element name="Id" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Add Book  Response Type -->
+    <xsd:element name="isAvailableResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Add Book Request Type -->
     <xsd:element name="addBookRequestType">
         <xsd:complexType>
             <xsd:sequence>
@@ -156,7 +175,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- getAvailable Request Type -->
+    <!-- getNbAvailable Request Type -->
     <xsd:element name="getAvailableRequestType">
         <xsd:complexType>
             <xsd:sequence>
@@ -173,7 +192,7 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- getAvailable Response Type -->
+    <!-- getNbAvailable Response Type -->
     <xsd:element name="getAvailableResponseType">
         <xsd:complexType>
             <xsd:sequence>
