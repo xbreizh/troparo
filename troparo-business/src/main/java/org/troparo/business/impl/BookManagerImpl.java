@@ -247,6 +247,11 @@ public class BookManagerImpl implements BookManager {
 
     @Override
     public boolean isAvailable(int id) {
-        return bookDAO.isAvailable(id);
+        //check if exists
+        if (bookDAO.getBookById(id) != null) {
+            return bookDAO.isAvailable(id);
+        } else {
+            return false;
+        }
     }
 }

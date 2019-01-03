@@ -152,13 +152,21 @@ public class BookDAOImpl implements BookDAO {
 
     @Override
     public boolean isAvailable(int id) {
-        logger.info("isbn passed: " + id);
-        String request = "From Book where id = :id and id not in(select book.id from Loan where endDate is not null)";
+        logger.info("id passed: " + id);
+
+        // checking if currently borrowed
+        String request1 = "select book.id from Loan where endDate is null and book.id = :id";
+        Query query1 = sessionFactory.getCurrentSession().createQuery(request1);
+        query1.setParameter("id", id);
+        return query1.getResultList().size() <= 0;// if not currently borrowed, then available
+        /*
+        String request2 = "From Book where id = :id and id not in(select book.id from Loan where endDate is not null)";
         logger.info("request: " + request);
         Query query = sessionFactory.getCurrentSession().createQuery(request);
         query.setParameter("id", id);
+        logger.info("is available: "+query.getSingleResult());
 
-        return query.getSingleResult() != null;
+        return query.getSingleResult() != null;*/
     }
 
     @Override
