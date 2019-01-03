@@ -111,17 +111,21 @@ public class LoanDAOImpl implements LoanDAO {
                 criterias += "where ";
             }
             criterias += entry.getKey() + " like :";
-            if (entry.getKey().toUpperCase().contains("ISBN")) {
-                criterias += "ISBN";
+            if (entry.getKey().toUpperCase().contains("BOOK")) {
+                criterias += "BOOKID";
             }
             if (entry.getKey().toUpperCase().contains("LOGIN")) {
                 criterias += "LOGIN";
             }
+            if (entry.getKey().toUpperCase().contains("STATUS")) {
+                criterias += "STATUS";
+            }
+
         }
         request = "From Loan ";
         request += criterias;
         logger.info("request: " + request);
-        Query query = sessionFactory.getCurrentSession().createQuery(request, Loan.class);
+       /* Query query = sessionFactory.getCurrentSession().createQuery(request, Loan.class);
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
             logger.info("criteria: " + entry.getValue());
@@ -138,6 +142,8 @@ public class LoanDAOImpl implements LoanDAO {
         } catch (Exception e) {
             return null;
         }
+        */
+        return null;
     }
 
    /* @Override

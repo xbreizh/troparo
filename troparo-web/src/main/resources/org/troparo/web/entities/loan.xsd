@@ -136,15 +136,6 @@
         </xsd:complexType>
     </xsd:element>
 
-    <!-- Loan Criterias-->
-    <xsd:element name="LoanCriterias">
-        <xsd:complexType>
-            <xsd:sequence>
-                <xsd:element ref="tns:Login"/>
-                <xsd:element ref="tns:Id"/>
-            </xsd:sequence>
-        </xsd:complexType>
-    </xsd:element>
 
     <!-- Loan Type Update-->
     <xsd:element name="LoanTypeUpdate">
@@ -190,11 +181,33 @@
         </xsd:simpleType>
     </xsd:element>
 
+
     <xsd:element name="ISBN">
         <xsd:simpleType>
             <xsd:restriction base="xsd:string">
                 <xsd:minInclusive value="10"/>
                 <xsd:maxInclusive value="13"/>
+            </xsd:restriction>
+        </xsd:simpleType>
+    </xsd:element>
+
+    <!-- Loan Criterias-->
+    <xsd:element name="LoanCriterias">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Login" minOccurs="0"/>
+                <xsd:element name="bookId" type="xsd:int" default="0"/>
+                <xsd:element ref="tns:Status" minOccurs="0"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="Status">
+        <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+                <xsd:enumeration value="PROGRESS"/>
+                <xsd:enumeration value="TERMINATED"/>
+                <xsd:enumeration value="OVERDUE"/>
             </xsd:restriction>
         </xsd:simpleType>
     </xsd:element>
@@ -213,4 +226,7 @@
         </xsd:complexType>
     </xsd:element>
 
+
 </xsd:schema>
+
+

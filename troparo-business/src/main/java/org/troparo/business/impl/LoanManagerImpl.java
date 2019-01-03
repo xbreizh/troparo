@@ -90,7 +90,8 @@ public class LoanManagerImpl implements LoanManager {
         }
         logger.info("map: " + map);
         logger.info("criterias: " + criterias);
-        return loanDAO.getLoansByCriterias(criterias);
+        /*return loanDAO.getLoansByCriterias(criterias);*/
+        return null;
     }
 
     @Override

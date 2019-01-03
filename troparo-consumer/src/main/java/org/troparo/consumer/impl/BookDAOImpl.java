@@ -154,9 +154,11 @@ public class BookDAOImpl implements BookDAO {
     public boolean isAvailable(int id) {
         logger.info("isbn passed: " + id);
         String request = "From Book where id = :id and id not in(select book.id from Loan where endDate is not null)";
+        logger.info("request: " + request);
         Query query = sessionFactory.getCurrentSession().createQuery(request);
         query.setParameter("id", id);
-        return query.getResultList().size() <= 0;
+
+        return query.getSingleResult() != null;
     }
 
     @Override

@@ -117,15 +117,21 @@ public class LoanServiceImpl implements ILoanService {
         HashMap<String, String> map = new HashMap<>();
         LoanCriterias criterias = parameters.getLoanCriterias();
         map.put("borrower.login", criterias.getLogin().toUpperCase());
-        map.put("book.id", Integer.toString(criterias.getId()));
+        if (criterias.getBookId() != -1) {
+            map.put("book.id", Integer.toString(criterias.getBookId()));
+        }
+        map.put("status", criterias.getStatus().toUpperCase());
         logger.info("map: " + map);
 
         loanList = loanManager.getLoansByCriterias(map);
         GetLoanByCriteriasResponseType brt = new GetLoanByCriteriasResponseType();
         logger.info("loanListType beg: " + loanListType.getLoanTypeOut().size());
 
-        convertLoanIntoLoanTypeOut();
-
+        if (loanList.size() > 0) {
+            convertLoanIntoLoanTypeOut();
+        } else {
+            return null;
+        }
         logger.info("loanListType end: " + loanListType.getLoanTypeOut().size());
         brt.setLoanListType(loanListType);
         return brt;
@@ -163,6 +169,7 @@ public class LoanServiceImpl implements ILoanService {
     // Converts Loan from Business into output
     private void convertLoanIntoLoanTypeOut() {
         loanListType.getLoanTypeOut().clear();
+
         for (Loan loan : loanList) {
 
             // set values retrieved from DAO class
