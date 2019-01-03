@@ -126,9 +126,12 @@ public class LoanServiceImpl implements ILoanService {
         loanList = loanManager.getLoansByCriterias(map);
         GetLoanByCriteriasResponseType brt = new GetLoanByCriteriasResponseType();
         logger.info("loanListType beg: " + loanListType.getLoanTypeOut().size());
-
-        if (loanList.size() > 0) {
-            convertLoanIntoLoanTypeOut();
+        if (loanList != null) {
+            if (loanList.size() > 0) {
+                convertLoanIntoLoanTypeOut();
+            } else {
+                return null;
+            }
         } else {
             return null;
         }

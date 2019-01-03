@@ -84,14 +84,14 @@ public class LoanManagerImpl implements LoanManager {
         HashMap<String, String> criterias = new HashMap<>();
         for (HashMap.Entry<String, String> entry : map.entrySet()
         ) {
-            if (!entry.getValue().equals("?") && !entry.getValue().equals("")) {
+            if (!entry.getValue().equals("?") && !entry.getValue().equals("") && !entry.getValue().equals("-1")) {
                 criterias.put(entry.getKey(), entry.getValue());
             }
+
         }
         logger.info("map: " + map);
         logger.info("criterias: " + criterias);
-        /*return loanDAO.getLoansByCriterias(criterias);*/
-        return null;
+        return loanDAO.getLoansByCriterias(criterias);
     }
 
     @Override

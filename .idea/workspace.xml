@@ -10,12 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-consumer/troparo-consumer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-consumer/troparo-consumer.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -48,60 +50,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="121" column="13" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="121" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="935">
-              <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+            <state relative-caret-position="160">
+              <caret line="86" column="114" selection-start-line="86" selection-start-column="114" selection-end-line="86" selection-end-column="114" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/BookManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="250" column="5" lean-forward="true" selection-start-line="250" selection-start-column="5" selection-end-line="250" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#8773#8774#0" expanded="true" />
-                <element signature="e#8819#8820#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java">
+        <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="795">
+              <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -112,8 +76,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="-15888">
+            <state relative-caret-position="-20717">
               <caret line="195" column="57" lean-forward="true" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Loan.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1196#1197#0" expanded="true" />
+                <element signature="e#1227#1228#0" expanded="true" />
+                <element signature="e#1275#1276#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/29bd13e7-ef95-4a81-9705-c1304b281d91/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="198" column="69" selection-start-line="198" selection-start-column="69" selection-end-line="198" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -129,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Isbn</find>
       <find>ISbn</find>
       <find>ISBN</find>
       <find>Login</find>
@@ -144,7 +137,6 @@
       <find>check</find>
       <find>Member</find>
       <find>load</find>
-      <find>member</find>
       <find>addM</find>
       <find>book</find>
       <find>terminate</find>
@@ -159,6 +151,8 @@
       <find>Crite</find>
       <find>Email</find>
       <find>defaul;t</find>
+      <find>member</find>
+      <find>nothing</find>
     </findStrings>
     <replaceStrings>
       <replace>logger.info</replace>
@@ -214,13 +208,11 @@
         <option value="$PROJECT_DIR$/troparo-web/pom.xml" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/apache-cxf-services.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/21bf4771-c899-40d8-baf9-6c1fd95633b6/console.sql" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/LoanDAO.java" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java" />
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Book.java" />
-        <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Loan.java" />
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/BookDAO.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/BookManager.java" />
@@ -229,12 +221,14 @@
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/LoanManager.java" />
-        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/BookServiceImpl.java" />
+        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java" />
-        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java" />
+        <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Loan.java" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" />
+        <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -516,6 +510,46 @@
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
               <item name="troparo" type="462c0819:PsiDirectoryNode" />
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
+              <item name="generated" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -618,7 +652,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546536521588" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546541210212" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/Jax-WsClient/JavaWsClient" />
@@ -793,7 +827,7 @@
       <workItem from="1546245262836" duration="22760000" />
       <workItem from="1546344484568" duration="17676000" />
       <workItem from="1546416706261" duration="34009000" />
-      <workItem from="1546504890738" duration="30135000" />
+      <workItem from="1546504890738" duration="35027000" />
     </task>
     <task id="LOCAL-00001" summary="updated wsdl github url -&gt; ok">
       <created>1545663706350</created>
@@ -1075,11 +1109,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546527237189</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="fixed isAvailable (Book)">
+      <created>1546536549067</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1546536549067</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205095000" />
+    <option name="totallyTimeSpent" value="209987000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,9 +1133,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1463" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49930844" visible="true" weight="0.22736992" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4979253" visible="true" weight="0.22736992" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -1103,10 +1143,10 @@
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info id="Image Layers" order="8" />
-      <window_info id="Persistence" order="9" sideWeight="0.5006916" side_tool="true" weight="0.24376336" />
+      <window_info id="Persistence" order="9" sideWeight="0.5020747" side_tool="true" weight="0.22736992" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982181" visible="true" weight="0.30152145" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4982181" visible="true" weight="0.38035962" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1116,20 +1156,20 @@
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4982181" weight="0.42876902" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5017819" side_tool="true" weight="0.46196404" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" weight="0.32918397" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" weight="0.32918397" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32918397" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.36099586" />
       <window_info anchor="bottom" id="Database Console" order="16" weight="0.32918397" />
       <window_info anchor="bottom" id="Inspection Results" order="17" weight="0.32918397" />
-      <window_info anchor="bottom" id="Hibernate Console" order="18" weight="0.45643154" />
+      <window_info anchor="bottom" id="Hibernate Console" order="18" weight="0.30705395" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Maven" order="3" weight="0.32929438" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.2651461" />
+      <window_info anchor="right" id="Database" order="6" weight="0.4946543" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Module Dependencies" order="9" weight="0.73485386" />
@@ -1180,7 +1220,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="added options xsd book" />
     <MESSAGE value="updated xsd / options" />
     <MESSAGE value="added default value for update int" />
     <MESSAGE value="created member wsdl and xsd" />
@@ -1205,18 +1244,12 @@
     <MESSAGE value="fixed searchAvailable book" />
     <MESSAGE value="added isAvailable (book)" />
     <MESSAGE value="saving" />
-    <option name="LAST_COMMIT_MESSAGE" value="saving" />
+    <MESSAGE value="fixed isAvailable (Book)" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed isAvailable (Book)" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="148">
@@ -1348,13 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="65" selection-start-line="16" selection-start-column="65" selection-end-line="17" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/WEB-INF/apache-cxf-services.xml" />
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1455,20 +1481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="147" column="67" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="206" selection-start-line="206" selection-end-line="206" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -1476,13 +1488,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/entities/loan/LoanCriterias.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1496,16 +1501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/BookServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1513,44 +1508,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Loan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="92" column="27" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1196#1197#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1275#1276#0" expanded="true" />
-            <element signature="e#1315#1316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
           <caret line="250" column="26" lean-forward="true" selection-start-line="250" selection-start-column="26" selection-end-line="250" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="208" column="17" selection-start-line="208" selection-start-column="17" selection-end-line="208" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1566,27 +1527,102 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="-15888">
-          <caret line="195" column="57" lean-forward="true" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="121" column="13" lean-forward="true" selection-start-line="119" selection-start-column="12" selection-end-line="121" selection-end-column="13" />
+        <state relative-caret-position="244">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/BookDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="159">
+          <caret line="147" column="67" selection-start-line="147" selection-start-column="15" selection-end-line="147" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/loan.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="198" column="69" selection-start-line="198" selection-start-column="69" selection-end-line="198" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/entities/loan/LoanCriterias.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="134" column="18" selection-start-line="134" selection-start-column="18" selection-end-line="134" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/LoanManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="86" column="114" selection-start-line="86" selection-start-column="114" selection-end-line="86" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="53" column="76" selection-start-line="53" selection-start-column="76" selection-end-line="53" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/29bd13e7-ef95-4a81-9705-c1304b281d91/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Loan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1196#1197#0" expanded="true" />
+            <element signature="e#1227#1228#0" expanded="true" />
+            <element signature="e#1275#1276#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-technical/src/main/resources/logs/logs.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-20717">
+          <caret line="195" column="57" lean-forward="true" selection-start-line="195" selection-start-column="57" selection-end-line="195" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/impl/LoanDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="172" column="32" selection-start-line="172" selection-start-column="32" selection-end-line="172" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

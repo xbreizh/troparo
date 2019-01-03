@@ -9,6 +9,7 @@ import org.troparo.model.Loan;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -103,37 +104,48 @@ public class LoanDAOImpl implements LoanDAO {
     public List<Loan> getLoansByCriterias(HashMap<String, String> map) {
         logger.info("map received in DAO: " + map);
         String criterias = "";
+        String status = "";
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
-            if (!criterias.equals("")) {
-                criterias += " and ";
+            if (!entry.getKey().toUpperCase().equals("STATUS")) {
+                if (!criterias.equals("")) {
+                    criterias += " and ";
+                } else {
+                    criterias += "where ";
+                }
+                criterias += entry.getKey() + " like :";
+                if (entry.getKey().toUpperCase().contains("BOOK")) {
+                    criterias += "BOOKID";
+                }
+                if (entry.getKey().toUpperCase().contains("LOGIN")) {
+                    criterias += "LOGIN";
+                }
+                if (entry.getKey().toUpperCase().contains("STATUS")) {
+                    criterias += "STATUS";
+                }
             } else {
-                criterias += "where ";
-            }
-            criterias += entry.getKey() + " like :";
-            if (entry.getKey().toUpperCase().contains("BOOK")) {
-                criterias += "BOOKID";
-            }
-            if (entry.getKey().toUpperCase().contains("LOGIN")) {
-                criterias += "LOGIN";
-            }
-            if (entry.getKey().toUpperCase().contains("STATUS")) {
-                criterias += "STATUS";
+                status = entry.getValue();
+                logger.info("status has been passed: " + status);
             }
 
         }
+
         request = "From Loan ";
         request += criterias;
+
+        addStatusToRequest(status);
         logger.info("request: " + request);
-       /* Query query = sessionFactory.getCurrentSession().createQuery(request, Loan.class);
+        Query query = sessionFactory.getCurrentSession().createQuery(request, Loan.class);
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
-            logger.info("criteria: " + entry.getValue());
-            if (entry.getKey().toUpperCase().contains("ISBN")) {
-                query.setParameter("ISBN", "%" + entry.getValue() + "%");
-            }
-            if (entry.getKey().toUpperCase().contains("LOGIN")) {
-                query.setParameter("LOGIN", "%" + entry.getValue() + "%");
+            if (!entry.getKey().toUpperCase().equals("STATUS")) {
+                logger.info("criteria: " + entry.getValue());
+                if (entry.getKey().toUpperCase().contains("ISBN")) {
+                    query.setParameter("ISBN", "%" + entry.getValue() + "%");
+                }
+                if (entry.getKey().toUpperCase().contains("LOGIN")) {
+                    query.setParameter("LOGIN", "%" + entry.getValue() + "%");
+                }
             }
         }
         try {
@@ -142,8 +154,26 @@ public class LoanDAOImpl implements LoanDAO {
         } catch (Exception e) {
             return null;
         }
-        */
-        return null;
+
+    }
+
+    private void addStatusToRequest(String status) {
+        if (!status.equals("")) {
+            switch (status) {
+                case "PROGRESS":
+                    request += " and endDate is null";
+                    break;
+                case "TERMINATED":
+                    request += " and endDate is not null";
+                    break;
+                case "OVERDUE":
+                    request += " and endDate is null and plannedEndDate < current_date";
+                    break;
+                default:
+                    logger.info("nothing to add");
+                    break;
+            }
+        }
     }
 
    /* @Override

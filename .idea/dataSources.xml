@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="TROPARO" uuid="912dd2f0-64ef-466e-a365-ed99f85c14de">
+    <data-source source="LOCAL" name="troparo" uuid="29bd13e7-ef95-4a81-9705-c1304b281d91">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/TROPARO</jdbc-url>
+      <jdbc-url>jdbc:postgresql://localhost:5432/troparo</jdbc-url>
     </data-source>
   </component>
 </project>

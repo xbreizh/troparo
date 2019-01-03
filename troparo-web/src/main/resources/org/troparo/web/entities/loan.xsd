@@ -196,7 +196,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login" minOccurs="0"/>
-                <xsd:element name="bookId" type="xsd:int" default="0"/>
+                <xsd:element name="bookId" type="xsd:int" default="-1"/>
                 <xsd:element ref="tns:Status" minOccurs="0"/>
             </xsd:sequence>
         </xsd:complexType>
