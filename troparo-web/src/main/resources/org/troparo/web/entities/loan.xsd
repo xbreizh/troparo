@@ -131,7 +131,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login"/>
-                <xsd:element ref="tns:ISBN"/>
+                <xsd:element ref="tns:Id"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -141,7 +141,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login"/>
-                <xsd:element ref="tns:ISBN"/>
+                <xsd:element ref="tns:Id"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -151,7 +151,7 @@
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element ref="tns:Login"/>
-                <xsd:element ref="tns:ISBN"/>
+                <xsd:element ref="tns:Id"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
@@ -162,7 +162,7 @@
             <xsd:sequence>
                 <xsd:element ref="tns:Id"/>
                 <xsd:element ref="tns:Login"/>
-                <xsd:element ref="tns:ISBN"/>
+                <xsd:element name="bookId" type="xsd:int"/>
                 <xsd:element name="startDate" type="xsd:date"/>
                 <xsd:element name="plannedEndDate" type="xsd:date"/>
                 <xsd:element name="endDate" type="xsd:date"/>

@@ -23,7 +23,7 @@ public class BookManagerImpl implements BookManager {
     public String addBook(Book book) {
         exception = "";
         // checking if already existing
-        if (bookDAO.existingISBN(book.getIsbn())) {
+        if (bookDAO.existingISBN(book.getIsbn().toUpperCase())) {
             exception = "ISBN already existing";
             return exception;
         }
@@ -41,6 +41,7 @@ public class BookManagerImpl implements BookManager {
         logger.info("in the ");
         // adding insertion date
         book.setInsert_date(new Date());
+        book.setIsbn(book.getIsbn().toUpperCase());
         bookDAO.addBook(book);
         logger.info("exception: " + exception);
         return exception;
@@ -156,7 +157,7 @@ public class BookManagerImpl implements BookManager {
         }
         List<Book> bookList = new ArrayList<>();
         HashMap<String, String> map = new HashMap<>();
-        map.put("ISBN", book.getIsbn());
+        map.put("ISBN", book.getIsbn().toUpperCase());
         bookList = bookDAO.getBooksByCriterias(map);
         if (bookList.size() == 0) {
             return "No Item found with that ISBN";
@@ -193,7 +194,7 @@ public class BookManagerImpl implements BookManager {
 
     @Override
     public Book getBookByIsbn(String isbn) {
-        return bookDAO.getBookByIsbn(isbn);
+        return bookDAO.getBookByIsbn(isbn.toUpperCase());
     }
 
     @Override
@@ -216,10 +217,10 @@ public class BookManagerImpl implements BookManager {
     @Override
     public String addCopy(String isbn, int copies) {
         exception = "";
-        if (!bookDAO.existingISBN(isbn)) {
+        if (!bookDAO.existingISBN(isbn.toUpperCase())) {
             return "No record found with that ISBN";
         } else {
-            Book b = bookDAO.getBookByIsbn(isbn);
+            Book b = bookDAO.getBookByIsbn(isbn.toUpperCase());
             logger.info("record found: " + b);
             int i = 0;
             while (i < copies) {

@@ -19,4 +19,5 @@ public interface LoanManager {
     String renewLoan(int id);
 
     String terminate(int id);
+
 }

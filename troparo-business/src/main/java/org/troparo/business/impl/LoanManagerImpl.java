@@ -28,7 +28,6 @@ public class LoanManagerImpl implements LoanManager {
     @Override
     public String addLoan(Loan loan) {
         exception = "";
-        /*logger.info("loan received: " + loan);*/
         loan.setStartDate(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(loan.getStartDate());
@@ -40,9 +39,12 @@ public class LoanManagerImpl implements LoanManager {
         if (loan.getBook() == null) {
             return "invalid book";
         }
+
+        // checks if loan is possible
         loanDAO.addLoan(loan);
         return exception;
     }
+
 
     @Override
     public List<Loan> getLoans() {

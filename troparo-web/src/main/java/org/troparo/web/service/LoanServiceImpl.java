@@ -74,7 +74,7 @@ public class LoanServiceImpl implements ILoanService {
             throw new BusinessException("no loan found with that id");
         } else {
             loanTypeOut.setId(loan.getId());
-            loanTypeOut.setISBN(loan.getBook().getIsbn());
+            loanTypeOut.setBookId(loan.getBook().getId());
             loanTypeOut.setLogin(loan.getBorrower().getLogin());
             loanTypeOut.setStartDate(convertDateIntoXmlDate(loan.getStartDate()));
             loanTypeOut.setPlannedEndDate(convertDateIntoXmlDate(loan.getPlannedEndDate()));
@@ -117,7 +117,7 @@ public class LoanServiceImpl implements ILoanService {
         HashMap<String, String> map = new HashMap<>();
         LoanCriterias criterias = parameters.getLoanCriterias();
         map.put("borrower.login", criterias.getLogin().toUpperCase());
-        map.put("book.isbn", criterias.getISBN().toUpperCase());
+        map.put("book.id", Integer.toString(criterias.getId()));
         logger.info("map: " + map);
 
         loanList = loanManager.getLoansByCriterias(map);
@@ -169,7 +169,7 @@ public class LoanServiceImpl implements ILoanService {
             loanTypeOut = new LoanTypeOut();
             loanTypeOut.setId(loan.getId());
             loanTypeOut.setLogin(loan.getBorrower().getLogin());
-            loanTypeOut.setISBN(loan.getBook().getIsbn());
+            loanTypeOut.setBookId(loan.getBook().getId());
             XMLGregorianCalendar startDate = convertDateIntoXmlDate(loan.getStartDate());
             XMLGregorianCalendar plannedEndDate = convertDateIntoXmlDate(loan.getPlannedEndDate());
             if (loan.getEndDate() != null) {
@@ -202,7 +202,7 @@ public class LoanServiceImpl implements ILoanService {
     private void convertLoanTypeInIntoLoan() {
         loan = new Loan();
         loan.setBorrower(memberManager.getMemberByLogin(loanTypeIn.getLogin().toUpperCase()));
-        loan.setBook(bookManager.getBookByIsbn(loanTypeIn.getISBN().toUpperCase()));
+        loan.setBook(bookManager.getBookById(loanTypeIn.getId()));
         logger.info("conversion loanType into loan done");
     }
 

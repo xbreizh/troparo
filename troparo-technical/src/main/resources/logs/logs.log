@@ -768,3 +768,148 @@
 2019-01-03 13:53:03 INFO  MemberDAOImpl:155 - token valid
 2019-01-03 13:53:03 INFO  LoanDAOImpl:62 - in the dao: 17157
 2019-01-03 13:53:03 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 13:53:03 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:54:36 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:54:36 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:54:36 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:54:37 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:07:37 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:07:38 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 14:07:38 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 14:07:38 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:07:38 INFO  LoanManagerImpl:57 - loan
+2019-01-03 14:07:58 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:58 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:58 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:07:58 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:08:03 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:03 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:03 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:08:38 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:38 INFO  BookManagerImpl:124 - getting id (from business): 17157
+2019-01-03 14:08:38 INFO  BookDAOImpl:54 - in the dao: 17157
+2019-01-03 14:08:38 INFO  BookManagerImpl:130 - book is probably null
+2019-01-03 14:08:38 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 14:08:38 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@7b18650b
+2019-01-03 14:08:38 INFO  LoanServiceImpl:53 - exception found: invalid book
+2019-01-03 14:08:47 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:47 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:47 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:47 INFO  BookManagerImpl:124 - getting id (from business): 17154
+2019-01-03 14:08:47 INFO  BookDAOImpl:54 - in the dao: 17154
+2019-01-03 14:08:47 INFO  BookManagerImpl:127 - book
+2019-01-03 14:08:47 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 14:08:47 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@7b18650b
+2019-01-03 14:08:48 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 14:08:48 CET 2019, plannedEndDate=Thu Jan 31 14:08:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 14:26:28 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 14:26:28 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 14:26:50 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:26:50 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:26:50 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:26:51 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:26:51 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:26:51 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:27:03 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:27:03 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:27:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:27:03 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:27:03 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:27:03 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:33:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:33:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:33:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:33:48 INFO  BookServiceImpl:183 - map: {ISBN=1234569789, Title=?, Author=?}
+2019-01-03 14:33:48 INFO  BookManagerImpl:144 - criterias: {ISBN=1234569789}
+2019-01-03 14:33:48 INFO  BookDAOImpl:85 - map received in DAO: {ISBN=1234569789}
+2019-01-03 14:33:48 INFO  BookDAOImpl:98 - request: From Book where ISBN like :ISBN
+2019-01-03 14:33:48 INFO  BookDAOImpl:104 - criteria: 1234569789
+2019-01-03 14:33:48 INFO  BookDAOImpl:108 - list with criterias size: 1
+2019-01-03 14:33:48 INFO  BookServiceImpl:187 - bookListType beg: 0
+2019-01-03 14:33:48 INFO  BookServiceImpl:247 - bookListType end: 1
+2019-01-03 14:33:48 INFO  BookServiceImpl:191 - bookListType end: 1
+2019-01-03 14:46:23 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:23 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:24 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:24 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:24 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:46:28 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:28 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:28 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:28 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:28 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:28 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:46:42 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:42 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:42 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:42 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:42 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:42 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:30 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:30 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:30 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:30 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:30 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:30 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:31 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:31 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:31 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:31 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:31 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:32 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:32 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:32 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:32 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:32 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:32 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:32 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:32 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:56:01 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:56:01 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:56:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:56:01 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:56:01 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:56:01 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:04:08 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:04:08 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:04:08 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:04:08 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 15:04:08 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 15:04:08 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:09:31 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:09:31 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:09:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:09:31 INFO  BookDAOImpl:142 - isbn passed: ?
+2019-01-03 15:09:31 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:09:31 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:09:31 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:10:23 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:10:23 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:10:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:10:23 INFO  BookDAOImpl:142 - isbn passed: ABCDERFSAE
+2019-01-03 15:10:23 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:10:23 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:10:23 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:14:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:14:57 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:14:57 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:14:57 INFO  BookDAOImpl:142 - isbn passed: ABCDERFSAE
+2019-01-03 15:14:57 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 15:14:57 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 15:14:57 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:15:15 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:15:15 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:15:15 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:15:15 INFO  BookDAOImpl:142 - isbn passed: BACRDFAERD
+2019-01-03 15:15:15 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:15:15 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:15:15 INFO  BookServiceImpl:222 - i: 1
