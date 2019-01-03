@@ -22,7 +22,7 @@ public class BookServiceImpl implements IBookService {
     private BookManager bookManager;
 
     @Inject
-    private Authentication authentication;
+    private ConnectServiceImpl authentication;
 
     private String exception = "";
     private List<Book> bookList = new ArrayList<>();

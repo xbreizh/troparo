@@ -29,7 +29,7 @@ public class LoanServiceImpl implements ILoanService {
     private MemberManager memberManager;
 
     @Inject
-    private Authentication authentication;
+    private ConnectServiceImpl authentication;
 
     private String exception = "";
     private List<Loan> loanList = new ArrayList<>();

@@ -1,3 +1,4 @@
+/*
 package org.troparo.web.service;
 
 import javax.annotation.Resource;
@@ -44,4 +45,4 @@ public class HelloWorld {
 
     }
 
-}
+}*/
