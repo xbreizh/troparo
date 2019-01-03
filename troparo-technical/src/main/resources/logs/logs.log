@@ -913,3 +913,52 @@
 2019-01-03 15:15:15 INFO  BookDAOImpl:147 - result found: 1
 2019-01-03 15:15:15 INFO  BookDAOImpl:149 - count: 1
 2019-01-03 15:15:15 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:33:53 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:33:53 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 15:34:04 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:04 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:04 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:34:04 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 15:34:04 INFO  BookServiceImpl:152 - size list: 1
+2019-01-03 15:34:04 INFO  BookServiceImpl:255 - bookListType end: 1
+2019-01-03 15:34:33 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:34:33 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 15:34:45 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:45 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:45 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:34:46 INFO  BookDAOImpl:142 - isbn passed: BACRDFAERD
+2019-01-03 15:34:46 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:34:46 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:34:46 INFO  BookServiceImpl:230 - i: 1
+2019-01-03 15:35:17 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:35:17 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:35:17 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:35:18 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:36:29 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:29 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:36:29 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:36:34 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:34 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:34 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:36:34 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:37:00 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:00 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:00 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:00 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 15:37:00 INFO  LoanServiceImpl:98 - size list: 1
+2019-01-03 15:37:00 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 15:37:00 INFO  LoanServiceImpl:197 - loanListType end: 1
+2019-01-03 15:37:16 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:16 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:16 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:16 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 15:37:16 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 15:37:16 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 15:37:20 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:20 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:20 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:20 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 15:37:31 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:31 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:31 INFO  BookDAOImpl:155 - isbn passed: 17154

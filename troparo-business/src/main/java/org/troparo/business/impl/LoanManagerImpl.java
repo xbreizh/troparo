@@ -2,7 +2,9 @@ package org.troparo.business.impl;
 
 
 import org.apache.log4j.Logger;
+import org.troparo.business.contract.BookManager;
 import org.troparo.business.contract.LoanManager;
+import org.troparo.business.contract.MemberManager;
 import org.troparo.consumer.contract.LoanDAO;
 import org.troparo.model.Loan;
 
@@ -19,9 +21,14 @@ import java.util.List;
 public class LoanManagerImpl implements LoanManager {
     private final int loanDuration = 28;
     private final int renewDuration = 28;
+    private final int maxBooks = 4;
     private final int maxLoanDuration = loanDuration + renewDuration;
     @Inject
     LoanDAO loanDAO;
+    @Inject
+    BookManager bookManager;
+    @Inject
+    MemberManager memberManager;
     private Logger logger = Logger.getLogger(this.getClass().getName());
     private String exception = "";
 
@@ -41,7 +48,15 @@ public class LoanManagerImpl implements LoanManager {
         }
 
         // checks if loan is possible
-        loanDAO.addLoan(loan);
+        if (!bookManager.isAvailable(loan.getBook().getId())) {
+            return "book is not available: " + loan.getBook().getId();
+        }
+        // checks if borrower can borrow
+        if (memberManager.getMemberById(loan.getBorrower().getId()).getLoanList().size() < maxBooks) {
+            loanDAO.addLoan(loan);
+        } else {
+            return "max number of books rented reached";
+        }
         return exception;
     }
 

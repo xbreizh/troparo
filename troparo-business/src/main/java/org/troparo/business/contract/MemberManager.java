@@ -42,4 +42,5 @@ public interface MemberManager {
     boolean updatePassword(String login, String email, String password);
 
     boolean checkAdmin(String token);
+
 }
