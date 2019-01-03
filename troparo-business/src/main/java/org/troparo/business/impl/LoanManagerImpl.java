@@ -28,7 +28,7 @@ public class LoanManagerImpl implements LoanManager {
     @Override
     public String addLoan(Loan loan) {
         exception = "";
-        logger.info("loan received: " + loan);
+        /*logger.info("loan received: " + loan);*/
         loan.setStartDate(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(loan.getStartDate());
@@ -80,8 +80,12 @@ public class LoanManagerImpl implements LoanManager {
     public String renewLoan(int id) {
         exception = "";
         Loan loan = loanDAO.getLoanById(id);
+
+        if (loan.getEndDate() != null) {
+            return "loan already terminated: " + loan.getEndDate();
+        }
         Date start = loan.getStartDate();
-        Date end = loan.getEndDate();
+        Date end = loan.getPlannedEndDate();
 
         int diffInDays = (int) ((end.getTime() - start.getTime())
                 / (1000 * 60 * 60 * 24));
@@ -90,9 +94,9 @@ public class LoanManagerImpl implements LoanManager {
             return "loan has already been renewed";
         } else {
             Calendar cal = Calendar.getInstance();
-            cal.setTime(loan.getStartDate());
+            cal.setTime(loan.getPlannedEndDate());
             cal.add(Calendar.DATE, renewDuration);
-            loan.setEndDate(cal.getTime());
+            loan.setPlannedEndDate(cal.getTime());
             loanDAO.updateLoan(loan);
         }
         return exception;
@@ -103,8 +107,12 @@ public class LoanManagerImpl implements LoanManager {
         Loan loan;
         try {
             loan = loanDAO.getLoanById(id);
-            loan.setEndDate(new Date());
-            loanDAO.updateLoan(loan);
+            if (loan.getEndDate() == null) {
+                loan.setEndDate(new Date());
+                loanDAO.updateLoan(loan);
+            } else {
+                return "loan already terminated";
+            }
         } catch (NullPointerException e) {
             return "loan couldn't be terminated!";
         }

@@ -78,7 +78,11 @@ public class LoanServiceImpl implements ILoanService {
             loanTypeOut.setLogin(loan.getBorrower().getLogin());
             loanTypeOut.setStartDate(convertDateIntoXmlDate(loan.getStartDate()));
             loanTypeOut.setPlannedEndDate(convertDateIntoXmlDate(loan.getPlannedEndDate()));
-            loanTypeOut.setEndDate(convertDateIntoXmlDate(loan.getEndDate()));
+            if (loan.getEndDate() != null) {
+                loanTypeOut.setEndDate(convertDateIntoXmlDate(loan.getEndDate()));
+            } else {
+                loanTypeOut.setEndDate(null);
+            }
             rep.setLoanTypeOut(loanTypeOut);
         }
         return rep;
@@ -171,10 +175,13 @@ public class LoanServiceImpl implements ILoanService {
             if (loan.getEndDate() != null) {
                 XMLGregorianCalendar endDate = convertDateIntoXmlDate(loan.getEndDate());
                 loanTypeOut.setEndDate(endDate);
+            } else {
+                loanTypeOut.setEndDate(null);
             }
 
             loanTypeOut.setStartDate(startDate);
             loanTypeOut.setPlannedEndDate(plannedEndDate);
+
 
             logger.info("conversion done");
 
