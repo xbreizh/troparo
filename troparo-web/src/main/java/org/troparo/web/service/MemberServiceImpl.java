@@ -37,7 +37,7 @@ public class MemberServiceImpl implements IMemberService {
     @Override
     public AddMemberResponseType addMember(AddMemberRequestType parameters) throws BusinessException {
         AddMemberResponseType ar = new AddMemberResponseType();
-        checkAuthentication(parameters.getToken());
+        /*checkAuthentication(parameters.getToken());*/
         ar.setReturn(true);
         memberTypeIn = parameters.getMemberTypeIn();
         convertMemberTypeInIntoMember();
@@ -161,6 +161,7 @@ public class MemberServiceImpl implements IMemberService {
         logger.info("size list: " + memberList.size());
 
         MemberListResponseType memberListResponseType = new MemberListResponseType();
+
 
         convertMemberIntoMemberTypeOut();
         // add memberType to the movieListType

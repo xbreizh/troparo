@@ -16,7 +16,7 @@ public interface LoanManager {
 
     List<Loan> getLoansByCriterias(HashMap<String, String> map);
 
-    String renewLoan(Loan loan);
+    String renewLoan(int id);
 
     String terminate(int id);
 }

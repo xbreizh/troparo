@@ -25,8 +25,12 @@ public class LoanDAOImpl implements LoanDAO {
 
     @Override
     public List<Loan> getLoans() {
-        Query query = sessionFactory.getCurrentSession().createQuery("From Loan ");
-        return query.getResultList();
+        logger.info("getting in dao");
+        try {
+            return sessionFactory.getCurrentSession().createQuery("From Loan", cl).getResultList();
+        } catch (Exception e) {
+            return null;
+        }
     }
 
     @Override
@@ -84,7 +88,7 @@ public class LoanDAOImpl implements LoanDAO {
     @Override
     public Loan getLoanByLogin(String login) {
         logger.info("in the dao: " + login);
-        request = "From Loan where member.login = :login";
+        request = "From Loan where borrower.login = :login";
 
         Query query = sessionFactory.getCurrentSession().createQuery(request, cl);
         query.setParameter("login", login);
@@ -106,7 +110,13 @@ public class LoanDAOImpl implements LoanDAO {
             } else {
                 criterias += "where ";
             }
-            criterias += entry.getKey() + " like :" + entry.getKey();
+            criterias += entry.getKey() + " like :";
+            if (entry.getKey().toUpperCase().contains("ISBN")) {
+                criterias += "ISBN";
+            }
+            if (entry.getKey().toUpperCase().contains("LOGIN")) {
+                criterias += "LOGIN";
+            }
         }
         request = "From Loan ";
         request += criterias;
@@ -115,7 +125,12 @@ public class LoanDAOImpl implements LoanDAO {
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
             logger.info("criteria: " + entry.getValue());
-            query.setParameter(entry.getKey(), "%" + entry.getValue() + "%");
+            if (entry.getKey().toUpperCase().contains("ISBN")) {
+                query.setParameter("ISBN", "%" + entry.getValue() + "%");
+            }
+            if (entry.getKey().toUpperCase().contains("LOGIN")) {
+                query.setParameter("LOGIN", "%" + entry.getValue() + "%");
+            }
         }
         try {
             logger.info("list with criterias size: " + query.getResultList().size());

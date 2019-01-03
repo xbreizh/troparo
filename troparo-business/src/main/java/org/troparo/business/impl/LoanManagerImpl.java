@@ -27,19 +27,21 @@ public class LoanManagerImpl implements LoanManager {
 
     @Override
     public String addLoan(Loan loan) {
+        exception = "";
+        logger.info("loan received: " + loan);
         loan.setStartDate(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(loan.getStartDate());
         cal.add(Calendar.DATE, loanDuration);
-        loan.setEndDate(cal.getTime());
-        if (loan.getMember() == null) {
+        loan.setPlannedEndDate(cal.getTime());
+        if (loan.getBorrower() == null) {
             return "invalid member";
         }
         if (loan.getBook() == null) {
             return "invalid book";
         }
         loanDAO.addLoan(loan);
-        return null;
+        return exception;
     }
 
     @Override
@@ -69,13 +71,15 @@ public class LoanManagerImpl implements LoanManager {
                 criterias.put(entry.getKey(), entry.getValue());
             }
         }
+        logger.info("map: " + map);
         logger.info("criterias: " + criterias);
         return loanDAO.getLoansByCriterias(criterias);
     }
 
     @Override
-    public String renewLoan(Loan loan) {
+    public String renewLoan(int id) {
         exception = "";
+        Loan loan = loanDAO.getLoanById(id);
         Date start = loan.getStartDate();
         Date end = loan.getEndDate();
 

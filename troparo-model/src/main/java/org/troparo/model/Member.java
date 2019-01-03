@@ -43,7 +43,7 @@ public class Member {
     @Column(name = "DATECONNECT")
     private Date dateConnect;
 
-    @OneToMany(mappedBy = "member", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE})
+    @OneToMany(mappedBy = "borrower", fetch = FetchType.EAGER, cascade = {CascadeType.REMOVE})
     private List<Loan> loanList = new ArrayList<>();
 
     // getters & setters
@@ -150,7 +150,7 @@ public class Member {
                 ", email='" + email + '\'' +
                 ", dateJoin=" + dateJoin +
                 ", dateConnect=" + dateConnect +
-                 ", loanList=" + loanList.size() +
+                ", loanList=" + loanList.size() +
                 '}';
     }
 }

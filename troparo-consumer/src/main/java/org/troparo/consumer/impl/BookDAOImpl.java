@@ -30,7 +30,7 @@ public class BookDAOImpl implements BookDAO {
     public List<Book> getBooks() {
         logger.info("getting in dao");
         try {
-            return sessionFactory.getCurrentSession().createQuery("from Book", Book.class).getResultList();
+            return sessionFactory.getCurrentSession().createQuery("from Book", cl).getResultList();
         } catch (Exception e) {
             return null;
         }

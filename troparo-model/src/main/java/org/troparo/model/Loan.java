@@ -24,7 +24,7 @@ public class Loan {
     private Date endDate;
 
     @ManyToOne
-    private Member member;
+    private Member borrower;
 
     @ManyToOne
     private Book book;
@@ -65,16 +65,22 @@ public class Loan {
         this.endDate = endDate;
     }
 
-    public Member getMember() {
-        return member;
+    public Member getBorrower() {
+        return borrower;
     }
 
-    public void setMember(Member member) {
-        this.member = member;
+    public void setBorrower(Member borrower) {
+        this.borrower = borrower;
     }
 
     public Book getBook() {
         return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+
+
     }
 
     @Override
@@ -84,14 +90,10 @@ public class Loan {
                 ", startDate=" + startDate +
                 ", plannedEndDate=" + plannedEndDate +
                 ", endDate=" + endDate +
-                ", member=" + member +
-                ", book=" + book +
+                ", borrower=" + borrower.getLogin() +
+                ", book=" + book.getTitle() +
                 '}';
     }
 
-    public void setBook(Book book) {
-        this.book = book;
 
-
-    }
 }

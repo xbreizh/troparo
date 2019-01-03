@@ -28,6 +28,9 @@ public class LoanServiceImpl implements ILoanService {
     @Inject
     private MemberManager memberManager;
 
+    @Inject
+    private Authentication authentication;
+
     private String exception = "";
     private List<Loan> loanList = new ArrayList<>();
     private LoanTypeOut loanTypeOut = null;
@@ -38,14 +41,16 @@ public class LoanServiceImpl implements ILoanService {
     // Create
     @Override
     public AddLoanResponseType addLoan(AddLoanRequestType parameters) throws BusinessException {
+        exception = "";
         AddLoanResponseType ar = new AddLoanResponseType();
+        checkAuthentication(parameters.getToken());
         ar.setReturn(true);
         loanTypeIn = parameters.getLoanTypeIn();
         convertLoanTypeInIntoLoan();
         logger.info("loanManager: " + loanManager);
         exception = loanManager.addLoan(loan);
         if (!exception.equals("")) {
-            logger.info(exception);
+            logger.info("exception found: " + exception);
             throw new BusinessException(exception);
         }
 
@@ -59,7 +64,8 @@ public class LoanServiceImpl implements ILoanService {
     // Get One
     @Override
     public GetLoanByIdResponseType getLoanById(GetLoanByIdRequestType parameters) throws BusinessException {
-
+        exception = "";
+        checkAuthentication(parameters.getToken());
         logger.info("new method added");
         GetLoanByIdResponseType rep = new GetLoanByIdResponseType();
         LoanTypeOut loanTypeOut = new LoanTypeOut();
@@ -69,7 +75,7 @@ public class LoanServiceImpl implements ILoanService {
         } else {
             loanTypeOut.setId(loan.getId());
             loanTypeOut.setISBN(loan.getBook().getIsbn());
-            loanTypeOut.setLogin(loan.getMember().getLogin());
+            loanTypeOut.setLogin(loan.getBorrower().getLogin());
             loanTypeOut.setStartDate(convertDateIntoXmlDate(loan.getStartDate()));
             loanTypeOut.setPlannedEndDate(convertDateIntoXmlDate(loan.getPlannedEndDate()));
             loanTypeOut.setEndDate(convertDateIntoXmlDate(loan.getEndDate()));
@@ -82,7 +88,9 @@ public class LoanServiceImpl implements ILoanService {
     // Get All
     @Override
     public LoanListResponseType getAllLoans(LoanListRequestType parameters) throws BusinessException {
+        checkAuthentication(parameters.getToken());
         loanList = loanManager.getLoans();
+
         logger.info("size list: " + loanList.size());
 
         LoanListResponseType loanListResponseType = new LoanListResponseType();
@@ -95,25 +103,17 @@ public class LoanServiceImpl implements ILoanService {
     }
 
 
-    @Override
-    public TerminateLoanResponseType terminateLoan(TerminateLoanRequestType parameters) throws BusinessException {
-        TerminateLoanResponseType ar = new TerminateLoanResponseType();
-        ar.setReturn(false);
-        String feedback = loanManager.terminate(parameters.getId());
-        if (feedback.equals("")) {
-            ar.setReturn(true);
-        }
-        return ar;
-    }
+
 
 
     // Get List By Criterias
     @Override
     public GetLoanByCriteriasResponseType getLoanByCriterias(GetLoanByCriteriasRequestType parameters) throws BusinessException {
+        checkAuthentication(parameters.getToken());
         HashMap<String, String> map = new HashMap<>();
         LoanCriterias criterias = parameters.getLoanCriterias();
-        map.put("Login", criterias.getLogin().toUpperCase());
-        map.put("ISBN", criterias.getISBN().toUpperCase());
+        map.put("borrower.login", criterias.getLogin().toUpperCase());
+        map.put("book.isbn", criterias.getISBN().toUpperCase());
         logger.info("map: " + map);
 
         loanList = loanManager.getLoansByCriterias(map);
@@ -130,7 +130,26 @@ public class LoanServiceImpl implements ILoanService {
 
     @Override
     public RenewLoanResponseType renewLoan(RenewLoanRequestType parameters) throws BusinessException {
-        return null;
+        checkAuthentication(parameters.getToken());
+        RenewLoanResponseType ar = new RenewLoanResponseType();
+        ar.setReturn(false);
+        String feedback = loanManager.renewLoan(parameters.getId());
+        if (feedback.equals("")) {
+            ar.setReturn(true);
+        }
+        return ar;
+    }
+
+    @Override
+    public TerminateLoanResponseType terminateLoan(TerminateLoanRequestType parameters) throws BusinessException {
+        checkAuthentication(parameters.getToken());
+        TerminateLoanResponseType ar = new TerminateLoanResponseType();
+        ar.setReturn(false);
+        String feedback = loanManager.terminate(parameters.getId());
+        if (feedback.equals("")) {
+            ar.setReturn(true);
+        }
+        return ar;
     }
 
 
@@ -145,14 +164,16 @@ public class LoanServiceImpl implements ILoanService {
             // set values retrieved from DAO class
             loanTypeOut = new LoanTypeOut();
             loanTypeOut.setId(loan.getId());
-            loanTypeOut.setLogin(loan.getMember().getLogin());
+            loanTypeOut.setLogin(loan.getBorrower().getLogin());
             loanTypeOut.setISBN(loan.getBook().getIsbn());
             XMLGregorianCalendar startDate = convertDateIntoXmlDate(loan.getStartDate());
-            XMLGregorianCalendar endDate = convertDateIntoXmlDate(loan.getEndDate());
             XMLGregorianCalendar plannedEndDate = convertDateIntoXmlDate(loan.getPlannedEndDate());
+            if (loan.getEndDate() != null) {
+                XMLGregorianCalendar endDate = convertDateIntoXmlDate(loan.getEndDate());
+                loanTypeOut.setEndDate(endDate);
+            }
 
             loanTypeOut.setStartDate(startDate);
-            loanTypeOut.setEndDate(endDate);
             loanTypeOut.setPlannedEndDate(plannedEndDate);
 
             logger.info("conversion done");
@@ -165,6 +186,7 @@ public class LoanServiceImpl implements ILoanService {
 
             loanListType.getLoanTypeOut().add(loanTypeOut);
         }
+
         logger.info("loanListType end: " + loanListType.getLoanTypeOut().size());
     }
 
@@ -172,7 +194,7 @@ public class LoanServiceImpl implements ILoanService {
     // Converts Input into Loan for business
     private void convertLoanTypeInIntoLoan() {
         loan = new Loan();
-        loan.setMember(memberManager.getMemberByLogin(loanTypeIn.getLogin().toUpperCase()));
+        loan.setBorrower(memberManager.getMemberByLogin(loanTypeIn.getLogin().toUpperCase()));
         loan.setBook(bookManager.getBookByIsbn(loanTypeIn.getISBN().toUpperCase()));
         logger.info("conversion loanType into loan done");
     }
@@ -192,5 +214,13 @@ public class LoanServiceImpl implements ILoanService {
         return xmlCalendar;
     }
 
+    private void checkAuthentication(String token) throws BusinessException {
+        try {
+            authentication.checkToken(token);
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw new BusinessException("invalid token");
+        }
+    }
 
 }
