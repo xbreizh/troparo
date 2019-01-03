@@ -12,6 +12,8 @@ public interface LoanDAO {
 
     boolean addLoan(Loan loan);
 
+    boolean updateLoan(Loan loan);
+
     Loan getLoanById(int id);
 
     Loan getLoanByIsbn(String isbn);
@@ -21,8 +23,8 @@ public interface LoanDAO {
 
     List<Loan> getLoansByCriterias(HashMap<String, String> map);
 
-    boolean renew(int id);
+    /*boolean renew(int id);
 
-    boolean terminate(Loan loan);
+    boolean terminate(Loan loan);*/
 
 }

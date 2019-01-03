@@ -89,6 +89,7 @@ public class LoanManagerImpl implements LoanManager {
             cal.setTime(loan.getStartDate());
             cal.add(Calendar.DATE, renewDuration);
             loan.setEndDate(cal.getTime());
+            loanDAO.updateLoan(loan);
         }
         return exception;
     }
@@ -99,6 +100,7 @@ public class LoanManagerImpl implements LoanManager {
         try {
             loan = loanDAO.getLoanById(id);
             loan.setEndDate(new Date());
+            loanDAO.updateLoan(loan);
         } catch (NullPointerException e) {
             return "loan couldn't be terminated!";
         }
