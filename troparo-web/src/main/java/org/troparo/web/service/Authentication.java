@@ -1,3 +1,4 @@
+/*
 package org.troparo.web.service;
 
 import org.troparo.business.contract.MemberManager;
@@ -26,3 +27,4 @@ public class Authentication {
         return true;
     }
 }
+*/

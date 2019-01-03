@@ -162,6 +162,10 @@
                                 <wsdlOption>
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/LoanService.wsdl</wsdl>
                                 </wsdlOption>
+                                <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/ConnectService.wsdl
+                                    </wsdl>
+                                </wsdlOption>
                             </wsdlOptions>
                         </configuration>
                         <goals>

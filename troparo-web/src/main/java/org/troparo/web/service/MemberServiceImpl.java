@@ -1,9 +1,11 @@
 package org.troparo.web.service;
 
 import org.apache.log4j.Logger;
+import org.springframework.security.core.Authentication;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.entities.member.*;
 import org.troparo.model.Member;
+import org.troparo.services.connectservice.IConnectService;
 import org.troparo.services.memberservice.BusinessException;
 import org.troparo.services.memberservice.IMemberService;
 
@@ -24,7 +26,7 @@ public class MemberServiceImpl implements IMemberService {
 
 
     @Inject
-    private Authentication authentication;
+    private ConnectServiceImpl authentication;
 
     private String exception = "";
     private List<Member> memberList = new ArrayList<>();
@@ -94,23 +96,8 @@ public class MemberServiceImpl implements IMemberService {
         return ar;
     }
 
-    @Override
-    public ConnectResponseType connect(ConnectRequestType parameters) throws BusinessException {
-        ConnectResponseType ar = new ConnectResponseType();
 
-        ar.setReturn(true);
-        String login = parameters.getLogin();
-        String password = parameters.getPassword();
-
-
-        ar.setReturn(memberManager.connect(login, password));
-        if (!exception.equals("")) {
-            throw new BusinessException(exception);
-        }
-
-        return ar;
-    }
-
+/*
     @Override
     public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessException {
 
@@ -119,7 +106,7 @@ public class MemberServiceImpl implements IMemberService {
         tokenIsValid = memberManager.checkToken(parameters.getToken());
         ar.setReturn(tokenIsValid);
         return ar;
-    }
+    }*/
 
 
     // Get One
@@ -145,12 +132,12 @@ public class MemberServiceImpl implements IMemberService {
         return rep;
     }
 
-    @Override
+  /*  @Override
     public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
         InvalidateTokenResponseType ar = new InvalidateTokenResponseType();
         ar.setReturn(memberManager.invalidateToken(parameters.getToken()));
         return ar;
-    }
+    }*/
 
 
     // Get All
@@ -170,13 +157,13 @@ public class MemberServiceImpl implements IMemberService {
         return memberListResponseType;
     }
 
-    @Override
+  /*  @Override
     public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessException {
         GetTokenResponseType ar = new GetTokenResponseType();
         String token = memberManager.getToken(parameters.getLogin(), parameters.getPassword());
         ar.setReturn(token);
         return ar;
-    }
+    }*/
 
 
     // Get List By Criterias
@@ -221,7 +208,7 @@ public class MemberServiceImpl implements IMemberService {
 
     }
 
-    @Override
+   /* @Override
     public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws BusinessException {
         ResetPasswordResponseType ar = new ResetPasswordResponseType();
         boolean result;
@@ -235,7 +222,7 @@ public class MemberServiceImpl implements IMemberService {
         ar.setReturn(result);
         return ar;
     }
-
+*/
 
     // Converts Member from Business into output
     private void convertMemberIntoMemberTypeOut() {
