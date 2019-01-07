@@ -1,12 +1,11 @@
 package org.troparo.web.service;
 
+
 import org.apache.log4j.Logger;
 import org.troparo.business.contract.BookManager;
 import org.troparo.entities.book.*;
 import org.troparo.model.Book;
-import org.troparo.services.bookservice.BusinessException;
-import org.troparo.services.bookservice.IBookService;
-
+import org.troparo.services.bookservice.*;
 import javax.inject.Inject;
 import javax.jws.WebService;
 import java.util.ArrayList;
@@ -26,14 +25,14 @@ public class BookServiceImpl implements IBookService {
 
     private String exception = "";
     private List<Book> bookList = new ArrayList<>();
-    private BookTypeOut bookTypeOut = null;
-    private BookTypeIn bookTypeIn = null;
-    private BookListType bookListType = new BookListType();
+    private org.troparo.entities.book.BookTypeOut bookTypeOut = null;
+    private org.troparo.entities.book.BookTypeIn bookTypeIn = null;
+    private org.troparo.entities.book.BookListType bookListType = new org.troparo.entities.book.BookListType();
     private Book book = null;
 
     // Create
     @Override
-    public AddBookResponseType addBook(AddBookRequestType parameters) throws BusinessException {
+    public AddBookResponseType addBook(org.troparo.entities.book.AddBookRequestType parameters) throws BusinessException {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
 
@@ -66,7 +65,7 @@ public class BookServiceImpl implements IBookService {
     }
 
     // Converts Input into Book for business
-    private void convertBookTypeUpdateIntoBook(BookTypeUpdate bookTypeUpdate) {
+    private void convertBookTypeUpdateIntoBook(org.troparo.entities.book.BookTypeUpdate bookTypeUpdate) {
         book = new Book();
         book.setIsbn(bookTypeUpdate.getISBN().toUpperCase());
         book.setTitle(bookTypeUpdate.getTitle().toUpperCase());
@@ -84,9 +83,9 @@ public class BookServiceImpl implements IBookService {
     public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
         checkAuthentication(parameters.getToken());
 
-        UpdateBookResponseType ar = new UpdateBookResponseType();
+        org.troparo.entities.book.UpdateBookResponseType ar = new org.troparo.entities.book.UpdateBookResponseType();
         ar.setReturn(true);
-        BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
+        org.troparo.entities.book.BookTypeUpdate bookTypeUpdate = parameters.getBookTypeUpdate();
         logger.info("received: " + bookTypeUpdate);
         // update
         convertBookTypeUpdateIntoBook(bookTypeUpdate);
@@ -124,7 +123,7 @@ public class BookServiceImpl implements IBookService {
 
         logger.info("new method added");
         GetBookByIdResponseType rep = new GetBookByIdResponseType();
-        BookTypeOut bt = new BookTypeOut();
+        BookTypeOut bt = new org.troparo.entities.book.BookTypeOut();
         Book book = bookManager.getBookById(parameters.getReturn());
         if (book == null) {
             throw new BusinessException("no book found with that id");
@@ -240,7 +239,7 @@ public class BookServiceImpl implements IBookService {
         for (Book book : bookList) {
 
             // set values retrieved from DAO class
-            bookTypeOut = new BookTypeOut();
+            bookTypeOut = new org.troparo.entities.book.BookTypeOut();
             bookTypeOut.setId(book.getId());
             bookTypeOut.setISBN(book.getIsbn());
             bookTypeOut.setTitle(book.getTitle());

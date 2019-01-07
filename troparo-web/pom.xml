@@ -150,7 +150,7 @@
                 <executions>
                     <execution>
                         <configuration>
-                            <sourceRoot>generated/java/source</sourceRoot>
+                            <sourceRoot>generated/java/</sourceRoot>
                             <wsdlOptions>
                                 <wsdlOption>
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/BookService.wsdl</wsdl>

@@ -10,6 +10,7 @@ import org.troparo.model.Member;
 import org.troparo.services.connectservice.BusinessException;
 import org.troparo.services.connectservice.IConnectService;
 
+
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebService;
@@ -47,14 +48,14 @@ public class ConnectServiceImpl implements IConnectService {
     }
 
     @Override
-    public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws org.troparo.services.connectservice.BusinessException {
+    public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
         InvalidateTokenResponseType ar = new InvalidateTokenResponseType();
         ar.setReturn(memberManager.invalidateToken(parameters.getToken()));
         return ar;
     }
 
     @Override
-    public GetTokenResponseType getToken(GetTokenRequestType parameters) throws org.troparo.services.connectservice.BusinessException {
+    public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessException {
         GetTokenResponseType ar = new GetTokenResponseType();
         String token = memberManager.getToken(parameters.getLogin(), parameters.getPassword());
         ar.setReturn(token);
@@ -62,7 +63,7 @@ public class ConnectServiceImpl implements IConnectService {
     }
 
     @Override
-    public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws org.troparo.services.connectservice.BusinessException {
+    public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessException {
         CheckTokenResponseType ar = new CheckTokenResponseType();
         boolean tokenIsValid = false;
         tokenIsValid = memberManager.checkToken(parameters.getToken());
@@ -71,7 +72,7 @@ public class ConnectServiceImpl implements IConnectService {
     }
 
     @Override
-    public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws org.troparo.services.connectservice.BusinessException {
+    public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws BusinessException {
         ResetPasswordResponseType ar = new ResetPasswordResponseType();
         boolean result;
 

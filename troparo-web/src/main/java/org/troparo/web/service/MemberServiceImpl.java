@@ -1,11 +1,9 @@
 package org.troparo.web.service;
 
 import org.apache.log4j.Logger;
-import org.springframework.security.core.Authentication;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.entities.member.*;
 import org.troparo.model.Member;
-import org.troparo.services.connectservice.IConnectService;
 import org.troparo.services.memberservice.BusinessException;
 import org.troparo.services.memberservice.IMemberService;
 
