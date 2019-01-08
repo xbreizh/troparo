@@ -11,7 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b2c5e5e-7e48-43f7-b688-2fd4961f34ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl" beforeDir="false" afterPath="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/troparo-web/target/" />
@@ -43,13 +44,62 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="286" column="69" selection-start-line="286" selection-start-column="69" selection-end-line="286" selection-end-column="69" />
+            <state relative-caret-position="105">
+              <caret line="92" column="12" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#xsd:schema#0;n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#xsd:import#0;n#xsd:schema#0;n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#1;n#wsdl:definitions#0;n#!!top" />
+                <element signature="e#1064#1340#0" />
+                <element signature="n#wsdl:message#2;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#3;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#4;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#5;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#6;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#7;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:message#8;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#0;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="e#2687#2951#0" />
+                <element signature="n#wsdl:operation#1;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#2;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#3;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#soap:binding#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#soap:operation#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:input#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:output#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:fault#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="e#4464#4940#0" />
+                <element signature="n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#soap:operation#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:input#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:output#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:fault#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#soap:operation#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:input#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:output#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:fault#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#soap:operation#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:input#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:output#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+                <element signature="n#wsdl:fault#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/connect.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -122,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/MusicService.wsdl" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/music.xsd" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/EmailValidator.java" />
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Test.java" />
@@ -144,7 +193,6 @@
         <option value="$PROJECT_DIR$/troparo-model/src/main/java/org/troparo/model/Member.java" />
         <option value="$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/BookDAO.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/BookManager.java" />
-        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" />
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/book.xsd" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/MemberManager.java" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/contract/LoanManager.java" />
@@ -173,6 +221,8 @@
         <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" />
         <option value="$PROJECT_DIR$/troparo-web/pom.xml" />
         <option value="$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl" />
+        <option value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl" />
       </list>
     </option>
   </component>
@@ -202,6 +252,15 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="troparo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="troparo" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="troparo-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
@@ -212,7 +271,7 @@
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1830" />
-    <option name="height" value="1100" />
+    <option name="height" value="1099" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -220,8 +279,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -232,121 +291,6 @@
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
               <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-technical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,7 +320,8 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -384,8 +329,9 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="troparo" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
@@ -393,26 +339,10 @@
               <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="troparo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="troparo" type="462c0819:PsiDirectoryNode" />
-              <item name="troparo-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="entities" type="462c0819:PsiDirectoryNode" />
+              <item name="connect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -427,7 +357,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546916795253" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/config/spring-hibernate-jax-ws.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../troparo-userApp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -507,6 +437,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_troparo_9" />
+        <option name="JNDI_PORT" value="1098" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -616,7 +547,8 @@
       <workItem from="1546901348148" duration="1154000" />
       <workItem from="1546915620362" duration="1212000" />
       <workItem from="1546916904620" duration="1092000" />
-      <workItem from="1546941284446" duration="1309000" />
+      <workItem from="1546941284446" duration="8013000" />
+      <workItem from="1546963694976" duration="2250000" />
     </task>
     <task id="LOCAL-00001" summary="updated wsdl github url -&gt; ok">
       <created>1545663706350</created>
@@ -954,11 +886,18 @@
       <option name="project" value="LOCAL" />
       <updated>1546917904374</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="fixed case sensitive email for password reset">
+      <created>1546942987054</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1546942987054</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238124000" />
+    <option name="totallyTimeSpent" value="247078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -973,7 +912,7 @@
     <frame x="-7" y="-7" width="1463" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4927798" visible="true" weight="0.2929437" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4927798" visible="true" weight="0.29722023" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -985,7 +924,7 @@
       <window_info id="Persistence" order="9" sideWeight="0.5072202" side_tool="true" weight="0.2843906" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32918397" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4982181" weight="0.4979253" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4982181" visible="true" weight="0.4979253" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1059,7 +998,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="fixed updateMember issue" />
     <MESSAGE value="added email regex" />
     <MESSAGE value="added connect / pwd reset methods" />
     <MESSAGE value="added getToken / invalidateToken methods in wsdl / xsd" />
@@ -1084,28 +1022,12 @@
     <MESSAGE value="connect Service ok" />
     <MESSAGE value="fixed isAvailable (book)" />
     <MESSAGE value="fixed persistence bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed persistence bug" />
+    <MESSAGE value="fixed case sensitive email for password reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed case sensitive email for password reset" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/21bf4771-c899-40d8-baf9-6c1fd95633b6/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-consumer/src/main/java/org/troparo/consumer/contract/MemberDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="33" lean-forward="true" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/generated/java/source/org/troparo/services/memberservice/MemberService.java" />
     <entry file="file://$PROJECT_DIR$/troparo-web/WEB-INF/apache-cxf-services.xml" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/912dd2f0-64ef-466e-a365-ed99f85c14de/console.sql">
@@ -1117,17 +1039,6 @@
           <caret line="43" column="52" lean-forward="true" selection-start-line="43" selection-start-column="52" selection-end-line="43" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="66" column="19" selection-start-line="61" selection-start-column="4" selection-end-line="66" selection-end-column="19" />
-          <folding>
-            <element signature="n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
-            <element signature="n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -1209,20 +1120,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../Project_7-Library_troparo/project/troparo-userApp/troparo-technical/src/main/resources/logs/logs.log" />
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/connect.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/member.xsd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4884">
@@ -1385,16 +1282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="220" column="58" lean-forward="true" selection-start-line="220" selection-start-column="58" selection-end-line="220" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/ConnectServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -1433,13 +1320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/troparo-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/MemberServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1454,12 +1334,108 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/services/connectservice/IConnectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-41">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/web/service/LoanServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" selection-start-line="20" selection-end-line="178" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/troparo-business/src/main/java/org/troparo/business/impl/MemberManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="139">
           <caret line="286" column="69" selection-start-line="286" selection-start-column="69" selection-end-line="286" selection-end-column="69" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/BookService.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="23" selection-start-line="61" selection-start-column="8" selection-end-line="66" selection-end-column="23" />
+          <folding>
+            <element signature="n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/entities/connect.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/java/org/troparo/services/connectservice/ConnectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/troparo-web/src/main/resources/org/troparo/web/services/ConnectService.wsdl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="92" column="12" selection-start-line="92" selection-start-column="12" selection-end-line="92" selection-end-column="12" />
+          <folding>
+            <element signature="n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#xsd:schema#0;n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#xsd:import#0;n#xsd:schema#0;n#wsdl:types#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#1;n#wsdl:definitions#0;n#!!top" />
+            <element signature="e#1064#1340#0" />
+            <element signature="n#wsdl:message#2;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#3;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#4;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#5;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#6;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#7;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:message#8;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#0;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="e#2687#2951#0" />
+            <element signature="n#wsdl:operation#1;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#2;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#3;n#wsdl:portType#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#soap:binding#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#soap:operation#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:input#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:output#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:fault#0;n#wsdl:operation#0;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="e#4464#4940#0" />
+            <element signature="n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#soap:operation#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:input#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:output#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:fault#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#soap:operation#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:input#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:output#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:fault#0;n#wsdl:operation#1;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#soap:operation#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:input#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:output#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
+            <element signature="n#wsdl:fault#0;n#wsdl:operation#2;n#wsdl:binding#0;n#wsdl:definitions#0;n#!!top" />
           </folding>
         </state>
       </provider>

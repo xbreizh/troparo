@@ -103,6 +103,19 @@
                  <soap:fault name="businessException" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>-->
+        <wsdl:operation name="checkToken">
+            <soap:operation
+                    soapAction=""/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="businessException">
+                <soap:fault name="businessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
 
         <wsdl:operation name="getToken">
             <soap:operation
