@@ -178,6 +178,7 @@ public class MemberDAOImpl implements MemberDAO {
     @Override
     public Member getMemberByLogin(String login) {
         List<Member> list = new ArrayList<>();
+        logger.info("login received: " + login);
         request = "From Member where login = :login";
 
         Query query = sessionFactory.getCurrentSession().createQuery(request, cl);
@@ -185,6 +186,7 @@ public class MemberDAOImpl implements MemberDAO {
         try {
             return (Member) query.getResultList().get(0);
         } catch (Exception e) {
+            logger.info("returning null");
             return null;
         }
     }

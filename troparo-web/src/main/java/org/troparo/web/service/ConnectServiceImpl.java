@@ -57,8 +57,16 @@ public class ConnectServiceImpl implements IConnectService {
     @Override
     public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessException {
         GetTokenResponseType ar = new GetTokenResponseType();
+        logger.info("entering get token method");
+        logger.info("login: " + parameters.getLogin());
+        logger.info("password: " + parameters.getPassword());
         String token = memberManager.getToken(parameters.getLogin(), parameters.getPassword());
-        ar.setReturn(token);
+        logger.info("token returned: " + token);
+        if (token == null) {
+            ar.setReturn("something went wrong");
+        } else {
+            ar.setReturn(token);
+        }
         return ar;
     }
 

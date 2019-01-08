@@ -1,5 +1,6 @@
 package org.troparo.web.service;
 
+
 import org.apache.log4j.Logger;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.entities.member.*;
@@ -35,7 +36,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Create
     @Override
-    public AddMemberResponseType addMember(AddMemberRequestType parameters) throws BusinessException {
+    public AddMemberResponseType addMember(AddMemberRequestType parameters) throws org.troparo.services.memberservice.BusinessException {
         AddMemberResponseType ar = new AddMemberResponseType();
         /*checkAuthentication(parameters.getToken());*/
         ar.setReturn(true);
@@ -45,7 +46,7 @@ public class MemberServiceImpl implements IMemberService {
         exception = memberManager.addMember(member);
         if (!exception.equals("")) {
             logger.info(exception);
-            throw new BusinessException(exception);
+            throw new org.troparo.services.memberservice.BusinessException(exception);
         }
 
         return ar;

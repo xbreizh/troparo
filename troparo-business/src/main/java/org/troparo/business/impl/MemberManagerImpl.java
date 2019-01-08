@@ -211,19 +211,25 @@ public class MemberManagerImpl implements MemberManager {
     public String getToken(String login, String password) {
         Member m;
         try {
+            logger.info("trying to get token from business");
             m = getMemberByLogin(login.toUpperCase());
             // checking password match
-            if (checkPassword(password, m.getPassword())) {
-                String token = generateToken();
-                m.setToken(token);
-                m.setDateConnect(new Date());
-                memberDAO.updateMember(m);
-                return token;
+            if (m != null) {
+                if (checkPassword(password, m.getPassword())) {
+                    String token = generateToken();
+                    m.setToken(token);
+                    m.setDateConnect(new Date());
+                    memberDAO.updateMember(m);
+                    return token;
+                } else {
+                    logger.info("no token");
+                }
             }
-        } catch (NoResultException e) {
+        } catch (NullPointerException e) {
             logger.info("wrong login or pwd");
         }
-        return null;
+
+        return "wrong login or pwd";
     }
 
     @Override
@@ -294,9 +300,7 @@ public class MemberManagerImpl implements MemberManager {
     public boolean checkAdmin(String token) {
         Member m = memberDAO.getMemberByToken(token);
         if (m != null) {
-            if (m.getRole().equals("Admin")) {
-                return true;
-            }
+            return m.getRole().equals("Admin");
         }
         return false;
     }
