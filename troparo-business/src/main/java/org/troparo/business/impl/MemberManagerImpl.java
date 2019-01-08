@@ -284,8 +284,8 @@ public class MemberManagerImpl implements MemberManager {
 
         if (getMemberByLogin(login.toUpperCase()) != null) {
             Member m = getMemberByLogin(login.toUpperCase());
-            if (m.getEmail().toUpperCase().equals(email)) {
-                logger.info("email passed");
+            if (m.getEmail().toUpperCase().equals(email.toUpperCase())) {
+                logger.info("email passed: " + m.getEmail());
                 m.setPassword(encryptPassword(password));
                 memberDAO.updateMember(m);
                 return true;
