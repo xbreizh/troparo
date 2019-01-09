@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="troparo-business" />
+        <module name="troparo-consumer" />
+        <module name="troparo-log" />
+        <module name="troparo-model" />
+        <module name="troparo-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="troparo" target="1.7" />
+      <module name="troparo-business" target="1.7" />
+      <module name="troparo-consumer" target="1.7" />
+      <module name="troparo-log" target="1.7" />
+      <module name="troparo-model" target="1.7" />
+      <module name="troparo-web" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

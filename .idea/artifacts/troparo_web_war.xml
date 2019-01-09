@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="troparo-web:war">
+    <output-path>$PROJECT_DIR$/troparo-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>troparo-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="troparo-web-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="troparo-web:war exploded" />
+    </root>
+  </artifact>
+</component>

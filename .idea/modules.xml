@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/troparo.iml" filepath="$PROJECT_DIR$/troparo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/troparo-business/troparo-business.iml" filepath="$PROJECT_DIR$/troparo-business/troparo-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/troparo-consumer/troparo-consumer.iml" filepath="$PROJECT_DIR$/troparo-consumer/troparo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/troparo-log/troparo-log.iml" filepath="$PROJECT_DIR$/troparo-log/troparo-log.iml" />
+      <module fileurl="file://$PROJECT_DIR$/troparo-model/troparo-model.iml" filepath="$PROJECT_DIR$/troparo-model/troparo-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/troparo-web/troparo-web.iml" filepath="$PROJECT_DIR$/troparo-web/troparo-web.iml" />
+    </modules>
+  </component>
+</project>
