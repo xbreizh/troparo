@@ -1,0 +1,1574 @@
+2019-01-03 10:24:12 INFO  MemberDAOImpl:138 - in the dao: ?
+2019-01-03 10:24:12 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 10:28:25 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 10:28:25 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@67c200bc
+2019-01-03 10:28:25 INFO  MemberDAOImpl:66 - in the dao: LOKI
+2019-01-03 10:28:25 INFO  MemberDAOImpl:75 - no record found for that login: LOKI
+2019-01-03 10:28:25 INFO  MemberServiceImpl:47 - Login must be 5 or 20 characters: LOKI
+2019-01-03 10:28:38 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 10:28:38 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@67c200bc
+2019-01-03 10:28:38 INFO  MemberDAOImpl:66 - in the dao: LOKI1
+2019-01-03 10:28:38 INFO  MemberDAOImpl:75 - no record found for that login: LOKI1
+2019-01-03 10:28:38 INFO  MemberManagerImpl:261 - hashed pwd: $2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha
+2019-01-03 10:28:38 INFO  MemberDAOImpl:26 - Member from dao: Member{Id=0, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='null', email='LOKI@LOKI.LOKI', dateJoin=Thu Jan 03 10:28:38 CET 2019, dateConnect=null, loanList=0}
+2019-01-03 10:28:38 INFO  MemberManagerImpl:51 - exception: 
+2019-01-03 10:46:00 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:46:00 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 10:46:23 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:46:24 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:46:24 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:46:24 INFO  LoanServiceImpl:194 - conversion loanType into loan done
+2019-01-03 10:46:24 INFO  LoanServiceImpl:49 - loanManager: org.troparo.business.impl.LoanManagerImpl@62b489d2
+2019-01-03 10:46:24 INFO  LoanServiceImpl:52 - invalid member
+2019-01-03 10:46:34 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:46:34 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:46:34 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:46:34 INFO  LoanServiceImpl:194 - conversion loanType into loan done
+2019-01-03 10:46:34 INFO  LoanServiceImpl:49 - loanManager: org.troparo.business.impl.LoanManagerImpl@62b489d2
+2019-01-03 10:46:34 INFO  LoanServiceImpl:52 - invalid book
+2019-01-03 10:48:21 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:21 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:21 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:48:21 INFO  BookServiceImpl:60 - 1986
+2019-01-03 10:48:21 INFO  BookServiceImpl:65 - pub date: 1986
+2019-01-03 10:48:21 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@44b1d38b
+2019-01-03 10:48:21 INFO  BookDAOImpl:69 - in the dao: 12345697894
+2019-01-03 10:48:21 INFO  BookDAOImpl:78 - no record found for that isbn: 12345697894
+2019-01-03 10:48:21 INFO  BookServiceImpl:47 - ISBN must be 10 or 13 characters: 12345697894
+2019-01-03 10:48:37 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:37 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:37 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:48:37 INFO  BookServiceImpl:60 - 1986
+2019-01-03 10:48:37 INFO  BookServiceImpl:65 - pub date: 1986
+2019-01-03 10:48:37 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@44b1d38b
+2019-01-03 10:48:37 INFO  BookDAOImpl:69 - in the dao: 123456978924
+2019-01-03 10:48:37 INFO  BookDAOImpl:78 - no record found for that isbn: 123456978924
+2019-01-03 10:48:37 INFO  BookServiceImpl:47 - ISBN must be 10 or 13 characters: 123456978924
+2019-01-03 10:48:55 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:55 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:48:55 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:48:55 INFO  BookServiceImpl:60 - 1986
+2019-01-03 10:48:55 INFO  BookServiceImpl:65 - pub date: 1986
+2019-01-03 10:48:55 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@44b1d38b
+2019-01-03 10:48:56 INFO  BookDAOImpl:69 - in the dao: 1234569789
+2019-01-03 10:48:56 INFO  BookDAOImpl:78 - no record found for that isbn: 1234569789
+2019-01-03 10:48:56 INFO  BookManagerImpl:41 - in the 
+2019-01-03 10:48:56 INFO  BookDAOImpl:42 - Book from dao: Book{Id=0, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=Thu Jan 03 10:48:56 CET 2019, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=0}
+2019-01-03 10:48:56 INFO  BookManagerImpl:45 - exception: 
+2019-01-03 10:49:19 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:49:19 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:49:19 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:49:19 INFO  LoanServiceImpl:194 - conversion loanType into loan done
+2019-01-03 10:49:19 INFO  LoanServiceImpl:49 - loanManager: org.troparo.business.impl.LoanManagerImpl@62b489d2
+2019-01-03 10:49:19 INFO  LoanDAOImpl:34 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 10:49:19 CET 2019, plannedEndDate=null, endDate=Thu Jan 31 10:49:19 CET 2019, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=0}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=0}}
+2019-01-03 10:51:15 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:51:15 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 10:51:15 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 10:51:15 INFO  LoanServiceImpl:194 - conversion loanType into loan done
+2019-01-03 10:51:15 INFO  LoanServiceImpl:49 - loanManager: org.troparo.business.impl.LoanManagerImpl@62b489d2
+2019-01-03 10:51:15 INFO  LoanDAOImpl:34 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 10:51:15 CET 2019, plannedEndDate=null, endDate=Thu Jan 31 10:51:15 CET 2019, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=1}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=1}}
+2019-01-03 11:03:06 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:03:06 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:03:06 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:03:07 INFO  LoanServiceImpl:194 - conversion loanType into loan done
+2019-01-03 11:03:07 INFO  LoanServiceImpl:49 - loanManager: org.troparo.business.impl.LoanManagerImpl@1c76203a
+2019-01-03 11:03:07 INFO  LoanManagerImpl:31 - loan received: Loan{Id=0, startDate=null, plannedEndDate=null, endDate=null, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=2}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=2}}
+2019-01-03 11:03:07 INFO  LoanDAOImpl:34 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 11:03:07 CET 2019, plannedEndDate=null, endDate=Thu Jan 31 11:03:07 CET 2019, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=2}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=2}}
+2019-01-03 11:07:05 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:07:06 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:07:06 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:07:06 INFO  LoanServiceImpl:196 - conversion loanType into loan done
+2019-01-03 11:07:06 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@175f9dd6
+2019-01-03 11:07:06 INFO  LoanManagerImpl:31 - loan received: Loan{Id=0, startDate=null, plannedEndDate=null, endDate=null, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=3}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=3}}
+2019-01-03 11:07:06 INFO  LoanDAOImpl:34 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 11:07:06 CET 2019, plannedEndDate=null, endDate=Thu Jan 31 11:07:06 CET 2019, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=3}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=3}}
+2019-01-03 11:07:20 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:07:20 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:07:20 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:07:20 INFO  LoanServiceImpl:94 - size list: 4
+2019-01-03 11:22:53 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:22:53 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:22:53 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:22:53 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 11:22:53 INFO  LoanServiceImpl:94 - size list: 4
+2019-01-03 11:23:04 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:23:04 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:23:04 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:23:04 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 11:23:04 INFO  LoanServiceImpl:94 - size list: 4
+2019-01-03 11:37:41 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:41 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:41 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:37:41 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 11:37:41 INFO  LoanServiceImpl:94 - size list: 0
+2019-01-03 11:37:41 INFO  LoanServiceImpl:189 - loanListType end: 0
+2019-01-03 11:37:49 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:49 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:49 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:37:49 INFO  LoanServiceImpl:198 - conversion loanType into loan done
+2019-01-03 11:37:49 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@55741e22
+2019-01-03 11:37:49 INFO  LoanManagerImpl:31 - loan received: Loan{Id=0, startDate=null, plannedEndDate=null, endDate=null, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=0}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=0}}
+2019-01-03 11:37:49 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 11:37:49 CET 2019, plannedEndDate=Thu Jan 31 11:37:49 CET 2019, endDate=null, member=Member{Id=17145, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$StvbSOx7zktNhoa9AgJHJuUW0i1.HRUipTgL1tU3RnA13wFiJHaha', role='ADMIN', token='0f36f1f7-bc5f-46f9-a93b-b682d708a7fa', email='LOKI@LOKI.LOKI', dateJoin=2019-01-03 10:28:38.468, dateConnect=2019-01-03 10:46:00.189, loanList=0}, book=Book{Id=17146, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=2019-01-03 10:48:56.013, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=0}}
+2019-01-03 11:37:54 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:54 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:37:54 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:37:54 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 11:37:54 INFO  LoanServiceImpl:94 - size list: 1
+2019-01-03 11:37:54 INFO  LoanServiceImpl:179 - conversion done
+2019-01-03 11:37:54 INFO  LoanServiceImpl:189 - loanListType end: 1
+2019-01-03 11:40:59 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:40:59 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:40:59 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:40:59 INFO  LoanServiceImpl:117 - map: {ISBN=?, Login=LOKI1}
+2019-01-03 11:40:59 INFO  LoanManagerImpl:74 - criterias: {Login=LOKI1}
+2019-01-03 11:40:59 INFO  LoanDAOImpl:104 - map received in DAO: {Login=LOKI1}
+2019-01-03 11:40:59 INFO  LoanDAOImpl:117 - request: From Loan where Login like :Login
+2019-01-03 11:40:59 INFO  LoanDAOImpl:121 - criteria: LOKI1
+2019-01-03 11:40:59 INFO  LoanServiceImpl:121 - loanListType beg: 1
+2019-01-03 11:43:37 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:43:37 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:43:37 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:43:37 INFO  LoanServiceImpl:117 - map: {ISBN=?, Login=LOKI1}
+2019-01-03 11:43:37 INFO  LoanManagerImpl:74 - criterias: {Login=LOKI1}
+2019-01-03 11:43:37 INFO  LoanDAOImpl:104 - map received in DAO: {Login=LOKI1}
+2019-01-03 11:43:37 INFO  LoanDAOImpl:117 - request: From Loan where Login like :Login
+2019-01-03 11:43:37 INFO  LoanDAOImpl:121 - criteria: LOKI1
+2019-01-03 11:43:37 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 11:48:51 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:48:52 INFO  MemberDAOImpl:194 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:48:52 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:48:52 INFO  MemberDAOImpl:39 - getting in dao
+2019-01-03 11:48:52 INFO  MemberServiceImpl:161 - size list: 1
+2019-01-03 11:48:52 INFO  MemberServiceImpl:253 - new date: 2019-01-03T10:28:38.468+01:00
+2019-01-03 11:48:52 INFO  MemberServiceImpl:265 - memberListType end: 1
+2019-01-03 11:49:25 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 11:49:25 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 11:49:47 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 11:49:47 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@78ff9f31
+2019-01-03 11:49:47 INFO  MemberDAOImpl:66 - in the dao: LOKI1
+2019-01-03 11:49:47 INFO  MemberDAOImpl:75 - no record found for that login: LOKI1
+2019-01-03 11:49:48 INFO  MemberManagerImpl:261 - hashed pwd: $2a$10$ju4SjeZ67cLESRzK5yJaCeyunyB5uE5UTlUNqLkgy98NroFMuYwWq
+2019-01-03 11:49:48 INFO  MemberDAOImpl:26 - Member from dao: Member{Id=0, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$ju4SjeZ67cLESRzK5yJaCeyunyB5uE5UTlUNqLkgy98NroFMuYwWq', role='ADMIN', token='null', email='LOKI@LOKI.LOKI', dateJoin=Thu Jan 03 11:49:48 CET 2019, dateConnect=null, loanList=0}
+2019-01-03 11:49:48 INFO  MemberManagerImpl:51 - exception: 
+2019-01-03 11:49:59 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:49:59 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 11:50:19 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:50:19 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:50:19 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:50:19 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 11:50:19 INFO  BookServiceImpl:152 - size list: 1
+2019-01-03 11:50:19 INFO  BookServiceImpl:247 - bookListType end: 1
+2019-01-03 11:50:32 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:50:32 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:50:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:50:32 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 11:50:32 INFO  BookServiceImpl:152 - size list: 0
+2019-01-03 11:50:32 INFO  BookServiceImpl:247 - bookListType end: 0
+2019-01-03 11:51:37 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:51:37 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:51:37 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:51:37 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 11:51:37 INFO  BookServiceImpl:152 - size list: 0
+2019-01-03 11:51:37 INFO  BookServiceImpl:247 - bookListType end: 0
+2019-01-03 11:52:07 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:52:07 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:52:07 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:52:07 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 11:52:07 INFO  BookServiceImpl:152 - size list: 0
+2019-01-03 11:52:07 INFO  BookServiceImpl:247 - bookListType end: 0
+2019-01-03 11:52:50 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:52:50 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:52:50 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:52:50 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 11:52:50 INFO  LoanServiceImpl:94 - size list: 0
+2019-01-03 11:52:50 INFO  LoanServiceImpl:191 - loanListType end: 0
+2019-01-03 11:53:21 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:53:21 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:53:21 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:53:21 INFO  LoanServiceImpl:117 - map: {ISBN=?, Login=?}
+2019-01-03 11:53:21 INFO  LoanManagerImpl:74 - criterias: {}
+2019-01-03 11:53:21 INFO  LoanDAOImpl:104 - map received in DAO: {}
+2019-01-03 11:53:21 INFO  LoanDAOImpl:117 - request: From Loan 
+2019-01-03 11:53:21 INFO  LoanDAOImpl:125 - list with criterias size: 0
+2019-01-03 11:53:21 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 11:53:21 INFO  LoanServiceImpl:126 - loanListType end: 0
+2019-01-03 11:53:47 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:53:47 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:53:47 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:53:47 INFO  LoanServiceImpl:117 - map: {ISBN=?, Login=DE}
+2019-01-03 11:53:47 INFO  LoanManagerImpl:74 - criterias: {Login=DE}
+2019-01-03 11:53:47 INFO  LoanDAOImpl:104 - map received in DAO: {Login=DE}
+2019-01-03 11:53:47 INFO  LoanDAOImpl:117 - request: From Loan where Login like :Login
+2019-01-03 11:53:47 INFO  LoanDAOImpl:121 - criteria: DE
+2019-01-03 11:53:47 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 11:54:01 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:54:01 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:54:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:54:01 INFO  LoanServiceImpl:117 - map: {ISBN=DE, Login=?}
+2019-01-03 11:54:01 INFO  LoanManagerImpl:74 - criterias: {ISBN=DE}
+2019-01-03 11:54:01 INFO  LoanDAOImpl:104 - map received in DAO: {ISBN=DE}
+2019-01-03 11:54:01 INFO  LoanDAOImpl:117 - request: From Loan where ISBN like :ISBN
+2019-01-03 11:54:01 INFO  LoanDAOImpl:121 - criteria: DE
+2019-01-03 11:54:01 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 11:58:15 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:58:16 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 11:58:16 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 11:58:16 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 11:58:16 INFO  LoanManagerImpl:74 - criterias: {book.ISBN=DE}
+2019-01-03 11:58:16 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 11:58:16 INFO  LoanDAOImpl:117 - request: From Loan where book.ISBN like :book.ISBN
+2019-01-03 12:05:11 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:05:11 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:05:11 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:05:11 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:05:11 INFO  LoanManagerImpl:74 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:05:11 INFO  LoanManagerImpl:75 - criterias: {book.ISBN=DE}
+2019-01-03 12:05:11 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 12:05:11 INFO  LoanDAOImpl:117 - request: From Loan where book.ISBN like :book.ISBN
+2019-01-03 12:10:03 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:10:03 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:10:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:10:03 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:10:03 INFO  LoanManagerImpl:74 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:10:03 INFO  LoanManagerImpl:75 - criterias: {book.ISBN=DE}
+2019-01-03 12:10:03 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 12:10:03 INFO  LoanDAOImpl:123 - request: From Loan where book.ISBN like :isbn
+2019-01-03 12:12:51 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:12:51 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:12:51 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:12:51 INFO  MemberServiceImpl:193 - map: {Email=?, role=?, FirstName=TEST, Login=?, LastName=?}
+2019-01-03 12:12:51 INFO  MemberManagerImpl:128 - criterias: {FirstName=TEST}
+2019-01-03 12:12:51 INFO  MemberDAOImpl:82 - map received in DAO: {FirstName=TEST}
+2019-01-03 12:12:51 INFO  MemberDAOImpl:95 - request: From Member where FirstName like :FirstName
+2019-01-03 12:12:52 INFO  MemberDAOImpl:101 - criteria: TEST
+2019-01-03 12:12:52 INFO  MemberDAOImpl:105 - list with criterias size: 0
+2019-01-03 12:12:52 INFO  MemberServiceImpl:197 - memberListType beg: 0
+2019-01-03 12:12:52 INFO  MemberServiceImpl:266 - memberListType end: 0
+2019-01-03 12:12:52 INFO  MemberServiceImpl:201 - memberListType end: 0
+2019-01-03 12:13:44 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:13:44 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:13:44 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:13:44 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:13:44 INFO  LoanManagerImpl:74 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:13:44 INFO  LoanManagerImpl:75 - criterias: {book.ISBN=DE}
+2019-01-03 12:13:44 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 12:13:44 INFO  LoanDAOImpl:123 - request: From Loan where book.ISBN like :isbn
+2019-01-03 12:23:59 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:24:00 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:24:00 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:24:00 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:24:00 INFO  LoanManagerImpl:74 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:24:00 INFO  LoanManagerImpl:75 - criterias: {book.ISBN=DE}
+2019-01-03 12:24:00 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 12:24:00 INFO  LoanDAOImpl:123 - request: From Loan where book.ISBN like :isbn
+2019-01-03 12:27:40 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:27:41 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:27:41 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:27:41 INFO  LoanServiceImpl:117 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:27:41 INFO  LoanManagerImpl:74 - map: {member.Login=?, book.ISBN=DE}
+2019-01-03 12:27:41 INFO  LoanManagerImpl:75 - criterias: {book.ISBN=DE}
+2019-01-03 12:27:41 INFO  LoanDAOImpl:104 - map received in DAO: {book.ISBN=DE}
+2019-01-03 12:27:41 INFO  LoanDAOImpl:123 - request: From Loan where book.ISBN like :ISBN
+2019-01-03 12:29:56 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:29:56 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:29:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:29:56 INFO  LoanServiceImpl:117 - map: {member.login=?, book.isbn=DE}
+2019-01-03 12:29:57 INFO  LoanManagerImpl:74 - map: {member.login=?, book.isbn=DE}
+2019-01-03 12:29:57 INFO  LoanManagerImpl:75 - criterias: {book.isbn=DE}
+2019-01-03 12:29:57 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=DE}
+2019-01-03 12:29:57 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 12:29:57 INFO  LoanDAOImpl:127 - criteria: DE
+2019-01-03 12:29:57 INFO  LoanDAOImpl:136 - list with criterias size: 0
+2019-01-03 12:29:57 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 12:29:57 INFO  LoanServiceImpl:190 - loanListType end: 0
+2019-01-03 12:29:57 INFO  LoanServiceImpl:125 - loanListType end: 0
+2019-01-03 12:30:06 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:30:06 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:30:06 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:30:06 INFO  LoanServiceImpl:117 - map: {member.login=S, book.isbn=DE}
+2019-01-03 12:30:06 INFO  LoanManagerImpl:74 - map: {member.login=S, book.isbn=DE}
+2019-01-03 12:30:06 INFO  LoanManagerImpl:75 - criterias: {member.login=S, book.isbn=DE}
+2019-01-03 12:30:06 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=S, book.isbn=DE}
+2019-01-03 12:30:06 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN and book.isbn like :ISBN
+2019-01-03 12:31:13 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:13 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:13 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:31:13 INFO  LoanServiceImpl:117 - map: {member.login=S, book.isbn=}
+2019-01-03 12:31:13 INFO  LoanManagerImpl:74 - map: {member.login=S, book.isbn=}
+2019-01-03 12:31:13 INFO  LoanManagerImpl:75 - criterias: {member.login=S}
+2019-01-03 12:31:13 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=S}
+2019-01-03 12:31:13 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN
+2019-01-03 12:31:21 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:21 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:21 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:31:21 INFO  LoanServiceImpl:117 - map: {member.login=S, book.isbn=}
+2019-01-03 12:31:21 INFO  LoanManagerImpl:74 - map: {member.login=S, book.isbn=}
+2019-01-03 12:31:21 INFO  LoanManagerImpl:75 - criterias: {member.login=S}
+2019-01-03 12:31:21 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=S}
+2019-01-03 12:31:21 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN
+2019-01-03 12:31:32 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:32 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:31:32 INFO  LoanServiceImpl:117 - map: {member.login=, book.isbn=FRR}
+2019-01-03 12:31:32 INFO  LoanManagerImpl:74 - map: {member.login=, book.isbn=FRR}
+2019-01-03 12:31:32 INFO  LoanManagerImpl:75 - criterias: {book.isbn=FRR}
+2019-01-03 12:31:32 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=FRR}
+2019-01-03 12:31:32 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 12:31:32 INFO  LoanDAOImpl:127 - criteria: FRR
+2019-01-03 12:31:32 INFO  LoanDAOImpl:136 - list with criterias size: 0
+2019-01-03 12:31:32 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 12:31:32 INFO  LoanServiceImpl:190 - loanListType end: 0
+2019-01-03 12:31:32 INFO  LoanServiceImpl:125 - loanListType end: 0
+2019-01-03 12:31:45 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:45 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:45 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:31:45 INFO  LoanServiceImpl:117 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:31:45 INFO  LoanManagerImpl:74 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:31:45 INFO  LoanManagerImpl:75 - criterias: {member.login=FRR}
+2019-01-03 12:31:45 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=FRR}
+2019-01-03 12:31:45 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN
+2019-01-03 12:31:51 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:51 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:31:51 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:31:51 INFO  LoanServiceImpl:117 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:31:51 INFO  LoanManagerImpl:74 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:31:51 INFO  LoanManagerImpl:75 - criterias: {member.login=FRR}
+2019-01-03 12:31:51 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=FRR}
+2019-01-03 12:31:51 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN
+2019-01-03 12:39:14 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:39:14 INFO  MemberDAOImpl:194 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 12:39:14 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:39:14 INFO  LoanServiceImpl:117 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:39:14 INFO  LoanManagerImpl:74 - map: {member.login=FRR, book.isbn=}
+2019-01-03 12:39:14 INFO  LoanManagerImpl:75 - criterias: {member.login=FRR}
+2019-01-03 12:39:14 INFO  LoanDAOImpl:104 - map received in DAO: {member.login=FRR}
+2019-01-03 12:39:14 INFO  LoanDAOImpl:123 - request: From Loan where member.login like :LOGIN
+2019-01-03 12:51:39 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 12:51:39 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@e75c987
+2019-01-03 12:51:39 INFO  MemberDAOImpl:66 - in the dao: LOKI1
+2019-01-03 12:51:40 INFO  MemberDAOImpl:75 - no record found for that login: LOKI1
+2019-01-03 12:51:40 INFO  MemberManagerImpl:261 - hashed pwd: $2a$10$pn2UdjRdBe4Q/IamHFn1J.3KxP3lpJJs8n6ED0gRpvuopUFtM23Je
+2019-01-03 12:51:40 INFO  MemberDAOImpl:26 - Member from dao: Member{Id=0, login='LOKI1', firstName='FRED', lastName='LOK', password='$2a$10$pn2UdjRdBe4Q/IamHFn1J.3KxP3lpJJs8n6ED0gRpvuopUFtM23Je', role='ADMIN', token='null', email='LOKI@LOKI.LOKI', dateJoin=Thu Jan 03 12:51:40 CET 2019, dateConnect=null, loanList=0}
+2019-01-03 12:51:40 INFO  MemberManagerImpl:51 - exception: 
+2019-01-03 12:51:47 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 12:51:47 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 12:52:04 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 12:52:04 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 12:52:04 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 12:52:04 INFO  LoanServiceImpl:117 - map: {book.isbn=, borrower.login=FRR}
+2019-01-03 12:52:04 INFO  LoanManagerImpl:74 - map: {book.isbn=, borrower.login=FRR}
+2019-01-03 12:52:04 INFO  LoanManagerImpl:75 - criterias: {borrower.login=FRR}
+2019-01-03 12:52:04 INFO  LoanDAOImpl:104 - map received in DAO: {borrower.login=FRR}
+2019-01-03 12:52:04 INFO  LoanDAOImpl:123 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 12:52:04 INFO  LoanDAOImpl:127 - criteria: FRR
+2019-01-03 12:52:04 INFO  LoanDAOImpl:136 - list with criterias size: 0
+2019-01-03 12:52:04 INFO  LoanServiceImpl:121 - loanListType beg: 0
+2019-01-03 12:52:04 INFO  LoanServiceImpl:190 - loanListType end: 0
+2019-01-03 12:52:04 INFO  LoanServiceImpl:125 - loanListType end: 0
+2019-01-03 13:01:11 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:01:11 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:01:11 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:01:11 INFO  LoanServiceImpl:199 - conversion loanType into loan done
+2019-01-03 13:01:11 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@2e5ba83f
+2019-01-03 13:05:18 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:18 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:18 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:05:19 INFO  LoanServiceImpl:199 - conversion loanType into loan done
+2019-01-03 13:05:19 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@710fd7cc
+2019-01-03 13:05:19 INFO  LoanServiceImpl:53 - exception found: invalid book
+2019-01-03 13:05:27 INFO  MemberDAOImpl:138 - in the dao: 0f36f1f7-bc5f-46f9-a93b-b682d708a7fa
+2019-01-03 13:05:27 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 13:05:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:05:48 INFO  BookServiceImpl:60 - 1986
+2019-01-03 13:05:48 INFO  BookServiceImpl:65 - pub date: 1986
+2019-01-03 13:05:48 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@3c3575e2
+2019-01-03 13:05:48 INFO  BookDAOImpl:69 - in the dao: 1234569789
+2019-01-03 13:05:48 INFO  BookDAOImpl:78 - no record found for that isbn: 1234569789
+2019-01-03 13:05:48 INFO  BookManagerImpl:41 - in the 
+2019-01-03 13:05:48 INFO  BookDAOImpl:42 - Book from dao: Book{Id=0, isbn='1234569789', title='L'EAU BLEUE', author='MARY ROBIN', insert_date=Thu Jan 03 13:05:48 CET 2019, publicationYear=1986, edition='MOSCO', nbPages=123, keywords='ROMAN  ADVENTURE', loanList=0}
+2019-01-03 13:05:48 INFO  BookManagerImpl:45 - exception: 
+2019-01-03 13:05:59 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:59 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:05:59 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:05:59 INFO  LoanServiceImpl:199 - conversion loanType into loan done
+2019-01-03 13:05:59 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@710fd7cc
+2019-01-03 13:05:59 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 13:05:59 CET 2019, plannedEndDate=Thu Jan 31 13:05:59 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:06:21 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:21 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:21 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:06:21 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 13:06:21 INFO  LoanServiceImpl:94 - size list: 1
+2019-01-03 13:06:21 INFO  LoanServiceImpl:179 - conversion done
+2019-01-03 13:06:21 INFO  LoanServiceImpl:190 - loanListType end: 1
+2019-01-03 13:06:38 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:06:38 INFO  LoanServiceImpl:117 - map: {book.isbn=, borrower.login=LO}
+2019-01-03 13:06:38 INFO  LoanManagerImpl:74 - map: {book.isbn=, borrower.login=LO}
+2019-01-03 13:06:38 INFO  LoanManagerImpl:75 - criterias: {borrower.login=LO}
+2019-01-03 13:06:38 INFO  LoanDAOImpl:104 - map received in DAO: {borrower.login=LO}
+2019-01-03 13:06:38 INFO  LoanDAOImpl:123 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 13:06:38 INFO  LoanDAOImpl:127 - criteria: LO
+2019-01-03 13:06:38 INFO  LoanDAOImpl:136 - list with criterias size: 1
+2019-01-03 13:06:38 INFO  LoanServiceImpl:121 - loanListType beg: 1
+2019-01-03 13:06:38 INFO  LoanServiceImpl:179 - conversion done
+2019-01-03 13:06:38 INFO  LoanServiceImpl:190 - loanListType end: 1
+2019-01-03 13:06:38 INFO  LoanServiceImpl:125 - loanListType end: 1
+2019-01-03 13:06:47 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:47 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:47 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:06:47 INFO  LoanServiceImpl:117 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:06:47 INFO  LoanManagerImpl:74 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:06:47 INFO  LoanManagerImpl:75 - criterias: {book.isbn=123}
+2019-01-03 13:06:47 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=123}
+2019-01-03 13:06:47 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 13:06:47 INFO  LoanDAOImpl:127 - criteria: 123
+2019-01-03 13:06:47 INFO  LoanDAOImpl:136 - list with criterias size: 1
+2019-01-03 13:06:47 INFO  LoanServiceImpl:121 - loanListType beg: 1
+2019-01-03 13:06:47 INFO  LoanServiceImpl:179 - conversion done
+2019-01-03 13:06:47 INFO  LoanServiceImpl:190 - loanListType end: 1
+2019-01-03 13:06:47 INFO  LoanServiceImpl:125 - loanListType end: 1
+2019-01-03 13:06:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:56 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:06:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:06:56 INFO  LoanServiceImpl:117 - map: {book.isbn=458, borrower.login=}
+2019-01-03 13:06:56 INFO  LoanManagerImpl:74 - map: {book.isbn=458, borrower.login=}
+2019-01-03 13:06:56 INFO  LoanManagerImpl:75 - criterias: {book.isbn=458}
+2019-01-03 13:06:56 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=458}
+2019-01-03 13:06:56 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 13:06:56 INFO  LoanDAOImpl:127 - criteria: 458
+2019-01-03 13:06:56 INFO  LoanDAOImpl:136 - list with criterias size: 0
+2019-01-03 13:06:56 INFO  LoanServiceImpl:121 - loanListType beg: 1
+2019-01-03 13:06:56 INFO  LoanServiceImpl:190 - loanListType end: 0
+2019-01-03 13:06:56 INFO  LoanServiceImpl:125 - loanListType end: 0
+2019-01-03 13:12:01 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:12:01 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:12:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:12:01 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 13:12:01 INFO  LoanServiceImpl:94 - size list: 1
+2019-01-03 13:12:01 INFO  LoanServiceImpl:179 - conversion done
+2019-01-03 13:12:01 INFO  LoanServiceImpl:190 - loanListType end: 1
+2019-01-03 13:12:22 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:12:22 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:12:22 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:12:22 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:12:22 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:12:22 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:12:22 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:28:37 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:28:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:28:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:28:38 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:28:38 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:28:38 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:28:38 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:28:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:28:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:28:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:28:48 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:28:48 INFO  LoanManagerImpl:54 - getting id (from business): 1715
+2019-01-03 13:28:48 INFO  LoanDAOImpl:62 - in the dao: 1715
+2019-01-03 13:28:48 INFO  LoanManagerImpl:60 - loan is probably null
+2019-01-03 13:29:28 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:29:28 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:29:28 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:29:28 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:29:28 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:29:28 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:29:28 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:31:05 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:31:05 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:31:05 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:31:05 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:33:33 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:33 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:33 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:33:33 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:33:33 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:33:33 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:33:33 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:33:41 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:41 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:41 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:33:41 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:33:41 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:33:41 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:33:41 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:33:46 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:46 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:46 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:33:46 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:33:46 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:33:46 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17155, startDate=2019-01-03 13:05:59.638, plannedEndDate=2019-01-31 13:05:59.638, endDate=Thu Jan 31 13:05:59 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:33:58 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:58 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:33:58 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:33:58 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:33:58 INFO  LoanManagerImpl:54 - getting id (from business): 17155
+2019-01-03 13:33:58 INFO  LoanDAOImpl:62 - in the dao: 17155
+2019-01-03 13:33:58 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:37:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:37:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:37:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:37:48 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 13:37:48 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@5df59867
+2019-01-03 13:37:48 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 13:37:48 CET 2019, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:37:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:37:56 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:37:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:37:57 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 13:37:57 INFO  LoanServiceImpl:98 - size list: 2
+2019-01-03 13:37:57 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:37:57 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:37:57 INFO  LoanServiceImpl:197 - loanListType end: 2
+2019-01-03 13:38:07 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:07 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:07 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:07 INFO  LoanServiceImpl:121 - map: {book.isbn=458, borrower.login=}
+2019-01-03 13:38:07 INFO  LoanManagerImpl:74 - map: {book.isbn=458, borrower.login=}
+2019-01-03 13:38:07 INFO  LoanManagerImpl:75 - criterias: {book.isbn=458}
+2019-01-03 13:38:07 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=458}
+2019-01-03 13:38:07 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 13:38:07 INFO  LoanDAOImpl:127 - criteria: 458
+2019-01-03 13:38:07 INFO  LoanDAOImpl:136 - list with criterias size: 0
+2019-01-03 13:38:07 INFO  LoanServiceImpl:125 - loanListType beg: 2
+2019-01-03 13:38:07 INFO  LoanServiceImpl:197 - loanListType end: 0
+2019-01-03 13:38:07 INFO  LoanServiceImpl:129 - loanListType end: 0
+2019-01-03 13:38:12 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:12 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:12 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:12 INFO  LoanServiceImpl:121 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:38:12 INFO  LoanManagerImpl:74 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:38:12 INFO  LoanManagerImpl:75 - criterias: {book.isbn=123}
+2019-01-03 13:38:12 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=123}
+2019-01-03 13:38:12 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 13:38:12 INFO  LoanDAOImpl:127 - criteria: 123
+2019-01-03 13:38:12 INFO  LoanDAOImpl:136 - list with criterias size: 2
+2019-01-03 13:38:12 INFO  LoanServiceImpl:125 - loanListType beg: 0
+2019-01-03 13:38:12 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:38:12 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:38:12 INFO  LoanServiceImpl:197 - loanListType end: 2
+2019-01-03 13:38:12 INFO  LoanServiceImpl:129 - loanListType end: 2
+2019-01-03 13:38:18 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:18 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:18 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:18 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:38:18 INFO  LoanManagerImpl:54 - getting id (from business): 17156
+2019-01-03 13:38:18 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:18 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:38:38 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:38 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:38 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:38:38 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:38:41 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:41 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:41 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:41 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:38:41 INFO  LoanManagerImpl:54 - getting id (from business): 17156
+2019-01-03 13:38:41 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:41 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:38:54 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:54 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:54 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:54 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:54 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:38:54 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:38:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:56 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:56 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:56 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:38:56 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:38:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:56 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:56 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:57 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:38:57 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:38:57 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:57 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:38:57 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:38:57 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:38:57 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:38:57 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:39:07 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:07 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:07 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:39:07 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:39:07 INFO  LoanManagerImpl:54 - getting id (from business): 17156
+2019-01-03 13:39:07 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:39:07 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:39:11 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:11 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:11 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:39:11 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:39:11 INFO  LoanManagerImpl:54 - getting id (from business): 17156
+2019-01-03 13:39:11 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:39:11 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:39:22 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:22 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:22 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:39:22 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:39:22 INFO  LoanManagerImpl:88 - diff days is: 28
+2019-01-03 13:39:22 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=Thu Jan 31 13:37:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:39:54 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:54 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:39:54 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:39:54 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:39:54 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17156, startDate=2019-01-03 13:37:48.776, plannedEndDate=2019-01-31 13:37:48.776, endDate=Thu Jan 03 13:39:54 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:40:02 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:40:02 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:40:02 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:40:02 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:40:02 INFO  LoanManagerImpl:54 - getting id (from business): 17156
+2019-01-03 13:40:02 INFO  LoanDAOImpl:62 - in the dao: 17156
+2019-01-03 13:40:02 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:04 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:04 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:04 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:04 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 13:48:04 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@5111a4d3
+2019-01-03 13:48:05 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 13:48:05 CET 2019, plannedEndDate=Thu Jan 31 13:48:05 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:48:10 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:10 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:10 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:11 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 13:48:11 INFO  LoanServiceImpl:98 - size list: 1
+2019-01-03 13:48:11 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:48:11 INFO  LoanServiceImpl:197 - loanListType end: 1
+2019-01-03 13:48:17 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:17 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:17 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:17 INFO  LoanServiceImpl:121 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:48:17 INFO  LoanManagerImpl:74 - map: {book.isbn=123, borrower.login=}
+2019-01-03 13:48:17 INFO  LoanManagerImpl:75 - criterias: {book.isbn=123}
+2019-01-03 13:48:17 INFO  LoanDAOImpl:104 - map received in DAO: {book.isbn=123}
+2019-01-03 13:48:17 INFO  LoanDAOImpl:123 - request: From Loan where book.isbn like :ISBN
+2019-01-03 13:48:17 INFO  LoanDAOImpl:127 - criteria: 123
+2019-01-03 13:48:17 INFO  LoanDAOImpl:136 - list with criterias size: 1
+2019-01-03 13:48:17 INFO  LoanServiceImpl:125 - loanListType beg: 1
+2019-01-03 13:48:17 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 13:48:17 INFO  LoanServiceImpl:197 - loanListType end: 1
+2019-01-03 13:48:17 INFO  LoanServiceImpl:129 - loanListType end: 1
+2019-01-03 13:48:26 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:26 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:26 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:26 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:26 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:26 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:26 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:33 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:33 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:33 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:33 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:33 INFO  LoanManagerImpl:92 - diff days is: 28
+2019-01-03 13:48:33 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=Thu Feb 28 13:48:05 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:48:43 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:43 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:43 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:43 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:43 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:43 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:43 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:46 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:46 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:46 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:46 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:46 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:46 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:46 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:47 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:47 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:47 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:47 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:47 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:47 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:47 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:48 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:48 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:48 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:48 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:49 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:49 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:49 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:49 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:49 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:49 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:49 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:50 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:50 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:50 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:50 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:50 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:50 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:50 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:50 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:50 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:50 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:50 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:50 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:50 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:50 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:51 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:51 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:51 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:51 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:51 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:51 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:51 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:52 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:52 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:52 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:52 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:52 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:52 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:52 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:48:55 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:55 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:48:55 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:48:55 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:48:55 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:48:55 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:48:55 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:49:01 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:49:01 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:49:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:49:01 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:49:01 INFO  LoanManagerImpl:92 - diff days is: 56
+2019-01-03 13:50:26 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:26 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:26 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:50:26 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:50:26 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 13:50:26 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:50:29 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:29 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:50:29 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:50:29 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 13:50:29 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:50:42 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:42 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:50:42 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:50:42 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 13:50:42 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 13:50:42 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:50:42 INFO  LoanManagerImpl:57 - loan
+2019-01-03 13:52:58 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:52:58 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:52:58 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:52:58 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:52:58 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 13:52:58 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:53:03 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:53:03 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:53:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:53:03 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 13:53:03 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 13:53:03 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 13:54:36 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:54:36 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 13:54:36 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 13:54:37 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:07:37 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:07:38 INFO  LoanServiceImpl:69 - new method added
+2019-01-03 14:07:38 INFO  LoanManagerImpl:54 - getting id (from business): 17157
+2019-01-03 14:07:38 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:07:38 INFO  LoanManagerImpl:57 - loan
+2019-01-03 14:07:58 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:58 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:07:58 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:07:58 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:08:03 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:03 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:03 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 14:08:38 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:38 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:38 INFO  BookManagerImpl:124 - getting id (from business): 17157
+2019-01-03 14:08:38 INFO  BookDAOImpl:54 - in the dao: 17157
+2019-01-03 14:08:38 INFO  BookManagerImpl:130 - book is probably null
+2019-01-03 14:08:38 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 14:08:38 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@7b18650b
+2019-01-03 14:08:38 INFO  LoanServiceImpl:53 - exception found: invalid book
+2019-01-03 14:08:47 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:47 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:08:47 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:08:47 INFO  BookManagerImpl:124 - getting id (from business): 17154
+2019-01-03 14:08:47 INFO  BookDAOImpl:54 - in the dao: 17154
+2019-01-03 14:08:47 INFO  BookManagerImpl:127 - book
+2019-01-03 14:08:47 INFO  LoanServiceImpl:206 - conversion loanType into loan done
+2019-01-03 14:08:47 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@7b18650b
+2019-01-03 14:08:48 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 14:08:48 CET 2019, plannedEndDate=Thu Jan 31 14:08:48 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 14:26:28 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 14:26:28 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 14:26:50 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:26:50 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:26:50 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:26:51 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:26:51 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:26:51 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:27:03 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:27:03 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:27:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:27:03 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:27:03 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:27:03 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:33:48 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:33:48 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:33:48 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:33:48 INFO  BookServiceImpl:183 - map: {ISBN=1234569789, Title=?, Author=?}
+2019-01-03 14:33:48 INFO  BookManagerImpl:144 - criterias: {ISBN=1234569789}
+2019-01-03 14:33:48 INFO  BookDAOImpl:85 - map received in DAO: {ISBN=1234569789}
+2019-01-03 14:33:48 INFO  BookDAOImpl:98 - request: From Book where ISBN like :ISBN
+2019-01-03 14:33:48 INFO  BookDAOImpl:104 - criteria: 1234569789
+2019-01-03 14:33:48 INFO  BookDAOImpl:108 - list with criterias size: 1
+2019-01-03 14:33:48 INFO  BookServiceImpl:187 - bookListType beg: 0
+2019-01-03 14:33:48 INFO  BookServiceImpl:247 - bookListType end: 1
+2019-01-03 14:33:48 INFO  BookServiceImpl:191 - bookListType end: 1
+2019-01-03 14:46:23 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:23 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:24 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:24 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:24 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:46:28 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:28 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:28 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:28 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:28 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:28 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:46:42 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:42 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:46:42 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:46:42 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:46:42 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:46:42 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:30 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:30 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:30 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:30 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:30 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:30 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:31 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:31 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:31 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:31 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:31 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:32 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:32 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:32 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:32 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:48:32 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:48:32 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:48:32 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:48:32 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:48:32 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 14:56:01 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:56:01 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 14:56:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 14:56:01 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 14:56:01 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 14:56:01 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:04:08 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:04:08 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:04:08 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:04:08 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 15:04:08 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 15:04:08 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:09:31 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:09:31 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:09:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:09:31 INFO  BookDAOImpl:142 - isbn passed: ?
+2019-01-03 15:09:31 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:09:31 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:09:31 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:10:23 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:10:23 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:10:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:10:23 INFO  BookDAOImpl:142 - isbn passed: ABCDERFSAE
+2019-01-03 15:10:23 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:10:23 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:10:23 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:14:56 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:14:57 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:14:57 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:14:57 INFO  BookDAOImpl:142 - isbn passed: ABCDERFSAE
+2019-01-03 15:14:57 INFO  BookDAOImpl:147 - result found: 0
+2019-01-03 15:14:57 INFO  BookDAOImpl:149 - count: 0
+2019-01-03 15:14:57 INFO  BookServiceImpl:222 - i: 0
+2019-01-03 15:15:15 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:15:15 INFO  MemberDAOImpl:194 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:15:15 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:15:15 INFO  BookDAOImpl:142 - isbn passed: BACRDFAERD
+2019-01-03 15:15:15 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:15:15 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:15:15 INFO  BookServiceImpl:222 - i: 1
+2019-01-03 15:33:53 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:33:53 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 15:34:04 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:04 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:04 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:34:04 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 15:34:04 INFO  BookServiceImpl:152 - size list: 1
+2019-01-03 15:34:04 INFO  BookServiceImpl:255 - bookListType end: 1
+2019-01-03 15:34:33 INFO  MemberDAOImpl:138 - in the dao: 0e95d4c3-bff9-4370-99f5-e2fa9182da9e
+2019-01-03 15:34:33 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 15:34:45 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:45 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:34:45 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:34:46 INFO  BookDAOImpl:142 - isbn passed: BACRDFAERD
+2019-01-03 15:34:46 INFO  BookDAOImpl:147 - result found: 1
+2019-01-03 15:34:46 INFO  BookDAOImpl:149 - count: 1
+2019-01-03 15:34:46 INFO  BookServiceImpl:230 - i: 1
+2019-01-03 15:35:17 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:35:17 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:35:17 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:35:18 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:36:29 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:29 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:36:29 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:36:34 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:34 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:36:34 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:36:34 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 15:37:00 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:00 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:00 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:00 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 15:37:00 INFO  LoanServiceImpl:98 - size list: 1
+2019-01-03 15:37:00 INFO  LoanServiceImpl:186 - conversion done
+2019-01-03 15:37:00 INFO  LoanServiceImpl:197 - loanListType end: 1
+2019-01-03 15:37:16 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:16 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:16 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:16 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 15:37:16 INFO  LoanDAOImpl:50 - Loan from dao: Loan{Id=17157, startDate=2019-01-03 13:48:05.002, plannedEndDate=2019-02-28 13:48:05.002, endDate=Thu Jan 03 15:37:16 CET 2019, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 15:37:20 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:20 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:20 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:20 INFO  LoanDAOImpl:62 - in the dao: 17157
+2019-01-03 15:37:31 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:31 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 15:37:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 15:37:31 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 16:27:05 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:27:06 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:27:06 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:27:06 INFO  LoanServiceImpl:122 - map: {book.id=2, borrower.login=?, status=PROGRESS}
+2019-01-03 16:27:06 INFO  LoanManagerImpl:91 - map: {book.id=2, borrower.login=?, status=PROGRESS}
+2019-01-03 16:27:06 INFO  LoanManagerImpl:92 - criterias: {book.id=2, status=PROGRESS}
+2019-01-03 16:27:06 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=2, status=PROGRESS}
+2019-01-03 16:27:06 INFO  LoanDAOImpl:132 - request: From Loan where book.id like : and status like :
+2019-01-03 16:27:26 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:27:26 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:27:26 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:27:26 INFO  LoanServiceImpl:122 - map: {book.id=2, borrower.login=?, status=PROGRESS}
+2019-01-03 16:27:26 INFO  LoanManagerImpl:91 - map: {book.id=2, borrower.login=?, status=PROGRESS}
+2019-01-03 16:27:26 INFO  LoanManagerImpl:92 - criterias: {book.id=2, status=PROGRESS}
+2019-01-03 16:27:26 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=2, status=PROGRESS}
+2019-01-03 16:27:26 INFO  LoanDAOImpl:132 - request: From Loan where book.id like : and status like :
+2019-01-03 16:35:38 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:35:39 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:35:39 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:35:39 INFO  LoanServiceImpl:122 - map: {book.id=1, borrower.login=?, status=PROGRESS}
+2019-01-03 16:35:39 INFO  LoanManagerImpl:91 - map: {book.id=1, borrower.login=?, status=PROGRESS}
+2019-01-03 16:35:39 INFO  LoanManagerImpl:92 - criterias: {book.id=1, status=PROGRESS}
+2019-01-03 16:35:39 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=1, status=PROGRESS}
+2019-01-03 16:35:39 INFO  LoanDAOImpl:132 - request: From Loan where  and 
+2019-01-03 16:37:45 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:37:45 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:37:45 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:37:45 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:45 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:45 INFO  LoanManagerImpl:92 - criterias: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:45 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:45 INFO  LoanDAOImpl:132 - request: From Loan where  and login like :LOGIN and 
+2019-01-03 16:37:51 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:37:51 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:37:51 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:37:51 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:51 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:51 INFO  LoanManagerImpl:92 - criterias: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:51 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424, borrower.login=MAURICE, status=PROGRESS}
+2019-01-03 16:37:51 INFO  LoanDAOImpl:132 - request: From Loan where  and login like :LOGIN and 
+2019-01-03 16:38:42 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:38:42 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:38:42 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:38:42 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:38:42 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:38:42 INFO  LoanManagerImpl:92 - criterias: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:38:42 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:38:42 INFO  LoanDAOImpl:132 - request: From Loan where  and login like :LOGIN
+2019-01-03 16:38:50 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:38:51 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:38:51 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:38:51 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:38:51 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:38:51 INFO  LoanManagerImpl:92 - criterias: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:38:51 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:38:51 INFO  LoanDAOImpl:132 - request: From Loan where  and login like :LOGIN
+2019-01-03 16:41:28 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:41:29 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:41:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:41:29 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:41:29 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=MAURICE, status=}
+2019-01-03 16:41:29 INFO  LoanManagerImpl:92 - criterias: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:41:29 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424, borrower.login=MAURICE}
+2019-01-03 16:41:29 INFO  LoanDAOImpl:124 - request: From Loan where book.id like : and borrower.login like :login like :LOGIN
+2019-01-03 16:46:12 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:46:12 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:46:12 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:46:12 INFO  LoanServiceImpl:122 - map: {book.id=123424, borrower.login=, status=}
+2019-01-03 16:46:12 INFO  LoanManagerImpl:91 - map: {book.id=123424, borrower.login=, status=}
+2019-01-03 16:46:12 INFO  LoanManagerImpl:92 - criterias: {book.id=123424}
+2019-01-03 16:46:12 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=123424}
+2019-01-03 16:46:12 INFO  LoanDAOImpl:124 - request: From Loan where book.id like :
+2019-01-03 16:56:16 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:56:16 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:56:16 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:56:16 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 16:56:16 INFO  LoanServiceImpl:98 - size list: 1
+2019-01-03 16:56:16 INFO  LoanServiceImpl:187 - conversion done
+2019-01-03 16:56:16 INFO  LoanServiceImpl:198 - loanListType end: 1
+2019-01-03 16:58:07 INFO  MemberDAOImpl:138 - in the dao: ?
+2019-01-03 16:58:07 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 16:58:19 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:58:19 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:58:19 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:58:19 INFO  LoanServiceImpl:122 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 16:58:19 INFO  LoanManagerImpl:91 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 16:58:19 INFO  LoanManagerImpl:92 - criterias: {book.id=1, borrower.login=LOKI1}
+2019-01-03 16:58:19 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=1, borrower.login=LOKI1}
+2019-01-03 16:58:19 INFO  LoanDAOImpl:123 - request: From Loan where book.id like : and borrower.login like :LOGIN
+2019-01-03 16:58:19 INFO  LoanServiceImpl:126 - loanListType beg: 1
+2019-01-03 16:58:26 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:58:26 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 16:58:26 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 16:58:26 INFO  LoanServiceImpl:122 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 16:58:26 INFO  LoanManagerImpl:91 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 16:58:26 INFO  LoanManagerImpl:92 - criterias: {book.id=1, borrower.login=LOKI1}
+2019-01-03 16:58:26 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=1, borrower.login=LOKI1}
+2019-01-03 16:58:26 INFO  LoanDAOImpl:123 - request: From Loan where book.id like : and borrower.login like :LOGIN
+2019-01-03 16:58:26 INFO  LoanServiceImpl:126 - loanListType beg: 0
+2019-01-03 17:03:11 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:03:12 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:03:12 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 17:03:12 INFO  LoanServiceImpl:122 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 17:03:12 INFO  LoanManagerImpl:91 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 17:03:12 INFO  LoanManagerImpl:92 - criterias: {book.id=1, borrower.login=LOKI1}
+2019-01-03 17:03:12 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=1, borrower.login=LOKI1}
+2019-01-03 17:03:12 INFO  LoanDAOImpl:123 - request: From Loan where book.id like : and borrower.login like :LOGIN
+2019-01-03 17:03:12 INFO  LoanServiceImpl:126 - loanListType beg: 0
+2019-01-03 17:05:46 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:05:46 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:05:46 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 17:05:46 INFO  LoanServiceImpl:122 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 17:05:47 INFO  LoanManagerImpl:91 - map: {book.id=1, borrower.login=LOKI1, status=?}
+2019-01-03 17:05:47 INFO  LoanManagerImpl:92 - criterias: {book.id=1, borrower.login=LOKI1}
+2019-01-03 17:05:47 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=1, borrower.login=LOKI1}
+2019-01-03 17:05:47 INFO  LoanDAOImpl:123 - request: From Loan where book.id like : and borrower.login like :LOGIN
+2019-01-03 17:05:47 INFO  LoanServiceImpl:126 - loanListType beg: 0
+2019-01-03 17:20:03 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:20:03 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:20:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 17:20:03 INFO  LoanServiceImpl:122 - map: {book.id=0, borrower.login=LOKI1, status=?}
+2019-01-03 17:20:03 INFO  LoanManagerImpl:91 - map: {book.id=0, borrower.login=LOKI1, status=?}
+2019-01-03 17:20:03 INFO  LoanManagerImpl:92 - criterias: {book.id=0, borrower.login=LOKI1}
+2019-01-03 17:20:03 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=0, borrower.login=LOKI1}
+2019-01-03 17:20:03 INFO  LoanDAOImpl:123 - request: From Loan where book.id like : and borrower.login like :LOGIN
+2019-01-03 17:20:03 INFO  LoanServiceImpl:126 - loanListType beg: 0
+2019-01-03 17:20:29 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:20:29 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:20:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 17:20:29 INFO  LoanServiceImpl:122 - map: {book.id=0, borrower.login=, status=?}
+2019-01-03 17:20:29 INFO  LoanManagerImpl:91 - map: {book.id=0, borrower.login=, status=?}
+2019-01-03 17:20:29 INFO  LoanManagerImpl:92 - criterias: {book.id=0}
+2019-01-03 17:20:29 INFO  LoanDAOImpl:104 - map received in DAO: {book.id=0}
+2019-01-03 17:20:29 INFO  LoanDAOImpl:123 - request: From Loan where book.id like :
+2019-01-03 17:20:29 INFO  LoanServiceImpl:126 - loanListType beg: 0
+2019-01-03 17:22:05 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:22:05 INFO  MemberDAOImpl:194 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 17:22:05 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 17:22:05 INFO  BookServiceImpl:191 - map: {ISBN=?, Title=?, Author=?}
+2019-01-03 17:22:05 INFO  BookManagerImpl:145 - criterias: {}
+2019-01-03 17:22:05 INFO  BookDAOImpl:85 - map received in DAO: {}
+2019-01-03 17:22:05 INFO  BookDAOImpl:98 - request: From Book 
+2019-01-03 17:22:05 INFO  BookDAOImpl:108 - list with criterias size: 1
+2019-01-03 17:22:05 INFO  BookServiceImpl:195 - bookListType beg: 0
+2019-01-03 17:22:05 INFO  BookServiceImpl:255 - bookListType end: 1
+2019-01-03 17:22:05 INFO  BookServiceImpl:199 - bookListType end: 1
+2019-01-03 17:26:02 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 17:26:02 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@74d41b20
+2019-01-03 17:26:02 INFO  MemberDAOImpl:66 - in the dao: LOKI1
+2019-01-03 17:26:02 INFO  MemberDAOImpl:72 - records found: 1
+2019-01-03 17:26:02 INFO  MemberServiceImpl:47 - Login already existing
+2019-01-03 17:26:08 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 17:26:08 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@74d41b20
+2019-01-03 17:26:08 INFO  MemberDAOImpl:66 - in the dao: LOKIS
+2019-01-03 17:26:08 INFO  MemberDAOImpl:75 - no record found for that login: LOKIS
+2019-01-03 17:26:08 INFO  MemberServiceImpl:47 - Invalid Email: KI
+2019-01-03 18:15:55 INFO  MemberDAOImpl:138 - in the dao: 1c5ec47b-cdcc-4732-bb0e-a2627b03ccf1
+2019-01-03 18:15:55 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 18:16:07 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:16:07 INFO  MemberDAOImpl:114 - Member from dao: LOKI1
+2019-01-03 18:16:14 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:16:14 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:16:14 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:16:14 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 18:16:14 INFO  LoanServiceImpl:98 - size list: 0
+2019-01-03 18:16:14 INFO  LoanServiceImpl:204 - loanListType end: 0
+2019-01-03 18:16:57 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:16:57 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:16:57 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:16:57 INFO  BookManagerImpl:125 - getting id (from business): 17154
+2019-01-03 18:16:57 INFO  BookDAOImpl:54 - in the dao: 17154
+2019-01-03 18:16:57 INFO  BookManagerImpl:128 - book
+2019-01-03 18:16:57 INFO  LoanServiceImpl:213 - conversion loanType into loan done
+2019-01-03 18:16:57 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@8a802be
+2019-01-03 18:16:57 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 18:16:57 INFO  LoanServiceImpl:53 - exception found: book is not available: 17154
+2019-01-03 18:24:24 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:24:24 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:24:24 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:24:25 INFO  BookManagerImpl:125 - getting id (from business): 17154
+2019-01-03 18:24:25 INFO  BookDAOImpl:54 - in the dao: 17154
+2019-01-03 18:24:25 INFO  BookManagerImpl:128 - book
+2019-01-03 18:24:25 INFO  LoanServiceImpl:213 - conversion loanType into loan done
+2019-01-03 18:24:25 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@542f5851
+2019-01-03 18:24:25 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 18:24:25 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 18:24:25 INFO  LoanServiceImpl:53 - exception found: book is not available: 17154
+2019-01-03 18:28:13 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:28:13 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:28:13 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:28:13 INFO  BookManagerImpl:125 - getting id (from business): 17154
+2019-01-03 18:28:13 INFO  BookDAOImpl:54 - in the dao: 17154
+2019-01-03 18:28:13 INFO  BookManagerImpl:128 - book
+2019-01-03 18:28:13 INFO  LoanServiceImpl:213 - conversion loanType into loan done
+2019-01-03 18:28:13 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@21228c25
+2019-01-03 18:28:13 INFO  BookDAOImpl:155 - isbn passed: 17154
+2019-01-03 18:28:13 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 18:28:13 INFO  MemberManagerImpl:103 - getting id (from business): 17153
+2019-01-03 18:28:13 INFO  MemberDAOImpl:51 - in the dao: 17153
+2019-01-03 18:28:13 INFO  MemberManagerImpl:106 - member
+2019-01-03 18:28:13 INFO  LoanDAOImpl:38 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 18:28:13 CET 2019, plannedEndDate=Thu Jan 31 18:28:13 CET 2019, endDate=null, borrower=LOKI1, book=L'EAU BLEUE}
+2019-01-03 18:28:36 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:28:36 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:28:36 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:28:36 INFO  BookManagerImpl:125 - getting id (from business): 170154
+2019-01-03 18:28:36 INFO  BookDAOImpl:54 - in the dao: 170154
+2019-01-03 18:28:36 INFO  BookManagerImpl:131 - book is probably null
+2019-01-03 18:28:36 INFO  LoanServiceImpl:213 - conversion loanType into loan done
+2019-01-03 18:28:36 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@21228c25
+2019-01-03 18:28:36 INFO  LoanServiceImpl:53 - exception found: invalid book
+2019-01-03 18:37:53 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:37:53 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:37:53 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:37:53 INFO  LoanServiceImpl:124 - map: {book.id=0, borrower.login=?, status=?}
+2019-01-03 18:37:53 INFO  LoanManagerImpl:91 - map: {book.id=0, borrower.login=?, status=?}
+2019-01-03 18:37:53 INFO  LoanManagerImpl:92 - criterias: {book.id=0}
+2019-01-03 18:37:53 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 18:45:34 INFO  MemberDAOImpl:138 - in the dao: 791bae9d-ef5d-41be-b0a9-611337d877ae
+2019-01-03 18:45:34 INFO  MemberDAOImpl:158 - invalid token
+2019-01-03 18:46:02 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:46:02 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:46:02 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:46:02 INFO  LoanDAOImpl:28 - getting in dao
+2019-01-03 18:46:02 INFO  LoanServiceImpl:98 - size list: 1
+2019-01-03 18:46:02 INFO  LoanServiceImpl:193 - conversion done
+2019-01-03 18:46:02 INFO  LoanServiceImpl:204 - loanListType end: 1
+2019-01-03 18:46:13 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:46:13 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:46:13 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:46:13 INFO  LoanServiceImpl:124 - map: {borrower.login=?, status=?}
+2019-01-03 18:46:13 INFO  LoanManagerImpl:91 - map: {borrower.login=?, status=?}
+2019-01-03 18:46:13 INFO  LoanManagerImpl:92 - criterias: {}
+2019-01-03 18:46:13 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 18:49:41 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:49:41 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:49:41 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:49:41 INFO  LoanServiceImpl:124 - map: {borrower.login=?, status=?}
+2019-01-03 18:49:41 INFO  LoanManagerImpl:91 - map: {borrower.login=?, status=?}
+2019-01-03 18:49:41 INFO  LoanManagerImpl:92 - criterias: {}
+2019-01-03 18:49:41 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 18:51:14 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:51:14 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:51:14 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:51:14 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=?}
+2019-01-03 18:51:14 INFO  LoanManagerImpl:91 - map: {borrower.login=LOKI1, status=?}
+2019-01-03 18:51:14 INFO  LoanManagerImpl:92 - criterias: {borrower.login=LOKI1}
+2019-01-03 18:51:14 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 18:53:11 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:53:11 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:53:11 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:53:11 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=?}
+2019-01-03 18:53:11 INFO  LoanManagerImpl:91 - map: {borrower.login=LOKI1, status=?}
+2019-01-03 18:53:11 INFO  LoanManagerImpl:92 - criterias: {borrower.login=LOKI1}
+2019-01-03 18:53:11 INFO  LoanDAOImpl:104 - map received in DAO: {borrower.login=LOKI1}
+2019-01-03 18:53:11 INFO  LoanDAOImpl:127 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 18:53:11 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 18:53:56 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:53:56 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 18:53:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 18:53:56 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 18:53:57 INFO  LoanManagerImpl:91 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 18:53:57 INFO  LoanManagerImpl:92 - criterias: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 18:53:57 INFO  LoanDAOImpl:104 - map received in DAO: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 18:53:57 INFO  LoanDAOImpl:127 - request: From Loan where borrower.login like :LOGIN and status like :STATUS
+2019-01-03 18:53:57 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:00:36 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:00:37 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:00:37 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:00:37 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:00:37 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:00:37 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:00:37 INFO  LoanDAOImpl:104 - map received in DAO: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:00:37 INFO  LoanDAOImpl:127 - status has been passed: status
+2019-01-03 19:00:37 INFO  LoanDAOImpl:134 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 19:00:37 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:09:15 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:09:15 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:09:15 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:09:15 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:09:15 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:09:15 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:09:15 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKI1, status=PROGRESS}
+2019-01-03 19:09:15 INFO  LoanDAOImpl:128 - status has been passed: PROGRESS
+2019-01-03 19:09:15 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and enddate is null
+2019-01-03 19:09:15 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:09:49 INFO  MemberDAOImpl:138 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:09:49 INFO  MemberDAOImpl:194 - in the dao: 3d7df97e-fddf-4311-9440-ef40bdf2ed5e
+2019-01-03 19:09:49 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:09:49 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKI1, status=OVERDUE}
+2019-01-03 19:09:49 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKI1, status=OVERDUE}
+2019-01-03 19:09:49 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKI1, status=OVERDUE}
+2019-01-03 19:09:49 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKI1, status=OVERDUE}
+2019-01-03 19:09:49 INFO  LoanDAOImpl:128 - status has been passed: OVERDUE
+2019-01-03 19:09:49 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGINand endate is not null and plannedenddate < sysdate
+2019-01-03 19:09:49 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:34:19 INFO  MemberServiceImpl:64 - conversion memberType into member done
+2019-01-03 19:34:19 INFO  MemberServiceImpl:44 - memberManager: org.troparo.business.impl.MemberManagerImpl@265b6ab9
+2019-01-03 19:34:19 INFO  MemberDAOImpl:66 - in the dao: LOKII
+2019-01-03 19:34:19 INFO  MemberDAOImpl:75 - no record found for that login: LOKII
+2019-01-03 19:34:19 INFO  MemberManagerImpl:261 - hashed pwd: $2a$10$KGtsnR0J6J64Zt4moh/pbuNpXFMnO6cMAnKXXvtiKAcMWuUPhVE7S
+2019-01-03 19:34:19 INFO  MemberDAOImpl:26 - Member from dao: Member{Id=0, login='LOKII', firstName='JOHN', lastName='BONHAM', password='$2a$10$KGtsnR0J6J64Zt4moh/pbuNpXFMnO6cMAnKXXvtiKAcMWuUPhVE7S', role='ADMIN', token='null', email='LOKI@LOKI.LOKI', dateJoin=Thu Jan 03 19:34:19 CET 2019, dateConnect=null, loanList=0}
+2019-01-03 19:34:19 INFO  MemberManagerImpl:51 - exception: 
+2019-01-03 19:34:38 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:34:38 INFO  MemberDAOImpl:114 - Member from dao: LOKII
+2019-01-03 19:35:55 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:35:55 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:35:55 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:35:55 INFO  BookServiceImpl:60 - 1985
+2019-01-03 19:35:55 INFO  BookServiceImpl:65 - pub date: 1985
+2019-01-03 19:35:55 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@5887203c
+2019-01-03 19:35:55 INFO  BookDAOImpl:69 - in the dao: ABC236548754
+2019-01-03 19:35:55 INFO  BookDAOImpl:78 - no record found for that isbn: ABC236548754
+2019-01-03 19:35:55 INFO  BookServiceImpl:47 - ISBN must be 10 or 13 characters: ABC236548754
+2019-01-03 19:36:01 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:36:01 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:36:01 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:36:01 INFO  BookServiceImpl:60 - 1985
+2019-01-03 19:36:01 INFO  BookServiceImpl:65 - pub date: 1985
+2019-01-03 19:36:01 INFO  BookServiceImpl:44 - bookManager: org.troparo.business.impl.BookManagerImpl@5887203c
+2019-01-03 19:36:01 INFO  BookDAOImpl:69 - in the dao: ABCD236548754
+2019-01-03 19:36:01 INFO  BookDAOImpl:78 - no record found for that isbn: ABCD236548754
+2019-01-03 19:36:01 INFO  BookManagerImpl:41 - in the 
+2019-01-03 19:36:01 INFO  BookDAOImpl:42 - Book from dao: Book{Id=0, isbn='ABCD236548754', title='L'EAU BLEU', author='MARGOT RIDO', insert_date=Thu Jan 03 19:36:01 CET 2019, publicationYear=1985, edition='PAGEOT', nbPages=156, keywords='THRILLER', loanList=0}
+2019-01-03 19:36:01 INFO  BookManagerImpl:46 - exception: 
+2019-01-03 19:37:21 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:37:21 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:37:21 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:37:21 INFO  BookDAOImpl:31 - getting in dao
+2019-01-03 19:37:21 INFO  BookServiceImpl:152 - size list: 1
+2019-01-03 19:37:21 INFO  BookServiceImpl:255 - bookListType end: 1
+2019-01-03 19:37:33 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:37:33 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:37:33 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:37:33 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 19:37:33 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 19:37:33 INFO  BookManagerImpl:128 - book
+2019-01-03 19:37:33 INFO  LoanServiceImpl:214 - conversion loanType into loan done
+2019-01-03 19:37:33 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@351ac07
+2019-01-03 19:37:33 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 19:37:33 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 19:37:33 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 19:37:33 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 19:37:33 INFO  MemberManagerImpl:106 - member
+2019-01-03 19:37:33 INFO  LoanDAOImpl:39 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 19:37:33 CET 2019, plannedEndDate=Thu Jan 31 19:37:33 CET 2019, endDate=null, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 19:38:34 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:38:34 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:38:34 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:38:34 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:38:34 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:38:34 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:38:34 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:38:34 INFO  LoanDAOImpl:128 - status has been passed: PROGRESS
+2019-01-03 19:38:34 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is null
+2019-01-03 19:38:34 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:38:34 INFO  LoanDAOImpl:167 - list with criterias size: 1
+2019-01-03 19:38:34 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:38:34 INFO  LoanServiceImpl:194 - conversion done
+2019-01-03 19:38:34 INFO  LoanServiceImpl:205 - loanListType end: 1
+2019-01-03 19:38:34 INFO  LoanServiceImpl:136 - loanListType end: 1
+2019-01-03 19:39:24 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:39:24 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:39:24 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:39:24 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:39:24 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:39:24 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:39:24 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:39:24 INFO  LoanDAOImpl:128 - status has been passed: TERMINATED
+2019-01-03 19:39:24 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is not null
+2019-01-03 19:39:24 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:39:24 INFO  LoanDAOImpl:167 - list with criterias size: 0
+2019-01-03 19:39:24 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:40:59 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:40:59 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:40:59 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:40:59 INFO  LoanDAOImpl:63 - in the dao: 3
+2019-01-03 19:40:59 INFO  LoanDAOImpl:51 - Loan from dao: Loan{Id=3, startDate=2019-01-03 19:37:33.458, plannedEndDate=2019-01-31 19:37:33.458, endDate=Thu Jan 03 19:40:59 CET 2019, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 19:41:06 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:41:06 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:41:06 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:41:06 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:41:06 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:41:06 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:41:06 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=PROGRESS}
+2019-01-03 19:41:06 INFO  LoanDAOImpl:128 - status has been passed: PROGRESS
+2019-01-03 19:41:06 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is null
+2019-01-03 19:41:06 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:41:06 INFO  LoanDAOImpl:167 - list with criterias size: 0
+2019-01-03 19:41:06 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:41:11 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:41:11 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:41:11 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:41:11 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:41:11 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:41:11 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:41:11 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:41:11 INFO  LoanDAOImpl:128 - status has been passed: TERMINATED
+2019-01-03 19:41:11 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is not null
+2019-01-03 19:41:11 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:41:11 INFO  LoanDAOImpl:167 - list with criterias size: 1
+2019-01-03 19:41:11 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:41:12 INFO  LoanServiceImpl:194 - conversion done
+2019-01-03 19:41:12 INFO  LoanServiceImpl:205 - loanListType end: 1
+2019-01-03 19:41:12 INFO  LoanServiceImpl:136 - loanListType end: 1
+2019-01-03 19:43:16 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:43:16 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:43:16 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:43:16 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:43:16 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:43:16 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:43:16 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=TERMINATED}
+2019-01-03 19:43:16 INFO  LoanDAOImpl:128 - status has been passed: TERMINATED
+2019-01-03 19:43:16 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is not null
+2019-01-03 19:43:16 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:43:16 INFO  LoanDAOImpl:167 - list with criterias size: 0
+2019-01-03 19:43:16 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:43:23 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:43:23 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:43:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:43:23 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:43:23 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:43:23 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:43:23 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:43:23 INFO  LoanDAOImpl:128 - status has been passed: OVERDUE
+2019-01-03 19:43:23 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is not null and plannedEndDate < current_date
+2019-01-03 19:43:23 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:43:23 INFO  LoanDAOImpl:167 - list with criterias size: 0
+2019-01-03 19:43:23 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:44:36 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:44:37 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:44:37 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:44:37 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:44:37 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:44:37 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:44:37 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=OVERDUE}
+2019-01-03 19:44:37 INFO  LoanDAOImpl:128 - status has been passed: OVERDUE
+2019-01-03 19:44:37 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN and endDate is null and plannedEndDate < current_date
+2019-01-03 19:44:37 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:44:37 INFO  LoanDAOImpl:167 - list with criterias size: 1
+2019-01-03 19:44:37 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 19:44:37 INFO  LoanServiceImpl:194 - conversion done
+2019-01-03 19:44:37 INFO  LoanServiceImpl:205 - loanListType end: 1
+2019-01-03 19:44:37 INFO  LoanServiceImpl:136 - loanListType end: 1
+2019-01-03 19:46:23 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:46:23 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:46:23 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:46:23 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=D}
+2019-01-03 19:46:23 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=D}
+2019-01-03 19:46:23 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=D}
+2019-01-03 19:46:23 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=D}
+2019-01-03 19:46:23 INFO  LoanDAOImpl:128 - status has been passed: D
+2019-01-03 19:46:23 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 19:46:23 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:46:23 INFO  LoanDAOImpl:167 - list with criterias size: 1
+2019-01-03 19:46:23 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:46:23 INFO  LoanServiceImpl:194 - conversion done
+2019-01-03 19:46:23 INFO  LoanServiceImpl:205 - loanListType end: 1
+2019-01-03 19:46:23 INFO  LoanServiceImpl:136 - loanListType end: 1
+2019-01-03 19:46:56 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:46:56 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 19:46:56 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 19:46:56 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 19:46:56 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 19:46:56 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=ALL}
+2019-01-03 19:46:56 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=ALL}
+2019-01-03 19:46:56 INFO  LoanDAOImpl:128 - status has been passed: ALL
+2019-01-03 19:46:56 INFO  LoanDAOImpl:152 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 19:46:56 INFO  LoanDAOImpl:157 - criteria: LOKII
+2019-01-03 19:46:56 INFO  LoanDAOImpl:167 - list with criterias size: 1
+2019-01-03 19:46:56 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 19:46:56 INFO  LoanServiceImpl:194 - conversion done
+2019-01-03 19:46:56 INFO  LoanServiceImpl:205 - loanListType end: 1
+2019-01-03 19:46:56 INFO  LoanServiceImpl:136 - loanListType end: 1
+2019-01-03 20:28:25 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:25 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:25 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:28:25 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:25 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:25 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:25 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:25 INFO  LoanDAOImpl:128 - status has been passed: ALL
+2019-01-03 20:28:25 INFO  LoanDAOImpl:173 - nothing to add
+2019-01-03 20:28:25 INFO  LoanDAOImpl:137 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 20:28:25 INFO  LoanDAOImpl:142 - criteria: LOKII
+2019-01-03 20:28:25 INFO  LoanDAOImpl:152 - list with criterias size: 1
+2019-01-03 20:28:26 INFO  LoanServiceImpl:128 - loanListType beg: 0
+2019-01-03 20:28:26 INFO  LoanServiceImpl:196 - conversion done
+2019-01-03 20:28:26 INFO  LoanServiceImpl:207 - loanListType end: 1
+2019-01-03 20:28:26 INFO  LoanServiceImpl:138 - loanListType end: 1
+2019-01-03 20:28:31 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:31 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:31 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:28:31 INFO  LoanServiceImpl:124 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:31 INFO  LoanManagerImpl:92 - map: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:31 INFO  LoanManagerImpl:93 - criterias: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:31 INFO  LoanDAOImpl:105 - map received in DAO: {borrower.login=LOKII, status=ALL}
+2019-01-03 20:28:31 INFO  LoanDAOImpl:128 - status has been passed: ALL
+2019-01-03 20:28:31 INFO  LoanDAOImpl:173 - nothing to add
+2019-01-03 20:28:31 INFO  LoanDAOImpl:137 - request: From Loan where borrower.login like :LOGIN
+2019-01-03 20:28:31 INFO  LoanDAOImpl:142 - criteria: LOKII
+2019-01-03 20:28:31 INFO  LoanDAOImpl:152 - list with criterias size: 1
+2019-01-03 20:28:31 INFO  LoanServiceImpl:128 - loanListType beg: 1
+2019-01-03 20:28:31 INFO  LoanServiceImpl:196 - conversion done
+2019-01-03 20:28:31 INFO  LoanServiceImpl:207 - loanListType end: 1
+2019-01-03 20:28:31 INFO  LoanServiceImpl:138 - loanListType end: 1
+2019-01-03 20:28:38 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:38 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:38 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:28:38 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:28:38 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:28:38 INFO  BookManagerImpl:128 - book
+2019-01-03 20:28:38 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:28:38 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@1ecf4909
+2019-01-03 20:28:38 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 20:28:38 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:28:38 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:28:38 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:28:38 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:28:38 INFO  LoanDAOImpl:39 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 20:28:38 CET 2019, plannedEndDate=Thu Jan 31 20:28:38 CET 2019, endDate=null, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 20:28:58 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:58 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:58 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:28:58 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:28:58 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:28:58 INFO  BookManagerImpl:128 - book
+2019-01-03 20:28:58 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:28:58 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@1ecf4909
+2019-01-03 20:28:58 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 20:28:58 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:28:58 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:28:58 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:28:58 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:28:58 INFO  LoanDAOImpl:39 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 20:28:58 CET 2019, plannedEndDate=Thu Jan 31 20:28:58 CET 2019, endDate=null, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 20:28:59 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:59 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:59 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:28:59 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:28:59 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:28:59 INFO  BookManagerImpl:128 - book
+2019-01-03 20:28:59 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:28:59 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@1ecf4909
+2019-01-03 20:28:59 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 20:28:59 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:28:59 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:28:59 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:28:59 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:28:59 INFO  LoanDAOImpl:39 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 20:28:59 CET 2019, plannedEndDate=Thu Jan 31 20:28:59 CET 2019, endDate=null, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 20:28:59 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:59 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:28:59 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:29:00 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:29:00 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:29:00 INFO  BookManagerImpl:128 - book
+2019-01-03 20:29:00 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:29:00 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@1ecf4909
+2019-01-03 20:29:00 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 20:29:00 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:29:00 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:29:00 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:29:00 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:29:00 INFO  LoanServiceImpl:53 - exception found: max number of books rented reached
+2019-01-03 20:31:29 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:31:29 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:31:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:31:29 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:31:29 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:31:29 INFO  BookManagerImpl:128 - book
+2019-01-03 20:31:29 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:31:29 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@1ecf4909
+2019-01-03 20:31:29 INFO  BookDAOImpl:155 - isbn passed: 2
+2019-01-03 20:31:29 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:31:29 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:31:29 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:31:29 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:31:29 INFO  LoanServiceImpl:53 - exception found: max number of books rented reached
+2019-01-03 20:36:10 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:36:10 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:36:10 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:36:10 INFO  BookManagerImpl:125 - getting id (from business): 2
+2019-01-03 20:36:10 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 20:36:10 INFO  BookManagerImpl:128 - book
+2019-01-03 20:36:10 INFO  LoanServiceImpl:216 - conversion loanType into loan done
+2019-01-03 20:36:10 INFO  LoanServiceImpl:50 - loanManager: org.troparo.business.impl.LoanManagerImpl@5c5f51a0
+2019-01-03 20:36:10 INFO  BookDAOImpl:155 - id passed: 2
+2019-01-03 20:36:10 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:36:10 INFO  BookDAOImpl:160 - is available: Book{Id=2, isbn='ABCD236548754', title='L'EAU BLEU', author='MARGOT RIDO', insert_date=2019-01-03 19:36:01.243, publicationYear=1985, edition='PAGEOT', nbPages=156, keywords='THRILLER', loanList=0}
+2019-01-03 20:36:10 INFO  MemberManagerImpl:103 - getting id (from business): 1
+2019-01-03 20:36:10 INFO  MemberDAOImpl:51 - in the dao: 1
+2019-01-03 20:36:10 INFO  MemberManagerImpl:106 - member
+2019-01-03 20:36:10 INFO  LoanDAOImpl:39 - Loan from dao: Loan{Id=0, startDate=Thu Jan 03 20:36:10 CET 2019, plannedEndDate=Thu Jan 31 20:36:10 CET 2019, endDate=null, borrower=LOKII, book=L'EAU BLEU}
+2019-01-03 20:43:13 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:43:13 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:43:13 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:43:13 INFO  BookDAOImpl:155 - id passed: 2
+2019-01-03 20:43:13 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:43:13 INFO  BookDAOImpl:160 - is available: Book{Id=2, isbn='ABCD236548754', title='L'EAU BLEU', author='MARGOT RIDO', insert_date=2019-01-03 19:36:01.243, publicationYear=1985, edition='PAGEOT', nbPages=156, keywords='THRILLER', loanList=1}
+2019-01-03 20:43:29 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:43:29 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 20:43:29 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 20:43:29 INFO  BookDAOImpl:155 - id passed: 2
+2019-01-03 20:43:29 INFO  BookDAOImpl:157 - request: From Book where id = :id and id not in(select book.id from Loan where endDate is not null)
+2019-01-03 20:43:29 INFO  BookDAOImpl:160 - is available: Book{Id=2, isbn='ABCD236548754', title='L'EAU BLEU', author='MARGOT RIDO', insert_date=2019-01-03 19:36:01.243, publicationYear=1985, edition='PAGEOT', nbPages=156, keywords='THRILLER', loanList=1}
+2019-01-03 21:03:53 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 21:03:53 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 21:03:53 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 21:03:53 INFO  BookDAOImpl:54 - in the dao: 2
+2019-01-03 21:03:53 INFO  BookDAOImpl:155 - id passed: 2
+2019-01-03 21:04:03 INFO  MemberDAOImpl:138 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 21:04:03 INFO  MemberDAOImpl:194 - in the dao: 05957a92-a11d-4152-992c-fabd25277ee7
+2019-01-03 21:04:03 INFO  MemberDAOImpl:155 - token valid
+2019-01-03 21:04:03 INFO  BookDAOImpl:54 - in the dao: 26

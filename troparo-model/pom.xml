@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>troparo</artifactId>
@@ -13,18 +13,23 @@
 
 
     <dependencies>
+        <!--Modules-->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>troparo-technical</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
         <!-- Spring Framework-4.x -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
             <version>${spring.version}</version>
-            <scope>${spring.scope}</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
             <version>${spring.version}</version>
-            <scope>${spring.scope}</scope>
         </dependency>
 
         <!-- Hibernate Core-4.2.x -->
@@ -32,13 +37,11 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
-            <scope>${hibernate.scope}</scope>
         </dependency>
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-ehcache</artifactId>
             <version>${hibernate.version}</version>
-            <scope>${hibernate.scope}</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->

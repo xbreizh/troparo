@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
@@ -13,12 +13,19 @@
     <!-- ===== General Infos ===== -->
     <name>${projectName}</name>
 
+    <!-- =============================================================== -->
+    <!-- Modules -->
+    <!-- =============================================================== -->
     <modules>
         <module>troparo-web</module>
         <module>troparo-business</module>
         <module>troparo-consumer</module>
         <module>troparo-model</module>
+<<<<<<< HEAD
         <module>troparo-log</module>
+=======
+        <module>troparo-technical</module>
+>>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
     </modules>
 
     <!-- properties -->
@@ -30,9 +37,6 @@
         <postgres.version>9.1-901-1.jdbc4</postgres.version>
         <cxf.scope>compile</cxf.scope>
         <jaxws.scope>compile</jaxws.scope>
-        <spring.scope>compile</spring.scope>
-        <hibernate.scope>compile</hibernate.scope>
-        <spring.scope>compile</spring.scope>
         <compileSource>1.7</compileSource>
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -40,6 +44,7 @@
     </properties>
 
 
+<<<<<<< HEAD
 <dependencyManagement>
     <dependencies>
         <!-- ===== Modules ===== -->
@@ -58,9 +63,47 @@
             <artifactId>troparo-web</artifactId>
             <version>${project.version}</version>
         </dependency>-->
+=======
+    <dependencyManagement>
+        <dependencies>
+            <!-- ===== Modules ===== -->
 
-        <!-- ===== Third Part ===== -->
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>troparo-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>troparo-technical</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
+
+            <!-- ===== Third Part ===== -->
+>>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
+
+            <!--apache cxf jax-ws-3.0.2-->
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-frontend-jaxws</artifactId>
+                <version>${cxf.version}</version>
+                <scope>${cxf.scope}</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-rt-transports-http</artifactId>
+                <version>${cxf.version}</version>
+                <scope>${cxf.scope}</scope>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-core</artifactId>
+                <version>5.1.2.RELEASE</version>
+            </dependency>
+
+<<<<<<< HEAD
          <!--apache cxf jax-ws-3.0.2-->
         <dependency>
             <groupId>org.apache.cxf</groupId>
@@ -88,52 +131,84 @@
             <version>${spring.version}</version>
             <scope>${spring.scope}</scope>
         </dependency>
+=======
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
+            </dependency>
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>1.2.17</version>
+                <scope>compile</scope>
+            </dependency>
+            <!-- JSR-250 -->
+            <dependency>
+                <groupId>javax.annotation</groupId>
+                <artifactId>javax.annotation-api</artifactId>
+                <version>1.2</version>
+            </dependency>
+            <!-- &lt;!&ndash; Spring Framework-4.x &ndash;&gt;
+             <dependency>
+                 <groupId>org.springframework</groupId>
+                 <artifactId>spring-webmvc</artifactId>
+                 <version>${spring.version}</version>
+                 <scope>${spring.scope}</scope>
+             </dependency>
+             <dependency>
+                 <groupId>org.springframework</groupId>
+                 <artifactId>spring-orm</artifactId>
+                 <version>${spring.version}</version>
+                 <scope>${spring.scope}</scope>
+             </dependency>
+>>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
 
-        &lt;!&ndash; Hibernate Core-4.2.x &ndash;&gt;
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
-            <scope>${hibernate.scope}</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-ehcache</artifactId>
-            <version>${hibernate.version}</version>
-            <scope>${hibernate.scope}</scope>
-        </dependency>
+             &lt;!&ndash; Hibernate Core-4.2.x &ndash;&gt;
+             <dependency>
+                 <groupId>org.hibernate</groupId>
+                 <artifactId>hibernate-core</artifactId>
+                 <version>${hibernate.version}</version>
+                 <scope>${hibernate.scope}</scope>
+             </dependency>
+             <dependency>
+                 <groupId>org.hibernate</groupId>
+                 <artifactId>hibernate-ehcache</artifactId>
+                 <version>${hibernate.version}</version>
+                 <scope>${hibernate.scope}</scope>
+             </dependency>
 
-        &lt;!&ndash; https://mvnrepository.com/artifact/postgresql/postgresql &ndash;&gt;
-        <dependency>
-            <groupId>postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>${postgres.version}</version>
-        </dependency>-->
-    </dependencies>
-</dependencyManagement>
-<!--<build>
-    <plugins>
-        &lt;!&ndash; plugin 4- apache cxf codegen wsdl2java goal &ndash;&gt;
-        <plugin>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-codegen-plugin</artifactId>
-            <version>3.0.2</version>
-            <executions>
-                <execution>
-                    <configuration>
-                        <sourceRoot>generated/java/source</sourceRoot>
-                        <wsdlOptions>
-                            <wsdlOption>
-                                <wsdl>${basedir}/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl</wsdl>
-                            </wsdlOption>
-                        </wsdlOptions>
-                    </configuration>
-                    <goals>
-                        <goal>wsdl2java</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-    </plugins>
-</build>-->
+             &lt;!&ndash; https://mvnrepository.com/artifact/postgresql/postgresql &ndash;&gt;
+             <dependency>
+                 <groupId>postgresql</groupId>
+                 <artifactId>postgresql</artifactId>
+                 <version>${postgres.version}</version>
+             </dependency>-->
+        </dependencies>
+    </dependencyManagement>
+    <!--<build>
+        <plugins>
+            &lt;!&ndash; plugin 4- apache cxf codegen wsdl2java goal &ndash;&gt;
+            <plugin>
+                <groupId>org.apache.cxf</groupId>
+                <artifactId>cxf-codegen-plugin</artifactId>
+                <version>3.0.2</version>
+                <executions>
+                    <execution>
+                        <configuration>
+                            <sourceRoot>generated/java/source</sourceRoot>
+                            <wsdlOptions>
+                                <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl</wsdl>
+                                </wsdlOption>
+                            </wsdlOptions>
+                        </configuration>
+                        <goals>
+                            <goal>wsdl2java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>-->
 </project>

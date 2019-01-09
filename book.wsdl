@@ -1,0 +1,158 @@
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+                  xmlns:tns="http://troparo.org/services/BookService/"
+                  xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+                  xmlns:ns1="http://troparo.org/entities/book" name="BookService"
+                  targetNamespace="http://troparo.org/services/BookService/">
+    <wsdl:types>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://troparo.org/entities/book"
+                   elementFormDefault="qualified" targetNamespace="http://troparo.org/entities/book" version="1.0">
+
+            <xs:element name="BookListRequestType">
+                <xs:complexType>
+                    <xs:sequence/>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="BookListResponseType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="tns:BookListType"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="BookListType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element maxOccurs="unbounded" ref="tns:BookTypeOut"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="BookTypeIn">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ISBN" type="xs:string"/>
+                        <xs:element name="Title" type="xs:string"/>
+                        <xs:element name="Author" type="xs:string"/>
+                        <xs:element name="Publication" type="xs:string"/>
+                        <xs:element name="Edition" type="xs:string"/>
+                        <xs:element name="NbPages" type="xs:int"/>
+                        <xs:element name="Keywords" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="BookTypeOut">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="ISBN" type="xs:string"/>
+                        <xs:element name="Title" type="xs:string"/>
+                        <xs:element name="Author" type="xs:string"/>
+                        <xs:element name="Publication" type="xs:date"/>
+                        <xs:element name="Edition" type="xs:string"/>
+                        <xs:element name="NbPages" type="xs:int"/>
+                        <xs:element name="Keywords" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="BusinessFaultType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="errorCode" type="xs:int"/>
+                        <xs:element name="errorMessage" type="xs:string"/>
+                        <xs:element name="errorDescription" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="addBookRequestType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="tns:BookTypeIn"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+            <xs:element name="addBookResponseType">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="return" type="xs:boolean"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="addBookResponse">
+        <wsdl:part element="ns1:addBookResponseType" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="BusinessException">
+        <wsdl:part element="ns1:BusinessFaultType" name="BusinessException">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAllBooks">
+        <wsdl:part element="ns1:BookListRequestType" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="addBook">
+        <wsdl:part element="ns1:addBookRequestType" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="getAllBooksResponse">
+        <wsdl:part element="ns1:BookListResponseType" name="parameters">
+        </wsdl:part>
+    </wsdl:message>
+    <wsdl:portType name="IBookService">
+        <wsdl:operation name="addBook">
+            <wsdl:input message="tns:addBook" name="addBook">
+            </wsdl:input>
+            <wsdl:output message="tns:addBookResponse" name="addBookResponse">
+            </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException">
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getAllBooks">
+            <wsdl:input message="tns:getAllBooks" name="getAllBooks">
+            </wsdl:input>
+            <wsdl:output message="tns:getAllBooksResponse" name="getAllBooksResponse">
+            </wsdl:output>
+            <wsdl:fault message="tns:BusinessException" name="BusinessException">
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BookServiceSoapBinding" type="tns:IBookService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="addBook">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="addBook">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="addBookResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getAllBooks">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getAllBooks">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getAllBooksResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="BusinessException">
+                <soap:fault name="BusinessException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="BookService">
+        <wsdl:port binding="tns:BookServiceSoapBinding" name="BookServicePort">
+            <soap:address location="http://localhost:8080/troparo/services/book/BookService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

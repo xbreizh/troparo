@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="FacetManager">
-    <facet type="web" name="Web">
+    <facet type="hibernate" name="Hibernate">
       <configuration>
-        <descriptors>
-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        </descriptors>
-        <webroots>
-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
-        </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/generated/java/source" />
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
+        <datasource-map>
+          <unit-entry name="sessionFactory" value="35b3615c-5627-4669-a6c8-a246a6af2d06" />
+        </datasource-map>
+        <naming-strategy-map />
       </configuration>
     </facet>
   </component>
