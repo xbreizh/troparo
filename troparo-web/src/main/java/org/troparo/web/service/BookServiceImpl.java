@@ -5,7 +5,9 @@ import org.apache.log4j.Logger;
 import org.troparo.business.contract.BookManager;
 import org.troparo.entities.book.*;
 import org.troparo.model.Book;
-import org.troparo.services.bookservice.*;
+import org.troparo.services.bookservice.BusinessException;
+import org.troparo.services.bookservice.IBookService;
+
 import javax.inject.Inject;
 import javax.jws.WebService;
 import java.util.ArrayList;

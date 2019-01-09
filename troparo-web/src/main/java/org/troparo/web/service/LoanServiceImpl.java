@@ -108,9 +108,6 @@ public class LoanServiceImpl implements ILoanService {
     }
 
 
-
-
-
     // Get List By Criterias
     @Override
     public GetLoanByCriteriasResponseType getLoanByCriterias(GetLoanByCriteriasRequestType parameters) throws BusinessException {

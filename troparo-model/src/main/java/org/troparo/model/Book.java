@@ -137,7 +137,7 @@ public class Book {
                 ", edition='" + edition + '\'' +
                 ", nbPages=" + nbPages +
                 ", keywords='" + keywords + '\'' +
-                 ", loanList=" + loanList.size() +
+                ", loanList=" + loanList.size() +
                 '}';
     }
 }

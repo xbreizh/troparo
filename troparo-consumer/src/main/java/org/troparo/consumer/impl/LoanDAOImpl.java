@@ -9,7 +9,6 @@ import org.troparo.model.Loan;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

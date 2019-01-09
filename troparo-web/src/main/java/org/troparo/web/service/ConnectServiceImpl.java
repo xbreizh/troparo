@@ -10,7 +10,6 @@ import org.troparo.model.Member;
 import org.troparo.services.connectservice.BusinessException;
 import org.troparo.services.connectservice.IConnectService;
 
-
 import javax.inject.Inject;
 import javax.inject.Named;
 import javax.jws.WebService;

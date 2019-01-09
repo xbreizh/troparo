@@ -11,18 +11,8 @@
     <packaging>pom</packaging>
 
     <!-- ===== General Infos ===== -->
-    <name>${projectName}</name>
+    <name>troparo</name>
 
-    <!-- =============================================================== -->
-    <!-- Modules -->
-    <!-- =============================================================== -->
-    <modules>
-        <module>troparo-web</module>
-        <module>troparo-business</module>
-        <module>troparo-consumer</module>
-        <module>troparo-model</module>
-        <module>troparo-technical</module>
-    </modules>
 
     <!-- properties -->
     <properties>
@@ -40,6 +30,17 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+
+    <!-- =============================================================== -->
+    <!-- Modules -->
+    <!-- =============================================================== -->
+    <modules>
+        <module>troparo-web</module>
+        <module>troparo-business</module>
+        <module>troparo-consumer</module>
+        <module>troparo-model</module>
+        <module>troparo-technical</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>

@@ -10,7 +10,6 @@ import org.troparo.model.Member;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.persistence.NoResultException;
 import javax.transaction.Transactional;
 import java.util.*;
 
