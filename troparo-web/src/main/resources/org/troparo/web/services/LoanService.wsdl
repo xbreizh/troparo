@@ -47,7 +47,7 @@
     <wsdl:message name="terminateLoanResponse">
         <wsdl:part element="loan:terminateLoanResponseType" name="parameters"/>
     </wsdl:message>
-    <wsdl:message name="BusinessException">
+    <wsdl:message name="BusinessExceptionLoan">
         <wsdl:part element="loan:BusinessFaultType" name="parameters"/>
     </wsdl:message>
 
@@ -55,32 +55,32 @@
         <wsdl:operation name="addLoan">
             <wsdl:input message="tns:addLoanRequest"/>
             <wsdl:output message="tns:addLoanResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
         <wsdl:operation name="getAllLoans">
             <wsdl:input message="tns:LoanListRequest"/>
             <wsdl:output message="tns:LoanListResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
         <wsdl:operation name="getLoanById">
             <wsdl:input message="tns:getLoanByIdRequest"/>
             <wsdl:output message="tns:getLoanByIdResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
         <wsdl:operation name="getLoanByCriterias">
             <wsdl:input message="tns:getLoanByCriteriasRequest"/>
             <wsdl:output message="tns:getLoanByCriteriasResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
         <wsdl:operation name="renewLoan">
             <wsdl:input message="tns:renewLoanRequest"/>
             <wsdl:output message="tns:renewLoanResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
         <wsdl:operation name="terminateLoan">
             <wsdl:input message="tns:terminateLoanRequest"/>
             <wsdl:output message="tns:terminateLoanResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionLoan" message="tns:BusinessExceptionLoan"/>
         </wsdl:operation>
     </wsdl:portType>
 
@@ -97,8 +97,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getAllLoans">
@@ -110,8 +110,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getLoanById">
@@ -123,8 +123,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getLoanByCriterias">
@@ -136,8 +136,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="renewLoan">
@@ -149,8 +149,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="terminateLoan">
@@ -162,8 +162,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionLoan">
+                <soap:fault name="businessExceptionLoan" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
     </wsdl:binding>

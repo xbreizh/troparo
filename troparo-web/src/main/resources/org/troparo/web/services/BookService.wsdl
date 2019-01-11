@@ -65,7 +65,7 @@
     <wsdl:message name="isAvailableResponse">
         <wsdl:part element="book:isAvailableResponseType" name="parameters"/>
     </wsdl:message>
-    <wsdl:message name="BusinessException">
+    <wsdl:message name="BusinessExceptionBook">
         <wsdl:part element="book:BusinessFaultType" name="parameters"/>
     </wsdl:message>
 
@@ -73,47 +73,47 @@
         <wsdl:operation name="addCopy">
             <wsdl:input message="tns:addCopyRequest"/>
             <wsdl:output message="tns:addCopyResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="getAvailable">
             <wsdl:input message="tns:getAvailableRequest"/>
             <wsdl:output message="tns:getAvailableResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="removeBook">
             <wsdl:input message="tns:removeBookRequest"/>
             <wsdl:output message="tns:removeBookResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="updateBook">
             <wsdl:input message="tns:updateBookRequest"/>
             <wsdl:output message="tns:updateBookResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="getAllBooks">
             <wsdl:input message="tns:BookListRequest"/>
             <wsdl:output message="tns:BookListResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="addBook">
             <wsdl:input message="tns:addBookRequest"/>
             <wsdl:output message="tns:addBookResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="getBookById">
             <wsdl:input message="tns:getBookByIdRequest"/>
             <wsdl:output message="tns:getBookByIdResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="getBookByCriterias">
             <wsdl:input message="tns:getBookByCriteriasRequest"/>
             <wsdl:output message="tns:getBookByCriteriasResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
         <wsdl:operation name="isAvailable">
             <wsdl:input message="tns:isAvailableRequest"/>
             <wsdl:output message="tns:isAvailableResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionBook" message="tns:BusinessExceptionBook"/>
         </wsdl:operation>
     </wsdl:portType>
 
@@ -129,8 +129,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="removeBook">
@@ -142,8 +142,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="updateBook">
@@ -155,8 +155,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getAllBooks">
@@ -168,8 +168,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="addBook">
@@ -181,8 +181,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getBookById">
@@ -194,8 +194,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getBookByCriterias">
@@ -207,8 +207,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="isAvailable">
@@ -220,8 +220,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionBook">
+                <soap:fault name="businessExceptionBook" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
     </wsdl:binding>

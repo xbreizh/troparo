@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 import org.troparo.business.contract.BookManager;
 import org.troparo.entities.book.*;
 import org.troparo.model.Book;
-import org.troparo.services.bookservice.BusinessException;
+import org.troparo.services.bookservice.BusinessExceptionBook;
 import org.troparo.services.bookservice.IBookService;
 
 import javax.inject.Inject;
@@ -34,7 +34,7 @@ public class BookServiceImpl implements IBookService {
 
     // Create
     @Override
-    public AddBookResponseType addBook(org.troparo.entities.book.AddBookRequestType parameters) throws BusinessException {
+    public AddBookResponseType addBook(org.troparo.entities.book.AddBookRequestType parameters) throws BusinessExceptionBook {
         AddBookResponseType ar = new AddBookResponseType();
         ar.setReturn(true);
 
@@ -46,7 +46,7 @@ public class BookServiceImpl implements IBookService {
         exception = bookManager.addBook(book);
         if (!exception.equals("")) {
             logger.info(exception);
-            throw new BusinessException(exception);
+            throw new BusinessExceptionBook(exception);
         }
 
         return ar;
@@ -82,7 +82,7 @@ public class BookServiceImpl implements IBookService {
 
     // Update
     @Override
-    public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessException {
+    public UpdateBookResponseType updateBook(UpdateBookRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         org.troparo.entities.book.UpdateBookResponseType ar = new org.troparo.entities.book.UpdateBookResponseType();
@@ -94,14 +94,14 @@ public class BookServiceImpl implements IBookService {
         logger.info("bookManager: " + bookManager);
         exception = bookManager.updateBook(book);
         if (!exception.equals("")) {
-            throw new BusinessException(exception);
+            throw new BusinessExceptionBook(exception);
         }
 
         return ar;
     }
 
     @Override
-    public AddCopyResponseType addCopy(AddCopyRequestType parameters) throws BusinessException {
+    public AddCopyResponseType addCopy(AddCopyRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         AddCopyResponseType ar = new AddCopyResponseType();
@@ -112,7 +112,7 @@ public class BookServiceImpl implements IBookService {
         logger.info("bookManager: " + bookManager);
         exception = bookManager.addCopy(isbn, copies);
         if (!exception.equals("")) {
-            throw new BusinessException(exception);
+            throw new BusinessExceptionBook(exception);
         }
 
         return ar;
@@ -120,7 +120,7 @@ public class BookServiceImpl implements IBookService {
 
     // Get One
     @Override
-    public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessException {
+    public GetBookByIdResponseType getBookById(GetBookByIdRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         logger.info("new method added");
@@ -128,7 +128,7 @@ public class BookServiceImpl implements IBookService {
         BookTypeOut bt = new org.troparo.entities.book.BookTypeOut();
         Book book = bookManager.getBookById(parameters.getReturn());
         if (book == null) {
-            throw new BusinessException("no book found with that id");
+            throw new BusinessExceptionBook("no book found with that id");
         } else {
             bt.setId(book.getId());
             bt.setISBN(book.getIsbn());
@@ -146,7 +146,7 @@ public class BookServiceImpl implements IBookService {
 
 
     @Override
-    public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessException {
+    public BookListResponseType getAllBooks(BookListRequestType parameters) throws BusinessExceptionBook {
 
         checkAuthentication(parameters.getToken());
         bookList = bookManager.getBooks();
@@ -162,26 +162,26 @@ public class BookServiceImpl implements IBookService {
     }
 
     @Override
-    public IsAvailableResponseType isAvailable(IsAvailableRequestType parameters) throws BusinessException {
+    public IsAvailableResponseType isAvailable(IsAvailableRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
         IsAvailableResponseType ar = new IsAvailableResponseType();
         ar.setReturn(bookManager.isAvailable(parameters.getId()));
         return ar;
     }
 
-    private void checkAuthentication(String token) throws BusinessException {
+    private void checkAuthentication(String token) throws BusinessExceptionBook {
         try {
             authentication.checkToken(token);
         } catch (Exception e) {
             e.printStackTrace();
-            throw new BusinessException("invalid token");
+            throw new BusinessExceptionBook("invalid token");
         }
     }
 
 
     // Get List By Criterias
     @Override
-    public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessException {
+    public GetBookByCriteriasResponseType getBookByCriterias(GetBookByCriteriasRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         HashMap<String, String> map = new HashMap<>();
@@ -205,7 +205,7 @@ public class BookServiceImpl implements IBookService {
 
     // Delete
     @Override
-    public RemoveBookResponseType removeBook(RemoveBookRequestType parameters) throws BusinessException {
+    public RemoveBookResponseType removeBook(RemoveBookRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         RemoveBookResponseType ar = new RemoveBookResponseType();
@@ -214,7 +214,7 @@ public class BookServiceImpl implements IBookService {
         logger.info("bookManager: " + bookManager);
         exception = bookManager.remove(parameters.getId());
         if (!exception.equals("")) {
-            throw new BusinessException(exception);
+            throw new BusinessExceptionBook(exception);
         }
 
         return ar;
@@ -223,7 +223,7 @@ public class BookServiceImpl implements IBookService {
 
     // Get number Available
     @Override
-    public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessException {
+    public GetAvailableResponseType getAvailable(GetAvailableRequestType parameters) throws BusinessExceptionBook {
         checkAuthentication(parameters.getToken());
 
         GetAvailableResponseType ar = new GetAvailableResponseType();

@@ -77,7 +77,7 @@
      <wsdl:message name="invalidateTokenResponse">
          <wsdl:part element="member:invalidateTokenResponseType" name="parameters"/>
      </wsdl:message>-->
-    <wsdl:message name="BusinessException">
+    <wsdl:message name="BusinessExceptionMember">
         <wsdl:part element="member:BusinessFaultType" name="parameters"/>
     </wsdl:message>
 
@@ -85,57 +85,57 @@
         <!-- <wsdl:operation name="resetPassword">
              <wsdl:input message="tns:resetPasswordRequest"/>
              <wsdl:output message="tns:resetPasswordResponse"/>
-             <wsdl:fault name="businessException" message="tns:BusinessException"/>
+             <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
          </wsdl:operation>
          <wsdl:operation name="connect">
              <wsdl:input message="tns:connectRequest"/>
              <wsdl:output message="tns:connectResponse"/>
-             <wsdl:fault name="businessException" message="tns:BusinessException"/>
+             <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
          </wsdl:operation>-->
         <wsdl:operation name="addMember">
             <wsdl:input message="tns:addMemberRequest"/>
             <wsdl:output message="tns:addMemberResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="getAllMembers">
             <wsdl:input message="tns:MemberListRequest"/>
             <wsdl:output message="tns:MemberListResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="getMemberById">
             <wsdl:input message="tns:getMemberByIdRequest"/>
             <wsdl:output message="tns:getMemberByIdResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="getMemberByCriterias">
             <wsdl:input message="tns:getMemberByCriteriasRequest"/>
             <wsdl:output message="tns:getMemberByCriteriasResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="updateMember">
             <wsdl:input message="tns:updateMemberRequest"/>
             <wsdl:output message="tns:updateMemberResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="removeMember">
             <wsdl:input message="tns:removeMemberRequest"/>
             <wsdl:output message="tns:removeMemberResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <!--<wsdl:operation name="getToken">
             <wsdl:input message="tns:getTokenRequest"/>
             <wsdl:output message="tns:getTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="checkToken">
             <wsdl:input message="tns:checkTokenRequest"/>
             <wsdl:output message="tns:checkTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="invalidateToken">
             <wsdl:input message="tns:invalidateTokenRequest"/>
             <wsdl:output message="tns:invalidateTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>-->
     </wsdl:portType>
 
@@ -152,8 +152,8 @@
              <wsdl:output>
                  <soap:body use="literal"/>
              </wsdl:output>
-             <wsdl:fault name="businessException">
-                 <soap:fault name="businessException" use="literal"/>
+             <wsdl:fault name="businessExceptionMember">
+                 <soap:fault name="businessExceptionMember" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>
          <wsdl:operation name="connect">
@@ -165,8 +165,8 @@
              <wsdl:output>
                  <soap:body use="literal"/>
              </wsdl:output>
-             <wsdl:fault name="businessException">
-                 <soap:fault name="businessException" use="literal"/>
+             <wsdl:fault name="businessExceptionMember">
+                 <soap:fault name="businessExceptionMember" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>-->
         <wsdl:operation name="addMember">
@@ -178,8 +178,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getAllMembers">
@@ -191,8 +191,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getMemberById">
@@ -204,8 +204,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getMemberByCriterias">
@@ -217,8 +217,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="updateMember">
@@ -230,8 +230,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="removeMember">
@@ -243,8 +243,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <!-- <wsdl:operation name="getToken">
@@ -256,8 +256,8 @@
              <wsdl:output>
                  <soap:body use="literal"/>
              </wsdl:output>
-             <wsdl:fault name="businessException">
-                 <soap:fault name="businessException" use="literal"/>
+             <wsdl:fault name="businessExceptionMember">
+                 <soap:fault name="businessExceptionMember" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>
          <wsdl:operation name="invalidateToken">
@@ -269,8 +269,8 @@
              <wsdl:output>
                  <soap:body use="literal"/>
              </wsdl:output>
-             <wsdl:fault name="businessException">
-                 <soap:fault name="businessException" use="literal"/>
+             <wsdl:fault name="businessExceptionMember">
+                 <soap:fault name="businessExceptionMember" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>-->
     </wsdl:binding>
