@@ -42,7 +42,7 @@
         <wsdl:part element="connect:invalidateTokenResponseType" name="parameters"/>
     </wsdl:message>
     <wsdl:message name="BusinessExceptionConnect">
-        <wsdl:part element="connect:BusinessFaultType" name="parameters"/>
+        <wsdl:part element="connect:BusinessConnectFaultType" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="IConnectService">

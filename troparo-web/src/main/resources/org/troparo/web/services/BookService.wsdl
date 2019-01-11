@@ -66,7 +66,7 @@
         <wsdl:part element="book:isAvailableResponseType" name="parameters"/>
     </wsdl:message>
     <wsdl:message name="BusinessExceptionBook">
-        <wsdl:part element="book:BusinessFaultType" name="parameters"/>
+        <wsdl:part element="book:BusinessBookFaultType" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="IBookService">

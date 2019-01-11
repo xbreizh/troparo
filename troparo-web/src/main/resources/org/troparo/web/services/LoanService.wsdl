@@ -48,7 +48,7 @@
         <wsdl:part element="loan:terminateLoanResponseType" name="parameters"/>
     </wsdl:message>
     <wsdl:message name="BusinessExceptionLoan">
-        <wsdl:part element="loan:BusinessFaultType" name="parameters"/>
+        <wsdl:part element="loan:BusinessLoanFaultType" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="ILoanService">

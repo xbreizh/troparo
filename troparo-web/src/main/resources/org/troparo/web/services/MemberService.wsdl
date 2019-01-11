@@ -78,7 +78,7 @@
          <wsdl:part element="member:invalidateTokenResponseType" name="parameters"/>
      </wsdl:message>-->
     <wsdl:message name="BusinessExceptionMember">
-        <wsdl:part element="member:BusinessFaultType" name="parameters"/>
+        <wsdl:part element="member:BusinessMemberFaultType" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="IMemberService">

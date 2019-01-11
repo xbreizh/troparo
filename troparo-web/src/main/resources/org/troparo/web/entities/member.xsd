@@ -412,7 +412,7 @@
     <!--Exception-->
 
     <!-- Business Exception Type -->
-    <xsd:element name="BusinessFaultType">
+    <xsd:element name="BusinessMemberFaultType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="errorCode" type="xsd:int"/>
