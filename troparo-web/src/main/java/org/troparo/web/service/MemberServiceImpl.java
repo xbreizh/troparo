@@ -108,7 +108,7 @@ public class MemberServiceImpl implements IMemberService {
     }*/
 
 
-    // Get One
+    // Get By Id
     @Override
     public GetMemberByIdResponseType getMemberById(GetMemberByIdRequestType parameters) throws BusinessExceptionMember {
         checkAuthentication(parameters.getToken());
@@ -130,6 +130,50 @@ public class MemberServiceImpl implements IMemberService {
         }
         return rep;
     }
+    @Override
+    public GetMemberByLoginResponseType getMemberByLogin(GetMemberByLoginRequestType parameters) throws BusinessExceptionMember {
+        checkAuthentication(parameters.getToken());
+        logger.info("new method added");
+        GetMemberByLoginResponseType rep = new GetMemberByLoginResponseType();
+        MemberTypeOut bt = new MemberTypeOut();
+        Member member = memberManager.getMemberByLogin(parameters.getLogin().toUpperCase());
+        if (member == null) {
+            throw new BusinessExceptionMember("no member found with that login");
+        } else {
+            bt.setId(member.getId());
+            bt.setLogin(member.getLogin());
+            bt.setFirstName(member.getFirstName());
+            bt.setLastName(member.getLastName());
+            bt.setEmail(member.getEmail());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
+            bt.setDateJoin(xmlCalendar);
+            rep.setMemberTypeOut(bt);
+        }
+        return rep;
+    }
+
+  /*  // Get By Login
+    @Override
+    public GetMemberByLoginResponseType getMemberByLogin(GetMemberByIdRequestType parameters) throws BusinessExceptionMember {
+        checkAuthentication(parameters.getToken());
+        logger.info("new method added");
+        GetMemberByIdResponseType rep = new GetMemberByIdResponseType();
+        MemberTypeOut bt = new MemberTypeOut();
+        Member member = memberManager.getMemberById(parameters.getId());
+        if (member == null) {
+            throw new BusinessExceptionMember("no member found with that id");
+        } else {
+            bt.setId(member.getId());
+            bt.setLogin(member.getLogin());
+            bt.setFirstName(member.getFirstName());
+            bt.setLastName(member.getLastName());
+            bt.setEmail(member.getEmail());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
+            bt.setDateJoin(xmlCalendar);
+            rep.setMemberTypeOut(bt);
+        }
+        return rep;
+    }*/
 
   /*  @Override
     public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
@@ -188,6 +232,8 @@ public class MemberServiceImpl implements IMemberService {
         brt.setMemberListType(memberListType);
         return brt;
     }
+
+
 
 
     // Delete

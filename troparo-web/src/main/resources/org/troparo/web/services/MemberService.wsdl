@@ -41,6 +41,12 @@
     <wsdl:message name="getMemberByIdResponse">
         <wsdl:part element="member:getMemberByIdResponseType" name="parameters"/>
     </wsdl:message>
+    <wsdl:message name="getMemberByLoginRequest">
+        <wsdl:part element="member:getMemberByLoginRequestType" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="getMemberByLoginResponse">
+        <wsdl:part element="member:getMemberByLoginResponseType" name="parameters"/>
+    </wsdl:message>
     <wsdl:message name="getMemberByCriteriasRequest">
         <wsdl:part element="member:getMemberByCriteriasRequestType" name="parameters"/>
     </wsdl:message>
@@ -105,6 +111,11 @@
         <wsdl:operation name="getMemberById">
             <wsdl:input message="tns:getMemberByIdRequest"/>
             <wsdl:output message="tns:getMemberByIdResponse"/>
+            <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
+        </wsdl:operation>
+        <wsdl:operation name="getMemberByLogin">
+            <wsdl:input message="tns:getMemberByLoginRequest"/>
+            <wsdl:output message="tns:getMemberByLoginResponse"/>
             <wsdl:fault name="businessExceptionMember" message="tns:BusinessExceptionMember"/>
         </wsdl:operation>
         <wsdl:operation name="getMemberByCriterias">
@@ -196,6 +207,19 @@
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="getMemberById">
+            <soap:operation
+                    soapAction=""/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="businessExceptionMember">
+                <soap:fault name="businessExceptionMember" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getMemberByLogin">
             <soap:operation
                     soapAction=""/>
             <wsdl:input>

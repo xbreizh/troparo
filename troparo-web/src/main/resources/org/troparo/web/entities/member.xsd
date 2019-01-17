@@ -159,6 +159,25 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Get Member Request Type -->
+    <xsd:element name="getMemberByLoginRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element name="Login" type="xsd:string" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Member Response Type -->
+    <xsd:element name="getMemberByLoginResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:MemberTypeOut"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Get Member by Criterias Request Type -->
     <xsd:element name="getMemberByCriteriasRequestType">
         <xsd:complexType>
