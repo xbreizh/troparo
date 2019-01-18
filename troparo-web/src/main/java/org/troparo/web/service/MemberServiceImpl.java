@@ -4,6 +4,7 @@ package org.troparo.web.service;
 import org.apache.log4j.Logger;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.entities.member.*;
+import org.troparo.model.Loan;
 import org.troparo.model.Member;
 import org.troparo.services.memberservice.BusinessExceptionMember;
 import org.troparo.services.memberservice.IMemberService;
@@ -126,10 +127,36 @@ public class MemberServiceImpl implements IMemberService {
             bt.setEmail(member.getEmail());
             XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
             bt.setDateJoin(xmlCalendar);
+            LoanListType loanListType = new LoanListType();
+
+
+            bt.setLoanListType(settingLoanListMember(member.getLoanList()));
             rep.setMemberTypeOut(bt);
+
         }
         return rep;
     }
+
+    private LoanListType settingLoanListMember(List<Loan> loanList) {
+        LoanListType loanListType = new LoanListType();
+       /* List<LoanTypeOut> listOut = new ArrayList<>();*/
+        for (Loan l: loanList
+             ) {
+            LoanTypeOut lout = new LoanTypeOut();
+            lout.setId(l.getId());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(l.getStartDate());
+            lout.setStartDate(xmlCalendar);
+            xmlCalendar = convertDateIntoXmlDate(l.getPlannedEndDate());
+            lout.setPlannedEndDate(xmlCalendar);
+            if(l.getEndDate()!=null) {
+                xmlCalendar = convertDateIntoXmlDate(l.getEndDate());
+                lout.setEndDate(xmlCalendar);
+            }
+            loanListType.getLoanTypeOut().add(lout);
+        }
+        return loanListType;
+    }
+
     @Override
     public GetMemberByLoginResponseType getMemberByLogin(GetMemberByLoginRequestType parameters) throws BusinessExceptionMember {
         checkAuthentication(parameters.getToken());

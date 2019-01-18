@@ -115,10 +115,14 @@ public class LoanServiceImpl implements ILoanService {
         HashMap<String, String> map = new HashMap<>();
         LoanCriterias criterias = parameters.getLoanCriterias();
         map.put("borrower.login", criterias.getLogin().toUpperCase());
-        if (criterias.getBookId() != -1) {
+        if (criterias.getBookId() != -1 && criterias.getBookId() != 0) {
             map.put("book.id", Integer.toString(criterias.getBookId()));
         }
-        map.put("status", criterias.getStatus().toUpperCase());
+        if(criterias.getStatus()!=null) {
+            if(!criterias.getStatus().equals("")) {
+                map.put("status", criterias.getStatus().toUpperCase());
+            }
+        }
         logger.info("map: " + map);
 
         loanList = loanManager.getLoansByCriterias(map);
