@@ -140,16 +140,16 @@ public class MemberServiceImpl implements IMemberService {
 
     private LoanListType settingLoanListMember(List<Loan> loanList) {
         LoanListType loanListType = new LoanListType();
-       /* List<LoanTypeOut> listOut = new ArrayList<>();*/
-        for (Loan l: loanList
-             ) {
+        /* List<LoanTypeOut> listOut = new ArrayList<>();*/
+        for (Loan l : loanList
+        ) {
             LoanTypeOut lout = new LoanTypeOut();
             lout.setId(l.getId());
             XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(l.getStartDate());
             lout.setStartDate(xmlCalendar);
             xmlCalendar = convertDateIntoXmlDate(l.getPlannedEndDate());
             lout.setPlannedEndDate(xmlCalendar);
-            if(l.getEndDate()!=null) {
+            if (l.getEndDate() != null) {
                 xmlCalendar = convertDateIntoXmlDate(l.getEndDate());
                 lout.setEndDate(xmlCalendar);
             }
@@ -279,8 +279,6 @@ public class MemberServiceImpl implements IMemberService {
         brt.setMemberListType(memberListType);
         return brt;
     }
-
-
 
 
     // Delete

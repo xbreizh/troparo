@@ -111,7 +111,6 @@ public class MemberManagerImpl implements MemberManager {
     }
 
 
-
     @Override
     public Member getMemberByLogin(String login) {
         logger.info("getting id (from business): " + login);

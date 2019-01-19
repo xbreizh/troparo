@@ -93,12 +93,13 @@ public class BookDAOImpl implements BookDAO {
             }
             criterias += entry.getKey() + " like :" + entry.getKey();
         }
-        request = "From Book ";
+        request = "SELECT DISTINCT ON (isbn ) *  From Book ";
         request += criterias;
+        /*request += "group by ISBN";*/
         logger.info("request: " + request);
         sessionFactory.getCurrentSession().flush();
         sessionFactory.getCurrentSession().clear();
-        Query query = sessionFactory.getCurrentSession().createQuery(request, Book.class);
+        Query query = sessionFactory.getCurrentSession().createNativeQuery(request, Book.class);
         for (Map.Entry<String, String> entry : map.entrySet()
         ) {
             logger.info("criteria: " + entry.getValue());

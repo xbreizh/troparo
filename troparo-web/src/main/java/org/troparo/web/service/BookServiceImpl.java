@@ -199,8 +199,26 @@ public class BookServiceImpl implements IBookService {
         /*bookListType.getBookTypeOut().add(bookTypeOut); // add bookType to the movieListType*/
         logger.info("bookListType end: " + bookListType.getBookTypeOut().size());
         brt.setBookListType(bookListType);
+       /* brt = removeDuplicates(brt);*/
         return brt;
     }
+/*
+    private GetBookByCriteriasResponseType removeDuplicates(GetBookByCriteriasResponseType brt) {
+        List<BookTypeOut> finallist = new ArrayList<>();
+        List<BookTypeOut> intermlist = new ArrayList<>();
+        List<BookTypeOut> initList = brt.getBookListType().getBookTypeOut();
+
+        for (BookTypeOut bout: initList
+             ) {
+            for (BookTypeOut bout2: finallist
+                 ) {
+                if(bout.getISBN().equals())
+            }
+        }*/
+
+/*
+        return brt;
+    }*/
 
 
     // Delete

@@ -118,8 +118,8 @@ public class LoanServiceImpl implements ILoanService {
         if (criterias.getBookId() != -1 && criterias.getBookId() != 0) {
             map.put("book.id", Integer.toString(criterias.getBookId()));
         }
-        if(criterias.getStatus()!=null) {
-            if(!criterias.getStatus().equals("")) {
+        if (criterias.getStatus() != null) {
+            if (!criterias.getStatus().equals("")) {
                 map.put("status", criterias.getStatus().toUpperCase());
             }
         }
