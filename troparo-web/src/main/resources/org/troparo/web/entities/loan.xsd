@@ -77,6 +77,26 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+
+    <!-- is Renewable Request Type -->
+    <xsd:element name="isRenewableRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element name="Id" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- is Renewable Response Type -->
+    <xsd:element name="isRenewableResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Renew Loan Request Type -->
     <xsd:element name="renewLoanRequestType">
         <xsd:complexType>

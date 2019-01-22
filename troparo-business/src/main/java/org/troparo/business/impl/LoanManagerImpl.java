@@ -121,6 +121,30 @@ public class LoanManagerImpl implements LoanManager {
     }
 
     @Override
+    public boolean isRenewable(int id) {
+        logger.info("checking if loan "+id+" is renewable");
+        Loan loan = loanDAO.getLoanById(id);
+
+        if (loan.getEndDate() != null) {
+            return false;
+        }
+
+        Date start = loan.getStartDate();
+        Date end = loan.getPlannedEndDate();
+
+        int diffInDays = (int) ((end.getTime() - start.getTime())
+                / (1000 * 60 * 60 * 24));
+        logger.info("diff days is: " + diffInDays);
+        if (diffInDays > loanDuration) {
+            return false;
+        } else {
+            return true;
+        }
+
+
+    }
+
+    @Override
     public String terminate(int id) {
         Loan loan;
         try {

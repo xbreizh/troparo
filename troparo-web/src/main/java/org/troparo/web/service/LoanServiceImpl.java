@@ -108,6 +108,7 @@ public class LoanServiceImpl implements ILoanService {
     }
 
 
+
     // Get List By Criterias
     @Override
     public GetLoanByCriteriasResponseType getLoanByCriterias(GetLoanByCriteriasRequestType parameters) throws BusinessExceptionLoan {
@@ -140,6 +141,17 @@ public class LoanServiceImpl implements ILoanService {
         logger.info("loanListType end: " + loanListType.getLoanTypeOut().size());
         brt.setLoanListType(loanListType);
         return brt;
+    }
+
+
+    @Override
+    public IsRenewableResponseType isRenewable(IsRenewableRequestType parameters) throws BusinessExceptionLoan {
+        checkAuthentication(parameters.getToken());
+        IsRenewableResponseType ar = new IsRenewableResponseType();
+
+        ar.setReturn(loanManager.isRenewable(parameters.getId()));
+
+        return ar;
     }
 
 
