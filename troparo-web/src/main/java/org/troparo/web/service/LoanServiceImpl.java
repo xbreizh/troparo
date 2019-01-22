@@ -143,6 +143,14 @@ public class LoanServiceImpl implements ILoanService {
         return brt;
     }
 
+    @Override
+    public GetLoanStatusResponseType getLoanStatus(GetLoanStatusRequestType parameters) throws BusinessExceptionLoan {
+        checkAuthentication(parameters.getToken());
+        GetLoanStatusResponseType ar = new GetLoanStatusResponseType();
+        ar.setStatus(loanManager.getLoanStatus(parameters.getId()));
+        return ar;
+    }
+
 
     @Override
     public IsRenewableResponseType isRenewable(IsRenewableRequestType parameters) throws BusinessExceptionLoan {

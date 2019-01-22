@@ -160,4 +160,26 @@ public class LoanManagerImpl implements LoanManager {
         }
         return "";
     }
+
+    @Override
+    public String getLoanStatus(int id) {
+        Loan loan;
+        logger.info("getting loan status");
+        Date today = new Date();
+        try {
+            loan = loanDAO.getLoanById(id);
+            if (loan.getEndDate() == null && loan.getPlannedEndDate().before(today)) {
+                return "OVERDUE";
+            }
+            if(loan.getEndDate()!=null){
+                return "TERMINATED";
+            }
+            else{
+                return "PROGRESS";
+            }
+        } catch (NullPointerException e) {
+            logger.error("error while getting loan status");
+        }
+        return null;
+    }
 }

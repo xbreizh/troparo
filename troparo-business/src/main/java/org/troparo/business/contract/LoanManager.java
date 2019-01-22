@@ -23,4 +23,5 @@ public interface LoanManager {
     String terminate(int id);
 
 
+    String getLoanStatus(int id);
 }

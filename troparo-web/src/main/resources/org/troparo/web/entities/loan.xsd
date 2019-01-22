@@ -59,6 +59,28 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Get Loan Status Request Type -->
+    <xsd:element name="getLoanStatusRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element ref="tns:Id"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Loan Status Response Type -->
+    <xsd:element name="getLoanStatusResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Status"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+
+
     <!-- Get Loan by Criterias Request Type -->
     <xsd:element name="getLoanByCriteriasRequestType">
         <xsd:complexType>
