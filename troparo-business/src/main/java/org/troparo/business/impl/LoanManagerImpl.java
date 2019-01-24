@@ -2,6 +2,9 @@ package org.troparo.business.impl;
 
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.troparo.business.contract.BookManager;
 import org.troparo.business.contract.LoanManager;
 import org.troparo.business.contract.MemberManager;
@@ -17,12 +20,16 @@ import java.util.HashMap;
 import java.util.List;
 
 @Transactional
-@Named
+@Configuration
+@PropertySource("classpath:config.properties")
 public class LoanManagerImpl implements LoanManager {
-    private final int loanDuration = 28;
-    private final int renewDuration = 28;
-    private final int maxBooks = 4;
-    private final int maxLoanDuration = loanDuration + renewDuration;
+    @Value("${loanDuration}")
+    private int loanDuration;
+    @Value("${renewDuration}")
+    private int renewDuration;
+    @Value("${maxBooks}")
+    private int maxBooks;
+
     @Inject
     LoanDAO loanDAO;
     @Inject
@@ -34,11 +41,12 @@ public class LoanManagerImpl implements LoanManager {
 
     @Override
     public String addLoan(Loan loan) {
+
         exception = "";
         loan.setStartDate(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(loan.getStartDate());
-        cal.add(Calendar.DATE, loanDuration);
+        cal.add(Calendar.DATE,loanDuration);
         loan.setPlannedEndDate(cal.getTime());
         if (loan.getBorrower() == null) {
             return "invalid member";
@@ -58,6 +66,7 @@ public class LoanManagerImpl implements LoanManager {
             return "max number of books rented reached";
         }
         return exception;
+
     }
 
 
@@ -135,7 +144,7 @@ public class LoanManagerImpl implements LoanManager {
         int diffInDays = (int) ((end.getTime() - start.getTime())
                 / (1000 * 60 * 60 * 24));
         logger.info("diff days is: " + diffInDays);
-        if (diffInDays > loanDuration) {
+        if (diffInDays > renewDuration) {
             return false;
         } else {
             return true;
