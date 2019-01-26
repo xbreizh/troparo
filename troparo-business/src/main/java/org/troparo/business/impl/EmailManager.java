@@ -37,7 +37,7 @@ public class EmailManager {
     @Value("${body}")
     private String body;
 
-    @Scheduled(cron = "*/20 * * * * *")
+    @Scheduled(cron = "${cron.expression}")
     public void sendMail() {
         final String username = "xavier.lamourec@gmail.com";
 
