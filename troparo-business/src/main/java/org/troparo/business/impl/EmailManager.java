@@ -22,9 +22,7 @@ import javax.inject.Inject;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
@@ -39,7 +37,7 @@ public class EmailManager {
     @Inject
     LoanManager loanManager;
 
-    @Value("${fromEmail}")
+    @Value("${sender}")
     private String mailFrom;
     @Value("${fileLocation}")
     private String fileLocation;
@@ -47,6 +45,15 @@ public class EmailManager {
     private String subject;
     @Value("${body}")
     private String body;
+    @Value("${mailTemplateLocation}")
+    private String templateLocation;
+    @Value("${mailServer}")
+    private String mailServer;
+    @Value("${mailServerPort}")
+    private String port;
+
+
+    public static final String AES = "AES";
 
     @Scheduled(cron = "*/10 * * * * *")
     public void sendMail() {
@@ -56,8 +63,8 @@ public class EmailManager {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
-        props.put("mail.smtp.host", "smtp.gmail.com");
-        props.put("mail.smtp.port", "587");
+        props.put("mail.smtp.host", mailServer);
+        props.put("mail.smtp.port", port);
 
         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
@@ -87,14 +94,19 @@ public class EmailManager {
                  ) {
                 logger.info("loan id: "+loan.getId());
                 String text = createMailContent(loan);
-                message.setContent(text, "text/html");
+
+                //HTML mail content
+                String htmlText = readEmailFromHtml(templateLocation,loan);
+                logger.info("html to be sent: "+htmlText);
+
+                message.setContent(htmlText, "text/html");
                 logger.info("sending email to "+loan.getBorrower().getEmail());
                 try {
                     logger.info("mail content: "+message.getContent().toString());
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
-                /* Transport.send(message);*/
+                 Transport.send(message);
 
             }
 
@@ -106,7 +118,72 @@ public class EmailManager {
     }
 
 
-    public static final String AES = "AES";
+
+
+    //Method to replace the values for keys
+    protected String readEmailFromHtml(String filePath, Loan loan)
+    {
+        Map<String, String> input = getTemplateItems(loan);
+
+
+        String msg = readContentFromFile(filePath);
+        try
+        {
+            Set<Map.Entry<String, String>> entries = input.entrySet();
+            for(Map.Entry<String, String> entry : entries) {
+                msg = msg.replace(entry.getKey().trim(), entry.getValue().trim());
+            }
+        }
+        catch(Exception exception)
+        {
+            exception.printStackTrace();
+        }
+        return msg;
+    }
+
+    private Map<String, String> getTemplateItems(Loan loan) {
+        //Set key values
+        Map<String, String> input = new HashMap<String, String>();
+        input.put("FIRSTNAME", loan.getBorrower().getFirstName());
+        input.put("LASTNAME", loan.getBorrower().getLastName());
+        SimpleDateFormat dt1 = new SimpleDateFormat("dd-MM-yyyy");
+        String dueDate = dt1.format(loan.getPlannedEndDate());
+        input.put("DUEDATE", dueDate);
+        Date today = new Date();
+        int overDays = calculateDaysBetweenDates(new Date(), loan.getPlannedEndDate());
+        input.put("Isbn", loan.getBook().getIsbn());
+        input.put("DIFFDAYS", Integer.toString(overDays));
+        input.put("TITLE", loan.getBook().getTitle());
+        input.put("AUTHOR", loan.getBook().getAuthor());
+        input.put("EDITION", loan.getBook().getEdition());
+        return input;
+    }
+
+    //Method to read HTML file as a String
+    private String readContentFromFile(String fileName)
+    {
+        StringBuffer contents = new StringBuffer();
+
+        try {
+            //use buffering, reading one line at a time
+            BufferedReader reader =  new BufferedReader(new FileReader(fileName));
+            try {
+                String line = null;
+                while (( line = reader.readLine()) != null){
+                    contents.append(line);
+                    contents.append(System.getProperty("line.separator"));
+                }
+            }
+            finally {
+                reader.close();
+            }
+        }
+        catch (IOException ex){
+            ex.printStackTrace();
+        }
+        return contents.toString();
+    }
+
 
     private String byteArrayToHexString(byte[] b) {
         StringBuffer sb = new StringBuffer(b.length * 2);
@@ -149,9 +226,8 @@ public class EmailManager {
         Member member = loan.getBorrower();
         Book book = loan.getBook();
         SimpleDateFormat dt1 = new SimpleDateFormat("dd-MM-yyyy");
-        Date today = new Date();
-        int overDays = calculateDaysBetweenDates(new Date(), loan.getPlannedEndDate());
-        String body="Dear "+member.getFirstName()+" "+member.getLastName()+"<br><br>" +
+
+      /*  String body="Dear "+member.getFirstName()+" "+member.getLastName()+"<br><br>" +
                 "This is to inform you that the following loan is overdue by "+overDays+" days as you were supposed to return the following item by " +
                 dt1.format(loan.getPlannedEndDate())+".<br>   " +
                 "ISBN: "+book.getIsbn()+"<br>"+
@@ -161,9 +237,9 @@ public class EmailManager {
                 "As a reminder, according to our policy, a fee of 1 euro is applied per day per item.<br>" +
                 "Please return that item as soon as possible <br>" +
                 "Best Regards<br>" +
-                "Library Loan Manager";
+                "Library Loan Manager";*/
 
-        return body;
+        return null;
     }
 
 
