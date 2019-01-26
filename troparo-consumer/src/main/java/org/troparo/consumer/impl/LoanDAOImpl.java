@@ -132,7 +132,7 @@ public class LoanDAOImpl implements LoanDAO {
         request = "From Loan ";
         request += criterias;
 
-        addStatusToRequest(status);
+        addStatusToRequest(status, map.size());
         logger.info("request: " + request);
         Query query = sessionFactory.getCurrentSession().createQuery(request, Loan.class);
         for (Map.Entry<String, String> entry : map.entrySet()
@@ -156,17 +156,22 @@ public class LoanDAOImpl implements LoanDAO {
 
     }
 
-    private void addStatusToRequest(String status) {
+    private void addStatusToRequest(String status, int i) {
+        if(i > 1){
+            request += " and";
+        }else{
+            request += " where";
+        }
         if (!status.equals("")) {
             switch (status) {
                 case "PROGRESS":
-                    request += " and endDate is null";
+                    request += "  endDate is null";
                     break;
                 case "TERMINATED":
-                    request += " and endDate is not null";
+                    request += "  endDate is not null";
                     break;
                 case "OVERDUE":
-                    request += " and endDate is null and plannedEndDate < current_date";
+                    request += "  endDate is null and plannedEndDate < current_date";
                     break;
                 default:
                     logger.info("nothing to add");

@@ -6,6 +6,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.troparo.model.Loan;
+import org.troparo.model.Mail;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
@@ -20,12 +22,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
+import java.util.List;
 import java.util.Properties;
 
 @Component
 @Configuration
 @EnableScheduling
-@PropertySource("classpath:keypassword.properties")
+@PropertySource("classpath:mail.properties")
 public class EmailManager {
 
     @Value("${fromEmail}")
@@ -37,7 +40,7 @@ public class EmailManager {
     @Value("${body}")
     private String body;
 
-    @Scheduled(cron = "${cron.expression}")
+    @Scheduled(cron = "*/10 * * * * *")
     public void sendMail() {
         final String username = "xavier.lamourec@gmail.com";
 
@@ -67,9 +70,11 @@ public class EmailManager {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("dontkillewok@gmail.com"));
             message.setSubject(subject);
-            message.setText(body);
+            /*message.setText(body);*/
+            String test = "markolo";
+            message.setContent("<h1>test</h1><br><h2>${test}</h2>", "text/html");
 
-            Transport.send(message);
+           /* Transport.send(message);*/
 
             System.out.println("Done");
 
@@ -103,11 +108,9 @@ public class EmailManager {
         return b;
     }
 
-  /*  public static void main(String args[]) throws NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException, FileNotFoundException, IOException {
-
-        getPassword();
-
-    }*/
+    private String createMailContent(List<Loan> loans){
+        return null;
+    }
 
     private String getPassword() throws IOException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
         String tempkey = "";
