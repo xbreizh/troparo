@@ -1,19 +1,24 @@
 package org.troparo.business.impl;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.troparo.business.contract.LoanManager;
+import org.troparo.model.Book;
 import org.troparo.model.Loan;
 import org.troparo.model.Mail;
+import org.troparo.model.Member;
 
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
+import javax.inject.Inject;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -22,14 +27,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
-import java.util.List;
-import java.util.Properties;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 @Component
 @Configuration
 @EnableScheduling
 @PropertySource("classpath:mail.properties")
 public class EmailManager {
+    private Logger logger = Logger.getLogger(EmailManager.class);
+    @Inject
+    LoanManager loanManager;
 
     @Value("${fromEmail}")
     private String mailFrom;
@@ -72,9 +80,23 @@ public class EmailManager {
             message.setSubject(subject);
             /*message.setText(body);*/
             String test = "markolo";
-            message.setContent("<h1>test</h1><br><h2>${test}</h2>", "text/html");
 
-           /* Transport.send(message);*/
+            List<Loan> overdueList = getOverdueList();
+            logger.info("overdue list size: "+overdueList.size());
+            for (Loan loan: overdueList
+                 ) {
+                logger.info("loan id: "+loan.getId());
+                String text = createMailContent(loan);
+                message.setContent(text, "text/html");
+                logger.info("sending email to "+loan.getBorrower().getEmail());
+                try {
+                    logger.info("mail content: "+message.getContent().toString());
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                /* Transport.send(message);*/
+
+            }
 
             System.out.println("Done");
 
@@ -108,9 +130,42 @@ public class EmailManager {
         return b;
     }
 
-    private String createMailContent(List<Loan> loans){
-        return null;
+    private List<Loan> getOverdueList(){
+        HashMap<String, String> criterias = new HashMap<>();
+        criterias.put("status", "OVERDUE");
+        logger.info("getting overdue list");
+        return loanManager.getLoansByCriterias(criterias);
     }
+
+    private int calculateDaysBetweenDates(Date d1, Date d2){
+        String format = "MM/dd/yyyy hh:mm a";
+        SimpleDateFormat sdf = new SimpleDateFormat(format);
+        long diff = d2.getTime() - d1.getTime();
+        int diffDays = (int) (diff / (24 * 60 * 60 * 1000));
+        return diffDays;
+    }
+
+    private String createMailContent(Loan loan){
+        Member member = loan.getBorrower();
+        Book book = loan.getBook();
+        SimpleDateFormat dt1 = new SimpleDateFormat("dd-MM-yyyy");
+        Date today = new Date();
+        int overDays = calculateDaysBetweenDates(new Date(), loan.getPlannedEndDate());
+        String body="Dear "+member.getFirstName()+" "+member.getLastName()+"<br><br>" +
+                "This is to inform you that the following loan is overdue by "+overDays+" days as you were supposed to return the following item by " +
+                dt1.format(loan.getPlannedEndDate())+".<br>   " +
+                "ISBN: "+book.getIsbn()+"<br>"+
+                "Title: "+book.getTitle()+"<br>"+
+                "Author: "+book.getAuthor()+"<br>"+
+                "Edition: "+book.getEdition()+"<br>"+
+                "As a reminder, according to our policy, a fee of 1 euro is applied per day per item.<br>" +
+                "Please return that item as soon as possible <br>" +
+                "Best Regards<br>" +
+                "Library Loan Manager";
+
+        return body;
+    }
+
 
     private String getPassword() throws IOException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException, IllegalBlockSizeException, BadPaddingException {
         String tempkey = "";
