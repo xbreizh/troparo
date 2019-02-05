@@ -8,11 +8,11 @@
 
 
 <br><br>
-<a href="http://localhost:8080/troparo/services"><h2>Services List</h2></a><br><br>
-<a href="http://localhost:8080/troparo/services/book?wsdl">Book</a><br><br>
-<a href="http://localhost:8080/troparo/services/member?wsdl">Member</a><br><br>
-<a href="http://localhost:8080/troparo/services/loan?wsdl">Loan</a><br><br>
-<a href="http://localhost:8080/troparo/services/connect?wsdl">Connect</a><br><br>
+<a href="http://localhost:8080/troparo-web/services"><h2>Services List</h2></a><br><br>
+<a href="http://localhost:8080/troparo-web/services/book?wsdl">Book</a><br><br>
+<a href="http://localhost:8080/troparo-web/services/member?wsdl">Member</a><br><br>
+<a href="http://localhost:8080/troparo-web/services/loan?wsdl">Loan</a><br><br>
+<a href="http://localhost:8080/troparo-web/services/connect?wsdl">Connect</a><br><br>
 
 </body>
 </html>

@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
     <artifactId>troparo-web</artifactId>
-
+    <name>troparo-web</name>
     <!--<properties>
         <cxf.version>3.2.7</cxf.version>
         <cxf.scope>compile</cxf.scope>
@@ -140,7 +140,7 @@
                 <configuration>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-                    <warName>JaxWsSecurity</warName>
+                    <warName>troparo-web</warName>
                 </configuration>
             </plugin>
             <!-- plugin 4- apache cxf codegen wsdl2java goal -->

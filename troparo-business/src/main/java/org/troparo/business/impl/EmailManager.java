@@ -28,10 +28,10 @@ import java.security.NoSuchAlgorithmException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-@Component
+/*@Component
 @Configuration
 @EnableScheduling
-@PropertySource("classpath:mail.properties")
+@PropertySource("classpath:mail.properties")*/
 public class EmailManager {
     private Logger logger = Logger.getLogger(EmailManager.class);
     @Inject
@@ -57,7 +57,7 @@ public class EmailManager {
 
     @Scheduled(cron = "*/10 * * * * *")
     public void sendMail() {
-        final String username = "xavier.lamourec@gmail.com";
+        /*final String username = "xavier.lamourec@gmail.com";
 
 
         Properties props = new Properties();
@@ -85,7 +85,7 @@ public class EmailManager {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("dontkillewok@gmail.com"));
             message.setSubject(subject);
-            /*message.setText(body);*/
+            *//*message.setText(body);*//*
             String test = "markolo";
 
             List<Loan> overdueList = getOverdueList();
@@ -114,7 +114,7 @@ public class EmailManager {
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
-        }
+        }*/
     }
 
 
