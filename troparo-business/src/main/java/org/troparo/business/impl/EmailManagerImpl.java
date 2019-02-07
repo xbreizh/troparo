@@ -7,6 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
+import org.troparo.business.contract.EmailManager;
 import org.troparo.business.contract.LoanManager;
 import org.troparo.model.Book;
 import org.troparo.model.Loan;
@@ -19,6 +20,7 @@ import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.spec.SecretKeySpec;
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.mail.*;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
@@ -32,8 +34,9 @@ import java.util.*;
 @Configuration
 @EnableScheduling
 @PropertySource("classpath:mail.properties")*/
-public class EmailManager {
-    private Logger logger = Logger.getLogger(EmailManager.class);
+@Named
+public class EmailManagerImpl implements EmailManager {
+    private Logger logger = Logger.getLogger(EmailManagerImpl.class);
     @Inject
     LoanManager loanManager;
 
@@ -57,7 +60,7 @@ public class EmailManager {
 
     @Scheduled(cron = "*/10 * * * * *")
     public void sendMail() {
-        /*final String username = "xavier.lamourec@gmail.com";
+        final String username = "xavier.lamourec@gmail.com";
 
 
         Properties props = new Properties();
@@ -85,7 +88,7 @@ public class EmailManager {
             message.setRecipients(Message.RecipientType.TO,
                     InternetAddress.parse("dontkillewok@gmail.com"));
             message.setSubject(subject);
-            *//*message.setText(body);*//*
+            message.setText(body);
             String test = "markolo";
 
             List<Loan> overdueList = getOverdueList();
@@ -114,7 +117,7 @@ public class EmailManager {
 
         } catch (MessagingException e) {
             throw new RuntimeException(e);
-        }*/
+        }
     }
 
 
@@ -262,5 +265,10 @@ public class EmailManager {
         String OriginalPassword = new String(decrypted);
 
         return OriginalPassword;
+    }
+
+    @Override
+    public List<Mail> getOverdueEmailList() {
+        return null;
     }
 }

@@ -2,9 +2,12 @@
 version: '3'
 
 services:
+  # getting postgres DB
   db:
     image: postgres:11.1
     container_name: troparo_db
+    ports:
+      - 5432:5432
     environment:
       POSTGRES_USER: ocp
       POSTGRES_PASSWORD: 123
@@ -12,8 +15,11 @@ services:
       POSTGRES_INITDB_ARGS: --data-checksums
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
-      - pgdata:/var/lib/postgresql/data
-  app:
+      - pg-data:/var/lib/postgresql/data
+
+
+  # getting troparo image
+  webservice:
     image: troparo_app
     container_name: troparo_app
     build: .
@@ -22,4 +28,7 @@ services:
     depends_on:
       - db
 volumes:
-  pgdata:
+  pg-data:
+
+
+
