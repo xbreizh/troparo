@@ -269,6 +269,32 @@ public class EmailManagerImpl implements EmailManager {
 
     @Override
     public List<Mail> getOverdueEmailList() {
-        return null;
+        HashMap<String, String> criterias = new HashMap<>();
+        criterias.put("status", "OVERDUE");
+        logger.info("getting overdue list");
+        List<Loan> loans = loanManager.getLoansByCriterias(criterias);
+        List<Mail> mailList = new ArrayList<>();
+
+        return createMailListfromLoans(loans);
+    }
+
+    private List<Mail> createMailListfromLoans(List<Loan> loans) {
+        List<Mail> mailList = new ArrayList<>();
+        for (Loan loan: loans
+             ) {
+            Mail mail = new Mail();
+            mail.setEmail(loan.getBorrower().getEmail());
+            mail.setFirstname(loan.getBorrower().getFirstName());
+            mail.setLastname(loan.getBorrower().getLastName());
+            mail.setIsbn(loan.getBook().getIsbn());
+            mail.setTitle(loan.getBook().getTitle());
+            mail.setAuthor(loan.getBook().getAuthor());
+            mail.setEdition(loan.getBook().getEdition());
+            mail.setDueDate(loan.getPlannedEndDate());
+            int overDays = calculateDaysBetweenDates(new Date(), loan.getPlannedEndDate());
+            mail.setDiffdays(overDays);
+            mailList.add(mail);
+        }
+        return mailList;
     }
 }
