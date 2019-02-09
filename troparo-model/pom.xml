@@ -13,12 +13,7 @@
 
 
     <dependencies>
-        <!--Modules-->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>troparo-technical</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+
 
         <!-- Spring Framework-4.x -->
         <dependency>
@@ -50,10 +45,6 @@
             <artifactId>postgresql</artifactId>
             <version>${postgres.version}</version>
         </dependency>
-        <dependency>
-            <groupId>javax.inject</groupId>
-            <artifactId>javax.inject</artifactId>
-            <version>1</version>
-        </dependency>
+
     </dependencies>
 </project>

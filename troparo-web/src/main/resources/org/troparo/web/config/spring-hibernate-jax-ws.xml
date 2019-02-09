@@ -35,6 +35,7 @@
                 <value>org.troparo.model.Book</value>
                 <value>org.troparo.model.Member</value>
                 <value>org.troparo.model.Loan</value>
+                <value>org.troparo.model.Mail</value>
             </list>
         </property>
         <property name="hibernateProperties">
@@ -50,8 +51,8 @@
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://127.0.0.1:5432/troparo"/>
-        <!--<property name="url" value="jdbc:postgresql://troparo_db:5432/troparo"/>-->
+        <!--<property name="url" value="jdbc:postgresql://127.0.0.1:5432/troparo"/>-->
+        <property name="url" value="jdbc:postgresql://db:5432/troparo"/>
        <!-- <property name="username" value="postgres"/>-->
         <property name="username" value="ocp"/>
         <property name="password" value="123"/>

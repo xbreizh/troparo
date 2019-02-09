@@ -302,7 +302,7 @@
     <wsdl:service name="MemberService">
         <wsdl:port name="MemberServicePort" binding="tns:MemberServiceSOAPBinding">
             <soap:address
-                    location="http://localhost:8080/troparo/services/member/MemberService"/>
+                    location="http://troparo_app:8080/troparo/services/member/MemberService"/>
         </wsdl:port>
     </wsdl:service>
 

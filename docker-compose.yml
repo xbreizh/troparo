@@ -16,6 +16,8 @@ services:
       PGDATA: /var/lib/postgresql/data/pgdata
     volumes:
       - pg-data:/var/lib/postgresql/data
+    networks:
+      - troparo
 
 
   # getting troparo image
@@ -24,11 +26,28 @@ services:
     container_name: troparo_app
     build: .
     ports:
-      - 8080:8080
+     - 8080:8080
     depends_on:
       - db
+    networks:
+      - troparo
+
+    # getting troparo image
+  webapp:
+    image: library_app
+    container_name: library_app
+    build: ../webo/library/.
+    ports:
+        - 8090:8080
+    depends_on:
+      - webservice
+    networks:
+      - troparo
+
+
 volumes:
   pg-data:
 
-
+networks:
+  troparo:
 

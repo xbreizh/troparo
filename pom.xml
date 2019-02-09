@@ -28,6 +28,8 @@
         <maven.compiler.target>1.7</maven.compiler.target>
         <maven.compiler.source>1.7</maven.compiler.source>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <dockerfile.version>1.4.1</dockerfile.version>
+        <docker.image.prefix>troparo</docker.image.prefix>
     </properties>
 
 
@@ -56,7 +58,21 @@
                 <artifactId>troparo-technical</artifactId>
                 <version>${project.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>troparo-consumer</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>troparo-business</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <artifactId>troparo-model</artifactId>
+                <version>${project.version}</version>
+            </dependency>
 
             <!-- ===== Third Part ===== -->
 
@@ -133,6 +149,40 @@
              </dependency>-->
         </dependencies>
     </dependencyManagement>
+    <build>
+
+        <plugins>
+          <!--  <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>dockerfile-maven-plugin</artifactId>
+                <version>${dockerfile.version}</version>
+                &lt;!&ndash; Wire up to the default build phases &ndash;&gt;
+                <executions>
+                    <execution>
+                        <id>default</id>
+                        <goals>
+                            <goal>build</goal>
+                            <goal>push</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
+                    <buildArgs>
+                        <WAR_FILE>troparo-web/target/${project.build.finalName}.war</WAR_FILE>
+                    </buildArgs>
+                </configuration>
+                <dependencies>
+                    &lt;!&ndash;&lt;!&ndash; To make this work on JDK 9+ &ndash;&gt;
+                    <dependency>
+                        <groupId>javax.activation</groupId>
+                        <artifactId>javax.activation-api</artifactId>
+                        <version>1.2.0</version>
+                    </dependency>&ndash;&gt;
+                </dependencies>
+            </plugin>-->
+        </plugins>
+    </build>
     <!--<build>
         <plugins>
             &lt;!&ndash; plugin 4- apache cxf codegen wsdl2java goal &ndash;&gt;
