@@ -23,7 +23,7 @@ services:
   # getting troparo image
   webservice:
     image: troparo_app
-    container_name: troparo_app
+    #container_name: troparo_app
     build: .
     ports:
      - 8080:8080
@@ -36,7 +36,7 @@ services:
     # getting troparo image
   webapp:
     image: library_app
-    container_name: library_app
+    #container_name: library_app
     build: ../webo/library/.
     ports:
         - 8090:8080
@@ -46,7 +46,7 @@ services:
       - troparo
 
 
-volumes:
+volumes:  
   pg-data:
 
 networks:
