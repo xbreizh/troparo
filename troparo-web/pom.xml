@@ -135,7 +135,7 @@
                 <configuration>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-                    <warName>troparo-web-1.0-SNAPSHOT</warName>
+                    <warName>troparo_app</warName>
                 </configuration>
             </plugin>
             <!-- plugin 4- apache cxf codegen wsdl2java goal -->

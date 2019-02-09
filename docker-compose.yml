@@ -5,7 +5,7 @@ services:
   # getting postgres DB
   db:
     image: postgres:11.1
-    container_name: troparo_db
+    #container_name: troparo_db
     ports:
       - 5432:5432
     environment:
@@ -31,6 +31,7 @@ services:
       - db
     networks:
       - troparo
+
 
     # getting troparo image
   webapp:
