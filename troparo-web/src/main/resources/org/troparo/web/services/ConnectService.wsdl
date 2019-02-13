@@ -41,35 +41,35 @@
     <wsdl:message name="invalidateTokenResponse">
         <wsdl:part element="connect:invalidateTokenResponseType" name="parameters"/>
     </wsdl:message>
-    <wsdl:message name="BusinessException">
-        <wsdl:part element="connect:BusinessFaultType" name="parameters"/>
+    <wsdl:message name="BusinessExceptionConnect">
+        <wsdl:part element="connect:BusinessConnectFaultType" name="parameters"/>
     </wsdl:message>
 
     <wsdl:portType name="IConnectService">
         <wsdl:operation name="resetPassword">
             <wsdl:input message="tns:resetPasswordRequest"/>
             <wsdl:output message="tns:resetPasswordResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionConnect" message="tns:BusinessExceptionConnect"/>
         </wsdl:operation>
         <!-- <wsdl:operation name="connect">
              <wsdl:input message="tns:connectRequest"/>
              <wsdl:output message="tns:connectResponse"/>
-             <wsdl:fault name="businessException" message="tns:BusinessException"/>
+             <wsdl:fault name="businessExceptionConnect" message="tns:BusinessExceptionConnect"/>
          </wsdl:operation>-->
         <wsdl:operation name="getToken">
             <wsdl:input message="tns:getTokenRequest"/>
             <wsdl:output message="tns:getTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionConnect" message="tns:BusinessExceptionConnect"/>
         </wsdl:operation>
         <wsdl:operation name="checkToken">
             <wsdl:input message="tns:checkTokenRequest"/>
             <wsdl:output message="tns:checkTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionConnect" message="tns:BusinessExceptionConnect"/>
         </wsdl:operation>
         <wsdl:operation name="invalidateToken">
             <wsdl:input message="tns:invalidateTokenRequest"/>
             <wsdl:output message="tns:invalidateTokenResponse"/>
-            <wsdl:fault name="businessException" message="tns:BusinessException"/>
+            <wsdl:fault name="businessExceptionConnect" message="tns:BusinessExceptionConnect"/>
         </wsdl:operation>
     </wsdl:portType>
 
@@ -86,8 +86,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionConnect">
+                <soap:fault name="businessExceptionConnect" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <!-- <wsdl:operation name="connect">
@@ -99,8 +99,8 @@
              <wsdl:output>
                  <soap:body use="literal"/>
              </wsdl:output>
-             <wsdl:fault name="businessException">
-                 <soap:fault name="businessException" use="literal"/>
+             <wsdl:fault name="businessExceptionConnect">
+                 <soap:fault name="businessExceptionConnect" use="literal"/>
              </wsdl:fault>
          </wsdl:operation>-->
         <wsdl:operation name="checkToken">
@@ -112,8 +112,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionConnect">
+                <soap:fault name="businessExceptionConnect" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
 
@@ -126,8 +126,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionConnect">
+                <soap:fault name="businessExceptionConnect" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
         <wsdl:operation name="invalidateToken">
@@ -139,8 +139,8 @@
             <wsdl:output>
                 <soap:body use="literal"/>
             </wsdl:output>
-            <wsdl:fault name="businessException">
-                <soap:fault name="businessException" use="literal"/>
+            <wsdl:fault name="businessExceptionConnect">
+                <soap:fault name="businessExceptionConnect" use="literal"/>
             </wsdl:fault>
         </wsdl:operation>
     </wsdl:binding>
@@ -148,7 +148,7 @@
     <wsdl:service name="ConnectService">
         <wsdl:port name="ConnectServicePort" binding="tns:ConnectServiceSOAPBinding">
             <soap:address
-                    location="http://localhost:8080/troparo/services/connect/ConnectService"/>
+                    location="http://webservice:8080/troparo_app/services/connect/ConnectService"/>
         </wsdl:port>
     </wsdl:service>
 

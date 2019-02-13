@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            xmlns:tns="http://troparo.org/entities/connect" targetNamespace="http://troparo.org/entities/connect"
+            targetNamespace="http://troparo.org/entities/connect"
             elementFormDefault="qualified">
 
     <!-- checkToken Request Type -->
@@ -117,7 +117,7 @@
     <!--Exception-->
 
     <!-- Business Exception Type -->
-    <xsd:element name="BusinessFaultType">
+    <xsd:element name="BusinessConnectFaultType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="errorCode" type="xsd:int"/>

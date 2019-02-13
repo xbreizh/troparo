@@ -10,7 +10,6 @@ import org.troparo.model.Member;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.persistence.NoResultException;
 import javax.transaction.Transactional;
 import java.util.*;
 
@@ -111,9 +110,18 @@ public class MemberManagerImpl implements MemberManager {
         }
     }
 
+
     @Override
     public Member getMemberByLogin(String login) {
-        return memberDAO.getMemberByLogin(login);
+        logger.info("getting id (from business): " + login);
+        Member member = memberDAO.getMemberByLogin(login);
+        if (member != null) {
+            logger.info("member");
+            return member;
+        } else {
+            logger.info("member is probably null");
+            return null;
+        }
     }
 
     @Override

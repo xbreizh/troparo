@@ -11,7 +11,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>war</packaging>
     <artifactId>troparo-web</artifactId>
-
+    <name>troparo-web</name>
     <!--<properties>
         <cxf.version>3.2.7</cxf.version>
         <cxf.scope>compile</cxf.scope>
@@ -25,26 +25,27 @@
 
         <!-- ===== Modules ===== -->
         <dependency>
-            <groupId>org.troparo</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>troparo-business</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
 >>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
         <dependency>
-            <groupId>org.troparo</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>troparo-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.troparo</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>troparo-consumer</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>troparo-technical</artifactId>
             <version>${project.version}</version>
         </dependency>
+
 
 
         <!-- apache cxf jax-ws-3.0.2 -->
@@ -60,7 +61,17 @@
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>3.2.7</version>
         </dependency>
-
+        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-ws-security -->
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-ws-security</artifactId>
+            <version>3.2.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.ws</groupId>
+            <artifactId>jaxws-rt</artifactId>
+            <version>2.3.0</version>
+        </dependency>
 
         <!-- Spring Framework-4.x -->
         <dependency>
@@ -86,9 +97,9 @@
             <version>${hibernate.version}</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
-            <groupId>postgresql</groupId>
+            <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgres.version}</version>
         </dependency>
@@ -102,28 +113,12 @@
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.apache.cxf</groupId>
             <artifactId>cxf-rt-frontend-jaxws</artifactId>
             <version>3.2.7</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-transports-http -->
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-transports-http</artifactId>
-            <version>3.2.7</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-ws-security -->
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-ws-security</artifactId>
-            <version>3.2.7</version>
-        </dependency>
-        <dependency>
-            <groupId>com.sun.xml.ws</groupId>
-            <artifactId>jaxws-rt</artifactId>
-            <version>2.3.0</version>
-        </dependency>
+        </dependency>-->
+
 
 
 >>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
@@ -147,14 +142,14 @@
                 <configuration>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-                    <warName>JaxWsSecurity</warName>
+                    <warName>troparo_app</warName>
                 </configuration>
             </plugin>
             <!-- plugin 4- apache cxf codegen wsdl2java goal -->
             <plugin>
                 <groupId>org.apache.cxf</groupId>
                 <artifactId>cxf-codegen-plugin</artifactId>
-                <version>3.0.2</version>
+                <version>3.2.7</version>
                 <executions>
                     <execution>
                         <configuration>
@@ -177,6 +172,10 @@
                                     <wsdl>${basedir}/src/main/resources/org/troparo/web/services/ConnectService.wsdl
                                     </wsdl>
 >>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47
+                                </wsdlOption>
+                                <wsdlOption>
+                                    <wsdl>${basedir}/src/main/resources/org/troparo/web/services/MailService.wsdl
+                                    </wsdl>
                                 </wsdlOption>
                             </wsdlOptions>
                         </configuration>

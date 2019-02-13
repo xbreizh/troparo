@@ -24,7 +24,11 @@
     </build>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> test
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
@@ -34,7 +38,7 @@
         <dependency>
             <groupId>org.troparo</groupId>
             <artifactId>troparo-model</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
@@ -59,7 +63,7 @@
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.2.4</version>
+            <version>${postgres.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
         <dependency>
@@ -104,6 +108,10 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
         </dependency>
     </dependencies>
 >>>>>>> 1871b21bfd40d05ca830d64e9bfa788b8b25ee47

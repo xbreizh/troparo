@@ -18,7 +18,10 @@ public interface LoanManager {
 
     String renewLoan(int id);
 
+    boolean isRenewable(int id);
+
     String terminate(int id);
 
 
+    String getLoanStatus(int id);
 }

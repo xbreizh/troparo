@@ -7,9 +7,8 @@ import org.troparo.entities.member.MemberListType;
 import org.troparo.entities.member.MemberTypeIn;
 import org.troparo.entities.member.MemberTypeOut;
 import org.troparo.model.Member;
-import org.troparo.services.connectservice.BusinessException;
+import org.troparo.services.connectservice.BusinessExceptionConnect;
 import org.troparo.services.connectservice.IConnectService;
-
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -38,24 +37,24 @@ public class ConnectServiceImpl implements IConnectService {
     private Member member = null;
 
 
-    private void checkAuthentication(String token) throws BusinessException {
+    private void checkAuthentication(String token) throws BusinessExceptionConnect {
         try {
             checkToken(token);
         } catch (Exception e) {
             e.printStackTrace();
-            throw new BusinessException("invalid token");
+            throw new BusinessExceptionConnect("invalid token");
         }
     }
 
     @Override
-    public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
+    public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessExceptionConnect {
         InvalidateTokenResponseType ar = new InvalidateTokenResponseType();
         ar.setReturn(memberManager.invalidateToken(parameters.getToken()));
         return ar;
     }
 
     @Override
-    public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessException {
+    public GetTokenResponseType getToken(GetTokenRequestType parameters) throws BusinessExceptionConnect {
         GetTokenResponseType ar = new GetTokenResponseType();
         logger.info("entering get token method");
         logger.info("login: " + parameters.getLogin());
@@ -71,7 +70,7 @@ public class ConnectServiceImpl implements IConnectService {
     }
 
     @Override
-    public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessException {
+    public CheckTokenResponseType checkToken(CheckTokenRequestType parameters) throws BusinessExceptionConnect {
         CheckTokenResponseType ar = new CheckTokenResponseType();
         boolean tokenIsValid = false;
         tokenIsValid = memberManager.checkToken(parameters.getToken());
@@ -80,7 +79,7 @@ public class ConnectServiceImpl implements IConnectService {
     }
 
     @Override
-    public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws BusinessException {
+    public ResetPasswordResponseType resetPassword(ResetPasswordRequestType parameters) throws BusinessExceptionConnect {
         ResetPasswordResponseType ar = new ResetPasswordResponseType();
         boolean result;
 

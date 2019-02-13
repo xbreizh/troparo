@@ -2,6 +2,9 @@ package org.troparo.business.impl;
 
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.troparo.business.contract.BookManager;
 import org.troparo.business.contract.LoanManager;
 import org.troparo.business.contract.MemberManager;
@@ -17,12 +20,16 @@ import java.util.HashMap;
 import java.util.List;
 
 @Transactional
-@Named
+@Configuration
+@PropertySource("classpath:config.properties")
 public class LoanManagerImpl implements LoanManager {
-    private final int loanDuration = 28;
-    private final int renewDuration = 28;
-    private final int maxBooks = 4;
-    private final int maxLoanDuration = loanDuration + renewDuration;
+    @Value("${loanDuration}")
+    private int loanDuration;
+    @Value("${renewDuration}")
+    private int renewDuration;
+    @Value("${maxBooks}")
+    private int maxBooks;
+
     @Inject
     LoanDAO loanDAO;
     @Inject
@@ -34,11 +41,12 @@ public class LoanManagerImpl implements LoanManager {
 
     @Override
     public String addLoan(Loan loan) {
+
         exception = "";
         loan.setStartDate(new Date());
         Calendar cal = Calendar.getInstance();
         cal.setTime(loan.getStartDate());
-        cal.add(Calendar.DATE, loanDuration);
+        cal.add(Calendar.DATE,loanDuration);
         loan.setPlannedEndDate(cal.getTime());
         if (loan.getBorrower() == null) {
             return "invalid member";
@@ -58,6 +66,7 @@ public class LoanManagerImpl implements LoanManager {
             return "max number of books rented reached";
         }
         return exception;
+
     }
 
 
@@ -121,6 +130,30 @@ public class LoanManagerImpl implements LoanManager {
     }
 
     @Override
+    public boolean isRenewable(int id) {
+        logger.info("checking if loan "+id+" is renewable");
+        Loan loan = loanDAO.getLoanById(id);
+
+        if (loan.getEndDate() != null) {
+            return false;
+        }
+
+        Date start = loan.getStartDate();
+        Date end = loan.getPlannedEndDate();
+
+        int diffInDays = (int) ((end.getTime() - start.getTime())
+                / (1000 * 60 * 60 * 24));
+        logger.info("diff days is: " + diffInDays);
+        if (diffInDays > renewDuration) {
+            return false;
+        } else {
+            return true;
+        }
+
+
+    }
+
+    @Override
     public String terminate(int id) {
         Loan loan;
         try {
@@ -135,5 +168,27 @@ public class LoanManagerImpl implements LoanManager {
             return "loan couldn't be terminated!";
         }
         return "";
+    }
+
+    @Override
+    public String getLoanStatus(int id) {
+        Loan loan;
+        logger.info("getting loan status");
+        Date today = new Date();
+        try {
+            loan = loanDAO.getLoanById(id);
+            if (loan.getEndDate() == null && loan.getPlannedEndDate().before(today)) {
+                return "OVERDUE";
+            }
+            if(loan.getEndDate()!=null){
+                return "TERMINATED";
+            }
+            else{
+                return "PROGRESS";
+            }
+        } catch (NullPointerException e) {
+            logger.error("error while getting loan status");
+        }
+        return null;
     }
 }

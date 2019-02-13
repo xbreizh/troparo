@@ -15,6 +15,8 @@
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/apache-cxf-services.xml,
             classpath:org/troparo/web/config/spring-hibernate-jax-ws.xml,
+
+
         </param-value>
     </context-param>
 

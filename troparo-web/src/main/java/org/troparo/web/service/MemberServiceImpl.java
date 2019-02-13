@@ -4,8 +4,10 @@ package org.troparo.web.service;
 import org.apache.log4j.Logger;
 import org.troparo.business.contract.MemberManager;
 import org.troparo.entities.member.*;
+import org.troparo.model.Book;
+import org.troparo.model.Loan;
 import org.troparo.model.Member;
-import org.troparo.services.memberservice.BusinessException;
+import org.troparo.services.memberservice.BusinessExceptionMember;
 import org.troparo.services.memberservice.IMemberService;
 
 import javax.inject.Inject;
@@ -36,7 +38,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Create
     @Override
-    public AddMemberResponseType addMember(AddMemberRequestType parameters) throws org.troparo.services.memberservice.BusinessException {
+    public AddMemberResponseType addMember(AddMemberRequestType parameters) throws BusinessExceptionMember {
         AddMemberResponseType ar = new AddMemberResponseType();
         /*checkAuthentication(parameters.getToken());*/
         ar.setReturn(true);
@@ -46,7 +48,7 @@ public class MemberServiceImpl implements IMemberService {
         exception = memberManager.addMember(member);
         if (!exception.equals("")) {
             logger.info(exception);
-            throw new org.troparo.services.memberservice.BusinessException(exception);
+            throw new BusinessExceptionMember(exception);
         }
 
         return ar;
@@ -79,7 +81,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Update
     @Override
-    public UpdateMemberResponseType updateMember(UpdateMemberRequestType parameters) throws BusinessException {
+    public UpdateMemberResponseType updateMember(UpdateMemberRequestType parameters) throws BusinessExceptionMember {
         UpdateMemberResponseType ar = new UpdateMemberResponseType();
         checkAuthentication(parameters.getToken());
         ar.setReturn(true);
@@ -89,7 +91,7 @@ public class MemberServiceImpl implements IMemberService {
         logger.info("memberManager: " + memberManager);
         exception = memberManager.updateMember(member);
         if (!exception.equals("")) {
-            throw new BusinessException(exception);
+            throw new BusinessExceptionMember(exception);
         }
 
         return ar;
@@ -108,16 +110,105 @@ public class MemberServiceImpl implements IMemberService {
     }*/
 
 
-    // Get One
+    // Get By Id
     @Override
-    public GetMemberByIdResponseType getMemberById(GetMemberByIdRequestType parameters) throws BusinessException {
+    public GetMemberByIdResponseType getMemberById(GetMemberByIdRequestType parameters) throws BusinessExceptionMember {
         checkAuthentication(parameters.getToken());
         logger.info("new method added");
         GetMemberByIdResponseType rep = new GetMemberByIdResponseType();
         MemberTypeOut bt = new MemberTypeOut();
         Member member = memberManager.getMemberById(parameters.getId());
         if (member == null) {
-            throw new BusinessException("no member found with that id");
+            throw new BusinessExceptionMember("no member found with that id");
+        } else {
+            bt.setId(member.getId());
+            bt.setLogin(member.getLogin());
+            bt.setFirstName(member.getFirstName());
+            bt.setLastName(member.getLastName());
+            bt.setEmail(member.getEmail());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
+            bt.setDateJoin(xmlCalendar);
+            LoanListType loanListType = new LoanListType();
+
+
+            bt.setLoanListType(settingLoanListMember(member.getLoanList()));
+            rep.setMemberTypeOut(bt);
+
+        }
+        return rep;
+    }
+
+    private LoanListType settingLoanListMember(List<Loan> loanList) {
+        LoanListType loanListType = new LoanListType();
+        /* List<LoanTypeOut> listOut = new ArrayList<>();*/
+        for (Loan l : loanList
+        ) {
+            LoanTypeOut lout = new LoanTypeOut();
+            lout.setId(l.getId());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(l.getStartDate());
+            lout.setStartDate(xmlCalendar);
+            xmlCalendar = convertDateIntoXmlDate(l.getPlannedEndDate());
+            lout.setPlannedEndDate(xmlCalendar);
+            if (l.getEndDate() != null) {
+                xmlCalendar = convertDateIntoXmlDate(l.getEndDate());
+                lout.setEndDate(xmlCalendar);
+            }
+            lout.setBookTypeOut(convertBookIntoBookTypeOut(l.getBook()));
+            loanListType.getLoanTypeOut().add(lout);
+        }
+        return loanListType;
+    }
+
+    private BookTypeOut convertBookIntoBookTypeOut(Book book) {
+        BookTypeOut bookTypeOut = new BookTypeOut();
+        bookTypeOut.setId(book.getId());
+        bookTypeOut.setISBN(book.getIsbn());
+        bookTypeOut.setTitle(book.getTitle());
+        bookTypeOut.setAuthor(book.getAuthor());
+        bookTypeOut.setEdition(book.getEdition());
+        bookTypeOut.setNbPages(book.getNbPages());
+        bookTypeOut.setPublicationYear(book.getPublicationYear());
+        bookTypeOut.setKeywords(book.getKeywords());
+        return bookTypeOut;
+    }
+
+    @Override
+    public GetMemberByLoginResponseType getMemberByLogin(GetMemberByLoginRequestType parameters) throws BusinessExceptionMember {
+        checkAuthentication(parameters.getToken());
+        logger.info("new method added");
+        GetMemberByLoginResponseType rep = new GetMemberByLoginResponseType();
+        MemberTypeOut bt = new MemberTypeOut();
+        Member member = memberManager.getMemberByLogin(parameters.getLogin().toUpperCase());
+        if (member == null) {
+            throw new BusinessExceptionMember("no member found with that login");
+        } else {
+            bt.setId(member.getId());
+            bt.setLogin(member.getLogin());
+            bt.setFirstName(member.getFirstName());
+            bt.setLastName(member.getLastName());
+            bt.setEmail(member.getEmail());
+            XMLGregorianCalendar xmlCalendar = convertDateIntoXmlDate(member.getDateJoin());
+            bt.setDateJoin(xmlCalendar);
+
+            // getting the loanList
+            LoanListType loanListType = new LoanListType();
+
+            bt.setLoanListType(settingLoanListMember(member.getLoanList()));
+            rep.setMemberTypeOut(bt);
+        }
+        return rep;
+    }
+
+  /*  // Get By Login
+    @Override
+    public GetMemberByLoginResponseType getMemberByLogin(GetMemberByIdRequestType parameters) throws BusinessExceptionMember {
+        checkAuthentication(parameters.getToken());
+        logger.info("new method added");
+        GetMemberByIdResponseType rep = new GetMemberByIdResponseType();
+        MemberTypeOut bt = new MemberTypeOut();
+        Member member = memberManager.getMemberById(parameters.getId());
+        if (member == null) {
+            throw new BusinessExceptionMember("no member found with that id");
         } else {
             bt.setId(member.getId());
             bt.setLogin(member.getLogin());
@@ -129,7 +220,7 @@ public class MemberServiceImpl implements IMemberService {
             rep.setMemberTypeOut(bt);
         }
         return rep;
-    }
+    }*/
 
   /*  @Override
     public InvalidateTokenResponseType invalidateToken(InvalidateTokenRequestType parameters) throws BusinessException {
@@ -141,7 +232,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Get All
     @Override
-    public MemberListResponseType getAllMembers(MemberListRequestType parameters) throws BusinessException {
+    public MemberListResponseType getAllMembers(MemberListRequestType parameters) throws BusinessExceptionMember {
         checkAuthentication(parameters.getToken());
         memberList = memberManager.getMembers();
         logger.info("size list: " + memberList.size());
@@ -167,7 +258,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Get List By Criterias
     @Override
-    public GetMemberByCriteriasResponseType getMemberByCriterias(GetMemberByCriteriasRequestType parameters) throws BusinessException {
+    public GetMemberByCriteriasResponseType getMemberByCriterias(GetMemberByCriteriasRequestType parameters) throws BusinessExceptionMember {
         HashMap<String, String> map = new HashMap<>();
         checkAuthentication(parameters.getToken());
         MemberCriterias criterias = parameters.getMemberCriterias();
@@ -192,7 +283,7 @@ public class MemberServiceImpl implements IMemberService {
 
     // Delete
     @Override
-    public RemoveMemberResponseType removeMember(RemoveMemberRequestType parameters) throws BusinessException {
+    public RemoveMemberResponseType removeMember(RemoveMemberRequestType parameters) throws BusinessExceptionMember {
         RemoveMemberResponseType ar = new RemoveMemberResponseType();
         checkAuthentication(parameters.getToken());
         ar.setReturn(true);
@@ -200,7 +291,7 @@ public class MemberServiceImpl implements IMemberService {
         logger.info("memberManager: " + memberManager);
         exception = memberManager.remove(parameters.getId());
         if (!exception.equals("")) {
-            throw new BusinessException(exception);
+            throw new BusinessExceptionMember(exception);
         }
 
         return ar;
@@ -266,12 +357,12 @@ public class MemberServiceImpl implements IMemberService {
         return xmlCalendar;
     }
 
-    private void checkAuthentication(String token) throws BusinessException {
+    private void checkAuthentication(String token) throws BusinessExceptionMember {
         try {
             authentication.checkToken(token);
         } catch (Exception e) {
             e.printStackTrace();
-            throw new BusinessException("invalid token");
+            throw new BusinessExceptionMember("invalid token");
         }
     }
 

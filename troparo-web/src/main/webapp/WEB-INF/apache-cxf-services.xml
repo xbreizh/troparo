@@ -20,10 +20,10 @@
                     implementor="org.troparo.web.service.ConnectServiceImpl"
                     address="/connect">
     </jaxws:endpoint>
-    <!-- <jaxws:endpoint id="helloworld"
-                     implementor="org.troparo.web.service.HelloWorld"
-                     address="/hello">
-     </jaxws:endpoint>-->
+    <jaxws:endpoint id="mailservice"
+                    implementor="org.troparo.web.service.MailServiceImpl"
+                    address="/mail">
+    </jaxws:endpoint>
 
 
 </beans>

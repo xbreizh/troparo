@@ -59,6 +59,28 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Get Loan Status Request Type -->
+    <xsd:element name="getLoanStatusRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element ref="tns:Id"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Loan Status Response Type -->
+    <xsd:element name="getLoanStatusResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Status"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+
+
+
     <!-- Get Loan by Criterias Request Type -->
     <xsd:element name="getLoanByCriteriasRequestType">
         <xsd:complexType>
@@ -77,6 +99,26 @@
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+
+    <!-- is Renewable Request Type -->
+    <xsd:element name="isRenewableRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:Token"/>
+                <xsd:element name="Id" type="xsd:int"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- is Renewable Response Type -->
+    <xsd:element name="isRenewableResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="return" type="xsd:boolean"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Renew Loan Request Type -->
     <xsd:element name="renewLoanRequestType">
         <xsd:complexType>
@@ -185,8 +227,6 @@
     <xsd:element name="ISBN">
         <xsd:simpleType>
             <xsd:restriction base="xsd:string">
-                <xsd:minInclusive value="10"/>
-                <xsd:maxInclusive value="13"/>
             </xsd:restriction>
         </xsd:simpleType>
     </xsd:element>
@@ -216,7 +256,7 @@
     <!--Exception-->
 
     <!-- Business Exception Type -->
-    <xsd:element name="BusinessFaultType">
+    <xsd:element name="BusinessLoanFaultType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="errorCode" type="xsd:int"/>

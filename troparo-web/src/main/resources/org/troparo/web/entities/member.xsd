@@ -159,6 +159,25 @@
         </xsd:complexType>
     </xsd:element>
 
+    <!-- Get Member Request Type -->
+    <xsd:element name="getMemberByLoginRequestType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Token" type="xsd:string"/>
+                <xsd:element name="Login" type="xsd:string"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Get Member Response Type -->
+    <xsd:element name="getMemberByLoginResponseType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:MemberTypeOut"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
     <!-- Get Member by Criterias Request Type -->
     <xsd:element name="getMemberByCriteriasRequestType">
         <xsd:complexType>
@@ -395,9 +414,105 @@
                 <xsd:element name="Email" type="xsd:string"/>
                 <xsd:element name="DateJoin" type="xsd:date"/>
                 <xsd:element name="Role" type="xsd:string"/>
+                <xsd:element ref="tns:LoanListType"/>
             </xsd:sequence>
         </xsd:complexType>
     </xsd:element>
+
+    <!-- List of Loans -->
+    <xsd:element name="LoanListType">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element ref="tns:LoanTypeOut" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Loan Type Out-->
+    <xsd:element name="LoanTypeOut">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="Id" type="xsd:int"/>
+                <xsd:element name="startDate" type="xsd:date"/>
+                <xsd:element name="plannedEndDate" type="xsd:date"/>
+                <xsd:element name="endDate" type="xsd:date"/>
+                <xsd:element ref="tns:BookTypeOut"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <!-- Book Type Out-->
+    <xsd:element name="BookTypeOut">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="id">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="ISBN">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minInclusive value="10"/>
+                            <xsd:maxInclusive value="13"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Title">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Author">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="PublicationYear">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1455"/>
+                            <xsd:maxInclusive value="2200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Edition">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="NbPages">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:int">
+                            <xsd:minInclusive value="1"/>
+                            <xsd:maxInclusive value="20000"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+                <xsd:element name="Keywords">
+                    <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                            <xsd:minLength value="2"/>
+                            <xsd:maxLength value="200"/>
+                        </xsd:restriction>
+                    </xsd:simpleType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
 
     <!--Token-->
     <xsd:element name="Token">
@@ -412,7 +527,7 @@
     <!--Exception-->
 
     <!-- Business Exception Type -->
-    <xsd:element name="BusinessFaultType">
+    <xsd:element name="BusinessMemberFaultType">
         <xsd:complexType>
             <xsd:sequence>
                 <xsd:element name="errorCode" type="xsd:int"/>
