@@ -18,12 +18,7 @@
             <version>${log4j.version}</version>
         </dependency>
 
-        <!--  &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework/spring-context &ndash;&gt;
-          <dependency>
-              <groupId>org.springframework</groupId>
-              <artifactId>spring-context</artifactId>
-              <version>5.1.3.RELEASE</version>
-          </dependency>-->
+
     </dependencies>
 
 

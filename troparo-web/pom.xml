@@ -12,10 +12,6 @@
     <packaging>war</packaging>
     <artifactId>troparo-web</artifactId>
     <name>troparo-web</name>
-    <!--<properties>
-        <cxf.version>3.2.7</cxf.version>
-        <cxf.scope>compile</cxf.scope>
-    </properties>-->
 
 
     <dependencies>
@@ -106,14 +102,6 @@
             <version>1</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.apache.cxf/cxf-rt-frontend-jaxws -->
-        <!--<dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>3.2.7</version>
-        </dependency>-->
-
-
 
     </dependencies>
 
@@ -135,7 +123,7 @@
                 <configuration>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
                     <webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-                    <warName>troparo_app</warName>
+                    <warName>library-webservice</warName>
                 </configuration>
             </plugin>
             <!-- plugin 4- apache cxf codegen wsdl2java goal -->

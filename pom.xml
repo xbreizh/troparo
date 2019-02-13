@@ -113,99 +113,10 @@
                 <artifactId>javax.annotation-api</artifactId>
                 <version>1.2</version>
             </dependency>
-            <!-- &lt;!&ndash; Spring Framework-4.x &ndash;&gt;
-             <dependency>
-                 <groupId>org.springframework</groupId>
-                 <artifactId>spring-webmvc</artifactId>
-                 <version>${spring.version}</version>
-                 <scope>${spring.scope}</scope>
-             </dependency>
-             <dependency>
-                 <groupId>org.springframework</groupId>
-                 <artifactId>spring-orm</artifactId>
-                 <version>${spring.version}</version>
-                 <scope>${spring.scope}</scope>
-             </dependency>
 
-             &lt;!&ndash; Hibernate Core-4.2.x &ndash;&gt;
-             <dependency>
-                 <groupId>org.hibernate</groupId>
-                 <artifactId>hibernate-core</artifactId>
-                 <version>${hibernate.version}</version>
-                 <scope>${hibernate.scope}</scope>
-             </dependency>
-             <dependency>
-                 <groupId>org.hibernate</groupId>
-                 <artifactId>hibernate-ehcache</artifactId>
-                 <version>${hibernate.version}</version>
-                 <scope>${hibernate.scope}</scope>
-             </dependency>
-
-             &lt;!&ndash; https://mvnrepository.com/artifact/postgresql/postgresql &ndash;&gt;
-             <dependency>
-                 <groupId>postgresql</groupId>
-                 <artifactId>postgresql</artifactId>
-                 <version>${postgres.version}</version>
-             </dependency>-->
         </dependencies>
     </dependencyManagement>
-    <build>
 
-        <plugins>
-          <!--  <plugin>
-                <groupId>com.spotify</groupId>
-                <artifactId>dockerfile-maven-plugin</artifactId>
-                <version>${dockerfile.version}</version>
-                &lt;!&ndash; Wire up to the default build phases &ndash;&gt;
-                <executions>
-                    <execution>
-                        <id>default</id>
-                        <goals>
-                            <goal>build</goal>
-                            <goal>push</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <repository>${docker.image.prefix}/${project.artifactId}</repository>
-                    <buildArgs>
-                        <WAR_FILE>troparo-web/target/${project.build.finalName}.war</WAR_FILE>
-                    </buildArgs>
-                </configuration>
-                <dependencies>
-                    &lt;!&ndash;&lt;!&ndash; To make this work on JDK 9+ &ndash;&gt;
-                    <dependency>
-                        <groupId>javax.activation</groupId>
-                        <artifactId>javax.activation-api</artifactId>
-                        <version>1.2.0</version>
-                    </dependency>&ndash;&gt;
-                </dependencies>
-            </plugin>-->
-        </plugins>
-    </build>
-    <!--<build>
-        <plugins>
-            &lt;!&ndash; plugin 4- apache cxf codegen wsdl2java goal &ndash;&gt;
-            <plugin>
-                <groupId>org.apache.cxf</groupId>
-                <artifactId>cxf-codegen-plugin</artifactId>
-                <version>3.0.2</version>
-                <executions>
-                    <execution>
-                        <configuration>
-                            <sourceRoot>generated/java/source</sourceRoot>
-                            <wsdlOptions>
-                                <wsdlOption>
-                                    <wsdl>${basedir}/src/main/resources/com/jaxws/series/td/spring/hibernate/services/MusicService.wsdl</wsdl>
-                                </wsdlOption>
-                            </wsdlOptions>
-                        </configuration>
-                        <goals>
-                            <goal>wsdl2java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>-->
+
+
 </project>

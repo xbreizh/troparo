@@ -5,9 +5,9 @@ services:
   # getting postgres DB
   db:
     image: postgres:11.1
-    #container_name: troparo_db
+    container_name: library-db
     ports:
-      - 5432:5432
+      - 5432:5433
     environment:
       POSTGRES_USER: ocp
       POSTGRES_PASSWORD: 123
@@ -20,13 +20,15 @@ services:
       - troparo
 
 
-  # getting troparo image
+  # getting library-webservice image
   webservice:
-    image: troparo_app
-    #container_name: troparo_app
+    image: library-webservice
+    container_name: library-webservice
     build: .
     ports:
      - 8080:8080
+    volumes:
+      - logs:/usr/app/resources
     depends_on:
       - db
     networks:
@@ -34,11 +36,13 @@ services:
 
        # getting troparo image
   mailapp:
-    image: mail_app
-    #container_name: library_app
+    image: library_mailapp
+    container_name: library_mailapp
     build: ../mail3/.
     ports:
         - 8085:8080
+    volumes:
+      - logs:/usr/app/resources    
     depends_on:
       - webservice
     networks:
@@ -47,11 +51,13 @@ services:
 
     # getting troparo image
   webapp:
-    image: library_app
-    #container_name: library_app
+    image: library_webapp
+    container_name: library_webapp
     build: ../webo/library/.
     ports:
         - 8090:8080
+    volumes:
+      - logs:/usr/app/resources
     depends_on:
       - webservice
     networks:
@@ -60,6 +66,7 @@ services:
 
 volumes:  
   pg-data:
+  logs:
 
 networks:
   troparo:
